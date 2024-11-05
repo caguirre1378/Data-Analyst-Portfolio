@@ -1,5 +1,8 @@
 # Data-Analyst-Portfolio
-Christian J Aguirre (www.linkedin.com/in/christianaguirre)
+My name is Christian J. Aguirre, a recent graduate with a Bachelor of Science in Management Information Systems. I am passionate about leveraging data to drive business decisions and enhance operational efficiency. My portfolio showcases a variety of projects that demonstrate my skills in data analysis, visualization, and programming.
+
+## Contact
+Feel free to connect with me on [LinkedIn](https://www.linkedin.com/in/christianaguirre) or reach out via email at [christianaguirrepp@gmail.com].
 
 ### Education
 Bachelors of Science in Management Information Systems, George Mason University
