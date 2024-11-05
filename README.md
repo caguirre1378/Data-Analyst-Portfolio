@@ -1,5 +1,5 @@
 # Data-Analyst-Portfolio
-As a recent MIS graduate with a strong foundation in data analytics, I'm eager to apply my skills in data-driven decision-making. My portfolio highlights projects that demonstrate my ability to analyze, visualize, and leverage data to optimize business processes.
++ As a recent MIS graduate with a strong foundation in data analytics, I'm eager to apply my skills in data-driven decision-making. My portfolio highlights projects that demonstrate my ability to analyze, visualize, and leverage data to optimize business processes.
 
 ### Contact
 Feel free to connect with me on [LinkedIn](https://www.linkedin.com/in/christianaguirre) or reach out via email at [christianaguirrepp@gmail.com].
