@@ -1,12 +1,12 @@
 # Data-Analyst-Portfolio
+Christian J Aguirre (www.linkedin.com/in/christianaguirre)
 
-# Education
+### Education
 Bachelors of Science in Management Information Systems, George Mason University
 Associates of Science in Business Administration, Northern Virginia Community College
 
-# Work Experience
-Pro Sales Associate @ Lowes Inc
-
+### Work Experience
+Pro Sales Associate @ Lowes Inc:
 Sales Data Analysis: Conducted a thorough analysis of sales data to identify high-demand building materials, enabling targeted promotions and inventory adjustments that increased sales by 15%.
 Customer Satisfaction Tracking: Analyzed customer feedback and complaint resolution data, uncovering key service improvements that led to a 20% rise in satisfaction ratings.
 
