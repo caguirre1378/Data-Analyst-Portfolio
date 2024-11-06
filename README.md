@@ -11,12 +11,12 @@ Throughout my academic and project work, I have developed a portfolio that showc
 With a commitment to applying these competencies, I am poised to make a meaningful impact by advancing organizational objectives through data-centered solutions.
 
 ### Contact
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/christianaguirre)
+- LinkedIn: [LinkedIn Portfolio](https://www.linkedin.com/in/christianaguirre)
 - Email:[christianaguirrepp@gmail.com].
 
 ### Education
-Bachelors of Science in Management Information Systems, *George Mason University*
-Associates of Science in Business Administration, *Northern Virginia Community College*
+- Bachelors of Science in Management Information Systems, *George Mason University*
+- Associates of Science in Business Administration, *Northern Virginia Community College*
 
 ### Work Experience
 Pro Sales Associate @ Lowes Inc.
