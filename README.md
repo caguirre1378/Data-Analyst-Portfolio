@@ -18,37 +18,53 @@ Sales Data Analysis: Conducted a thorough analysis of sales data to identify hig
 Customer Satisfaction Tracking: Analyzed customer feedback and complaint resolution data, uncovering key service improvements that led to a 20% rise in satisfaction ratings.
 
 ## Projects
-### Project 1: Optimizing Operational Performance in Lawn Equipment Manufacturing: A Business Analytics Case Study (Fall 2021)
+### Project 1: Optimizing Operational Performance in Lawn Equipment Manufacturing
+
+### A Business Analytics Case Study (Fall 2021)
 
 **Project Overview:**
-This senior project in Business Analytics II focused on identifying and addressing core operational challenges within a hypothetical lawn equipment manufacturing company. Key objectives included improving on-time delivery rates, optimizing transmission costs, and enhancing employee retention—critical areas for supporting operational efficiency and overall company performance. The project aimed to provide actionable insights for operations managers and decision-makers through data analysis and visualization.
+This senior project in Business Analytics II focused on identifying and addressing core operational challenges within a hypothetical lawn equipment manufacturing company. 
+
+Key objectives included:
+- Improving on-time delivery rates
+- Optimizing transmission costs
+- Enhancing employee retention—critical areas for supporting operational efficiency and overall company performance.
+
+The project aimed to provide actionable insights for operations managers and decision-makers through data analysis and visualization.
 
 **Technical Specifications:**
-The project was completed using Microsoft Excel and Microsoft Word to analyze data, generate visualizations, and compile a final report. Excel was used extensively for data manipulation and KPI tracking, while Word facilitated structured reporting. System requirements included Microsoft Office Suite 2016 or later.
+- The project was completed using Microsoft Excel and Microsoft Word to analyze data, generate visualizations, and compile a final report.
+- Excel was used extensively for data manipulation and KPI tracking, while Word facilitated structured reporting.
+- System requirements included Microsoft Office Suite 2016 or later.
 
 **Project Structure:**
+- Data Analysis Worksheets:
+  Organized in an Excel file, the worksheets contain:
+  - Raw data,
+  - Calculations,
+  - Graphs
+  
+Arranged in labeled tabs for clear navigation.This structure enabled analysis of performance metrics such as on-time delivery, cost-efficiency, and employee retention factors.
 
-**Data Analysis Worksheets:**
-Organized in an Excel file, the worksheets contain raw data, calculations, and graphs, each arranged in labeled tabs for clear navigation. This structure enabled analysis of performance metrics such as on-time delivery, cost-efficiency, and employee retention factors.
-
-**Comprehensive Report:**
-An 8-page report was created in Microsoft Word to present findings and recommendations in a structured format, including an executive summary, in-depth analysis sections, and visual summaries of the data insights.
-Configuration: The Excel workbook is set up with formatted cells, data filters, and conditional formatting to allow for easy data exploration and real-time updates to visualizations as data changes.
+- Comprehensive Report:
+An 8-page report was created in Microsoft Word to present findings and recommendations in a structured format, including:
+  - Executive summary
+  - In-depth analysis sections
+  - Visual summaries of the data insights.
+    
+- Configuration: The Excel workbook is set up with formatted cells, data filters, and conditional formatting to allow for easy data exploration and real-time updates to visualizations as data changes.
 
 **Usage Instructions:**
-
-Setup: Ensure access to Microsoft Excel and Word (version 2016 or later).
-Exploring the Analysis: Open the Excel workbook to review and interact with data visualizations and metrics. Each worksheet tab corresponds to specific KPIs, allowing stakeholders to focus on areas of interest.
-
-**Testing and Debugging:**
-Filters within Excel were tested for data consistency. All calculations are designed to dynamically update based on input adjustments.
+- Setup: Ensure access to Microsoft Excel and Word (version 2016 or later).
+- Exploring the Analysis: Open the Excel workbook to review and interact with data visualizations and metrics. Each worksheet tab corresponds to specific KPIs, allowing stakeholders to focus on areas of interest.
+- Testing and Debugging: Filters within Excel were tested for data consistency. All calculations are designed to dynamically update based on input adjustments.
 
 **Project Impact and Deliverables:**
-Improved On-Time Delivery: Analysis showed a notable improvement in delivery rates from 2014 to 2018, indicating gains in production efficiency.
-Optimized Transmission Processes: The study evaluated cost-effective methods for transmission processes, contributing to potential cost savings in production.
-Enhanced Employee Retention: Analyzed factors affecting employee retention, such as gender and locality, to suggest measures for improved satisfaction and retention rates.
-Comprehensive Report: An 8-page report provided a summary of findings, insights, and recommendations, serving as a valuable reference for decision-makers.
-Data Analysis Worksheets: Excel sheets with data, calculations, and visualizations offer stakeholders the ability to explore findings independently.
+- Improved On-Time Delivery: Analysis showed a notable improvement in delivery rates from 2014 to 2018, indicating gains in production efficiency.
+- Optimized Transmission Processes: The study evaluated cost-effective methods for transmission processes, contributing to potential cost savings in production.
+- Enhanced Employee Retention: Analyzed factors affecting employee retention, such as gender and locality, to suggest measures for improved satisfaction and retention rates.
+- Comprehensive Report: An 8-page report provided a summary of findings, insights, and recommendations, serving as a valuable reference for decision-makers.
+- Data Analysis Worksheets: Excel sheets with data, calculations, and visualizations offer stakeholders the ability to explore findings independently.
 
 **Conclusion:**
 This project demonstrates the value of data analytics in supporting data-driven decision-making. The insights provided serve as a foundation for improved operational efficiency and employee retention strategies, giving the company practical guidance for sustained performance optimization. The final report and Excel worksheets are designed to be user-friendly resources, offering clear directions for applying the findings and monitoring progress.
