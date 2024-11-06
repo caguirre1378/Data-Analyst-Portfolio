@@ -1,21 +1,30 @@
 # Data-Analyst-Portfolio
 
 ### Introduction
-As a recent graduate in Management Information Systems with a comprehensive foundation in data analytics, I am eager to contribute my skills to drive data-informed decision-making within a dynamic organization. My academic background, paired with hands-on project experience, has equipped me with the expertise to gather, analyze, and interpret complex datasets to uncover actionable insights. My portfolio features a range of projects demonstrating my proficiency in building impactful data visualizations, developing models, and applying data-driven strategies to streamline and enhance business processes. I am committed to leveraging this skill set to support and advance organizational objectives through thoughtful, data-centered solutions.
+As a recent graduate with a Bachelor of Science in Management Information Systems, I am well-prepared to contribute analytical and data-driven insights within an organization focused on strategic decision-making. My academic background, augmented by practical project experience, has equipped me with the skills to collect, analyze, and interpret complex datasets, enabling me to extract actionable insights that support organizational goals.
+
+Throughout my academic and project work, I have developed a portfolio that showcases proficiency in:
+- Constructing impactful data visualizations
+- Developing predictive and optimization models
+- Applying data-driven strategies to enhance business processes and streamline operations
+
+With a commitment to applying these competencies, I am poised to make a meaningful impact by advancing organizational objectives through data-centered solutions.
 
 ### Contact
-Feel free to connect with me on [LinkedIn](https://www.linkedin.com/in/christianaguirre) or reach out via email at [christianaguirrepp@gmail.com].
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/christianaguirre)
+- Email:[christianaguirrepp@gmail.com].
 
 ### Education
-Bachelors of Science in Management Information Systems, George Mason University
-Associates of Science in Business Administration, Northern Virginia Community College
+Bachelors of Science in Management Information Systems, *George Mason University*
+Associates of Science in Business Administration, *Northern Virginia Community College*
 
 ### Work Experience
-Pro Sales Associate @ Lowes Inc:
+Pro Sales Associate @ Lowes Inc.
 
-Sales Data Analysis: Conducted a thorough analysis of sales data to identify high-demand building materials, enabling targeted promotions and inventory adjustments that increased sales by 15%.
-
-Customer Satisfaction Tracking: Analyzed customer feedback and complaint resolution data, uncovering key service improvements that led to a 20% rise in satisfaction ratings.
+- Sales Data Analysis:
+  Conducted a thorough analysis of sales data to identify high-demand building materials, enabling targeted promotions and inventory adjustments that increased sales by 15%.
+- Customer Satisfaction Tracking:
+  Analyzed customer feedback and complaint resolution data, uncovering key service improvements that led to a 20% rise in satisfaction ratings.
 
 ## Projects
 ### Project 1: Optimizing Operational Performance in Lawn Equipment Manufacturing
@@ -40,8 +49,8 @@ The project aimed to provide actionable insights for operations managers and dec
 **Project Structure:**
 - Data Analysis Worksheets:
   Organized in an Excel file, the worksheets contain:
-  - Raw data,
-  - Calculations,
+  - Raw data
+  - Calculations
   - Graphs
   
 Arranged in labeled tabs for clear navigation.This structure enabled analysis of performance metrics such as on-time delivery, cost-efficiency, and employee retention factors.
