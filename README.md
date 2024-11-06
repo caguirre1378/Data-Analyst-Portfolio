@@ -12,10 +12,11 @@ With a commitment to applying these competencies, I am poised to make a meaningf
 
 ### Contact
 - LinkedIn: [LinkedIn Portfolio](https://www.linkedin.com/in/christianaguirre)
-- Email:[christianaguirrepp@gmail.com].
+- Email: christianaguirrepp@gmail.com
 
 ### Education
 - Bachelors of Science in Management Information Systems, *George Mason University*
+  
 - Associates of Science in Business Administration, *Northern Virginia Community College*
 
 ### Work Experience
@@ -23,6 +24,7 @@ Pro Sales Associate @ Lowes Inc.
 
 - Sales Data Analysis:
   Conducted a thorough analysis of sales data to identify high-demand building materials, enabling targeted promotions and inventory adjustments that increased sales by 15%.
+
 - Customer Satisfaction Tracking:
   Analyzed customer feedback and complaint resolution data, uncovering key service improvements that led to a 20% rise in satisfaction ratings.
 
