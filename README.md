@@ -28,25 +28,27 @@ The project was completed using Microsoft Excel and Microsoft Word to analyze da
 
 Project Structure:
 
-Data Analysis Worksheets: Organized in an Excel file, the worksheets contain raw data, calculations, and graphs, each arranged in labeled tabs for clear navigation. This structure enabled analysis of performance metrics such as on-time delivery, cost-efficiency, and employee retention factors.
+Data Analysis Worksheets: 
+Organized in an Excel file, the worksheets contain raw data, calculations, and graphs, each arranged in labeled tabs for clear navigation. This structure enabled analysis of performance metrics such as on-time delivery, cost-efficiency, and employee retention factors.
 
-Comprehensive Report: An 8-page report was created in Microsoft Word to present findings and recommendations in a structured format, including an executive summary, in-depth analysis sections, and visual summaries of the data insights.
+Comprehensive Report: 
+An 8-page report was created in Microsoft Word to present findings and recommendations in a structured format, including an executive summary, in-depth analysis sections, and visual summaries of the data insights.
 Configuration: The Excel workbook is set up with formatted cells, data filters, and conditional formatting to allow for easy data exploration and real-time updates to visualizations as data changes.
+
 Usage Instructions:
 
 Setup: Ensure access to Microsoft Excel and Word (version 2016 or later).
 Exploring the Analysis: Open the Excel workbook to review and interact with data visualizations and metrics. Each worksheet tab corresponds to specific KPIs, allowing stakeholders to focus on areas of interest.
 
-Testing and Debugging: Filters within Excel were tested for data consistency. All calculations are designed to dynamically update based on input adjustments.
+Testing and Debugging: 
+Filters within Excel were tested for data consistency. All calculations are designed to dynamically update based on input adjustments.
+
 Project Impact and Deliverables:
-
-Improved On-Time Delivery: Analysis showed a notable improvement in delivery rates from 2014 to 2018, indicating gains in production efficiency.
-Optimized Transmission Processes: The study evaluated cost-effective methods for transmission processes, contributing to potential cost savings in production.
-
-Enhanced Employee Retention: Analyzed factors affecting employee retention, such as gender and locality, to suggest measures for improved satisfaction and retention rates.
-Comprehensive Report: An 8-page report provided a summary of findings, insights, and recommendations, serving as a valuable reference for decision-makers.
-
-Data Analysis Worksheets: Excel sheets with data, calculations, and visualizations offer stakeholders the ability to explore findings independently.
+**Improved On-Time Delivery: Analysis showed a notable improvement in delivery rates from 2014 to 2018, indicating gains in production efficiency.**
+**Optimized Transmission Processes: The study evaluated cost-effective methods for transmission processes, contributing to potential cost savings in production.**
+**Enhanced Employee Retention: Analyzed factors affecting employee retention, such as gender and locality, to suggest measures for improved satisfaction and retention rates.**
+**Comprehensive Report: An 8-page report provided a summary of findings, insights, and recommendations, serving as a valuable reference for decision-makers.**
+**Data Analysis Worksheets: Excel sheets with data, calculations, and visualizations offer stakeholders the ability to explore findings independently.**
 
 Conclusion:
 This project demonstrates the value of data analytics in supporting data-driven decision-making. The insights provided serve as a foundation for improved operational efficiency and employee retention strategies, giving the company practical guidance for sustained performance optimization. The final report and Excel worksheets are designed to be user-friendly resources, offering clear directions for applying the findings and monitoring progress.
@@ -67,9 +69,9 @@ Technical Specifications:
 Software Used: Excel Solver, LINGO
 
 Techniques Applied:
-Linear Programming (LP)
-Mixed-Integer Linear Programming (MILP)
-Network Flow, Minimum Spanning Tree, and Shortest Path algorithms
+**Linear Programming (LP)**
+**Mixed-Integer Linear Programming (MILP)**
+**Network Flow, Minimum Spanning Tree, and Shortest Path algorithms**
 
 Project Structure:
 The project is organized into three primary modules:
@@ -77,27 +79,32 @@ The project is organized into three primary modules:
 Laptop Allocation Module
 Objective: Allocate a limited number of laptops across three departments to maximize productivity within given departmental constraints.
 Methodology: Applied LP and MILP to formulate and solve the problem in LINGO.
+
 Garment Component Shipping Module
 Objective: Optimize shipping costs for a clothing company, balancing the flow of garment components from manufacturing sites to assembly facilities.
 Methodology: Solved Transportation and Transshipment Problems, accommodating both balanced and unbalanced scenarios using LP in Excel Solver.
+
 Network Cabling Module
 Objective: Minimize network cabling costs by effectively connecting computers to a central network/server.
 Methodology: Utilized Network Flow Problems, implementing Minimum Spanning Tree and Shortest Path algorithms to find the optimal cabling paths.
+
 Usage Instructions:
 
 System Requirements:
+**Software: Excel with Solver add-in, LINGO**
+**Hardware: Standard system capable of running Microsoft Excel and LINGO**
 
-Software: Excel with Solver add-in, LINGO
-Hardware: Standard system capable of running Microsoft Excel and LINGO
 Installation and Running Instructions:
 
-Open the provided Excel and LINGO files.
-For each module, follow the detailed steps in the documentation to adjust parameters as needed.
-Run Excel Solver or execute the LINGO script to view optimized results.
+**Open the provided Excel and LINGO files.**
+**For each module, follow the detailed steps in the documentation to adjust parameters as needed.**
+**Run Excel Solver or execute the LINGO script to view optimized results.**
+
 Testing and Debugging:
 
-Adjust constraints and parameters to test solution adaptability.
-Use Solver’s sensitivity analysis for troubleshooting and refining results.
+**Adjust constraints and parameters to test solution adaptability.**
+**Use Solver’s sensitivity analysis for troubleshooting and refining results.**
+
 Contribution Guidelines:
 
 Code of Conduct: Maintain respectful and collaborative communication.
@@ -119,8 +126,8 @@ Technical Specifications:
 Software Used: SQL Server Management Studio, SQL Server, ERDPlus
 
 Techniques Applied:
-Data standardization and normalization
-SQL queries for business insights and reporting
+**Data standardization and normalization**
+**SQL queries for business insights and reporting**
 
 Project Structure:
 The project is organized into three main sections:
@@ -144,13 +151,13 @@ Software: SQL Server Management Studio, SQL Server
 Hardware: Standard workstation capable of running SQL Server
 
 Installation and Running Instructions:
-Import the provided SQL scripts into SQL Server.
-Execute setup scripts for schema and data standardization.
-Run the SQL queries from the documentation to generate insights.
+**Import the provided SQL scripts into SQL Server.**
+**Execute setup scripts for schema and data standardization.**
+**Run the SQL queries from the documentation to generate insights.**
 
 Testing and Debugging:
-Modify parameters to test query adaptability.
-Verify data consistency and accuracy of query results.
+**Modify parameters to test query adaptability.**
+**Verify data consistency and accuracy of query results.**
 
 Contribution Guidelines:
 
@@ -174,8 +181,9 @@ Software and Tools Used: JGrasp, Java, JavaScript, LucidChart
 
 Core Features:
 
-Backend built in Java to manage menu browsing, order customization, and processing.
-Visual planning and documentation using LucidChart for database design and process flows.
+**Backend built in Java to manage menu browsing, order customization, and processing.**
+**Visual planning and documentation using LucidChart for database design and process flows.**
+
 Project Structure:
 The project is divided into the following modules:
 
@@ -208,11 +216,10 @@ Testing included verifying order customizations and ensuring menu display accura
 
 Project Impact and Deliverables:
 
-Enhanced Customer Experience: Designed a backend that can support a future front-end for smooth menu browsing and order customization.
-Operational Efficiency: Streamlined order processing reduces potential delays, contributing to efficient service delivery.
-Comprehensive Documentation: LucidChart diagrams and Java files serve as a foundation for future development.
-Future Work and Feedback:
-Future development may include front-end implementation, payment gateway integration, and full deployment. Feedback from potential users and contributors is encouraged to refine features and expand the app’s functionality.
+**Enhanced Customer Experience: Designed a backend that can support a future front-end for smooth menu browsing and order customization.**
+**Operational Efficiency: Streamlined order processing reduces potential delays, contributing to efficient service delivery.**
+**Comprehensive Documentation: LucidChart diagrams and Java files serve as a foundation for future development.**
+**Future Work and Feedback: Future development may include front-end implementation, payment gateway integration, and full deployment. Feedback from potential users and contributors is encouraged to refine features and expand the app’s functionality.**
 
 Contribution and Licensing:
 As a university project, this work is proprietary and intended for educational use within the scope of the course requirements.
