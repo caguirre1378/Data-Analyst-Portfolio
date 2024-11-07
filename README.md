@@ -49,9 +49,8 @@ The project aimed to provide actionable insights for operations managers and dec
 - System requirements included Microsoft Office Suite 2016 or later.
 
 **Project Structure:**
-- Data Analysis Worksheets:
-     Organized in an Excel file, the worksheets contain Raw data, Calculations, and Graphs.
-     Arranged in labeled tabs for clear navigation.This structure enabled analysis of performance metrics such as:
+- Data Analysis Worksheets: Organnized in an Excel file, the worksheets contain Raw data, Calculations, and Graphs. Arranged in labeled tabs for clear navigation.
+- This structure enabled analysis of performance metrics such as:
      - On-time delivery
      - Cost-efficiency
      - Employee Retention factors.
