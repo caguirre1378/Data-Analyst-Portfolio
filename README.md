@@ -95,12 +95,15 @@ An 8-page report was created in Microsoft Word to present findings and recommend
   Excel sheets with data, calculations, and visualizations offer stakeholders the ability to explore findings independently.
 
 **Conclusion**
+
 This project demonstrates the value of data analytics in supporting data-driven decision-making. The insights provided serve as a foundation for improved operational efficiency and employee retention strategies, giving the company practical guidance for sustained performance optimization. The final report and Excel worksheets are designed to be user-friendly resources, offering clear directions for applying the findings and monitoring progress.
 
 **Contribution and Licensing**
+
 As a university project, this work is proprietary and intended for educational use within the scope of the course requirements.
 
-**Future Work and Feedback:**
+**Future Work and Feedback**
+
 Potential expansions include:
 - Integrating predictive modeling
 - Automating KPI tracking to streamline decision-making.
