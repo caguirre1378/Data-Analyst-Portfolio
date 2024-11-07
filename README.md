@@ -111,34 +111,47 @@ Potential expansions include:
 
 Feedback from stakeholders is welcomed to refine and adapt the project for practical industry applications.
 
-### Project 2: Optimizing Resource Allocation, Logistics, and Network Infrastructure Using LP, MILP, and Network Flow Techniques (Fall 2023, Operations and Supply Chain Management)
+### Project 2: Optimizing Resource Allocation, Logistics, and Network Infrastructure Using LP, MILP, and Network Flow Techniques 
+### (Fall 2023, Operations and Supply Chain Management)
 
 **Project Overview:**
-This project aims to address critical operational challenges in resource allocation, logistics, and network infrastructure optimization using Linear Programming (LP), Mixed-Integer Linear Programming (MILP), and Network Flow methods. Three unique, real-world problems were analyzed and solved: laptop allocation, garment component shipping, and network cabling. By leveraging Excel Solver and LINGO, the project delivers optimization solutions applicable to industries in need of efficient resource management and cost reduction. Intended for stakeholders in operations research, supply chain management, and network engineering, the project’s findings highlight how mathematical modeling and optimization techniques can significantly enhance productivity and reduce costs.
+This project addresses key challenges in resource allocation, logistics, and network optimization using Linear Programming (LP), Mixed-Integer Linear Programming (MILP), and Network Flow models to enhance efficiency and cost-effectiveness. 
+
+Three unique, real-world problems were analyzed and solved: 
+- Laptop allocation
+- Garment component shipping
+- Network cabling. 
+  
+This project provides optimization solutions designed to enhance efficiency and reduce costs for industries focused on resource management and logistics optimization. Utilizing Linear Programming (LP), Mixed-Integer Linear Programming (MILP), and Network Flow analysis, the project demonstrates how mathematical modeling can address complex challenges in sectors like operations research, supply chain management, and network engineering. By employing structured, data-driven techniques, these findings highlight significant opportunities to improve productivity, streamline processes, and achieve cost savings through optimized decision-making frameworks.
 
 **Technical Specifications:**
 
-Software Used: Excel Solver, LINGO
+Software Used: 
+- Excel Solver
+- LINGO: It is a software tool used to formulate and solve complex mathematical optimization problems.
 
 **Techniques Applied:**
-Linear Programming (LP)
-Mixed-Integer Linear Programming (MILP)
-Network Flow, Minimum Spanning Tree, and Shortest Path algorithms
+- Linear Programming (LP)
+- Mixed-Integer Linear Programming (MILP)
+- Network Flow Algorithms
+  -- Minimum Spanning Tree
+  -- Shortest Path algorithms
 
 **Project Structure:**
+
 The project is organized into three primary modules:
 
-**Laptop Allocation Module**
-Objective: Allocate a limited number of laptops across three departments to maximize productivity within given departmental constraints.
-Methodology: Applied LP and MILP to formulate and solve the problem in LINGO.
+  1. **Laptop Allocation Module**
+  - Objective: Allocate a limited number of laptops across three departments to maximize productivity within given departmental constraints.
+  - Methodology: Applied LP and MILP to formulate and solve the problem in LINGO.
 
-**Garment Component Shipping Module**
-Objective: Optimize shipping costs for a clothing company, balancing the flow of garment components from manufacturing sites to assembly facilities.
-Methodology: Solved Transportation and Transshipment Problems, accommodating both balanced and unbalanced scenarios using LP in Excel Solver.
+  2. **Garment Component Shipping Module**
+  - Objective: Optimize shipping costs for a clothing company, balancing the flow of garment components from manufacturing sites to assembly facilities.
+  - Methodology: Solved Transportation and Transshipment Problems, accommodating both balanced and unbalanced scenarios using LP in Excel Solver.
 
-**Network Cabling Module**
-Objective: Minimize network cabling costs by effectively connecting computers to a central network/server.
-Methodology: Utilized Network Flow Problems, implementing Minimum Spanning Tree and Shortest Path algorithms to find the optimal cabling paths.
+  3. **Network Cabling Module**
+  - Objective: Minimize network cabling costs by effectively connecting computers to a central network/server.
+  - Methodology: Utilized Network Flow Problems, implementing Minimum Spanning Tree and Shortest Path algorithms to find the optimal cabling paths.
 
 **Usage Instructions:**
 
