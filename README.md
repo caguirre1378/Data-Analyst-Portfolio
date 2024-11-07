@@ -79,20 +79,34 @@ An 8-page report was created in Microsoft Word to present findings and recommend
    - All calculations are designed to dynamically update based on input adjustments.
 
 **Project Impact and Deliverables:**
-- Improved On-Time Delivery: Analysis showed a notable improvement in delivery rates from 2014 to 2018, indicating gains in production efficiency.
-- Optimized Transmission Processes: The study evaluated cost-effective methods for transmission processes, contributing to potential cost savings in production.
-- Enhanced Employee Retention: Analyzed factors affecting employee retention, such as gender and locality, to suggest measures for improved satisfaction and retention rates.
-- Comprehensive Report: An 8-page report provided a summary of findings, insights, and recommendations, serving as a valuable reference for decision-makers.
-- Data Analysis Worksheets: Excel sheets with data, calculations, and visualizations offer stakeholders the ability to explore findings independently.
+- Improved On-Time Delivery:
+  Analysis showed a notable improvement in delivery rates from 2014 to 2018, indicating gains in production efficiency.
+  
+- Optimized Transmission Processes:
+  The study evaluated cost-effective methods for transmission processes, contributing to potential cost savings in production.
+  
+- Enhanced Employee Retention:
+  Analyzed factors affecting employee retention, such as gender and locality, to suggest measures for improved satisfaction and retention rates.
+  
+- Comprehensive Report:
+  An 8-page report provided a summary of findings, insights, and recommendations, serving as a valuable reference for decision-makers.
+  
+- Data Analysis Worksheets:
+  Excel sheets with data, calculations, and visualizations offer stakeholders the ability to explore findings independently.
 
-**Conclusion:**
+**Conclusion**
 This project demonstrates the value of data analytics in supporting data-driven decision-making. The insights provided serve as a foundation for improved operational efficiency and employee retention strategies, giving the company practical guidance for sustained performance optimization. The final report and Excel worksheets are designed to be user-friendly resources, offering clear directions for applying the findings and monitoring progress.
 
-**Contribution and Licensing:**
+**Contribution and Licensing**
 As a university project, this work is proprietary and intended for educational use within the scope of the course requirements.
 
 **Future Work and Feedback:**
-Potential expansions include integrating predictive modeling and automating KPI tracking to streamline decision-making. Embedding this analysis into an ERP system could also provide real-time insights. Stakeholder feedback is welcomed to further refine and adapt the project for industry needs.
+Potential expansions include:
+- Integrating predictive modeling
+- Automating KPI tracking to streamline decision-making.
+- Embedding this analysis into an ERP system could also provide real-time insights.
+
+Feedback from stakeholders is welcomed to refine and adapt the project for practical industry applications.
 
 ### Project 2: Optimizing Resource Allocation, Logistics, and Network Infrastructure Using LP, MILP, and Network Flow Techniques (Fall 2023, Operations and Supply Chain Management)
 
