@@ -45,11 +45,14 @@ The project aimed to provide actionable insights for operations managers and dec
 
 **Technical Specifications:**
 - The project was completed using Microsoft Excel and Microsoft Word to analyze data, generate visualizations, and compile a final report.
+  
 - Excel was used extensively for data manipulation and KPI tracking, while Word facilitated structured reporting.
+  
 - System requirements included Microsoft Office Suite 2016 or later.
 
 **Project Structure:**
 - Data Analysis Worksheets: Organnized in an Excel file, the worksheets contain Raw data, Calculations, and Graphs. Arranged in labeled tabs for clear navigation.
+  
 - This structure enabled analysis of performance metrics such as:
      - On-time delivery
      - Cost-efficiency
@@ -64,9 +67,16 @@ An 8-page report was created in Microsoft Word to present findings and recommend
 - Configuration: The Excel workbook is set up with formatted cells, data filters, and conditional formatting to allow for easy data exploration and real-time updates to visualizations as data changes.
 
 **Usage Instructions:**
-- Setup: Ensure access to Microsoft Excel and Word (version 2016 or later).
-- Exploring the Analysis: Open the Excel workbook to review and interact with data visualizations and metrics. Each worksheet tab corresponds to specific KPIs, allowing stakeholders to focus on areas of interest.
-- Testing and Debugging: Filters within Excel were tested for data consistency. All calculations are designed to dynamically update based on input adjustments.
+1. Setup
+   - Ensure access to Microsoft Excel and Word (version 2016 or later).
+     
+2. Exploring the Analysis
+   - Open the Excel workbook to review and interact with data visualizations and metrics.
+   - Each worksheet tab corresponds to specific KPIs, allowing stakeholders to focus on areas of interest.
+     
+3. Testing and Debugging
+   - Filters within Excel were tested for data consistency.
+   - All calculations are designed to dynamically update based on input adjustments.
 
 **Project Impact and Deliverables:**
 - Improved On-Time Delivery: Analysis showed a notable improvement in delivery rates from 2014 to 2018, indicating gains in production efficiency.
