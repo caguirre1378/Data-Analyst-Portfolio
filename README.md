@@ -134,8 +134,8 @@ Software Used:
 - Linear Programming (LP)
 - Mixed-Integer Linear Programming (MILP)
 - Network Flow Algorithms
-  -- Minimum Spanning Tree
-  -- Shortest Path algorithms
+  - Minimum Spanning Tree
+  - Shortest Path algorithms
 
 **Project Structure:**
 
