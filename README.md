@@ -111,6 +111,8 @@ Potential expansions include:
 
 Feedback from stakeholders is welcomed to refine and adapt the project for practical industry applications.
 
+---
+
 ### Project 2: Optimizing Resource Allocation, Logistics, and Network Infrastructure Using LP, MILP, and Network Flow Techniques 
 ### (Fall 2023, Operations and Supply Chain Management)
 
@@ -156,7 +158,9 @@ The project is organized into three primary modules:
 **Usage Instructions:**
 
 System Requirements:
+
 Software: Excel with Solver add-in, LINGO
+
 Hardware: Standard system capable of running Microsoft Excel and LINGO
 
 **Installation and Running Instructions:**
@@ -166,6 +170,7 @@ For each module, follow the detailed steps in the documentation to adjust parame
 Run Excel Solver or execute the LINGO script to view optimized results.
 
 **Testing and Debugging:**
+
 Adjust constraints and parameters to test solution adaptability.
 Use Solver’s sensitivity analysis for troubleshooting and refining results.
 
@@ -173,6 +178,7 @@ Use Solver’s sensitivity analysis for troubleshooting and refining results.
 
 Code of Conduct: Maintain respectful and collaborative communication.
 Workflow: Contributors should use the fork-and-pull model for code submissions.
+
 Style Guide: Adhere to structured, readable formatting for LINGO scripts and Excel formulas.
 
 **Contribution and Licensing:**
@@ -181,19 +187,24 @@ As a university project, this work is proprietary and intended for educational u
 **Future Work and Feedback:**
 Potential expansions of this project include integrating advanced algorithms, automating the decision-making processes, and implementing solutions in enterprise systems. Feedback and contributions are encouraged to enhance project scope and applicability.
 
+---
+
 ### Project 3: Landscape Database Revitalization for Enhanced Business Insights (Spring 2023, Advanced Database Management)
 
 **Project Overview:**
 This project tackled the restructuring of a fragmented landscaping company's database, transforming it into a streamlined system that supports data integrity and informed decision-making. Using SQL Server Management Studio, SQL Server, and ERDPlus, the project standardized data, eliminated redundancies, and optimized database performance. Over 30 advanced SQL queries were developed to generate key insights on popular services, customer trends, and project profitability. Intended for stakeholders in database management and business operations, this revitalized database provides a reliable foundation for strategic growth.
 
 **Technical Specifications:**
+
 Software Used: SQL Server Management Studio, SQL Server, ERDPlus
 
 **Techniques Applied:**
+
 Data standardization and normalization
 SQL queries for business insights and reporting
 
 **Project Structure:**
+
 The project is organized into three main sections:
 
 **Data Standardization Module**
@@ -230,10 +241,14 @@ Workflow: Contributors should follow a fork-and-pull model.
 Style Guide: Use consistent formatting for SQL scripts.
 
 **Contribution and Licensing:**
+
 As a university project, this work is proprietary and intended for educational use within the scope of course requirements.
 
 **Future Work and Feedback:**
+
 Further enhancements could include integrating real-time data updates, automating report generation, and expanding query capabilities to support additional business metrics. Feedback and contributions are welcomed to extend project functionality and adaptability.
+
+---
 
 ### Project 4: Enhancing Customer Experience and Operational Efficiency through Food Delivery Web App Backend Development (Fall 2023, Intro to Programming for Business Applications)
 
@@ -241,13 +256,16 @@ Further enhancements could include integrating real-time data updates, automatin
 This project involved the design and development of the core backend functionalities for a custom food delivery web application, created to improve customer experience and streamline order processing. Built for "EasyOrder Cakes," a fictional business, the app allows users to browse the menu, customize orders (including catering options), and submit orders efficiently. The project demonstrates the practical application of Java programming for backend development and highlights its potential to enhance both user experience and operational efficiency.
 
 **Technical Specifications:**
+
 Software and Tools Used: JGrasp, Java, JavaScript, LucidChart
 
 **Core Features:**
+
 Backend built in Java to manage menu browsing, order customization, and processing.
 Visual planning and documentation using LucidChart for database design and process flows.
 
 **Project Structure:**
+
 The project is divided into the following modules:
 
 **Menu Browsing Module**
@@ -265,15 +283,18 @@ Methodology: Java handles order validation, time estimates, and sends order deta
 **Usage Instructions:**
 
 System Requirements:
+
 Software: JGrasp, JDK for Java
 Hardware: Standard system capable of running Java applications
 
 **Installation and Running Instructions:**
+
 Open the JGrasp project files.
 Follow the setup guide in the documentation to adjust any configuration parameters.
 Run the Java program to test core backend functionalities.
 
 **Testing and Debugging:**
+
 Testing included verifying order customizations and ensuring menu display accuracy. Error-handling mechanisms were also tested to enhance app stability.
 
 **Project Impact and Deliverables:**
@@ -286,6 +307,8 @@ Future Work and Feedback: Future development may include front-end implementatio
 **Contribution and Licensing:**
 As a university project, this work is proprietary and intended for educational use within the scope of the course requirements.
 
+---
+
 ### Project 5: Developing an Interactive Survey Platform on AWS (Fall 2022, Cloud Computing Essentials)
 
 **Project Overview**
@@ -295,17 +318,22 @@ This project focused on creating an interactive, cloud-based survey platform usi
 Software Used: Amazon EC2, Amazon S3, Amazon Route 53
 
 **Project Structure:**
+
 Survey Interface Module Objective: Create an intuitive survey interface for easy navigation and multi-type question support. Methodology: Deployed an EC2 instance to host the survey application and stored assets in S3 for efficient retrieval. Domain Management Module Objective: Simplify access to the platform with a clear and memorable domain. Methodology: Configured Route 53 to link a custom domain to the survey platform. Usage Instructions:
 
 System Requirements: 
+
 Software: AWS Console access for EC2, S3, and Route 53 
 Hardware: Any device with internet access
 
 **Installation and Running Instructions:**
+
 Launch the EC2 instance and upload survey assets to S3. Configure Route 53 settings to associate the domain with the EC2-hosted platform. Testing and Debugging: Test survey navigation and question types on multiple devices for usability. Verify domain setup and troubleshoot connectivity issues via Route 53 diagnostics.
 
 **Contribution and Licensing:**
+
 As a university project, this work is proprietary and intended for educational use within the course requirements.
 
 **Future Work and Feedback:** 
+
 Future enhancements could include database integration for storing responses, adding analytics features, and implementing user authentication for role-based access. Feedback and contributions are welcomed to expand the platform's capabilities and usability.
