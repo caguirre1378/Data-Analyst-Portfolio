@@ -382,13 +382,13 @@ The project is divided into the following modules:
    
    - Methodology: Utilized Java classes to structure and organize menu data efficiently. The system is designed with scalability in mind, allowing for future expansions and real-time updates to reflect changes in the menu. This modular design ensures that the menu can be easily adjusted to accommodate new items or categories.
     
-2. Order Customization Module:
+3. Order Customization Module:
    
    - Objective: Provide users with the ability to customize their orders based on preferences, including portion sizes and specific catering requests.
    
    - Methodology: Implemented flexible and dynamic data structures in Java to capture and store user customizations. This approach allows for a wide range of order configurations, supporting diverse customer needs and ensuring that all preferences are properly handled within the system.
     
-3. Order Processing :
+4. Order Processing :
    
    - Objective: Enhance backend efficiency by streamlining order handling for fast and reliable processing.
    
