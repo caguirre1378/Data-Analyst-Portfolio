@@ -22,16 +22,17 @@ With a commitment to applying these competencies, I am poised to make a meaningf
 ### Work Experience
 Pro Sales Associate @ Lowes Inc.
 
-- Sales Data Analysis:
-  Conducted a thorough analysis of sales data to identify high-demand building materials, enabling targeted promotions and inventory adjustments that increased sales by 15%.
+- Sales Data Analysis: Conducted a thorough analysis of sales data to identify high-demand building materials, enabling targeted promotions and inventory adjustments that increased sales by 15%.
 
-- Customer Satisfaction Tracking:
-  Analyzed customer feedback and complaint resolution data, uncovering key service improvements that led to a 20% rise in satisfaction ratings.
+- Customer Satisfaction Tracking: Analyzed customer feedback and complaint resolution data, uncovering key service improvements that led to a 20% rise in satisfaction ratings.
+
+---
 
 ## Projects
+
 ### Project 1: Optimizing Operational Performance in Lawn Equipment Manufacturing
 
-### A Business Analytics Case Study (Fall 2021)
+### (Fall 2021, Busniess Analytics II)
 
 **Project Overview:**
 This senior project in Business Analytics II focused on identifying and addressing core operational challenges within a hypothetical lawn equipment manufacturing company. 
@@ -118,6 +119,7 @@ Feedback from stakeholders and industry professionals is highly valued. Their in
 ---
 
 ### Project 2: Optimizing Resource Allocation, Logistics, and Network Infrastructure Using LP, MILP, and Network Flow Techniques 
+
 ### (Fall 2023, Operations and Supply Chain Management)
 
 **Project Overview:**
@@ -230,7 +232,9 @@ Future enhancements could include integrating machine learning algorithms to pre
 
 ---
 
-### Project 3: Landscape Database Revitalization for Enhanced Business Insights (Spring 2023, Advanced Database Management)
+### Project 3: Landscape Database Revitalization for Enhanced Business Insights 
+
+### (Spring 2023, Advanced Database Management)
 
 **Project Overview:**
 This project tackled the restructuring of a fragmented landscaping company's database, transforming it into a streamlined system that supports data integrity and informed decision-making. Using SQL Server Management Studio, SQL Server, and ERDPlus, the project standardized data, eliminated redundancies, and optimized database performance. Over 30 advanced SQL queries were developed to generate key insights on popular services, customer trends, and project profitability. Intended for stakeholders in database management and business operations, this revitalized database provides a reliable foundation for strategic growth.
@@ -352,7 +356,9 @@ These enhancements will contribute to a more robust and flexible system, better 
 
 ---
 
-### Project 4: Enhancing Customer Experience and Operational Efficiency through Food Delivery Web App Backend Development (Fall 2023, Intro to Programming for Business Applications)
+### Project 4: Enhancing Customer Experience and Operational Efficiency through Food Delivery Web App Backend Development 
+
+### (Fall 2023, Intro to Programming for Business Applications)
 
 **Project Overview:**
 This project involved the design and development of the core backend functionalities for a custom food delivery web application, created to improve customer experience and streamline order processing. Built for "EasyOrder Cakes," a fictional business, the app allows users to browse the menu, customize orders (including catering options), and submit orders efficiently. The project demonstrates the practical application of Java programming for backend development and highlights its potential to enhance both user experience and operational efficiency.
@@ -454,7 +460,9 @@ As a university project, this work is proprietary and intended for educational u
 
 ---
 
-### Project 5: Developing an Interactive Survey Platform on AWS (Fall 2022, Cloud Computing Essentials)
+### Project 5: Developing an Interactive Survey Platform on AWS 
+
+### (Fall 2022, Cloud Computing Essentials)
 
 **Project Overview**
 This project focused on creating an interactive, cloud-based survey platform using AWS services, offering a user-friendly interface for participants to provide structured feedback. Key objectives included enabling seamless navigation across survey sections, supporting various question types, and simplifying access through a user-friendly domain. Targeted at organizations seeking efficient survey solutions, this platform prototype illustrates how AWS infrastructure can support scalable, responsive applications.
@@ -522,10 +530,10 @@ Ensure that you have the appropriate IAM (Identity and Access Management) roles 
 3. Configure Route 53 Settings:
    
    - Associate the custom domain with the EC2-hosted survey platform using Route 53 DNS management.
-     
+      
    - Update the DNS records (A, CNAME) to point to the EC2 instance's public IP or Elastic IP.
 
-4. Verify Domain Association:
+5. Verify Domain Association:
    
    - Test the domain setup to ensure the domain is properly routed to the EC2-hosted platform.
      
