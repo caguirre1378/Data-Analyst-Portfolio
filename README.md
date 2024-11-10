@@ -104,12 +104,16 @@ As a university project, this work is proprietary and intended for educational u
 
 **Future Work and Feedback**
 
-Potential expansions include:
-- Integrating predictive modeling
-- Automating KPI tracking to streamline decision-making.
-- Embedding this analysis into an ERP system could also provide real-time insights.
+To enhance functionality and align the database with real-world business needs, several expansions are proposed:
 
-Feedback from stakeholders is welcomed to refine and adapt the project for practical industry applications.
+- Predictive Modeling Integration: Implementing machine learning models to forecast trends, such as seasonal demand and service profitability, to enable proactive decision-making.
+
+- Automated KPI Tracking: Automating the tracking of key performance indicators to streamline monitoring and improve response times to business shifts.
+  
+- ERP System Integration: Embedding the database within an ERP framework would provide real-time insights across business functions, enhancing visibility and data accessibility for continuous operational improvement.
+
+Feedback from stakeholders and industry professionals is highly valued. Their insights will be critical in refining and adapting the project for practical applications, ensuring that it meets the evolving demands of the industry and provides maximum value to end-users.
+
 
 ---
 
@@ -146,19 +150,16 @@ The project is organized into three primary modules:
 1. Laptop Allocation Module:
    
   - Objective: Strategically allocate a constrained number of laptops among three departments, maximizing productivity and operational efficiency while respecting departmental budgetary and resource constraints.
-    
   - Methodology: Formulated the allocation problem using LP and MILP to achieve optimal distribution based on departmental requirements. Implemented in LINGO, the model analyzed productivity gains relative to resource limitations, allowing for precise, need-based allocation aligned with organizational goals.
 
 2. Garment Component Shipping Module:
    
   - Objective: Optimize the shipping logistics for a clothing company, reducing transportation costs by managing the flow of garment components from multiple manufacturing sites to designated assembly facilities.
-    
   - Methodology: Tackled this as a Transportation and Transshipment Problem, accounting for both balanced (equal supply and demand) and unbalanced scenarios. Using LP in Excel Solver, the model minimized costs across varied routes while maintaining timely delivery schedules, resulting in a highly adaptable shipping plan that aligns with production timelines and reduces overhead.
 
 3. Network Cabling Module:
-     
-  - Objective: Minimize the infrastructure costs of network cabling by efficiently connecting a network of computers to a central server, ensuring low-latency communication and cost-effectiveness.
-    
+   
+  - Objective: Minimize the infrastructure costs of network cabling by efficiently connecting a network of computers to a central server, ensuring low-latency communication and cost-effectiveness.    
   - Methodology: Addressed this through Network Flow Problem-solving techniques, applying Minimum Spanning Tree and Shortest Path algorithms to determine optimal cabling paths. By implementing these algorithms, the module reduced installation costs while maintaining effective connectivity, supporting scalable network expansion for future needs.
 
 **Usage Instructions:**
