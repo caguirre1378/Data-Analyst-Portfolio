@@ -147,20 +147,23 @@ Software Used:
 
 The project is organized into three primary modules:
 
-1. Laptop Allocation Module
+1. Laptop Allocation Module:
    
-  - Objective: Strategically allocate a constrained number of laptops among three departments, maximizing productivity and operational efficiency while respecting departmental budgetary and resource constraints.
-  - Methodology: Formulated the allocation problem using LP and MILP to achieve optimal distribution based on departmental requirements. Implemented in LINGO, the model analyzed productivity gains relative to resource limitations, allowing for precise, need-based allocation aligned with organizational goals.
+   - Objective: Strategically allocate a constrained number of laptops among three departments, maximizing productivity and operational efficiency while respecting departmental budgetary and resource constraints.
+   
+   - Methodology: Formulated the allocation problem using LP and MILP to achieve optimal distribution based on departmental requirements. Implemented in LINGO, the model analyzed productivity gains relative to resource limitations, allowing for precise, need-based allocation aligned with organizational goals.
 
-2. Garment Component Shipping Module
+2. Garment Component Shipping Module:
    
-  - Objective: Optimize the shipping logistics for a clothing company, reducing transportation costs by managing the flow of garment components from multiple manufacturing sites to designated assembly facilities.
-  - Methodology: Tackled this as a Transportation and Transshipment Problem, accounting for both balanced (equal supply and demand) and unbalanced scenarios. Using LP in Excel Solver, the model minimized costs across varied routes while maintaining timely delivery schedules, resulting in a highly adaptable shipping plan that aligns with production timelines and reduces overhead.
+   - Objective: Optimize the shipping logistics for a clothing company, reducing transportation costs by managing the flow of garment components from multiple manufacturing sites to designated assembly facilities.
+     
+   - Methodology: Tackled this as a Transportation and Transshipment Problem, accounting for both balanced (equal supply and demand) and unbalanced scenarios. Using LP in Excel Solver, the model minimized costs across varied routes while maintaining timely delivery schedules, resulting in a highly adaptable shipping plan that aligns with production timelines and reduces overhead.
 
-3. Network Cabling Module
+3. Network Cabling Module:
    
-  - Objective: Minimize the infrastructure costs of network cabling by efficiently connecting a network of computers to a central server, ensuring low-latency communication and cost-effectiveness.    
-  - Methodology: Addressed this through Network Flow Problem-solving techniques, applying Minimum Spanning Tree and Shortest Path algorithms to determine optimal cabling paths. By implementing these algorithms, the module reduced installation costs while maintaining effective connectivity, supporting scalable network expansion for future needs.
+   - Objective: Minimize the infrastructure costs of network cabling by efficiently connecting a network of computers to a central server, ensuring low-latency communication and cost-effectiveness.
+   
+   - Methodology: Addressed this through Network Flow Problem-solving techniques, applying Minimum Spanning Tree and Shortest Path algorithms to determine optimal cabling paths. By implementing these algorithms, the module reduced installation costs while maintaining effective connectivity, supporting scalable network expansion for future needs.
 
 **Usage Instructions:**
 
