@@ -377,21 +377,19 @@ Visual planning and documentation using LucidChart for database design and proce
 The project is divided into the following modules:
 
 1. Menu Browsing Module:
+   - Objective: Empower users to view and explore a comprehensive, categorized menu with detailed descriptions and pricing.
    
-  - Objective: Empower users to view and explore a comprehensive, categorized menu with detailed descriptions and pricing.
-    
-  - Methodology: Utilized Java classes to structure and organize menu data efficiently. The system is designed with scalability in mind, allowing for future expansions and real-time updates to reflect changes in the menu. This modular design ensures that the menu can be easily adjusted to accommodate new items or categories.
+   - Methodology: Utilized Java classes to structure and organize menu data efficiently. The system is designed with scalability in mind, allowing for future expansions and real-time updates to reflect changes in the menu. This modular design ensures that the menu can be easily adjusted to accommodate new items or categories.
     
 2. Order Customization Module:
+   - Objective: Provide users with the ability to customize their orders based on preferences, including portion sizes and specific catering requests.
    
-  - Objective: Provide users with the ability to customize their orders based on preferences, including portion sizes and specific catering requests.
-    
-  - Methodology: Implemented flexible and dynamic data structures in Java to capture and store user customizations. This approach allows for a wide range of order configurations, supporting diverse customer needs and ensuring that all preferences are properly handled within the system.
+   - Methodology: Implemented flexible and dynamic data structures in Java to capture and store user customizations. This approach allows for a wide range of order configurations, supporting diverse customer needs and ensuring that all preferences are properly handled within the system.
     
 3. Order Processing :
+   - Objective: Enhance backend efficiency by streamlining order handling for fast and reliable processing.
    
-  - Objective: Enhance backend efficiency by streamlining order handling for fast and reliable processing.
-  - Methodology: The module leverages Java to handle critical tasks such as order validation, time estimation, and transmission of order details for further processing. This ensures that each order is processed promptly, with accurate time estimates and smooth transitions to subsequent stages of order fulfillment.
+   - Methodology: The module leverages Java to handle critical tasks such as order validation, time estimation, and transmission of order details for further processing. This ensures that each order is processed promptly, with accurate time estimates and smooth transitions to subsequent stages of order fulfillment.
 
 Each module is designed to be a foundational component of a highly scalable, flexible, and efficient system that supports the overall business goals of streamlining customer interactions and improving operational efficiency.
 
@@ -472,7 +470,7 @@ Software Used: Amazon EC2, Amazon S3, Amazon Route 53
 
 **Project Structure:**
 
-1. Survey Interface Module:'
+1. Survey Interface Module:
    
    - Objective: Design and implement an intuitive survey interface that facilitates easy navigation and supports multiple question types, enhancing user engagement and survey completion rates.
      
