@@ -469,6 +469,7 @@ As a university project, this work is proprietary and intended for educational u
 This project focused on creating an interactive, cloud-based survey platform using AWS services, offering a user-friendly interface for participants to provide structured feedback. Key objectives included enabling seamless navigation across survey sections, supporting various question types, and simplifying access through a user-friendly domain. Targeted at organizations seeking efficient survey solutions, this platform prototype illustrates how AWS infrastructure can support scalable, responsive applications.
 
 **Technical Specifications:**
+
 Software Used: Amazon EC2, Amazon S3, Amazon Route 53
 
 **Project Structure:**
