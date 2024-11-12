@@ -1,5 +1,12 @@
-title: Christian J. Aguirre
-photo: "![professional photo of myself](/assets/professional photo of myself.jpg)"
+#title: Christian J. Aguirre
+#photo: "![professional photo of myself](/assets/professional photo of myself.jpg)"
 #description: text below image
+#show_downloads: true
+#theme: jekyll-theme-minimal
+
+title: "Christian J. Aguirre"
+photo: "assets/professional_photo_of_myself.jpg"
+# logo: "assets/images/professional_photo_of_myself.jpg"
+# description: "text below image"
 show_downloads: true
-theme: jekyll-theme-minimal
+theme: "jekyll-theme-minimal"
