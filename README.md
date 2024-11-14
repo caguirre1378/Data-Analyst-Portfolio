@@ -47,9 +47,10 @@ This senior-level project, undertaken in the Business Analytics II course, focus
 **Project Objectives:**
 
 1. Increase On-Time Delivery Rates: Analyze delivery performance from 2014 to 2018 to identify trends and areas for improvement.
+   
 2. Optimize Transmission Costs: Assess the cost-effectiveness of alternative transmission processes to determine the most efficient approach.
+   
 3. Enhance Employee Retention: Evaluate factors influencing employee retention, including gender and locality, to inform strategies for improved workforce stability.
-- Optimizing transmission costs
 
 **Technical Specifications:**
 
@@ -59,22 +60,28 @@ This project was developed using Microsoft Excel for data analysis and visualiza
 - Data Analysis Worksheets: Organnized in an Excel file, the worksheets contain Raw data, Calculations, and Graphs. Arranged in labeled tabs for clear navigation. Organized within a comprehensive Excel workbook, the data was segmented into tabs labeled for specific KPIs, including:
   
      - On-Time Delivery: Analyzed delivery performance changes from 2014 to 2018
+       
      - Transmission Costs: Evaluated the cost of current and proposed transmission processes
+       
      - Employee Retention: Assessed retention patterns based on gender and locality.
  
 Each worksheet features formatted cells, data filters, and conditional formatting to support clear data exploration and real-time updates to visualizations.
 
 - Comprehensive Report: An 8-page Microsoft Word report provided a structured presentation of insights, including:
-An 8-page report was created in Microsoft Word to present findings and recommendations in a structured format, including:
+  - An 8-page report was created in Microsoft Word to present findings and recommendations in a structured format, including:
 
-  - Executive Summary: Overview of objectives, methods, and key findings.
-  - Detailed Analysis: Section-by-section analysis for each KPI.
-  - Data Visual Summaries: Visual representations of key insights to enhance clarity and impact.
+    - Executive Summary: Overview of objectives, methods, and key findings.
+    
+    - Detailed Analysis: Section-by-section analysis for each KPI.
+    
+    - Data Visual Summaries: Visual representations of key insights to enhance clarity and impact.
  
 **Methodology and Analysis:**
 
   - On-Time Delivery Analysis: A one-sample proportion test was performed to evaluate whether delivery rates in 2018 improved significantly over 2014, with results indicating a notable increase in on-time deliveries.
+    
   - Transmission Cost Evaluation: Using a one-way ANOVA test, the project analyzed cost variances across different transmission processes. The findings indicated marginal cost differences, suggesting that current processes might remain viable with minor adjustments.
+    
   - Employee Retention Assessment: Employee retention data revealed slight variations based on gender and locality, with local employees and male employees demonstrating marginally higher retention rates.
 
 **Usage Instructions:**
@@ -92,7 +99,9 @@ An 8-page report was created in Microsoft Word to present findings and recommend
 **Deliverables:**
 
   - Improvement in On-Time Delivery: Evidence showed a consistent increase in delivery performance from 2014 to 2018.
+    
   - Transmission Process Optimization: Process A was identified as a potential, albeit minimally more cost-effective, alternative to the current transmission process.
+    
   - Enhanced Retention Insights: Data-driven suggestions were made to improve employee satisfaction and retention, factoring in demographic influences.
 
 **Conclusion**
@@ -108,7 +117,9 @@ As a university project, this work is proprietary and intended for educational u
 To enhance functionality and align the database with real-world business needs, several expansions are proposed:
 
 - Predictive Modeling Integration: Implementing machine learning models to forecast trends, such as seasonal demand and service profitability, to enable proactive decision-making.
+  
 - Automated KPI Tracking: Automating the tracking of key performance indicators to streamline monitoring and improve response times to business shifts.
+  
 - ERP System Integration: Embedding the database within an ERP framework would provide real-time insights across business functions, enhancing visibility and data accessibility for continuous operational improvement.
 
 Feedback from stakeholders and industry professionals is highly valued. Their insights will be critical in refining and adapting the project for practical applications, ensuring that it meets the evolving demands of the industry and provides maximum value to end-users.
