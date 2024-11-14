@@ -68,8 +68,7 @@ This project was developed using Microsoft Excel for data analysis and visualiza
 Each worksheet features formatted cells, data filters, and conditional formatting to support clear data exploration and real-time updates to visualizations.
 
 - Comprehensive Report: An 8-page Microsoft Word report provided a structured presentation of insights, including:
-  - An 8-page report was created in Microsoft Word to present findings and recommendations in a structured format, including:
-
+  
     - Executive Summary: Overview of objectives, methods, and key findings.
     
     - Detailed Analysis: Section-by-section analysis for each KPI.
@@ -90,10 +89,12 @@ Each worksheet features formatted cells, data filters, and conditional formattin
      
 2. Exploring the Analysis
    - Open the Excel workbook to review and interact with data visualizations and metrics.
+     
    - Each worksheet tab corresponds to specific KPIs, allowing stakeholders to focus on areas of interest.
      
 3. Testing and Debugging
    - Filters within Excel were tested for data consistency.
+     
    - All calculations are designed to dynamically update based on input adjustments.
 
 **Deliverables:**
