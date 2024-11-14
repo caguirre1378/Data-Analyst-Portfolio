@@ -44,7 +44,7 @@ Pro Sales Associate @ Lowes Inc.
 
 This senior-level project, undertaken in the Business Analytics II course, focused on diagnosing and addressing core operational issues within a hypothetical lawn equipment manufacturing company. Key challenges explored included improving on-time delivery rates, reducing transmission costs, and enhancing employee retention, all critical areas impacting operational efficiency and overall company performance. The project aimed to empower operations managers and decision-makers with actionable insights derived from in-depth data analysis and visualization.
 
-![Overview of CSP Tabs](/assets/BUS 310 CSP Main Screen (Excel).png)
+![BUS 310 CSP Main Screen](assets/BUS%20310%20CSP%20Main%20Screen%20%28Excel%29.png)
 
 **Project Objectives:**
 
