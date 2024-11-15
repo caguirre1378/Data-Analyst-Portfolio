@@ -62,10 +62,13 @@ This project was developed using Microsoft Excel for data analysis and visualiza
 - Data Analysis Worksheets: Organnized in an Excel file, the worksheets contain Raw data, Calculations, and Graphs. Arranged in labeled tabs for clear navigation. Organized within a comprehensive Excel workbook, the data was segmented into tabs labeled for specific KPIs, including:
   
      - On-Time Delivery: Analyzed delivery performance changes from 2014 to 2018
+       ![BUS 310 CSP OTD Percentage](assets/BUS%20310%20CSP%20OTD%20Percentage.png)
        
      - Transmission Costs: Evaluated the cost of current and proposed transmission processes
+       ![BUS 310 CSP UTC for Processes](assets/BUS%20310%20CSP%20UTC%20for%20Processes.png)
        
      - Employee Retention: Assessed retention patterns based on gender and locality.
+       ![BUS 310 CSP ER by G&L](assets/BUS%20310%20CSP%20ER%20by%20G&L.png)
  
 Each worksheet features formatted cells, data filters, and conditional formatting to support clear data exploration and real-time updates to visualizations.
 
