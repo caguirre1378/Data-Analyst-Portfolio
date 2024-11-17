@@ -85,17 +85,17 @@ Each worksheet features formatted cells, data filters, and conditional formattin
  
 **Methodology and Analysis:**
 
-  - On-Time Delivery Analysis: A one-sample proportion test was performed to evaluate whether delivery rates in 2018 improved significantly over 2014, with results indicating a notable increase in on-time deliveries.
-
-    ![BUS 310 CSP OTD Analysis](assets/BUS%20310%20CSP%20OTD%20Analysis.png)
+  -- On-Time Delivery Analysis: A one-sample proportion test was performed to evaluate whether delivery rates in 2018 improved significantly over 2014, with results indicating a notable increase in on-time deliveries.
+  
+  ![BUS 310 CSP OTD Analysis](assets/BUS%20310%20CSP%20OTD%20Analysis.png)
     
-  - Transmission Cost Evaluation: Using a one-way ANOVA test, the project analyzed cost variances across different transmission processes. The findings indicated marginal cost differences, suggesting that current processes might remain viable with minor adjustments.
-
-    ![BUS 310 CSP UTC Analysis](assets/BUS%20310%20CSP%20UTC%20Analysis.png)
+  -- Transmission Cost Evaluation: Using a one-way ANOVA test, the project analyzed cost variances across different transmission processes. The findings indicated marginal cost differences, suggesting that current processes might remain viable with minor adjustments.
+  
+  ![BUS 310 CSP UTC Analysis](assets/BUS%20310%20CSP%20UTC%20Analysis.png)
     
-  - Employee Retention Assessment: Employee retention data revealed slight variations based on gender and locality, with local employees and male employees demonstrating marginally higher retention rates
-
-    ![BUS 310 CSP ER Analysis](assets/BUS%20310%20CSP%20ER%20Analysis.png)
+  -- Employee Retention Assessment: Employee retention data revealed slight variations based on gender and locality, with local employees and male employees demonstrating marginally higher retention rates
+  
+  ![BUS 310 CSP ER Analysis](assets/BUS%20310%20CSP%20ER%20Analysis.png)
 
 **Usage Instructions:**
 1. Setup
