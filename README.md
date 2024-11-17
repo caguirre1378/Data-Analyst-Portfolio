@@ -93,7 +93,9 @@ Each worksheet features formatted cells, data filters, and conditional formattin
 
     ![BUS 310 CSP UTC Analysis](assets/BUS%20310%20CSP%20UTC%20Analysis.png)
     
-  - Employee Retention Assessment: Employee retention data revealed slight variations based on gender and locality, with local employees and male employees demonstrating marginally higher retention rates.
+  - Employee Retention Assessment: Employee retention data revealed slight variations based on gender and locality, with local employees and male employees demonstrating marginally higher retention rates
+
+    ![BUS 310 CSP ER Analysis](assets/BUS%20310%20CSP%20ER%20Analysis.png)
 
 **Usage Instructions:**
 1. Setup
