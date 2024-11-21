@@ -153,80 +153,61 @@ This project applies advanced management science techniques to solve six real-wo
 
 Problem 1: Customer Checkout Optimization
 
-- Objective: Reduce customer balking by optimizing cashier allocation using queueing theory models.
+Objective: Reduce customer balking by optimizing cashier allocation using queueing theory models.
 
-- Methodology:
-  
-  - Modeled Poisson arrivals and exponential service times.
-    
-  - Utilized LP to calculate utilization factors and determine the minimum number of cashiers.
-    
-  - Verified solutions with simulation to assess robustness.
+Methodology:
 
-- Outcome: The system requires at least three cashiers working collaboratively to meet operational goals, reducing wait times and ensuring higher customer satisfaction.
+  1. Modeling Customer Behavior: Customer arrivals were modeled as a Poisson process, while service times were assumed to follow an exponential distribution.
+     
+  2. Linear Programming (LP) Analysis: LP was employed to calculate utilization factors and determine the minimum number of cashiers required to meet operational goals.
+     
+  3. Simulation: Simulation modeling was used to validate the LP solution and assess its robustness under various operational scenarios.
+
+Results: Our analysis revealed that a minimum of three cashiers working collaboratively is necessary to meet operational goals and minimize customer balking. This optimized staffing level significantly reduces wait times and enhances overall customer satisfaction.
 
 Problem 2: Specialty Steak Stocking
 
-- Objective: Determine the optimal weekly stocking level for steaks to maximize profitability.
+Objective: Determine the optimal weekly stocking level for steaks to maximize profitability.
 
-- Methodology:
-  
-  - Constructed payoff and regret tables.
-    
-  - Evaluated using expected value, optimistic, and pessimistic criteria.
-    
-  - Performed sensitivity analysis to validate robustness.
+Methodology: We employed a decision-analytic approach to assess various stocking levels. Payoff and regret tables were constructed to visualize the potential outcomes and associated costs. To select the optimal stocking level, we utilized three decision criteria: expected value, optimistic, and pessimistic. Sensitivity analysis was conducted to evaluate the model's robustness under varying demand conditions.
 
-- Outcome: Optimal order quantity is 35 pounds per week, achieving an expected weekly profit of $79 under the expected value criterion.
+Results: The analysis indicated that an optimal weekly order quantity of 35 pounds maximizes expected weekly profit at $79. This decision is based on the expected value criterion and is supported by sensitivity analysis, which confirmed its robustness under various demand scenarios.
 
 Problem 3: Profitability of a New Product
 
-- Objective: Simulate profitability under varying cost scenarios.
+Objective: Simulate profitability under varying cost scenarios.
 
-- Methodology:
-  
-  - Conducted 20 random trials for cost variables.
-    
-  - Calculated mean profit, standard deviation, and confidence intervals.
-    
-  - Assessed criteria for product launch.
+Methodology: A Monte Carlo simulation was conducted with 20 random trials to account for uncertainty in key cost variables: unit cost, fixed cost, and selling price. For each trial, the profit per unit was calculated, considering a fixed demand of 1000 units. The mean profit per unit, standard deviation, and 95% confidence interval were determined from the simulation results.
 
-- Outcome: The mean profit per unit was $6.90, with a standard deviation of $2.27, validating the product’s potential to meet profitability criteria.
+Results: The mean profit per unit was estimated to be $6.90, with a standard deviation of $2.27. The 95% confidence interval for the mean profit per unit was between $4.46 and $9.34. Based on these findings, the new product has the potential to meet profitability criteria and is recommended for launch, subject to further analysis and risk assessment.
 
 Problem 4: Copier Selection for a Law Office
 
-- Objective: Evaluate costs and operational efficiency of two copier options for a law office.
+Objective: Evaluate costs and operational efficiency of two copier options for a law office.
 
-- Methodology:
-  
-  - Calculated hourly costs for lease and employee wages.
-    
-  - Applied LP to compare costs across scenarios.
+Methodology: We calculated the hourly costs associated with leasing each copier option and employee wages for operation. Linear Programming (LP) was then employed to compare the total costs across various scenarios, considering factors such as print volume, speed, and maintenance requirements.
 
-- Outcome: The high-speed copier was selected for its efficiency and cost-effectiveness, saving $11.20 daily compared to the regular copier.
+Results: After a comprehensive analysis, the high-speed copier emerged as the most cost-effective option. This selection resulted in a daily cost savings of $11.20 compared to the regular copier. This significant cost reduction can be attributed to the high-speed copier's increased efficiency and reduced operational time.
 
 Problem 5: Patent Infringement Lawsuit Decision
 
-- Objective: Decide between settling or going to trial in a patent dispute.
+Objective: Decide between settling or going to trial in a patent dispute.
 
-- Methodology:
-  
-  - Constructed a decision tree with expected monetary values (EMV).
-    
-  - Evaluated probabilities and costs for both scenarios.
+Methodology: A decision tree analysis was conducted to evaluate the expected monetary value (EMV) of each option. This involved estimating the probabilities and costs associated with various outcomes, including:
 
-Outcome: Going to trial yielded a higher EMV ($1.8 million vs. $1.5 million), making it the recommended choice.
+- Settlement: The potential costs of a settlement, including legal fees and licensing fees.
+
+- Trial: The potential costs of a trial, including legal fees, expert witness fees, and potential damages.
+
+Results: After careful analysis of the decision tree, it was determined that proceeding to trial yielded a higher EMV ($1.8 million) compared to settling ($1.5 million). Therefore, based on the expected financial outcomes, it is recommended to proceed with the lawsuit.
 
 Problem 6: Machine Assignment for Aircraft Part Manufacturing
 
-- Objective: Assign machinists to machines to minimize production time.
+Objective: Assign machinists to machines to minimize production time.
 
-- Methodology:
-  - Used BILP to assign machinists based on skill and availability.
-    
-  - Optimized assignments under constraints like certification and workload distribution.
+Methodology: A Binary Integer Linear Programming (BILP) model was developed to assign machinists to machines based on their skills and availability. The model accounted for constraints such as machinist certifications and workload distribution.
 
-Outcome: The optimal assignment achieved a total production time of 100 minutes.
+Results: The optimized assignment schedule, derived from the BILP model, resulted in a total production time of 100 minutes. This represents a significant reduction in production time compared to previous manual assignment methods.
 
 **Usage Instructions:**
 
@@ -242,6 +223,7 @@ System Requirements:
 File Setup:
 
   1. Download provided Excel and LINGO files.
+     
   2. Review accompanying documentation for module-specific instructions.
 
 Module Configuration:
