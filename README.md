@@ -149,147 +149,134 @@ Feedback from stakeholders and industry professionals is highly valued. Their in
 **Project Overview:**
 This project applies advanced management science techniques to solve six real-world operational challenges. Using mathematical optimization methods such as Linear Programming (LP), Mixed-Integer Linear Programming (MILP), and Binary Integer Linear Programming (BILP), it emphasizes resource allocation, cost reduction, and efficiency improvement. By integrating decision-making tools like decision trees and simulation, the project highlights practical applications across supply chain, retail, and manufacturing environments.
 
-Problems and Solutions
-Customer Checkout Optimization
-
-Objective: Minimize customer balking by optimizing the number of cashiers in a retail checkout system.
-Approach: Modeled using Poisson arrivals and exponential service times to determine the minimum number of cashiers required to ensure customer wait times stay below five minutes.
-Outcome: The system requires at least three cashiers working collaboratively to meet operational goals, reducing wait times and ensuring higher customer satisfaction.
-Specialty Steak Stocking
-
-Objective: Determine the optimal weekly order quantity for specialty steaks to maximize profit.
-Approach: Constructed payoff and regret tables to evaluate decisions using expected value, pessimistic, and optimistic criteria.
-Outcome: Optimal order quantity is 35 pounds per week, achieving an expected weekly profit of $79 under the expected value criterion.
-Profitability of a New Product
-
-Objective: Evaluate the profitability of a new product under various cost scenarios.
-Approach: Simulated 20 random trials to calculate mean profit, variability, and confidence intervals using empirical probability distributions.
-Outcome: The mean profit per unit was $6.90, with a standard deviation of $2.27, validating the product’s potential to meet profitability criteria.
-Copier Selection for a Law Office
-
-Objective: Choose between a regular copier and a high-speed copier based on cost and efficiency.
-Approach: Calculated total costs for each copier, factoring in lease costs, job completion times, and employee wages.
-Outcome: The high-speed copier was selected for its efficiency and cost-effectiveness, saving $11.20 daily compared to the regular copier.
-Patent Infringement Lawsuit Decision
-
-Objective: Decide whether a small software company should settle or proceed to trial in a lawsuit.
-Approach: Developed a decision tree to calculate expected monetary values (EMV) for both options.
-Outcome: Going to trial yielded a higher EMV ($1.8 million vs. $1.5 million), making it the recommended choice.
-Machine Assignment for Aircraft Part Manufacturing
-
-Objective: Assign machinists to machines to minimize production time.
-Approach: Used Binary Integer Linear Programming to assign machinists to machines based on time efficiencies while respecting constraints (e.g., certification).
-Outcome: The optimal assignment achieved a total production time of 100 minutes.
-
-**Technical Specifications:**
-
-Software Used: 
-- Excel Solver
-- LINGO: It is a software tool used to formulate and solve complex mathematical optimization problems.
-
-**Techniques Applied:**
-
-Software Used:
-
-Excel Solver: For solving LP and MILP problems and performing sensitivity analysis.
-LINGO: A comprehensive optimization tool for formulating and solving complex models.
-
-Techniques Applied:
-
-Linear Programming (LP)
-Mixed-Integer Linear Programming (MILP)
-Binary Integer Linear Programming (BILP)
-Network Flow Algorithms (e.g., Minimum Spanning Tree, Shortest Path)
-Decision Tree Analysis
-Simulation Modeling
-
-**Project Structure:**
-
-The project is organized into three primary modules:
+**Problems and Solutions**
 
 Problem 1: Customer Checkout Optimization
 
-Objective: Reduce customer balking by optimizing cashier allocation using queueing theory models.
-Methodology:
-Modeled Poisson arrivals and exponential service times.
-Utilized LP to calculate utilization factors and determine the minimum number of cashiers.
-Verified solutions with simulation to assess robustness.
+- Objective: Reduce customer balking by optimizing cashier allocation using queueing theory models.
+
+- Methodology:
+  
+  - Modeled Poisson arrivals and exponential service times.
+    
+  - Utilized LP to calculate utilization factors and determine the minimum number of cashiers.
+    
+  - Verified solutions with simulation to assess robustness.
+
+- Outcome: The system requires at least three cashiers working collaboratively to meet operational goals, reducing wait times and ensuring higher customer satisfaction.
 
 Problem 2: Specialty Steak Stocking
 
-Objective: Determine the optimal weekly stocking level for steaks to maximize profitability.
-Methodology:
-Constructed payoff and regret tables.
-Evaluated using expected value, optimistic, and pessimistic criteria.
-Performed sensitivity analysis to validate robustness.
+- Objective: Determine the optimal weekly stocking level for steaks to maximize profitability.
 
-Problem 3: Profitability Analysis for a New Product
+- Methodology:
+  
+  - Constructed payoff and regret tables.
+    
+  - Evaluated using expected value, optimistic, and pessimistic criteria.
+    
+  - Performed sensitivity analysis to validate robustness.
 
-Objective: Simulate profitability under varying cost scenarios.
-Methodology:
-Conducted 20 random trials for cost variables.
-Calculated mean profit, standard deviation, and confidence intervals.
-Assessed criteria for product launch.
+- Outcome: Optimal order quantity is 35 pounds per week, achieving an expected weekly profit of $79 under the expected value criterion.
 
-Problem 4: Copier Selection for Efficiency
+Problem 3: Profitability of a New Product
 
-Objective: Evaluate costs and operational efficiency of two copier options for a law office.
-Methodology:
-Calculated hourly costs for lease and employee wages.
-Applied LP to compare costs across scenarios.
+- Objective: Simulate profitability under varying cost scenarios.
 
-Problem 5: Patent Lawsuit Decision Analysis
+- Methodology:
+  
+  - Conducted 20 random trials for cost variables.
+    
+  - Calculated mean profit, standard deviation, and confidence intervals.
+    
+  - Assessed criteria for product launch.
 
-Objective: Decide between settling or going to trial in a patent dispute.
-Methodology:
-Constructed a decision tree with expected monetary values (EMV).
-Evaluated probabilities and costs for both scenarios.
+- Outcome: The mean profit per unit was $6.90, with a standard deviation of $2.27, validating the product’s potential to meet profitability criteria.
 
-Problem 6: Aircraft Part Manufacturing Optimization
+Problem 4: Copier Selection for a Law Office
 
-Objective: Assign machinists to machines to minimize production time.
-Methodology:
-Used BILP to assign machinists based on skill and availability.
-Optimized assignments under constraints like certification and workload distribution.
+- Objective: Evaluate costs and operational efficiency of two copier options for a law office.
+
+- Methodology:
+  
+  - Calculated hourly costs for lease and employee wages.
+    
+  - Applied LP to compare costs across scenarios.
+
+- Outcome: The high-speed copier was selected for its efficiency and cost-effectiveness, saving $11.20 daily compared to the regular copier.
+
+Problem 5: Patent Infringement Lawsuit Decision
+
+- Objective: Decide between settling or going to trial in a patent dispute.
+
+- Methodology:
+  
+  - Constructed a decision tree with expected monetary values (EMV).
+    
+  - Evaluated probabilities and costs for both scenarios.
+
+Outcome: Going to trial yielded a higher EMV ($1.8 million vs. $1.5 million), making it the recommended choice.
+
+Problem 6: Machine Assignment for Aircraft Part Manufacturing
+
+- Objective: Assign machinists to machines to minimize production time.
+
+- Methodology:
+  - Used BILP to assign machinists based on skill and availability.
+    
+  - Optimized assignments under constraints like certification and workload distribution.
+
+Outcome: The optimal assignment achieved a total production time of 100 minutes.
 
 **Usage Instructions:**
 
 System Requirements:
 
-Software: Excel with Solver Add-In, LINGO
-Hardware: Standard computer capable of running Excel and LINGO
+- Software: Excel with Solver Add-In, LINGO
+
+- Hardware: Standard computer capable of running Excel and LINGO
 
 
 **Installation and Running Instructions:**
 
 File Setup:
 
-Download provided Excel and LINGO files.
-Review accompanying documentation for module-specific instructions.
+  1. Download provided Excel and LINGO files.
+  2. Review accompanying documentation for module-specific instructions.
+
 Module Configuration:
 
-Adjust parameters as needed for business-specific data inputs.
-Ensure solver settings are aligned with project constraints.
+- Adjust parameters as needed for business-specific data inputs.
+
+- Ensure solver settings are aligned with project constraints.
+  
 Execution:
 
-Excel Solver: Run optimization models directly from the Data Analysis tab.
-LINGO: Execute provided scripts, adjusting parameters for enhanced customization.
+- Excel Solver: Run optimization models directly from the Data Analysis tab.
+
+- LINGO: Execute provided scripts, adjusting parameters for enhanced customization.
+
 Results Verification:
 
-Cross-check outputs with expected results.
-Perform sensitivity analysis to validate robustness.
+- Cross-check outputs with expected results.
+  
+- Perform sensitivity analysis to validate robustness.
 
 **Testing and Debugging:**
 
 To ensure solution robustness and adaptability, the following testing and debugging processes were employed:
 
-Testing and Debugging
-Parameter Adjustment and Constraint Validation:
-Refined constraints to assess model flexibility.
-Sensitivity Analysis:
-Evaluated variable changes for stability.
-Iterative Testing:
-Conducted iterative trials to ensure accuracy.
+1. Parameter Adjustment and Constraint Validation:
+   
+   - Refined constraints to assess model flexibility.
+     
+2. Sensitivity Analysis:
+
+   - Evaluated variable changes for stability.
+
+3. Iterative Testing:
+
+   - Conducted iterative trials to ensure accuracy.
 
 These methods collectively strengthened the solution’s adaptability and ensured reliable, accurate outputs in diverse business contexts.
 
@@ -305,11 +292,13 @@ These methods collectively strengthened the solution’s adaptability and ensure
 As a university project, this work is proprietary and intended for educational use within the scope of the course requirements.
 
 **Future Work and Feedback:**
-Proposed Enhancements:
 
-Integrate machine learning for predictive analytics.
-Automate decision-making processes for resource optimization.
-Develop real-time data integration for continuous monitoring
+Proposed Enhancements:
+- Integrate machine learning for predictive analytics.
+  
+- Automate decision-making processes for resource optimization.
+  
+- Develop real-time data integration for continuous monitoring
 
 Feedback:
 
