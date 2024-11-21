@@ -142,19 +142,44 @@ Feedback from stakeholders and industry professionals is highly valued. Their in
 
 ---
 
-### Project 2: Optimizing Resource Allocation, Logistics, and Network Infrastructure Using LP, MILP, and Network Flow Techniques 
+### Project 2: Application of Operations Management Techniques in Resource Optimization and Decision-Making
 
 ### (Fall 2023, Operations and Supply Chain Management)
 
 **Project Overview:**
-This project addresses key challenges in resource allocation, logistics, and network optimization using Linear Programming (LP), Mixed-Integer Linear Programming (MILP), and Network Flow models to enhance efficiency and cost-effectiveness. 
+This project applies advanced management science techniques to solve six real-world operational challenges. Using mathematical optimization methods such as Linear Programming (LP), Mixed-Integer Linear Programming (MILP), and Binary Integer Linear Programming (BILP), it emphasizes resource allocation, cost reduction, and efficiency improvement. By integrating decision-making tools like decision trees and simulation, the project highlights practical applications across supply chain, retail, and manufacturing environments.
 
-Three unique, real-world problems were analyzed and solved: 
-- Laptop allocation
-- Garment component shipping
-- Network cabling. 
-  
-This project provides optimization solutions designed to enhance efficiency and reduce costs for industries focused on resource management and logistics optimization. Utilizing Linear Programming (LP), Mixed-Integer Linear Programming (MILP), and Network Flow analysis, the project demonstrates how mathematical modeling can address complex challenges in sectors like operations research, supply chain management, and network engineering. By employing structured, data-driven techniques, these findings highlight significant opportunities to improve productivity, streamline processes, and achieve cost savings through optimized decision-making frameworks.
+Problems and Solutions
+Customer Checkout Optimization
+
+Objective: Minimize customer balking by optimizing the number of cashiers in a retail checkout system.
+Approach: Modeled using Poisson arrivals and exponential service times to determine the minimum number of cashiers required to ensure customer wait times stay below five minutes.
+Outcome: The system requires at least three cashiers working collaboratively to meet operational goals, reducing wait times and ensuring higher customer satisfaction.
+Specialty Steak Stocking
+
+Objective: Determine the optimal weekly order quantity for specialty steaks to maximize profit.
+Approach: Constructed payoff and regret tables to evaluate decisions using expected value, pessimistic, and optimistic criteria.
+Outcome: Optimal order quantity is 35 pounds per week, achieving an expected weekly profit of $79 under the expected value criterion.
+Profitability of a New Product
+
+Objective: Evaluate the profitability of a new product under various cost scenarios.
+Approach: Simulated 20 random trials to calculate mean profit, variability, and confidence intervals using empirical probability distributions.
+Outcome: The mean profit per unit was $6.90, with a standard deviation of $2.27, validating the product’s potential to meet profitability criteria.
+Copier Selection for a Law Office
+
+Objective: Choose between a regular copier and a high-speed copier based on cost and efficiency.
+Approach: Calculated total costs for each copier, factoring in lease costs, job completion times, and employee wages.
+Outcome: The high-speed copier was selected for its efficiency and cost-effectiveness, saving $11.20 daily compared to the regular copier.
+Patent Infringement Lawsuit Decision
+
+Objective: Decide whether a small software company should settle or proceed to trial in a lawsuit.
+Approach: Developed a decision tree to calculate expected monetary values (EMV) for both options.
+Outcome: Going to trial yielded a higher EMV ($1.8 million vs. $1.5 million), making it the recommended choice.
+Machine Assignment for Aircraft Part Manufacturing
+
+Objective: Assign machinists to machines to minimize production time.
+Approach: Used Binary Integer Linear Programming to assign machinists to machines based on time efficiencies while respecting constraints (e.g., certification).
+Outcome: The optimal assignment achieved a total production time of 100 minutes.
 
 **Technical Specifications:**
 
@@ -163,80 +188,108 @@ Software Used:
 - LINGO: It is a software tool used to formulate and solve complex mathematical optimization problems.
 
 **Techniques Applied:**
-- Linear Programming (LP)
-- Mixed-Integer Linear Programming (MILP)
-- Network Flow Algorithms
-  - Minimum Spanning Tree
-  - Shortest Path algorithms
+
+Software Used:
+
+Excel Solver: For solving LP and MILP problems and performing sensitivity analysis.
+LINGO: A comprehensive optimization tool for formulating and solving complex models.
+
+Techniques Applied:
+
+Linear Programming (LP)
+Mixed-Integer Linear Programming (MILP)
+Binary Integer Linear Programming (BILP)
+Network Flow Algorithms (e.g., Minimum Spanning Tree, Shortest Path)
+Decision Tree Analysis
+Simulation Modeling
 
 **Project Structure:**
 
 The project is organized into three primary modules:
 
-1. Laptop Allocation Module:
-   
-   - Objective: Strategically allocate a constrained number of laptops among three departments, maximizing productivity and operational efficiency while respecting departmental budgetary and resource constraints.
-   
-   - Methodology: Formulated the allocation problem using LP and MILP to achieve optimal distribution based on departmental requirements. Implemented in LINGO, the model analyzed productivity gains relative to resource limitations, allowing for precise, need-based allocation aligned with organizational goals.
+Problem 1: Customer Checkout Optimization
 
-2. Garment Component Shipping Module:
-   
-   - Objective: Optimize the shipping logistics for a clothing company, reducing transportation costs by managing the flow of garment components from multiple manufacturing sites to designated assembly facilities.
-     
-   - Methodology: Tackled this as a Transportation and Transshipment Problem, accounting for both balanced (equal supply and demand) and unbalanced scenarios. Using LP in Excel Solver, the model minimized costs across varied routes while maintaining timely delivery schedules, resulting in a highly adaptable shipping plan that aligns with production timelines and reduces overhead.
+Objective: Reduce customer balking by optimizing cashier allocation using queueing theory models.
+Methodology:
+Modeled Poisson arrivals and exponential service times.
+Utilized LP to calculate utilization factors and determine the minimum number of cashiers.
+Verified solutions with simulation to assess robustness.
 
-3. Network Cabling Module:
-   
-   - Objective: Minimize the infrastructure costs of network cabling by efficiently connecting a network of computers to a central server, ensuring low-latency communication and cost-effectiveness.
-   
-   - Methodology: Addressed this through Network Flow Problem-solving techniques, applying Minimum Spanning Tree and Shortest Path algorithms to determine optimal cabling paths. By implementing these algorithms, the module reduced installation costs while maintaining effective connectivity, supporting scalable network expansion for future needs.
+Problem 2: Specialty Steak Stocking
+
+Objective: Determine the optimal weekly stocking level for steaks to maximize profitability.
+Methodology:
+Constructed payoff and regret tables.
+Evaluated using expected value, optimistic, and pessimistic criteria.
+Performed sensitivity analysis to validate robustness.
+
+Problem 3: Profitability Analysis for a New Product
+
+Objective: Simulate profitability under varying cost scenarios.
+Methodology:
+Conducted 20 random trials for cost variables.
+Calculated mean profit, standard deviation, and confidence intervals.
+Assessed criteria for product launch.
+
+Problem 4: Copier Selection for Efficiency
+
+Objective: Evaluate costs and operational efficiency of two copier options for a law office.
+Methodology:
+Calculated hourly costs for lease and employee wages.
+Applied LP to compare costs across scenarios.
+
+Problem 5: Patent Lawsuit Decision Analysis
+
+Objective: Decide between settling or going to trial in a patent dispute.
+Methodology:
+Constructed a decision tree with expected monetary values (EMV).
+Evaluated probabilities and costs for both scenarios.
+
+Problem 6: Aircraft Part Manufacturing Optimization
+
+Objective: Assign machinists to machines to minimize production time.
+Methodology:
+Used BILP to assign machinists based on skill and availability.
+Optimized assignments under constraints like certification and workload distribution.
 
 **Usage Instructions:**
 
 System Requirements:
 
-- Software: Excel with Solver add-in, LINGO
-
-- Hardware: Standard system capable of running Microsoft Excel and LINGO
+Software: Excel with Solver Add-In, LINGO
+Hardware: Standard computer capable of running Excel and LINGO
 
 
 **Installation and Running Instructions:**
 
-1. File Setup
+File Setup:
 
-    - Open the provided Excel and LINGO files to ensure all components are accessible.
-      
-    - Review the documentation to familiarize yourself with each module’s specific functions and requirements.
+Download provided Excel and LINGO files.
+Review accompanying documentation for module-specific instructions.
+Module Configuration:
 
-2. Module Configuration
+Adjust parameters as needed for business-specific data inputs.
+Ensure solver settings are aligned with project constraints.
+Execution:
 
-    - For each module, follow the detailed steps in the accompanying documentation. Adjust parameters as necessary to tailor the solution to specific data inputs or business scenarios.
-      
-    - Ensure that all necessary configurations, such as data input fields and solver constraints, are accurately set for optimal performance.
+Excel Solver: Run optimization models directly from the Data Analysis tab.
+LINGO: Execute provided scripts, adjusting parameters for enhanced customization.
+Results Verification:
 
-3. Execution
-
-    - Excel: Launch the Excel Solver from the data analysis tab and run the module’s optimization functions. Solver configurations and constraints are pre-set, but can be modified for further refinement based on project requirements.
-      
-    - LINGO: Execute the LINGO script directly to initiate the optimization process. The script is designed to run efficiently with the included parameters, but users may adjust variables and constraints for enhanced customization or expanded analytical depth.
-
-4. Results Verification
-    - After execution, review the generated results for each module. Confirm that outputs align with expected optimization outcomes.
-      
-    - Test with varied input data to validate the robustness and adaptability of each module.
+Cross-check outputs with expected results.
+Perform sensitivity analysis to validate robustness.
 
 **Testing and Debugging:**
 
 To ensure solution robustness and adaptability, the following testing and debugging processes were employed:
 
-1. Parameter Adjustment and Constraint Validation
-   - Refined constraints and adjusted parameters to test the solution's flexibility and resilience under varied scenarios, ensuring that it meets performance standards and business requirements.
-     
-2. Sensitivity Analysis via Solver
-   - Leveraged Solver’s sensitivity analysis to evaluate the impact of variable changes, identifying potential weaknesses and refining outcomes for accuracy and stability.
-
-3. Iterative Testing and Troubleshooting
-   - Conducted iterative testing to validate data integrity, fine-tune model assumptions, and optimize results, ensuring consistent performance across different use cases.
+Testing and Debugging
+Parameter Adjustment and Constraint Validation:
+Refined constraints to assess model flexibility.
+Sensitivity Analysis:
+Evaluated variable changes for stability.
+Iterative Testing:
+Conducted iterative trials to ensure accuracy.
 
 These methods collectively strengthened the solution’s adaptability and ensured reliable, accurate outputs in diverse business contexts.
 
@@ -252,7 +305,15 @@ These methods collectively strengthened the solution’s adaptability and ensure
 As a university project, this work is proprietary and intended for educational use within the scope of the course requirements.
 
 **Future Work and Feedback:**
-Future enhancements could include integrating machine learning algorithms to predict customer trends, automating decision-making processes for resource optimization, and deploying the system within enterprise platforms for broader applicability. Real-time data integration and automated reporting would further support continuous business intelligence. Feedback and contributions from industry experts are encouraged to expand the project’s scope and real-world impact.
+Proposed Enhancements:
+
+Integrate machine learning for predictive analytics.
+Automate decision-making processes for resource optimization.
+Develop real-time data integration for continuous monitoring
+
+Feedback:
+
+Industry expert contributions are encouraged to expand scope and applicability.
 
 ---
 
