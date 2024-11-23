@@ -230,7 +230,7 @@ Objective: Evaluate costs and operational efficiency of two copier options for a
 
 Methodology: We calculated the hourly costs associated with leasing each copier option and employee wages for operation. Linear Programming (LP) was then employed to compare the total costs across various scenarios, considering factors such as print volume, speed, and maintenance requirements.
 
-![OSCM 352 FE PB4 DTA](assets/OSCM%20352%20FE%20PB4%20DTA.png)
+![OSCM 352 FE PB4 LP](assets/OSCM%20352%20FE%20PB4%20LP.png)
 
 Results: After a comprehensive analysis, the high-speed copier emerged as the most cost-effective option. This selection resulted in a daily cost savings of $11.20 compared to the regular copier. This significant cost reduction can be attributed to the high-speed copier's increased efficiency and reduced operational time.
 
