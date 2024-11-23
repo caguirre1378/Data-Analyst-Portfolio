@@ -159,15 +159,15 @@ Methodology:
 
   1. Modeling Customer Behavior: Customer arrivals were modeled as a Poisson process, while service times were assumed to follow an exponential distribution.
 
-     ![BUS 310 FE PB1 P1](assets/OSCM%20352%20FE%20PB1%20P1.png)
+     ![OSCM 352 FE PB1 P1](assets/OSCM%20352%20FE%20PB1%20P1.png)
      
   2. Queueing System Analysis: Utilization factors were calculated for 1, 2, and 3 cashiers to determine system viability and performance.
 
-     ![BUS 310 FE PB1 P2](assets/OSCM%20352%20FE%20PB1%20P2.png)
+     ![OSCM 352 FE PB1 P2](assets/OSCM%20352%20FE%20PB1%20P2.png)
      
   3. Optimization Criteria: The probability of a customer waiting more than 5 minutes was evaluated to meet operational objectives.
 
-     ![BUS 310 FE PB1 P3](assets/OSCM%20352%20FE%20PB1%20P3.png)
+     ![OSCM 352 FE PB1 P3](assets/OSCM%20352%20FE%20PB1%20P3.png)
 
 Results: Our analysis revealed that a minimum of three cashiers working collaboratively is necessary to meet operational goals and minimize customer balking. This optimized staffing level significantly reduces wait times and enhances overall customer satisfaction.
 
