@@ -151,7 +151,7 @@ This project applies advanced management science techniques to solve six real-wo
 
 **Problems and Solutions**
 
-Problem 1: Customer Checkout Optimization
+Problem A: Customer Checkout Optimization
 
 Objective: Reduce customer balking by optimizing cashier allocation using queueing theory models.
 
@@ -173,7 +173,7 @@ Results: Our analysis revealed that a minimum of three cashiers working collabor
 
 ---
 
-Problem 2: Specialty Steak Stocking
+Problem B: Specialty Steak Stocking
 
 Objective: Determine the optimal weekly stocking level for steaks to maximize profitability.
 
@@ -204,13 +204,23 @@ Results: The analysis indicated that an optimal weekly order quantity of 35 poun
 
 ---
 
-Problem 3: Profitability of a New Product
+Problem C: Profitability of a New Product
 
 Objective: Simulate profitability under varying cost scenarios.
 
+![OSCM 352 FE PB3 P24](assets/OSCM%20352%20FE%20PB3%20P24.png)
+
 Methodology: A Monte Carlo simulation was conducted with 20 random trials to account for uncertainty in key cost variables: unit cost, fixed cost, and selling price. For each trial, the profit per unit was calculated, considering a fixed demand of 1000 units. The mean profit per unit, standard deviation, and 95% confidence interval were determined from the simulation results.
 
+A Monte Carlo simulation was run with 20 random trials for purchase cost, labor cost, and transportation cost. Profit per unit was calculated using:
+
+- Profit per unit was calculated using: Profit = Selling Price − Purchase Cost − Labor Cost − Transportation Cost
+
+![OSCM 352 FE PB3 P25](assets/OSCM%20352%20FE%20PB3%20P25.png)
+
 Results: The mean profit per unit was estimated to be $6.90, with a standard deviation of $2.27. The 95% confidence interval for the mean profit per unit was between $4.46 and $9.34. Based on these findings, the new product has the potential to meet profitability criteria and is recommended for launch, subject to further analysis and risk assessment.
+
+---
 
 Problem 4: Copier Selection for a Law Office
 
