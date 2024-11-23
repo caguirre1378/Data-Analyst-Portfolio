@@ -159,11 +159,13 @@ Methodology:
 
   1. Modeling Customer Behavior: Customer arrivals were modeled as a Poisson process, while service times were assumed to follow an exponential distribution.
      
-  2. Linear Programming (LP) Analysis: LP was employed to calculate utilization factors and determine the minimum number of cashiers required to meet operational goals.
+  2. Queueing System Analysis: Utilization factors were calculated for 1, 2, and 3 cashiers to determine system viability and performance.
      
-  3. Simulation: Simulation modeling was used to validate the LP solution and assess its robustness under various operational scenarios.
+  3. Optimization Criteria: The probability of a customer waiting more than 5 minutes was evaluated to meet operational objectives.
 
 Results: Our analysis revealed that a minimum of three cashiers working collaboratively is necessary to meet operational goals and minimize customer balking. This optimized staffing level significantly reduces wait times and enhances overall customer satisfaction.
+
+---
 
 Problem 2: Specialty Steak Stocking
 
@@ -172,6 +174,8 @@ Objective: Determine the optimal weekly stocking level for steaks to maximize pr
 Methodology: We employed a decision-analytic approach to assess various stocking levels. Payoff and regret tables were constructed to visualize the potential outcomes and associated costs. To select the optimal stocking level, we utilized three decision criteria: expected value, optimistic, and pessimistic. Sensitivity analysis was conducted to evaluate the model's robustness under varying demand conditions.
 
 Results: The analysis indicated that an optimal weekly order quantity of 35 pounds maximizes expected weekly profit at $79. This decision is based on the expected value criterion and is supported by sensitivity analysis, which confirmed its robustness under various demand scenarios.
+
+---
 
 Problem 3: Profitability of a New Product
 
