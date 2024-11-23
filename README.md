@@ -388,41 +388,60 @@ Software Used: SQL Server Management Studio, SQL Server, ERDPlus
 Project Structure:
 
 1. Data Standardization Module
+   
    - Objective: Standardize and normalize fragmented data for consistency across the database.
+     
    - Methodology: Design and implement a normalized schema in SQL Server.
 
 2. Redundancy Elimination Module
+   
    - Objective: Prevent duplicate data entries and maintain high data integrity.
+     
    - Methodology: Use primary/foreign keys and indexing techniques to eliminate redundancies.
 
 3. Business Insights Module
+   
    - Objective: Unlock key business insights through SQL queries.
+     
    - Methodology: Use over 30 advanced SQL queries to generate insights related to customer behavior, service popularity, and project profitability.
 
 **Database Design and Implementation: ER Model, SQL Scripting, and Query Development**
 
 Task 1: ER Model Development
 The goal of this task was to create an Entity-Relationship (ER) model to represent the data relationships within the landscaping business. Key steps included:
+
   - Identifying Entities: Key entities such as Client, Project, Material, Labor, and Supplier were identified.
+    
   - Defining Attributes: Relevant attributes for each entity were defined to capture necessary information.
+    
   - Establishing Relationships: Relationships between entities were defined with appropriate cardinality constraints (one-to-one, one-to-many, and many-to-many).
+    
   - Refining the ER Model: The model was refined to ensure it met business requirements and enabled efficient data retrieval.
 
 Task 2: SQL Scripting
 This task involved setting up the database and populating it with sample data:
+
   - Database Creation: A new database, NBDDB-[CTF], was created and set as the default. If an existing database was present, it was dropped.
+    
   - Table Creation: Tables were created for entities like Client, Project, Material, Labor, and Supplier, with appropriate data types assigned to each column.
+    
   - Defining Constraints:
+    
       - Primary keys were added to ensure each record was unique.
+        
       - Foreign keys were used to establish relationships between related tables.
+        
       - Unique constraints were applied to prevent duplicate entries.
+        
       - Data Insertion: At least five records were inserted into each table to facilitate testing and querying.
         
 Task 3: Database Querying
 The final task involved writing SQL queries to extract valuable insights:
 
   - Query Development: SQL queries were written to replicate the results from IMS-2 and IMS-3.
+    
   - Metrics Analysis: Queries focused on key business metrics such as customer trends, service popularity, and project profitability.
+    
   - SQL Functions and Techniques: Functions, aggregations, and joins were used to manipulate and analyze the data, demonstrating the database’s ability to support data-driven decision-making.
 
 **Usage Instructions:**
