@@ -262,7 +262,19 @@ Formulated as such:
 
 ![OSCM 352 FE PB6 OF](assets/OSCM%20352%20FE%20PB6%20OF.png)
 
-Results: The optimized assignment schedule, derived from the BILP model, resulted in a total production time of 100 minutes. This represents a significant reduction in production time compared to previous manual assignment methods.
+Results: 
+
+The optimal machinist-machine assignments are as follows:
+
+- Machinist 3 assigned to Metal Lathe
+- Machinist 1 assigned to Turning Machine
+- Machinist 2 assigned to Milling Machine
+- Machinist 4 assigned to Radial Drill
+
+The total combined time to produce a part using all four machines with the assigned operators is 100 minutes.
+
+LINGO INPUT AND OUTPUT:
+
 
 ---
 
