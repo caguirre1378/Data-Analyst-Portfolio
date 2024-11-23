@@ -385,24 +385,55 @@ Software Used: SQL Server Management Studio, SQL Server, ERDPlus
 
 **Project Structure:**
 
-The project is organized into three main sections:
+STAGE 1: ER MODEL AND DATABASE CREATION
 
-1. Data Standardization Module:
+Task 1: ER Model Development
 
-   - Objective: To standardize and normalize fragmented data, ensuring consistency and reliability across the entire database.
-     
-   - Methodology: A normalized schema was carefully designed and implemented within SQL Server to convert data into a uniform format. This involved migrating and transforming raw data to align with predefined standards, eliminating discrepancies and ensuring that data across various tables and sources is consistent and structured for optimal use.
-     
-2. Redundancy Elimination Module:
-   
-   - Objective: To identify, remove, and prevent redundant data entries, safeguarding the integrity of the database and ensuring it only reflects accurate and up-to-date information.
-     
-   - Methodology: This module utilized SQL constraints (such as primary keys, foreign keys, and unique constraints) in combination with indexing techniques to identify and eliminate duplicate records. By implementing these practices, the database maintains high data integrity, improving query performance and preventing the growth of unnecessary data.
-     
-3. Business Insights Module:
-   - Objective: To unlock actionable business insights from the database that support strategic decision-making, focusing on key business metrics such as popular services, customer trends, and project profitability.
-     
-   - Methodology: Over 30 advanced SQL queries were meticulously crafted to aggregate and analyze data, providing stakeholders with in-depth reports on business performance. These queries generate comprehensive insights on customer behavior, service popularity, and overall project success, enabling data-driven decisions that guide the company’s growth and operational focus.
+Objective: Create a comprehensive ER model that accurately represents the data relationships within the landscaping business.
+Approach:
+  - Identify key entities such as Client, Project, Material, Labor, and Supplier.
+  - Define attributes for each entity to capture relevant information.
+  - Establish relationships between entities using appropriate cardinality constraints (e.g., one-to-one, one-to-many, many-to-many).
+  - Refine the ER model to ensure it supports business requirements and efficient data retrieval.
+
+Task 2: SQL Scripting
+
+Database Creation and Selection:
+
+Objective: Set up a new database to store project data.
+Procedure:
+     - Create a database named NBDDB-[CTF].
+     - Drop the existing database if necessary.
+     - Set the newly created database as the default database.
+       
+Table Creation:
+
+Objective: Define the structure of the database tables.
+Procedure:
+     - Create tables for Client, Project, Material, Labor, Supplier, and other relevant entities.
+     - Specify appropriate data types for each column (e.g., VARCHAR, INT, DATE, DECIMAL).
+
+Constraint Definition:
+
+Objective: Ensure data integrity and consistency.'
+Procedure:
+     - Define primary keys to uniquely identify records within each table.
+     - Establish foreign key relationships to link related tables.
+     - Implement unique constraints to prevent duplicate entries.
+
+Data Insertion:
+
+Objective: Populate the database with sample data.
+Procedure:
+     - Insert at least 5 records into each table to facilitate testing and querying.
+
+Task 3: Database Querying
+
+Objective: Demonstrate the database's capabilities by extracting valuable insights.
+Procedure:
+     - Write SQL queries to reproduce the results of IMS-2 and IMS-3.
+     - Develop queries to analyze customer trends, service popularity, project profitability, and other relevant metrics.
+     - Utilize SQL functions, aggregations, and joins to manipulate and analyze data effectively.
 
 **Usage Instructions:**
 
