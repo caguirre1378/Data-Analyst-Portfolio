@@ -179,18 +179,28 @@ Objective: Determine the optimal weekly stocking level for steaks to maximize pr
 
 Methodology: 
 1. Payoff Table and Regret Table: These tables provide a clear view of profits and regrets for different stocking decisions under all possible demand scenarios.
+
+   ![OSCM 352 FE PB2 PT and RT](assets/OSCM%20352%20FE%20PB2%20PT%20and%20RT.png)
    
 2. Decision Criteria:
    
    - Expected Value Criterion: Chooses the option with the highest average expected payoff.
      
+     ![OSCM 352 FE PB2 EVC](assets/OSCM%20352%20FE%20PB2%20EVC.png)
+     
    - Optimistic Criterion: Assumes the best-case scenario for each decision.
+  
+     ![OSCM 352 FE PB2 OPTC](assets/OSCM%20352%20FE%20PB2%20OPTC.png)
      
    - Pessimistic Criterion: Focuses on minimizing potential losses (worst-case scenario).
 
-3. Sensitivity Analysis: Ensures that the chosen decision remains optimal under demand fluctuations.
+     ![OSCM 352 FE PB2 PESC](assets/OSCM%20352%20FE%20PB2%20PESC.png)
+
+4. Sensitivity Analysis: Ensures that the chosen decision remains optimal under demand fluctuations.
 
 Results: The analysis indicated that an optimal weekly order quantity of 35 pounds maximizes expected weekly profit at $79. This decision is based on the expected value criterion and is supported by sensitivity analysis, which confirmed its robustness under various demand scenarios.
+
+![OSCM 352 FE PB2 CONCLUSION](assets/OSCM%20352%20FE%20PB2%20CONCLUSION.png)
 
 ---
 
