@@ -385,55 +385,31 @@ Software Used: SQL Server Management Studio, SQL Server, ERDPlus
 
 **Project Structure:**
 
-STAGE 1: ER MODEL AND DATABASE CREATION
+Stage 1: ER Model and Database Creation
 
 Task 1: ER Model Development
-
-- Objective: Create a comprehensive ER model that accurately represents the data relationships within the landscaping business.
-- Approach:
-  - Identify key entities such as Client, Project, Material, Labor, and Supplier.
-  - Define attributes for each entity to capture relevant information.
-  - Establish relationships between entities using appropriate cardinality constraints (e.g., one-to-one, one-to-many, many-to-many).
-  - Refine the ER model to ensure it supports business requirements and efficient data retrieval.
+The goal of this task was to create an Entity-Relationship (ER) model to represent the data relationships within the landscaping business. Key steps included:
+  - Identifying Entities: Key entities such as Client, Project, Material, Labor, and Supplier were identified.
+  - Defining Attributes: Relevant attributes for each entity were defined to capture necessary information.
+  - Establishing Relationships: Relationships between entities were defined with appropriate cardinality constraints (one-to-one, one-to-many, and many-to-many).
+  - Refining the ER Model: The model was refined to ensure it met business requirements and enabled efficient data retrieval.
 
 Task 2: SQL Scripting
-
-Database Creation and Selection:
-
-- Objective: Set up a new database to store project data.
-- Procedure:
-     - Create a database named NBDDB-[CTF].
-     - Drop the existing database if necessary.
-     - Set the newly created database as the default database.
-       
-Table Creation:
-
-- Objective: Define the structure of the database tables.
-- Procedure:
-     - Create tables for Client, Project, Material, Labor, Supplier, and other relevant entities.
-     - Specify appropriate data types for each column (e.g., VARCHAR, INT, DATE, DECIMAL).
-
-Constraint Definition:
-
-- Objective: Ensure data integrity and consistency.'
-- Procedure:
-     - Define primary keys to uniquely identify records within each table.
-     - Establish foreign key relationships to link related tables.
-     - Implement unique constraints to prevent duplicate entries.
-
-Data Insertion:
-
-- Objective: Populate the database with sample data.
-- Procedure:
-     - Insert at least 5 records into each table to facilitate testing and querying.
-
+This task involved setting up the database and populating it with sample data:
+  - Database Creation: A new database, NBDDB-[CTF], was created and set as the default. If an existing database was present, it was dropped.
+  - Table Creation: Tables were created for entities like Client, Project, Material, Labor, and Supplier, with appropriate data types assigned to each column.
+  - Defining Constraints:
+      - Primary keys were added to ensure each record was unique.
+      - Foreign keys were used to establish relationships between related tables.
+      - Unique constraints were applied to prevent duplicate entries.
+      - Data Insertion: At least five records were inserted into each table to facilitate testing and querying.
+        
 Task 3: Database Querying
+The final task involved writing SQL queries to extract valuable insights:
 
-- Objective: Demonstrate the database's capabilities by extracting valuable insights.
-- Procedure:
-     - Write SQL queries to reproduce the results of IMS-2 and IMS-3.
-     - Develop queries to analyze customer trends, service popularity, project profitability, and other relevant metrics.
-     - Utilize SQL functions, aggregations, and joins to manipulate and analyze data effectively.
+  - Query Development: SQL queries were written to replicate the results from IMS-2 and IMS-3.
+  - Metrics Analysis: Queries focused on key business metrics such as customer trends, service popularity, and project profitability.
+  - SQL Functions and Techniques: Functions, aggregations, and joins were used to manipulate and analyze the data, demonstrating the database’s ability to support data-driven decision-making.
 
 **Usage Instructions:**
 
