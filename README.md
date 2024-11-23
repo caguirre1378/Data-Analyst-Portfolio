@@ -246,6 +246,8 @@ Methodology: A decision tree analysis was conducted to evaluate the expected mon
 
 - Trial: The potential costs of a trial, including legal fees, expert witness fees, and potential damages.
 
+  ![OSCM 352 FE PB5 DTA](assets/OSCM%20352%20FE%20PB5%20DTA.png)
+
 Results: After careful analysis of the decision tree, it was determined that proceeding to trial yielded a higher EMV ($1.8 million) compared to settling ($1.5 million). Therefore, based on the expected financial outcomes, it is recommended to proceed with the lawsuit.
 
 ---
