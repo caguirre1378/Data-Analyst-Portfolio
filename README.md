@@ -258,7 +258,9 @@ Objective: Assign machinists to machines to minimize production time.
 
 Methodology: A Binary Integer Linear Programming (BILP) model was developed to assign machinists to four machines—metal lathe, turning machine, milling machine, and radial drill. The model accounts for machinist skill levels and certifications, with the restriction that Machinist 3 cannot be assigned to the turning machine. The goal was to minimize the total production time, given the operating times for each machinist on each machine
 
-Objective Function: ![OSCM 352 FE PB6 OF](assets/OSCM%20352%20FE%20PB6%20OF.png)
+Formulated as such:
+
+![OSCM 352 FE PB6 OF](assets/OSCM%20352%20FE%20PB6%20OF.png)
 
 Results: The optimized assignment schedule, derived from the BILP model, resulted in a total production time of 100 minutes. This represents a significant reduction in production time compared to previous manual assignment methods.
 
