@@ -277,7 +277,7 @@ LINGO INPUT:
 
 ![OSCM 352 FE PB6 Lingo Input](assets/OSCM%20352%20FE%20PB6%20Lingo%20Input.png)
 
-OUTPUT:
+LINGO OUTPUT:
 
 ![OSCM 352 FE PB6 Lingo Output](assets/OSCM%20352%20FE%20PB6%20Lingo%20Ouput.png)
 
