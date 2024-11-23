@@ -59,17 +59,17 @@ This senior-level project, undertaken in the Business Analytics II course, focus
 This project was developed using Microsoft Excel for data analysis and visualization, with Microsoft Word employed for structured reporting. Excel was instrumental in data manipulation, KPI tracking, and generating insights, while Word served to compile findings in a coherent report. The project was executed using Microsoft Office Suite 2016 or later.
 
 **Project Structure:**
-- Data Analysis Worksheets: Organnized in an Excel file, the worksheets contain Raw data, Calculations, and Graphs. Arranged in labeled tabs for clear navigation. Organized within a comprehensive Excel workbook, the data was segmented into tabs labeled for specific KPIs, including:
+Data Analysis Worksheets: Organnized in an Excel file, the worksheets contain Raw data, Calculations, and Graphs. Arranged in labeled tabs for clear navigation. Organized within a comprehensive Excel workbook, the data was segmented into tabs labeled for specific KPIs, including:
 
-  -- On-Time Delivery Analysis: Examined monthly on-time delivery performance between 2014 and 2018, highlighting improvements and seasonal trends to inform operational adjustments.
+  - On-Time Delivery Analysis: Examined monthly on-time delivery performance between 2014 and 2018, highlighting improvements and seasonal trends to inform operational adjustments.
 
   ![BUS 310 CSP OTD Percentage](assets/BUS%20310%20CSP%20OTD%20Percentage.png)
 
-  -- Transmission Cost Analysis: Compared the cost-effectiveness of current versus alternative transmission processes to identify potential savings and efficiency improvements.
+  - Transmission Cost Analysis: Compared the cost-effectiveness of current versus alternative transmission processes to identify potential savings and efficiency improvements.
 
   ![BUS 310 CSP UTC for Processes](assets/BUS%20310%20CSP%20UTC%20for%20Processes.png)
-       
-  -- Employee Retention Analysis: Analyzed retention trends by gender and local/non-local status to uncover patterns that could inform targeted retention strategies.
+
+  - Employee Retention Analysis: Analyzed retention trends by gender and local/non-local status to uncover patterns that could inform targeted retention strategies.
 
   ![BUS 310 CSP ER by G&L](assets/BUS%20310%20CSP%20ER%20by%20G&L.png)
  
@@ -273,8 +273,13 @@ The optimal machinist-machine assignments are as follows:
 
 The total combined time to produce a part using all four machines with the assigned operators is 100 minutes.
 
-LINGO INPUT AND OUTPUT:
+LINGO INPUT:
 
+![OSCM 352 FE PB6 Lingo Input](assets/OSCM%20352%20FE%20PB6%20Lingo%20Input.png)
+
+OUTPUT:
+
+![OSCM 352 FE PB6 Lingo Output](assets/OSCM%20352%20FE%20PB6%20Lingo%20Ouput.png)
 
 ---
 
