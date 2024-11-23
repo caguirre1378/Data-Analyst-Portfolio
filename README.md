@@ -256,7 +256,9 @@ Problem F: Machine Assignment for Aircraft Part Manufacturing
 
 Objective: Assign machinists to machines to minimize production time.
 
-Methodology: A Binary Integer Linear Programming (BILP) model was developed to assign machinists to machines based on their skills and availability. The model accounted for constraints such as machinist certifications and workload distribution.
+Methodology: A Binary Integer Linear Programming (BILP) model was developed to assign machinists to four machines—metal lathe, turning machine, milling machine, and radial drill. The model accounts for machinist skill levels and certifications, with the restriction that Machinist 3 cannot be assigned to the turning machine. The goal was to minimize the total production time, given the operating times for each machinist on each machine
+
+Objective Function: ![OSCM 352 FE PB6 OF](assets/OSCM%20352%20FE%20PB6%20OF.png)
 
 Results: The optimized assignment schedule, derived from the BILP model, resulted in a total production time of 100 minutes. This represents a significant reduction in production time compared to previous manual assignment methods.
 
@@ -462,108 +464,3 @@ To further enhance the system's functionality and adaptability, several opportun
 - Expansion of Query Capabilities: Extending the current query framework to include additional business metrics such as customer satisfaction, seasonal service demand, and financial projections, offering more comprehensive insights to stakeholders.
 
 These enhancements will contribute to a more robust and flexible system, better suited to meet evolving business needs. Feedback and contributions are highly encouraged as part of a collaborative effort to refine and expand the system's capabilities, ensuring its long-term value and scalability.
-
----
-
-### Project 4: Enhancing Customer Experience and Operational Efficiency through Food Delivery Web App Backend Development 
-
-### (Fall 2023, Intro to Programming for Business Applications)
-
-**Project Overview:**
-This project involved the design and development of the core backend functionalities for a custom food delivery web application, created to improve customer experience and streamline order processing. Built for "EasyOrder Cakes," a fictional business, the app allows users to browse the menu, customize orders (including catering options), and submit orders efficiently. The project demonstrates the practical application of Java programming for backend development and highlights its potential to enhance both user experience and operational efficiency.
-
-**Technical Specifications:**
-
-Software and Tools Used: JGrasp, Java, JavaScript, LucidChart
-
-**Core Features:**
-
-Backend built in Java to manage menu browsing, order customization, and processing.
-Visual planning and documentation using LucidChart for database design and process flows.
-
-**Project Structure:**
-
-The project is divided into the following modules:
-
-1. Menu Browsing Module:
-   
-   - Objective: Empower users to view and explore a comprehensive, categorized menu with detailed descriptions and pricing.
-   
-   - Methodology: Utilized Java classes to structure and organize menu data efficiently. The system is designed with scalability in mind, allowing for future expansions and real-time updates to reflect changes in the menu. This modular design ensures that the menu can be easily adjusted to accommodate new items or categories.
-    
-3. Order Customization Module:
-   
-   - Objective: Provide users with the ability to customize their orders based on preferences, including portion sizes and specific catering requests.
-   
-   - Methodology: Implemented flexible and dynamic data structures in Java to capture and store user customizations. This approach allows for a wide range of order configurations, supporting diverse customer needs and ensuring that all preferences are properly handled within the system.
-    
-4. Order Processing :
-   
-   - Objective: Enhance backend efficiency by streamlining order handling for fast and reliable processing.
-   
-   - Methodology: The module leverages Java to handle critical tasks such as order validation, time estimation, and transmission of order details for further processing. This ensures that each order is processed promptly, with accurate time estimates and smooth transitions to subsequent stages of order fulfillment.
-
-Each module is designed to be a foundational component of a highly scalable, flexible, and efficient system that supports the overall business goals of streamlining customer interactions and improving operational efficiency.
-
-**Usage Instructions:**
-
-System Requirements:
-
-Software: JGrasp, JDK for Java
-Hardware: Standard system capable of running Java applications
-
-**Installation and Running Instructions:**
-
-1. Open the JGrasp project files:
-   
-   - Follow the setup guide in the documentation to adjust any configuration parameters.
-   - Run the Java program to test core backend functionalities.
-
-2. Open Project Files:
-   
-   - Download and open the JGrasp project files in your local development environment.
-     
-3. Configuration Setup:
-   
-   - Review and follow the setup guide provided in the documentation to configure any necessary parameters, such as database connections or environment settings, ensuring compatibility with your system.
-
-4. Execute the Program:
-   
-   - Run the Java program within JGrasp to initiate the backend functionalities. Test and verify core operations, such as data processing, business logic execution, and system interactions, to ensure that the program functions as expected.
-     
-5. Troubleshooting (if applicable):
-   
-   - Should any issues arise, consult the documentation for troubleshooting steps, or modify the configuration settings as needed to resolve conflicts. Verify that all dependencies are properly integrated.
-
-**Testing and Debugging:**
-
-The testing phase involved comprehensive verification of the system's functionality to ensure robustness and accuracy. Key areas of focus included:
-
-- Order Customization Validation: Thorough testing was conducted to verify that all order customizations were accurately processed, ensuring the integrity of customer preferences in the final order.
-
-- Menu Display Accuracy: A detailed review was carried out to confirm that the menu displays all items, options, and modifications correctly, ensuring a seamless user experience.
-
-- Error-Handling Mechanisms: The system’s error-handling mechanisms were rigorously tested to identify potential failure points and ensure that the application remains stable under various conditions. This included validating proper error messages, data validation, and recovery protocols to improve overall app reliability.
-
-These testing processes were critical in identifying and resolving any issues, ensuring that the app provides a reliable, accurate, and stable user experience.
-
-**Project Impact and Deliverables:**
-1. Enhanced Customer Experience:
-   
-   - The backend architecture was strategically designed to support the seamless integration of a future front-end interface. This allows for intuitive menu browsing and flexible order customization, ensuring a user-friendly and engaging experience for customers.
-     
-2. Operational Efficiency:
-   
-   - By streamlining the order processing system, the project minimizes potential delays and enhances overall service delivery. The optimized backend processes contribute to faster, more reliable order fulfillment, supporting operational excellence and improving customer satisfaction.
-     
-3. Comprehensive Documentation:
-   - Detailed LucidChart diagrams and well-documented Java files provide a clear blueprint for future development. These resources not only serve as a foundation for maintaining and expanding the system but also facilitate onboarding for new developers and ensure that future improvements can be made efficiently.
-
-**Future Work and Feedback:** 
-
-- Future development will focus on the implementation of a front-end interface to complete the customer experience and further enhance the app's functionality. Additionally, integration with a secure payment gateway will be prioritized to enable seamless transactions.
-  
-- Full deployment is a key objective, ensuring that the system operates at scale. We welcome feedback from potential users and contributors to refine features and drive the expansion of the app's capabilities. Your input will be instrumental in ensuring that the system continues to meet user needs and adapt to evolving business requirements.
-
-**Contribution and Licensing:**
-As a university project, this work is proprietary and intended for educational use within the scope of the course requirements.
