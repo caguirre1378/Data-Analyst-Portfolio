@@ -389,8 +389,8 @@ STAGE 1: ER MODEL AND DATABASE CREATION
 
 Task 1: ER Model Development
 
-Objective: Create a comprehensive ER model that accurately represents the data relationships within the landscaping business.
-Approach:
+- Objective: Create a comprehensive ER model that accurately represents the data relationships within the landscaping business.
+- Approach:
   - Identify key entities such as Client, Project, Material, Labor, and Supplier.
   - Define attributes for each entity to capture relevant information.
   - Establish relationships between entities using appropriate cardinality constraints (e.g., one-to-one, one-to-many, many-to-many).
@@ -400,37 +400,37 @@ Task 2: SQL Scripting
 
 Database Creation and Selection:
 
-Objective: Set up a new database to store project data.
-Procedure:
+- Objective: Set up a new database to store project data.
+- Procedure:
      - Create a database named NBDDB-[CTF].
      - Drop the existing database if necessary.
      - Set the newly created database as the default database.
        
 Table Creation:
 
-Objective: Define the structure of the database tables.
-Procedure:
+- Objective: Define the structure of the database tables.
+- Procedure:
      - Create tables for Client, Project, Material, Labor, Supplier, and other relevant entities.
      - Specify appropriate data types for each column (e.g., VARCHAR, INT, DATE, DECIMAL).
 
 Constraint Definition:
 
-Objective: Ensure data integrity and consistency.'
-Procedure:
+- Objective: Ensure data integrity and consistency.'
+- Procedure:
      - Define primary keys to uniquely identify records within each table.
      - Establish foreign key relationships to link related tables.
      - Implement unique constraints to prevent duplicate entries.
 
 Data Insertion:
 
-Objective: Populate the database with sample data.
-Procedure:
+- Objective: Populate the database with sample data.
+- Procedure:
      - Insert at least 5 records into each table to facilitate testing and querying.
 
 Task 3: Database Querying
 
-Objective: Demonstrate the database's capabilities by extracting valuable insights.
-Procedure:
+- Objective: Demonstrate the database's capabilities by extracting valuable insights.
+- Procedure:
      - Write SQL queries to reproduce the results of IMS-2 and IMS-3.
      - Develop queries to analyze customer trends, service popularity, project profitability, and other relevant metrics.
      - Utilize SQL functions, aggregations, and joins to manipulate and analyze data effectively.
