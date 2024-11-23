@@ -222,15 +222,21 @@ Results: The mean profit per unit was estimated to be $6.90, with a standard dev
 
 ---
 
-Problem 4: Copier Selection for a Law Office
+Problem D: Copier Selection for a Law Office
 
 Objective: Evaluate costs and operational efficiency of two copier options for a law office.
 
+![OSCM 352 FE PB4 Costs](assets/OSCM%20352%20FE%20PB4%20Costs.png)
+
 Methodology: We calculated the hourly costs associated with leasing each copier option and employee wages for operation. Linear Programming (LP) was then employed to compare the total costs across various scenarios, considering factors such as print volume, speed, and maintenance requirements.
+
+![OSCM 352 FE PB4 DTA](assets/OSCM%20352%20FE%20PB4%20DTA.png)
 
 Results: After a comprehensive analysis, the high-speed copier emerged as the most cost-effective option. This selection resulted in a daily cost savings of $11.20 compared to the regular copier. This significant cost reduction can be attributed to the high-speed copier's increased efficiency and reduced operational time.
 
-Problem 5: Patent Infringement Lawsuit Decision
+---
+
+Problem E: Patent Infringement Lawsuit Decision
 
 Objective: Decide between settling or going to trial in a patent dispute.
 
@@ -242,13 +248,17 @@ Methodology: A decision tree analysis was conducted to evaluate the expected mon
 
 Results: After careful analysis of the decision tree, it was determined that proceeding to trial yielded a higher EMV ($1.8 million) compared to settling ($1.5 million). Therefore, based on the expected financial outcomes, it is recommended to proceed with the lawsuit.
 
-Problem 6: Machine Assignment for Aircraft Part Manufacturing
+---
+
+Problem F: Machine Assignment for Aircraft Part Manufacturing
 
 Objective: Assign machinists to machines to minimize production time.
 
 Methodology: A Binary Integer Linear Programming (BILP) model was developed to assign machinists to machines based on their skills and availability. The model accounted for constraints such as machinist certifications and workload distribution.
 
 Results: The optimized assignment schedule, derived from the BILP model, resulted in a total production time of 100 minutes. This represents a significant reduction in production time compared to previous manual assignment methods.
+
+---
 
 **Usage Instructions:**
 
