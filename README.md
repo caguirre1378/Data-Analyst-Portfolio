@@ -383,9 +383,23 @@ Software Used: SQL Server Management Studio, SQL Server, ERDPlus
   
   Developed over 30 advanced SQL queries to extract key business insights, including customer trends, service popularity, and project profitability. These queries utilized complex SQL functions—such as joins, subqueries, and aggregations—to generate actionable reports that support data-driven decision-making and strategic business growth.
 
-**Project Structure:**
+**Project Components and Methodology:**
 
-Stage 1: ER Model and Database Creation
+Project Structure:
+
+1. Data Standardization Module
+   - Objective: Standardize and normalize fragmented data for consistency across the database.
+   - Methodology: Design and implement a normalized schema in SQL Server.
+
+2. Redundancy Elimination Module
+   - Objective: Prevent duplicate data entries and maintain high data integrity.
+   - Methodology: Use primary/foreign keys and indexing techniques to eliminate redundancies.
+
+3. Business Insights Module
+   - Objective: Unlock key business insights through SQL queries.
+   - Methodology: Use over 30 advanced SQL queries to generate insights related to customer behavior, service popularity, and project profitability.
+
+**Database Design and Implementation: ER Model, SQL Scripting, and Query Development**
 
 Task 1: ER Model Development
 The goal of this task was to create an Entity-Relationship (ER) model to represent the data relationships within the landscaping business. Key steps included:
