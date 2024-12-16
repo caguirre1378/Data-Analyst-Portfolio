@@ -422,10 +422,6 @@ The goal of this task was to create an Entity-Relationship (ER) model to represe
     
     ![MIS410 ERD P1](assets/MIS410%20ERD%20P1.png)
 
-    Refined ER Design:
-
-    ![MIS410 ERD P1](assets/MIS410%20ERD%20P2.png)
-
 Task 2: SQL Scripting
 This task involved setting up the database and populating it with sample data:
 
