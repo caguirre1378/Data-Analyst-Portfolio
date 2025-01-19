@@ -555,7 +555,7 @@ Software Used: GitHub and MySQL
 
 Project Structure:
 
-1. Raw Data Import Module
+ 1. Raw Data Import Module
    
 Objective: Create a raw data reference table for all transformations.
 
@@ -563,7 +563,7 @@ Methodology: Imported the CSV dataset into a MySQL database (world_layoffs) and 
 
 Include Screenshot: Show the initial imported dataset in the MySQL database to highlight the raw data structure.
 
-2. Staging and Cleaning Module
+ 2. Staging and Cleaning Module
 
 Objective: Perform data cleaning and preparation in a controlled environment.
 
