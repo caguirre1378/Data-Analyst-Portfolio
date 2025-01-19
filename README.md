@@ -557,23 +557,23 @@ Software Used: GitHub and MySQL
 
 1.  Raw Data Import Module
    
-Objective: Create a raw data reference table for all transformations.
-
-Methodology: Imported the CSV dataset into a MySQL database (world_layoffs) and created a layoffs table for raw data. This table was retained unchanged to ensure integrity and serve as a baseline for comparison.
-
-Include Screenshot: Show the initial imported dataset in the MySQL database to highlight the raw data structure.
+    Objective: Create a raw data reference table for all transformations.
+    
+    Methodology: Imported the CSV dataset into a MySQL database (world_layoffs) and created a layoffs table for raw data. This table was retained unchanged to ensure integrity and serve as a baseline for comparison.
+    
+    Include Screenshot: Show the initial imported dataset in the MySQL database to highlight the raw data structure.
 
 2.  Staging and Cleaning Module
 
-Objective: Perform data cleaning and preparation in a controlled environment.
-
-Methodology: 
-
-- Duplicated the raw data into a layoffs_staging table for intermediate transformations.
-  
-- Created a final table (layoffs_staging2) for cleaned data after all transformations.
-  
-Include Screenshot: Display the structure and data of layoffs_staging after duplication to demonstrate the workflow.
+    Objective: Perform data cleaning and preparation in a controlled environment.
+    
+    Methodology: 
+    
+    - Duplicated the raw data into a layoffs_staging table for intermediate transformations.
+      
+    - Created a final table (layoffs_staging2) for cleaned data after all transformations.
+      
+    Include Screenshot: Display the structure and data of layoffs_staging after duplication to demonstrate the workflow.
 
 **Cleaning Process:**
 
