@@ -527,3 +527,156 @@ To further enhance the system's functionality and adaptability, several opportun
 - Expansion of Query Capabilities: Extending the current query framework to include additional business metrics such as customer satisfaction, seasonal service demand, and financial projections, offering more comprehensive insights to stakeholders.
 
 These enhancements will contribute to a more robust and flexible system, better suited to meet evolving business needs. Feedback and contributions are highly encouraged as part of a collaborative effort to refine and expand the system's capabilities, ensuring its long-term value and scalability.
+
+---
+
+### Project 4: World Layoffs Data Cleaning for Enhanced Business Analysis
+
+### (January 2025, Database Management Practice)
+
+**Project Overview:**
+This project focused on cleaning a real-world dataset on layoffs across industries and countries to ensure its suitability for advanced exploratory data analysis and business insights. Using MySQL, the project involved identifying and resolving duplicates, standardizing inconsistent data, handling missing values, and optimizing the table structure for efficient querying. The final cleaned dataset provided a solid foundation for extracting actionable insights into global layoffs trends.
+
+**Technical Specifications:**
+
+Software Used: GitHub and MySQL
+
+**Techniques Applied:**
+
+- Duplicate Removal: Utilized ROW_NUMBER() with PARTITION BY to identify and eliminate duplicate rows effectively. This ensured that the dataset contained only unique and relevant records.
+
+- Data Standardization: Resolved inconsistencies in textual fields (e.g., industry, country, company) using functions like TRIM() and updates to ensure data consistency and accurate categorization.
+
+- Handling Null and Blank Values: Addressed missing values through logical population where possible (e.g., filling missing industry values by referencing the same company in other rows) or removing irrelevant records where both total_laid_off and percentage_laid_off were NULL.
+
+- Data Type Conversion: Converted date fields from TEXT to DATE format using STR_TO_DATE() and updated column types for compatibility with time-series analysis.
+
+**Project Components and Methodology:**
+
+Project Structure:
+
+1. Raw Data Import Module
+
+Objective: Create a raw data reference table for all transformations.
+
+Methodology: Imported the CSV dataset into a MySQL database (world_layoffs) and created a layoffs table for raw data. This table was retained unchanged to ensure integrity and serve as a baseline for comparison.
+
+Include Screenshot: Show the initial imported dataset in the MySQL database to highlight the raw data structure.
+
+2. Staging and Cleaning Module
+
+Objective: Perform data cleaning and preparation in a controlled environment.
+
+Methodology: 
+
+- Duplicated the raw data into a layoffs_staging table for intermediate transformations.
+  
+- Created a final table (layoffs_staging2) for cleaned data after all transformations.
+  
+Include Screenshot: Display the structure and data of layoffs_staging after duplication to demonstrate the workflow.
+
+Cleaning Process:
+
+Step 1: Removing Duplicates
+
+- Created a ROW_NUMBER() function partitioned by key fields (company, location, industry, date, etc.) to identify duplicates.
+
+- Inserted the result into layoffs_staging2 and removed rows where ROW_NUMBER > 1.
+
+Include Screenshot: Show the query and results of duplicates identified and the cleaned dataset without duplicates.
+
+Step 2: Standardizing Data
+
+- Standardized company names using TRIM() to remove whitespace.
+
+- Consolidated variations of industries (e.g., "Cryptocurrency" and "Crypto") into a single category.
+
+- Removed inconsistent formatting in the country field (e.g., "United States." to "United States") using TRIM(TRAILING '.').
+
+Include Screenshot: Display before-and-after views of columns like industry and country to demonstrate data standardization.
+
+Step 3: Handling Missing Data
+
+- Populated missing industry fields by self-joining on company and location.
+
+- Removed rows where total_laid_off and percentage_laid_off were both NULL, as they provided no meaningful information.
+
+Include Screenshot: Show queries identifying null values and the updated dataset after addressing these issues.
+
+Step 4: Data Type Conversion
+
+- Converted date column from TEXT to DATE format using STR_TO_DATE() with the format %m/%d/%Y.
+
+- Modified the date column type in layoffs_staging2 using ALTER TABLE.
+
+Include Screenshot: Highlight the column type transformation and the updated date formatting.
+
+Step 5: Final Cleanup
+
+- Dropped unnecessary columns (e.g., row_num) and verified the integrity of the final table.
+  
+Include Screenshot: Present the final cleaned table with all columns and data ready for analysis.
+
+Usage Instructions
+
+System Requirements:
+
+- Software: MySQL (with a GUI tool like MySQL Workbench)
+
+- Hardware: Standard workstation capable of running MySQL.
+
+Installation and Running Instructions:
+
+1. Setup:
+
+- Import the provided raw data CSV file into a MySQL database.
+
+- Execute the SQL scripts for creating staging tables and cleaning transformations.
+
+2 Querying the Data:
+
+- Use the cleaned layoffs_staging2 table for analysis.
+  
+- Execute additional SQL queries to uncover insights like industry trends, geographical layoff patterns, and funding correlations.
+
+Testing and Debugging:
+
+- Verified query correctness by comparing results across raw, staging, and cleaned tables.
+
+- Conducted tests for edge cases, such as blank or null values, ensuring appropriate handling.
+
+- Ensured all transformations adhered to project requirements without data loss.
+
+Contribution and Licensing:
+
+This project was developed for educational purposes and showcases advanced SQL data cleaning techniques.
+
+Future Enhancements and Feedback:
+
+1. Integrate Real-Time Updates: Add functionality to handle live updates in the dataset.
+   
+2. Automate Cleaning Pipelines: Build automated scripts for repetitive cleaning tasks.
+   
+3. Visualization and Reporting: Integrate the cleaned dataset with visualization tools like Tableau or Power BI for enhanced reporting.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
