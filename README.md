@@ -562,7 +562,7 @@ Software Used: GitHub and MySQL
     Methodology: Imported the CSV dataset into a MySQL database (world_layoffs) and created a layoffs table for raw data. This table was retained unchanged to ensure integrity and serve as a baseline for comparison.
     
     Screenshot: The initial imported dataset from Excel csv file to highlight the raw data structure.
-
+    
     ![Layoffs Raw Data](assets/Layoffs%20Raw%20Data.png)
     
     View the raw [Layoffs Data CSV](https://caguirre1378.github.io/Data-Analyst-Portfolio/assets/layoffs.csv) or the [GitHub Table Preview](https://github.com/caguirre1378/Data-Analyst-Portfolio/blob/main/assets/layoffs.csv).
