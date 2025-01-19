@@ -562,8 +562,9 @@ Software Used: GitHub and MySQL
     Methodology: Imported the CSV dataset into a MySQL database (world_layoffs) and created a layoffs table for raw data. This table was retained unchanged to ensure integrity and serve as a baseline for comparison.
     
     Include Screenshot: Show the initial imported dataset in the MySQL database to highlight the raw data structure.
+    ![Layoffs Data CSV](layoffs.csv)
 
-2.  Staging and Cleaning Module
+3.  Staging and Cleaning Module
 
     Objective: Perform data cleaning and preparation in a controlled environment.
     
@@ -574,6 +575,7 @@ Software Used: GitHub and MySQL
     - Created a final table (layoffs_staging2) for cleaned data after all transformations.
       
     Include Screenshot: Display the structure and data of layoffs_staging after duplication to demonstrate the workflow.
+    ![BUS 310 CSP Main Screen](assets/BUS%20310%20CSP%20Main%20Screen%20%28Excel%29.png
 
 **Cleaning Process:**
 
@@ -584,6 +586,7 @@ Step 1: Removing Duplicates
 - Inserted the result into layoffs_staging2 and removed rows where ROW_NUMBER > 1.
 
 Include Screenshot: Show the query and results of duplicates identified and the cleaned dataset without duplicates.
+![BUS 310 CSP Main Screen](assets/BUS%20310%20CSP%20Main%20Screen%20%28Excel%29.png
 
 Step 2: Standardizing Data
 
@@ -594,6 +597,8 @@ Step 2: Standardizing Data
 - Removed inconsistent formatting in the country field (e.g., "United States." to "United States") using TRIM(TRAILING '.').
 
 Include Screenshot: Display before-and-after views of columns like industry and country to demonstrate data standardization.
+![BUS 310 CSP Main Screen](assets/BUS%20310%20CSP%20Main%20Screen%20%28Excel%29.png
+
 
 Step 3: Handling Missing Data
 
@@ -602,6 +607,7 @@ Step 3: Handling Missing Data
 - Removed rows where total_laid_off and percentage_laid_off were both NULL, as they provided no meaningful information.
 
 Include Screenshot: Show queries identifying null values and the updated dataset after addressing these issues.
+![BUS 310 CSP Main Screen](assets/BUS%20310%20CSP%20Main%20Screen%20%28Excel%29.png
 
 Step 4: Data Type Conversion
 
@@ -610,6 +616,7 @@ Step 4: Data Type Conversion
 - Modified the date column type in layoffs_staging2 using ALTER TABLE.
 
 Include Screenshot: Highlight the column type transformation and the updated date formatting.
+![BUS 310 CSP Main Screen](assets/BUS%20310%20CSP%20Main%20Screen%20%28Excel%29.png
 
 Step 5: Final Cleanup
 
@@ -617,15 +624,15 @@ Step 5: Final Cleanup
   
 Include Screenshot: Present the final cleaned table with all columns and data ready for analysis.
 
-Usage Instructions
+**Usage Instructions**
 
-**System Requirements:**
+System Requirements:
 
 - Software: MySQL (with a GUI tool like MySQL Workbench)
 
 - Hardware: Standard workstation capable of running MySQL.
 
-**Installation and Running Instructions:**
+Installation and Running Instructions:
 
 1. Setup:
 
