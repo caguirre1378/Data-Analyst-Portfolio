@@ -553,9 +553,9 @@ Software Used: GitHub and MySQL
 
 **Project Components and Methodology:**
 
-Project Structure:
+**Project Structure:**
 
- 1. Raw Data Import Module
+1.  Raw Data Import Module
    
 Objective: Create a raw data reference table for all transformations.
 
@@ -563,7 +563,7 @@ Methodology: Imported the CSV dataset into a MySQL database (world_layoffs) and 
 
 Include Screenshot: Show the initial imported dataset in the MySQL database to highlight the raw data structure.
 
- 2. Staging and Cleaning Module
+2.  Staging and Cleaning Module
 
 Objective: Perform data cleaning and preparation in a controlled environment.
 
@@ -575,7 +575,7 @@ Methodology:
   
 Include Screenshot: Display the structure and data of layoffs_staging after duplication to demonstrate the workflow.
 
-Cleaning Process:
+**Cleaning Process:**
 
 Step 1: Removing Duplicates
 
@@ -619,13 +619,13 @@ Include Screenshot: Present the final cleaned table with all columns and data re
 
 Usage Instructions
 
-System Requirements:
+**System Requirements:**
 
 - Software: MySQL (with a GUI tool like MySQL Workbench)
 
 - Hardware: Standard workstation capable of running MySQL.
 
-Installation and Running Instructions:
+**Installation and Running Instructions:**
 
 1. Setup:
 
@@ -639,7 +639,7 @@ Installation and Running Instructions:
   
 - Execute additional SQL queries to uncover insights like industry trends, geographical layoff patterns, and funding correlations.
 
-Testing and Debugging:
+**Testing and Debugging:**
 
 - Verified query correctness by comparing results across raw, staging, and cleaned tables.
 
@@ -647,7 +647,7 @@ Testing and Debugging:
 
 - Ensured all transformations adhered to project requirements without data loss.
 
-Contribution and Licensing:
+**Contribution and Licensing:**
 
 This project was developed for educational purposes and showcases advanced SQL data cleaning techniques.
 
