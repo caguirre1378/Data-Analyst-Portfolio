@@ -575,7 +575,6 @@ Methodology:
     
 - Duplicated the raw data into a layoffs_staging table for intermediate transformations.
   
-```sql
 CREATE TABLE layoffs_staging
 LIKE layoffs;
 
@@ -587,6 +586,8 @@ SELECT *
 FROM layoffs;
 
 - Created a final table (layoffs_staging2) for cleaned data after all transformations.
+
+## Advanced SQL Queries for Layoffs Data
 
     -- Retrieve data with row numbers based on specific partitions
     SELECT *,
@@ -642,6 +643,8 @@ FROM layoffs;
       country, funds_raised_millions
     ) AS row_num
     FROM layoffs_staging;
+
+    
       
 Include Screenshot: Display the structure and data of layoffs_staging after duplication to demonstrate the workflow.
 ![BUS 310 CSP Main Screen](assets/BUS%20310%20CSP%20Main%20Screen%20%28Excel%29.png
