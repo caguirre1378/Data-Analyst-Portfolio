@@ -574,7 +574,7 @@ Objective: Perform data cleaning and preparation in a controlled environment.
 Methodology: 
     
 - Duplicated the raw data into a layoffs_staging table for intermediate transformations.
-
+  
 ```sql
 CREATE TABLE layoffs_staging
 LIKE layoffs;
@@ -587,9 +587,8 @@ SELECT *
 FROM layoffs;
 
 - Created a final table (layoffs_staging2) for cleaned data after all transformations.
-
-## Advanced SQL Queries for Layoffs Data
-
+  
+```sql
     -- Retrieve data with row numbers based on specific partitions
     SELECT *,
     ROW_NUMBER() OVER(
