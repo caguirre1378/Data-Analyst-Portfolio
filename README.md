@@ -587,8 +587,7 @@ SELECT *
 FROM layoffs;
 
 - Created a final table (layoffs_staging2) for cleaned data after all transformations.
-  
-```sql
+
     -- Retrieve data with row numbers based on specific partitions
     SELECT *,
     ROW_NUMBER() OVER(
