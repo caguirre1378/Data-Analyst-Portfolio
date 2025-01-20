@@ -587,7 +587,7 @@ FROM layoffs;
 
 - Created a final table (layoffs_staging2) for cleaned data after all transformations.
 
-```sql
+<pre><code class="language-sql">
 -- Retrieve data with row numbers based on specific partitions
 SELECT *,
 ROW_NUMBER() OVER(
@@ -642,7 +642,7 @@ ROW_NUMBER() OVER(
   country, funds_raised_millions
 ) AS row_num
 FROM layoffs_staging;
-
+</code></pre>
 
     
       
