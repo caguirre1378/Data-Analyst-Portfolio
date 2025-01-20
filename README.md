@@ -575,15 +575,13 @@ Methodology:
     
 - Duplicated the raw data into a layoffs_staging table for intermediate transformations.
   
-CREATE TABLE layoffs_staging
-LIKE layoffs;
+<pre><code class="language-sql">
+CREATE TABLE layoffs_staging LIKE layoffs;
 
-SELECT *
-FROM layoffs_staging;
+SELECT * FROM layoffs_staging;
 
-INSERT INTO layoffs_staging
-SELECT *
-FROM layoffs;
+INSERT INTO layoffs_staging SELECT * FROM layoffs;
+</code></pre>
 
 - Created a final table (layoffs_staging2) for cleaned data after all transformations.
 
