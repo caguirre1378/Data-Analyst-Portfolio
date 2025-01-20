@@ -587,60 +587,62 @@ FROM layoffs;
 
 - Created a final table (layoffs_staging2) for cleaned data after all transformations.
 
-    -- Retrieve data with row numbers based on specific partitions
-    SELECT *,
-    ROW_NUMBER() OVER(
-      PARTITION BY company, industry, total_laid_off, percentage_laid_off, `date`
-    ) AS row_num
-    FROM layoffs_staging;
+```sql
+-- Retrieve data with row numbers based on specific partitions
+SELECT *,
+ROW_NUMBER() OVER(
+  PARTITION BY company, industry, total_laid_off, percentage_laid_off, `date`
+) AS row_num
+FROM layoffs_staging;
 
-    -- Common Table Expression (CTE) to identify duplicates
-    WITH duplicate_cte AS (
-      SELECT *,
-      ROW_NUMBER() OVER(
-        PARTITION BY company, location, 
-        industry, total_laid_off, percentage_laid_off, `date`, stage,
-        country, funds_raised_millions
-      ) AS row_num
-      FROM layoffs_staging
-    )
-    SELECT *
-    FROM duplicate_cte
-    WHERE row_num > 1;
+-- Common Table Expression (CTE) to identify duplicates
+WITH duplicate_cte AS (
+  SELECT *,
+  ROW_NUMBER() OVER(
+    PARTITION BY company, location, 
+    industry, total_laid_off, percentage_laid_off, `date`, stage,
+    country, funds_raised_millions
+  ) AS row_num
+  FROM layoffs_staging
+)
+SELECT *
+FROM duplicate_cte
+WHERE row_num > 1;
 
-    -- Query specific data from layoffs_staging
-    SELECT *
-    FROM layoffs_staging
-    WHERE company = 'Casper';
+-- Query specific data from layoffs_staging
+SELECT *
+FROM layoffs_staging
+WHERE company = 'Casper';
 
-    -- Create a new table with a similar structure and an additional row number column
-    CREATE TABLE `layoffs_staging2` (
-      `company` text,
-      `location` text,
-      `industry` text,
-      `total_laid_off` int DEFAULT NULL,
-      `percentage_laid_off` text,
-      `date` text,
-      `stage` text,
-      `country` text,
-      `funds_raised_millions` int DEFAULT NULL,
-      `row_num` INT
-    ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+-- Create a new table with a similar structure and an additional row number column
+CREATE TABLE `layoffs_staging2` (
+  `company` text,
+  `location` text,
+  `industry` text,
+  `total_laid_off` int DEFAULT NULL,
+  `percentage_laid_off` text,
+  `date` text,
+  `stage` text,
+  `country` text,
+  `funds_raised_millions` int DEFAULT NULL,
+  `row_num` INT
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
-    -- Query rows with row_num > 1 in the new table
-    SELECT *
-    FROM layoffs_staging2
-    WHERE row_num > 1;
+-- Query rows with row_num > 1 in the new table
+SELECT *
+FROM layoffs_staging2
+WHERE row_num > 1;
 
-    -- Insert data into the new table with calculated row numbers
-    INSERT INTO layoffs_staging2
-    SELECT *,
-    ROW_NUMBER() OVER(
-      PARTITION BY company, location, 
-      industry, total_laid_off, percentage_laid_off, `date`, stage,
-      country, funds_raised_millions
-    ) AS row_num
-    FROM layoffs_staging;
+-- Insert data into the new table with calculated row numbers
+INSERT INTO layoffs_staging2
+SELECT *,
+ROW_NUMBER() OVER(
+  PARTITION BY company, location, 
+  industry, total_laid_off, percentage_laid_off, `date`, stage,
+  country, funds_raised_millions
+) AS row_num
+FROM layoffs_staging;
+
 
     
       
