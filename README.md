@@ -555,30 +555,103 @@ Software Used: GitHub and MySQL
 
 **Project Structure:**
 
-1.  Raw Data Import Module
+Raw Data Import Module - 
    
-    Objective: Create a raw data reference table for all transformations.
+Objective: Create a raw data reference table for all transformations.
     
-    Methodology: Imported the CSV dataset into a MySQL database (world_layoffs) and created a layoffs table for raw data. This table was retained unchanged to ensure integrity and serve as a baseline for comparison.
+Methodology: Imported the CSV dataset into a MySQL database (world_layoffs) and created a layoffs table for raw data. This table was retained unchanged to ensure integrity and serve as a baseline for comparison.
     
-    Screenshot: The initial imported dataset from Excel csv file to highlight the raw data structure.
+Screenshot: The initial imported dataset from Excel csv file to highlight the raw data structure.
     
 ![Layoffs Raw Data](assets/LayoffsRawData.png)
 
 View the raw [Layoffs Data CSV](https://caguirre1378.github.io/Data-Analyst-Portfolio/assets/layoffs.csv) or the [GitHub Table Preview](https://github.com/caguirre1378/Data-Analyst-Portfolio/blob/main/assets/layoffs.csv).
 
-3.  Staging and Cleaning Module
+Staging and Cleaning Module - 
 
-    Objective: Perform data cleaning and preparation in a controlled environment.
+Objective: Perform data cleaning and preparation in a controlled environment.
     
-    Methodology: 
+Methodology: 
     
-    - Duplicated the raw data into a layoffs_staging table for intermediate transformations.
+- Duplicated the raw data into a layoffs_staging table for intermediate transformations.
+
+"
+
+CREATE TABLE layoffs_staging
+LIKE layoffs;
+
+SELECT *
+FROM layoffs_staging;
+
+INSERT INTO layoffs_staging
+SELECT *
+FROM layoffs;
+
+"
+
+- Created a final table (layoffs_staging2) for cleaned data after all transformations.
+
+"
+
+-- Retrieve data with row numbers based on specific partitions
+SELECT *,
+ROW_NUMBER() OVER(
+  PARTITION BY company, industry, total_laid_off, percentage_laid_off, `date`
+) AS row_num
+FROM layoffs_staging;
+
+-- Common Table Expression (CTE) to identify duplicates
+WITH duplicate_cte AS (
+  SELECT *,
+  ROW_NUMBER() OVER(
+    PARTITION BY company, location, 
+    industry, total_laid_off, percentage_laid_off, `date`, stage,
+    country, funds_raised_millions
+  ) AS row_num
+  FROM layoffs_staging
+)
+SELECT *
+FROM duplicate_cte
+WHERE row_num > 1;
+
+-- Query specific data from layoffs_staging
+SELECT *
+FROM layoffs_staging
+WHERE company = 'Casper';
+
+-- Create a new table with a similar structure and an additional row number column
+CREATE TABLE `layoffs_staging2` (
+  `company` text,
+  `location` text,
+  `industry` text,
+  `total_laid_off` int DEFAULT NULL,
+  `percentage_laid_off` text,
+  `date` text,
+  `stage` text,
+  `country` text,
+  `funds_raised_millions` int DEFAULT NULL,
+  `row_num` INT
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+-- Query rows with row_num > 1 in the new table
+SELECT *
+FROM layoffs_staging2
+WHERE row_num > 1;
+
+-- Insert data into the new table with calculated row numbers
+INSERT INTO layoffs_staging2
+SELECT *,
+ROW_NUMBER() OVER(
+  PARTITION BY company, location, 
+  industry, total_laid_off, percentage_laid_off, `date`, stage,
+  country, funds_raised_millions
+) AS row_num
+FROM layoffs_staging;
+
+"
       
-    - Created a final table (layoffs_staging2) for cleaned data after all transformations.
-      
-    Include Screenshot: Display the structure and data of layoffs_staging after duplication to demonstrate the workflow.
-    ![BUS 310 CSP Main Screen](assets/BUS%20310%20CSP%20Main%20Screen%20%28Excel%29.png
+Include Screenshot: Display the structure and data of layoffs_staging after duplication to demonstrate the workflow.
+![BUS 310 CSP Main Screen](assets/BUS%20310%20CSP%20Main%20Screen%20%28Excel%29.png
 
 **Cleaning Process:**
 
