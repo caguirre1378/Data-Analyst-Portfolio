@@ -560,12 +560,16 @@ Raw Data Import Module -
 Objective: Create a raw data reference table for all transformations.
     
 Methodology: Imported the CSV dataset into a MySQL database (world_layoffs) and created a layoffs table for raw data. This table was retained unchanged to ensure integrity and serve as a baseline for comparison.
-    
-Screenshot: The initial imported dataset from Excel csv file to highlight the raw data structure.
+
+Screenshot: The raw data structure of the dataset as imported from the original Excel CSV file.
     
 ![Layoffs Raw Data](assets/LayoffsRawData.png)
 
 View the raw [Layoffs Data CSV](https://caguirre1378.github.io/Data-Analyst-Portfolio/assets/layoffs.csv) or the [GitHub Table Preview](https://github.com/caguirre1378/Data-Analyst-Portfolio/blob/main/assets/layoffs.csv).
+
+Screenshot: The initial imported layoffs table into MySQL, highlighting the raw data structure after migration from Excel CSV.
+
+![Layoffs Table Initial](assets/LayoffsTableInitial.png)
 
 Staging and Cleaning Module - 
 
