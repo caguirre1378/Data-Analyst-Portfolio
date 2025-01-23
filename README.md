@@ -695,7 +695,26 @@ Step 3: Handling Missing Data
 - Removed rows where total_laid_off and percentage_laid_off were both NULL, as they provided no meaningful information.
 
 Include Screenshot: Show queries identifying null values and the updated dataset after addressing these issues.
-![BUS 310 CSP Main Screen](assets/BUS%20310%20CSP%20Main%20Screen%20%28Excel%29.png
+
+
+<pre><code class="language-sql">
+-- Populate missing industry fields by self-joining on company and location
+UPDATE layoffs_staging2 t1
+JOIN layoffs_staging2 t2
+  ON t1.company = t2.company
+  AND t1.location = t2.location
+SET t1.industry = t2.industry
+WHERE t1.industry IS NULL
+  AND t2.industry IS NOT NULL;
+
+-- Remove rows where both total_laid_off and percentage_laid_off are NULL
+DELETE
+FROM layoffs_staging2
+WHERE total_laid_off IS NULL
+  AND percentage_laid_off IS NULL;
+        </code></pre>
+
+        
 
 Step 4: Data Type Conversion
 
