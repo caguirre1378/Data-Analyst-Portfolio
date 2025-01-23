@@ -569,6 +569,7 @@ View the raw [Layoffs Data CSV](https://caguirre1378.github.io/Data-Analyst-Port
 
 Screenshot: The initial imported layoffs table into MySQL, highlighting the raw data structure after migration from Excel CSV.
 
+![Layoffs Table Initial](assets/LayoffsTableInitial.png)
 
 Staging and Cleaning Module - 
 
