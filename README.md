@@ -667,7 +667,25 @@ Step 2: Standardizing Data
 - Removed inconsistent formatting in the country field (e.g., "United States." to "United States") using TRIM(TRAILING '.').
 
 Include Screenshot: Display before-and-after views of columns like industry and country to demonstrate data standardization.
-![BUS 310 CSP Main Screen](assets/BUS%20310%20CSP%20Main%20Screen%20%28Excel%29.png
+
+
+<pre><code class="language-sql">
+-- Standardize company names by trimming leading and trailing whitespace
+UPDATE layoffs_staging2
+SET company = TRIM(company);
+
+-- Consolidate variations of industries into a single category
+UPDATE layoffs_staging2
+SET industry = 'Crypto'
+WHERE industry LIKE 'Crypto%';
+
+-- Remove inconsistent formatting in the country field (e.g., "United States." to "United States")
+UPDATE layoffs_staging2
+SET country = TRIM(TRAILING '.' FROM country)
+WHERE country LIKE 'United States%';
+        </code></pre>
+
+        
 
 
 Step 3: Handling Missing Data
