@@ -613,9 +613,6 @@ FROM layoffs_staging;
 
 ![Layoffs Table Staging 2](assets/LayoffsTableStaging2.png)
 
-      
-Include Screenshot: Display the structure and data of layoffs_staging after duplication to demonstrate the workflow.
-![BUS 310 CSP Main Screen](assets/BUS%20310%20CSP%20Main%20Screen%20%28Excel%29.png
 
 **Cleaning Process:**
 
@@ -626,7 +623,40 @@ Step 1: Removing Duplicates
 - Inserted the result into layoffs_staging2 and removed rows where ROW_NUMBER > 1.
 
 Include Screenshot: Show the query and results of duplicates identified and the cleaned dataset without duplicates.
-![BUS 310 CSP Main Screen](assets/BUS%20310%20CSP%20Main%20Screen%20%28Excel%29.png
+
+<pre><code class="language-sql">
+-- Step 1: Removing Duplicates
+
+-- Identify duplicates using ROW_NUMBER() and partition by key fields
+WITH duplicate_cte AS
+(
+    SELECT *,
+        ROW_NUMBER() OVER (
+            PARTITION BY company, location, industry, total_laid_off, percentage_laid_off, `date`, stage, country, funds_raised_millions
+        ) AS row_num
+    FROM layoffs_staging
+)
+SELECT *
+FROM duplicate_cte
+WHERE row_num > 1;
+
+-- Insert data into layoffs_staging2 including the ROW_NUMBER()
+INSERT INTO layoffs_staging2
+SELECT *,
+    ROW_NUMBER() OVER (
+        PARTITION BY company, location, industry, total_laid_off, percentage_laid_off, `date`, stage, country, funds_raised_millions
+    ) AS row_num
+FROM layoffs_staging;
+
+-- Remove rows where ROW_NUMBER > 1 (duplicates)
+DELETE 
+FROM layoffs_staging2
+WHERE row_num > 1;
+
+-- Verify the cleaned dataset
+SELECT *
+FROM layoffs_staging2;
+        </code></pre>
 
 Step 2: Standardizing Data
 
