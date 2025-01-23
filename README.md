@@ -744,6 +744,17 @@ Step 5: Final Cleanup
   
 Include Screenshot: Present the final cleaned table with all columns and data ready for analysis.
 
+<pre><code class="language-sql">
+-- Drop the unnecessary row_num column from the table
+ALTER TABLE layoffs_staging2
+DROP COLUMN row_num;
+
+-- Verify the final cleaned table
+SELECT *
+FROM layoffs_staging2;
+        </code></pre>
+
+        
 **Usage Instructions**
 
 System Requirements:
