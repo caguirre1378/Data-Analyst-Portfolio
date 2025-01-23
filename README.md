@@ -723,7 +723,20 @@ Step 4: Data Type Conversion
 - Modified the date column type in layoffs_staging2 using ALTER TABLE.
 
 Include Screenshot: Highlight the column type transformation and the updated date formatting.
-![BUS 310 CSP Main Screen](assets/BUS%20310%20CSP%20Main%20Screen%20%28Excel%29.png
+
+
+
+  <pre><code class="language-sql">
+-- Convert the date column from TEXT to DATE format
+UPDATE layoffs_staging2
+SET `date` = STR_TO_DATE(`date`, '%m/%d/%Y');
+
+-- Modify the date column type to DATE
+ALTER TABLE layoffs_staging2
+MODIFY COLUMN `date` DATE;
+        </code></pre>
+
+        
 
 Step 5: Final Cleanup
 
