@@ -587,6 +587,8 @@ SELECT * FROM layoffs_staging;
 INSERT INTO layoffs_staging SELECT * FROM layoffs;
 </code></pre>
 
+![Layoffs Table Staging](assets/LayoffsTableStaging.png)
+
 - Created a final table (layoffs_staging2) for cleaned data after all transformations.
 
 <pre><code class="language-sql">
@@ -645,6 +647,8 @@ ROW_NUMBER() OVER(
 ) AS row_num
 FROM layoffs_staging;
 </code></pre>
+
+![Layoffs Table Staging 2](assets/LayoffsTableStaging2.png)
 
     
       
