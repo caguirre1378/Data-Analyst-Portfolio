@@ -798,6 +798,128 @@ Future Enhancements and Feedback:
 3. Visualization and Reporting: Integrate the cleaned dataset with visualization tools like Tableau or Power BI for enhanced reporting.
 
 
+---
+
+### Project 5: Cyclistic Bike-Share Behavior Analysis for Membership Growth
+
+### (May 2026, Google Data Analytics Capstone Project)
+
+**Project Overview:**
+This project focused on uncovering usage trends between casual riders and annual members within the Cyclistic bike-share program in Chicago. As part of the Google Data Analytics Professional Certificate, this capstone project applied the full data analysis process — Ask, Prepare, Process, Analyze, Share, and Act — to inform a strategic marketing campaign aimed at increasing membership conversion. The analysis used 12 months of public trip data to extract actionable insights on ride duration, user behavior, and peak usage patterns.
+
+**Technical Specifications:**
+
+Software Used: R (RStudio), Google Sheets, Tableau, GitHub
+
+**Techniques Applied:**
+
+- Data Wrangling: Merged and cleaned 12 monthly CSV files; standardized column formats across datasets to ensure seamless integration.
+  
+- Feature Engineering: Created new variables such as ride_length and day_of_week to enrich time-based behavior analysis.
+  
+- Data Cleaning: Removed negative and missing ride durations; filtered out non-standard entries; ensured consistency in member/casual classification.
+  
+- Descriptive Statistics: Calculated ride averages, medians, and usage frequency across user types and days of the week.
+  
+- Data Visualization: Developed comparative bar plots and line graphs using ggplot2 and Tableau to clearly communicate patterns between rider types.
+
+**Project Components and Methodology:**
+
+**Project Structure:**
+
+Raw Data Import and Preparation - 
+   
+Objective: Ingest and consolidate 12 months of ride data from Divvy (Cyclistic’s public dataset).
+    
+Methodology: 
+
+- Downloaded and unzipped monthly .csv files
+  
+- Imported files into R and ensured consistent column names
+  
+- Combined into one master dataframe
+
+Cleaning and Transformation Module - 
+
+Objective: Prepare clean and analyzable data to compare casual and member usage.
+    
+Methodology: 
+
+- Created ride_length by subtracting started_at from ended_at
+  
+- Filtered out rides with negative or zero duration
+  
+- Added day_of_week using weekdays() in R
+  
+- Removed station IDs and trip IDs for privacy compliance
+
+Analysis Module - 
+
+Objective: Identify behavioral differences between user types
+
+Methodology: 
+
+- Used dplyr to group and summarize key statistics
+
+- Pivoted data by day and user type to find peak usage
+
+- Calculated average ride length, count of rides, and total ride time
+
+- Compared weekday vs. weekend usage by user type
+
+Key Findings:
+
+- Ride Duration: Casual riders had longer average ride durations than members
+
+- Peak Usage Days: Casual users rode most on weekends; members were more consistent on weekdays
+
+- Ride Volume: Members took more frequent, shorter rides — aligned with commuting patterns
+
+- Seasonal Trends: Summer months showed the highest surge in casual use, highlighting a promotional opportunity
+        
+**Usage Instructions**
+
+System Requirements:
+
+- Software: R (preferably through RStudio), Excel or Google Sheets, Tableau (optional for visualization)
+
+- Hardware: Standard workstation capable of running R and handling ~1M-row datasets
+
+Installation and Running Instructions:
+
+1. Download 12 monthly .csv files from Divvy Bike Share Data
+   
+2. Run the cyclistic_cleaning_and_analysis.R script to load, clean, and analyze the data
+   
+3. Review generated .csv summary outputs and visualizations
+   
+4. Open Tableau file or .Rmd report to explore visuals and insights
+
+**Testing and Debugging:**
+
+- Verified consistency of columns across files
+
+- Tested ride length calculations for correctness
+
+- Checked for NULL and duplicate records
+
+- Ensured ride times followed logical start-end flow
+
+- Conducted exploratory analysis to validate trends
+
+**Contribution and Licensing:**
+
+This project was developed for educational purposes through the Google Data Analytics Professional Certificate. All data used is publicly available and anonymized, provided by Motivate International Inc. under open license terms.
+
+Future Enhancements and Feedback:
+
+1. Machine Learning: Add a predictive model to identify which casual riders are most likely to convert
+
+2. Real-Time Dashboard: Integrate cleaned data with a live Tableau dashboard
+
+3. Geo Analysis: Include station location data to study geographical trends
+
+4. A/B Testing Framework: Design a marketing experiment based on insights and measure membership conversion impact
 
 
 
