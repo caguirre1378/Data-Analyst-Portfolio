@@ -797,12 +797,11 @@ Future Enhancements and Feedback:
    
 3. Visualization and Reporting: Integrate the cleaned dataset with visualization tools like Tableau or Power BI for enhanced reporting.
 
-
 ---
 
 ### Project 5: Cyclistic Bike-Share Behavior Analysis for Membership Growth
 
-### (May 2026, Google Data Analytics Capstone Project)
+### (May 2026, Google Data Analytics Capstone Project - Case Study #1)
 
 **Project Overview:**
 This project focused on uncovering usage trends between casual riders and annual members within the Cyclistic bike-share program in Chicago. As part of the Google Data Analytics Professional Certificate, this capstone project applied the full data analysis process — Ask, Prepare, Process, Analyze, Share, and Act — to inform a strategic marketing campaign aimed at increasing membership conversion. The analysis used 12 months of public trip data to extract actionable insights on ride duration, user behavior, and peak usage patterns.
@@ -922,6 +921,131 @@ Future Enhancements and Feedback:
 3. Geo Analysis: Include station location data to study geographical trends
 
 4. A/B Testing Framework: Design a marketing experiment based on insights and measure membership conversion impact
+
+---
+
+### Project 6: Bellabeat Smart Device Usage Analysis for Strategic Marketing
+
+### (May 2026, Google Data Analytics Capstone Project - Case Study #2)
+
+**Project Overview:**
+This project focused on analyzing smart device usage trends using public Fitbit data to support strategic growth for Bellabeat, a wellness technology company. The goal was to uncover patterns in user behavior (e.g., sleep, activity, heart rate) and translate those insights into marketing strategies for Bellabeat’s wellness products. The analysis focused on user habits across Bellabeat's target demographics, especially around activity and sleep, and culminated in actionable recommendations to optimize product engagement and customer acquisition.
+
+**Technical Specifications:**
+
+Software Used: R (RStudio), Google Sheets, Tableau, GitHub
+
+**Techniques Applied:**
+
+- Data Exploration: Explored and summarized activity, steps, sleep, and calories data from Fitbit users using summary statistics and visualizations.
+
+- Data Cleaning: Addressed missing values, removed duplicates, standardized column names, and validated data types and formats in R.
+
+- Behavioral Analysis: Identified weekday/weekend differences, activity trends by hour, and sleep duration ranges linked to calorie burn and activity levels.
+
+- Visualization and Storytelling: Built clear visuals using ggplot2 and Tableau to show usage trends and generate insights on how Bellabeat could better align with consumer wellness habits.
+
+**Project Components and Methodology:**
+
+**Project Structure:**
+
+Raw Data Import and Initial Review - 
+   
+Objective: Understand the format and quality of the public Fitbit dataset from Kaggle
+    
+Methodology: 
+
+- Imported .csv files into R
+
+- Inspected tables: dailyActivity, dailyCalories, dailySteps, sleepDay, and heartrate_seconds
+
+- Conducted initial checks for NULLs, unusual values, and formatting issues
+  
+
+Cleaning and Transformation Module - 
+
+Objective: Prepare the data for analysis across multiple domains (activity, sleep, heart rate)
+    
+Methodology: 
+
+- Merged and joined key tables (e.g., sleepDay + dailyActivity)
+
+- Removed duplicate rows and filtered out erroneous entries (e.g., sleep duration = 0, extreme calories)
+
+- Standardized date formats and derived new fields (e.g., total minutes asleep, active minutes, day of week)
+  
+
+Analysis Module - 
+
+Objective: Extract trends to inform Bellabeat’s marketing direction
+
+Methodology: 
+
+- Analyzed activity and calorie patterns by weekday and user
+
+- Explored relationship between sleep and calorie burn
+
+- Identified low-engagement patterns that could be addressed via app nudges or coaching
+
+- Visualized hourly activity trends to inform content scheduling for Bellabeat app notifications
+  
+
+Key Findings:
+
+- Sleep Duration: Users with 7–8 hours of sleep burned more calories and had more active minutes on average
+
+- Activity Patterns: Peak steps and calories burned occurred mid-week (Tuesday–Thursday), with reduced engagement on weekends
+
+- Inactive Users: Some users displayed very low step counts or no recorded sleep data, indicating opportunities for re-engagement
+
+- Calorie Burn: Consistently higher calorie burn correlated with longer active minutes, especially among users who walked over 10,000 steps
+
+        
+**Usage Instructions**
+
+System Requirements:
+
+- Software: R/RStudio, Google Sheets (optional), Tableau (for visualization)
+
+- Hardware: Standard workstation capable of running R and processing moderate datasets (~1M rows)
+
+Installation and Running Instructions:
+
+1. Download the Fitbit dataset from Kaggle
+   
+2. Use bellabeat_analysis.R to import, clean, and analyze the dataset
+  
+3. Review the generated .csv summaries and Bellabeat_Insights.pdf report
+  
+4. Open Tableau file or visual gallery for presentation-ready charts
+
+   
+
+**Testing and Debugging:**
+
+- Validated merged dataframes for row consistency and ID overlap
+
+- Ensured accurate transformation of datetime formats and numeric summaries
+
+- Verified logical relationships (e.g., active calories vs. steps, sleep hours vs. calorie burn)
+
+- Explored outliers to determine inclusion/exclusion based on real-world plausibility
+
+  
+
+**Contribution and Licensing:**
+
+This project was created for educational use as part of the Google Data Analytics Certificate. Data was sourced publicly from Fitbit (via Kaggle) and anonymized under a CC0 public domain license.
+
+Future Enhancements and Feedback:
+
+1. Expand Scope: Add smartwatch behavioral data from other sources for broader trend comparison
+
+2. Real-Time Integration: Connect live Bellabeat data streams for interactive dashboards
+
+3. User Segmentation: Cluster users by behavior types to support persona-based marketing
+
+4. Personalized Recommendations: Build logic for app nudges or habit-based notifications based on engagement trends
 
 
 
