@@ -839,6 +839,7 @@ Methodology:
   
 - Combined into one master dataframe
 
+
 Cleaning and Transformation Module - 
 
 Objective: Prepare clean and analyzable data to compare casual and member usage.
@@ -852,6 +853,7 @@ Methodology:
 - Added day_of_week using weekdays() in R
   
 - Removed station IDs and trip IDs for privacy compliance
+
 
 Analysis Module - 
 
