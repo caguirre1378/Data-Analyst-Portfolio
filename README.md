@@ -806,121 +806,95 @@ Future Enhancements and Feedback:
 **Project Overview:**
 This project focused on uncovering usage trends between casual riders and annual members within the Cyclistic bike-share program in Chicago. As part of the Google Data Analytics Professional Certificate, this capstone project applied the full data analysis process — Ask, Prepare, Process, Analyze, Share, and Act — to inform a strategic marketing campaign aimed at increasing membership conversion. The analysis used 12 months of public trip data to extract actionable insights on ride duration, user behavior, and peak usage patterns.
 
+**Project Objectives:**
+1. Identify behavioral differences between casual riders and annual members.
+2. Determine peak usage times, ride durations, and ride frequency for both groups.
+3. Support a targeted marketing strategy based on user patterns.
+
 **Technical Specifications:**
+Tools Used: R (RStudio), ggplot2, dplyr, lubridate, GitHub
+Dataset: 12 months of public trip data from Divvy Bike Share (Motivate International Inc.)
 
-Software Used: R (RStudio), Google Sheets, Tableau, GitHub
-
-**Techniques Applied:**
-
-- Data Wrangling: Merged and cleaned 12 monthly CSV files; standardized column formats across datasets to ensure seamless integration.
-  
-- Feature Engineering: Created new variables such as ride_length and day_of_week to enrich time-based behavior analysis.
-  
-- Data Cleaning: Removed negative and missing ride durations; filtered out non-standard entries; ensured consistency in member/casual classification.
-  
-- Descriptive Statistics: Calculated ride averages, medians, and usage frequency across user types and days of the week.
-  
-- Data Visualization: Developed comparative bar plots and line graphs using ggplot2 and Tableau to clearly communicate patterns between rider types.
-
-**Project Components and Methodology:**
+**Technical Specifications:**
+Tools Used: R (RStudio), ggplot2, dplyr, GitHub
+Dataset: 12 months of public trip data from Divvy Bike Share (Motivate International Inc.)
 
 **Project Structure:**
 
-Raw Data Import and Preparation - 
-   
-Objective: Ingest and consolidate 12 months of ride data from Divvy (Cyclistic’s public dataset).
-    
-Methodology: 
+Data Import and Preparation:
+- Downloaded and unzipped 12 .csv trip data files.
 
-- Downloaded and unzipped monthly .csv files
+- Standardized and merged them into a unified R dataframe using read_csv() and bind_rows().
+
+- Ensured consistent column names across files (e.g., ride_id, rideable_type, started_at, ended_at, member_casual).
+
+Cleaning and Transformation Module:
+- Created new variables:
+-   ride_length = ended_at - started_at
+-   day_of_week = weekday of started_at
+
+- Filtered out:
+-   Rides with negative or zero duration.
+-   Trips with missing member_casual or station IDs.
   
-- Imported files into R and ensured consistent column names
-  
-- Combined into one master dataframe
+- Converted times using lubridate and formatted data for analysis.
 
+Analysis Module:
+- Used dplyr to group by user type and day to summarize key metrics:
+-   Mean ride length
+-   Ride count by weekday
+-   Total ride duration by type
 
-Cleaning and Transformation Module - 
+Created pivot-like summaries and cross-tabulated usage patterns.
 
-Objective: Prepare clean and analyzable data to compare casual and member usage.
-    
-Methodology: 
+Visualization and Communication:
+- Built visual insights using ggplot2 and Tableau:
+-   Bar Charts: Ride volume by weekday and user type
+-   Line Charts: Average ride duration over time
+-   Heatmaps: Peak usage by hour and day
+-   
+-   Example Visuals:
 
-- Created ride_length by subtracting started_at from ended_at
-  
-- Filtered out rides with negative or zero duration
-  
-- Added day_of_week using weekdays() in R
-  
-- Removed station IDs and trip IDs for privacy compliance
+Key Findings
+- Ride Duration: Casual riders average significantly longer rides than members.
+- Usage Timing: Casuals peak on weekends; members are consistent on weekdays (commuter pattern).
+- Ride Volume: Members take more rides overall, but shorter in length.
+- Seasonality: Summer months show a spike in casual usage, suggesting seasonal promotion potential.
 
+Usage Instructions:
+- System Requirements:
+-   Software: R (RStudio), Excel or Sheets (optional), Tableau
+-   Hardware: Workstation capable of handling ~1M rows
 
-Analysis Module - 
+Setup Instructions:
+1. Download 12 monthly Divvy datasets from Divvy Data Portal
+2. Run cyclistic_cleaning_and_analysis.R to:
+  - Merge and clean the data
+  - Export summaries
+3. Open Tableau dashboards or .Rmd report for visual insights
 
-Objective: Identify behavioral differences between user types
+Testing and Debugging:
+- Verified consistency of column headers across all monthly files
+- Manually tested ride_length calculations for edge cases (e.g., midnight wrap-arounds)
+- Checked for NULLs, duplicates, and illogical time patterns
+- Ran exploratory summaries to validate trends before final visualization
 
-Methodology: 
+Top 3 Recommendations - 
+1. Weekend Promotions: Target casual riders with weekend discounts or summer perks to encourage membership sign-ups.
 
-- Used dplyr to group and summarize key statistics
+2. Membership Messaging: Emphasize the value of frequent rides with consistent savings and convenience for work-week commuters.
 
-- Pivoted data by day and user type to find peak usage
+3. App-Based Incentives: Use location and time data to suggest membership deals when casual riders take long trips repeatedly.
 
-- Calculated average ride length, count of rides, and total ride time
-
-- Compared weekday vs. weekend usage by user type
-
-Key Findings:
-
-- Ride Duration: Casual riders had longer average ride durations than members
-
-- Peak Usage Days: Casual users rode most on weekends; members were more consistent on weekdays
-
-- Ride Volume: Members took more frequent, shorter rides — aligned with commuting patterns
-
-- Seasonal Trends: Summer months showed the highest surge in casual use, highlighting a promotional opportunity
-        
-**Usage Instructions**
-
-System Requirements:
-
-- Software: R (preferably through RStudio), Excel or Google Sheets, Tableau (optional for visualization)
-
-- Hardware: Standard workstation capable of running R and handling ~1M-row datasets
-
-Installation and Running Instructions:
-
-1. Download 12 monthly .csv files from Divvy Bike Share Data
-   
-2. Run the cyclistic_cleaning_and_analysis.R script to load, clean, and analyze the data
-   
-3. Review generated .csv summary outputs and visualizations
-   
-4. Open Tableau file or .Rmd report to explore visuals and insights
-
-**Testing and Debugging:**
-
-- Verified consistency of columns across files
-
-- Tested ride length calculations for correctness
-
-- Checked for NULL and duplicate records
-
-- Ensured ride times followed logical start-end flow
-
-- Conducted exploratory analysis to validate trends
+Future Enhancements:
+- Integrate machine learning to predict likelihood of conversion from casual to member
+- Add real-time dashboarding with Tableau Public
+- Include station location data for geo-specific analysis
+- Launch A/B testing campaigns based on insights
 
 **Contribution and Licensing:**
 
 This project was developed for educational purposes through the Google Data Analytics Professional Certificate. All data used is publicly available and anonymized, provided by Motivate International Inc. under open license terms.
-
-Future Enhancements and Feedback:
-
-1. Machine Learning: Add a predictive model to identify which casual riders are most likely to convert
-
-2. Real-Time Dashboard: Integrate cleaned data with a live Tableau dashboard
-
-3. Geo Analysis: Include station location data to study geographical trends
-
-4. A/B Testing Framework: Design a marketing experiment based on insights and measure membership conversion impact
 
 ---
 
