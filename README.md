@@ -815,10 +815,6 @@ This project focused on uncovering usage trends between casual riders and annual
 Tools Used: R (RStudio), ggplot2, dplyr, lubridate, GitHub
 Dataset: 12 months of public trip data from Divvy Bike Share (Motivate International Inc.)
 
-**Technical Specifications:**
-Tools Used: R (RStudio), ggplot2, dplyr, GitHub
-Dataset: 12 months of public trip data from Divvy Bike Share (Motivate International Inc.)
-
 **Project Structure:**
 
 Data Import and Preparation:
@@ -830,29 +826,29 @@ Data Import and Preparation:
 
 Cleaning and Transformation Module:
 - Created new variables:
--   ride_length = ended_at - started_at
--   day_of_week = weekday of started_at
+  -   ride_length = ended_at - started_at
+  -   day_of_week = weekday of started_at
 
 - Filtered out:
--   Rides with negative or zero duration.
--   Trips with missing member_casual or station IDs.
+  -   Rides with negative or zero duration.
+  -   Trips with missing member_casual or station IDs.
   
 - Converted times using lubridate and formatted data for analysis.
 
 Analysis Module:
 - Used dplyr to group by user type and day to summarize key metrics:
--   Mean ride length
--   Ride count by weekday
--   Total ride duration by type
+  -   Mean ride length
+  -   Ride count by weekday
+  -   Total ride duration by type
 
 Created pivot-like summaries and cross-tabulated usage patterns.
 
 Visualization and Communication:
 - Built visual insights using ggplot2 and Tableau:
--   Bar Charts: Ride volume by weekday and user type
--   Line Charts: Average ride duration over time
--   Heatmaps: Peak usage by hour and day
--   
+  -   Bar Charts: Ride volume by weekday and user type
+  -   Line Charts: Average ride duration over time
+  -   Heatmaps: Peak usage by hour and day
+  
 -   Example Visuals:
 
 Key Findings
@@ -863,8 +859,8 @@ Key Findings
 
 Usage Instructions:
 - System Requirements:
--   Software: R (RStudio), Excel or Sheets (optional), Tableau
--   Hardware: Workstation capable of handling ~1M rows
+  -   Software: R (RStudio), Excel or Sheets (optional), Tableau
+  -   Hardware: Workstation capable of handling ~1M rows
 
 Setup Instructions:
 1. Download 12 monthly Divvy datasets from Divvy Data Portal
