@@ -817,22 +817,22 @@ Dataset: 12 months of public trip data from Divvy Bike Share (Motivate Internati
 
 **Project Structure:**
 
-Data Import and Preparation:
+1. Data Import and Preparation:
 
 The analysis began by downloading and unzipping 12 monthly .csv trip files. These were imported using read_csv() and combined into a single R dataframe via bind_rows(). Column names were standardized across all datasets (e.g., ride_id, rideable_type, started_at, ended_at, member_casual) to ensure uniformity.
 
-Cleaning and Transformation Module:
+2. Cleaning and Transformation Module:
 
 Data cleaning involved removing rides with negative or zero duration and excluding records with missing member_casual values or station IDs. Time-related fields were processed using the lubridate package. Two new variables were created:
 
 - ride_length, calculated as the difference between ended_at and started_at
 - day_of_week, derived from the started_at timestamp
 
-Analysis Module:
+3. Analysis Module:
 
 Using dplyr, the data was grouped by user type and weekday to calculate summary metrics such as mean ride length, total duration by user type, and ride frequency across weekdays. Pivot-style summaries and cross-tabulations were developed to uncover usage patterns.
 
-Visualization and Communication:
+4. Visualization and Communication:
 
 Visual analysis was conducted using ggplot2 and Tableau. The following charts were produced to support interpretation:
 - Bar charts showing ride volume by user type and weekday
@@ -841,7 +841,8 @@ Visual analysis was conducted using ggplot2 and Tableau. The following charts we
   
 - Example visuals were included to communicate trends to stakeholders.
 
-Key Findings
+5. Key Findings
+   
 - Ride Duration: Casual riders average significantly longer rides than members.
 - Usage Timing: Casuals peak on weekends; members are consistent on weekdays (commuter pattern).
 - Ride Volume: Members take more rides overall, but shorter in length.
@@ -849,7 +850,7 @@ Key Findings
 
 - Casual riders took longer rides on average, while members rode more often but for shorter durations. Weekend peaks in casual use suggest recreation, whereas weekday member usage indicates commuting. Summer spikes in casual rides highlight opportunities for seasonal promotions.
 
-Usage Instructions:
+**Usage Instructions:**
 - System Requirements:
   -   Software: R (RStudio), Excel or Sheets (optional), Tableau
   -   Hardware: Workstation capable of handling ~1M rows
@@ -861,11 +862,11 @@ Setup Instructions:
   - Export summaries
 3. Open Tableau dashboards or .Rmd report for visual insights
 
-Testing and Debugging:
-- Verified consistency of column headers across all monthly files
-- Manually tested ride_length calculations for edge cases (e.g., midnight wrap-arounds)
-- Checked for NULLs, duplicates, and illogical time patterns
-- Ran exploratory summaries to validate trends before final visualization
+**Future Enhancements:**
+- Integrate machine learning to predict likelihood of conversion from casual to member
+- Add real-time dashboarding with Tableau Public
+- Include station location data for geo-specific analysis
+- Launch A/B testing campaigns based on insights
 
 Top 3 Recommendations - 
 1. Weekend Promotions: Target casual riders with weekend discounts or summer perks to encourage membership sign-ups.
@@ -873,12 +874,6 @@ Top 3 Recommendations -
 2. Membership Messaging: Emphasize the value of frequent rides with consistent savings and convenience for work-week commuters.
 
 3. App-Based Incentives: Use location and time data to suggest membership deals when casual riders take long trips repeatedly.
-
-Future Enhancements:
-- Integrate machine learning to predict likelihood of conversion from casual to member
-- Add real-time dashboarding with Tableau Public
-- Include station location data for geo-specific analysis
-- Launch A/B testing campaigns based on insights
 
 **Contribution and Licensing:**
 
