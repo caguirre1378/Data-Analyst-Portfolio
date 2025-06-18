@@ -831,14 +831,6 @@ Dataset: 12 months of public trip data from Divvy Bike Share (Motivate Internati
     - Heatmaps identifying peak usage by hour and day
     - Example visuals were included to communicate trends to stakeholders ->
 
-5. Key Findings:
-- Ride Duration: Casual riders consistently take longer trips than members.
-- Usage Patterns:
-  -   Casual usage peaks on weekends, indicating recreational use.
-  -   Member usage is steady on weekdays, suggesting commuting behavior.
-- Ride Volume: Members take more rides overall, but each ride tends to be shorter in duration.
-- Seasonality: A noticeable increase in casual ridership during summer months presents an opportunity for targeted seasonal promotions.
-
 **Usage Instructions:**
 
 System Requirements:
@@ -868,7 +860,7 @@ Setup Instructions:
    - Members ride shorter durations on weekdays.
      → Promotional opportunities on weekends.
 
-**Top 3 Recommendations for the Marketing Team:**
+**Recommendations:**
 
 - Weekend Promotions for Casual Riders 
 Launch discounted weekend passes or referral codes to convert casuals who already ride on weekends.
