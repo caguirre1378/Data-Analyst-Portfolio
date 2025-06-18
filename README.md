@@ -832,58 +832,58 @@ install.packages(c(
 
 1. Data Import and Preparation: The analysis began by downloading and unzipping 12 monthly .csv trip files. These were imported using read_csv() and combined into a single R dataframe via bind_rows(). Column names were standardized across all datasets (e.g., ride_id, rideable_type, started_at, ended_at, member_casual) to ensure uniformity.
 
-<pre><code class="language-r">
-library(tidyverse)
-library(lubridate)
-library(janitor)
+      <pre><code class="language-r">
+      library(tidyverse)
+      library(lubridate)
+      library(janitor)
+      
+      file_list <- list.files("data_raw", pattern = "*.csv", full.names = TRUE)
+      
+      all_trips <- file_list %>%
+        map_df(read_csv) %>%
+        clean_names()
+      </code></pre>
 
-file_list <- list.files("data_raw", pattern = "*.csv", full.names = TRUE)
-
-all_trips <- file_list %>%
-  map_df(read_csv) %>%
-  clean_names()
-</code></pre>
-
-  ![CS1_Step2_DataImport](assets/CS1_Step2_DataImport.png)
-  - Figure 2 – Successful import and merging of 12 monthly datasets into all_trips.
+      ![CS1_Step2_DataImport](assets/CS1_Step2_DataImport.png)
+      - Figure 2 – Successful import and merging of 12 monthly datasets into all_trips.
 
 2. Cleaning and Transformation Module: Data cleaning involved removing rides with negative or zero duration and excluding records with missing member_casual values or station IDs. Time-related fields were processed using the lubridate package. Two new variables were created:
     - ride_length, calculated as the difference between ended_at and started_at
     - day_of_week, derived from the started_at timestamp
 
-<pre><code class="language-r">
-all_trips &lt;- all_trips %&gt;%
-  mutate(
-    started_at = ymd_hms(started_at),
-    ended_at = ymd_hms(ended_at),
-    ride_length = as.numeric(difftime(ended_at, started_at, units = "mins")),
-    day_of_week = wday(started_at, label = TRUE)
-  ) %&gt;%
-  filter(ride_length &gt; 1, !is.na(member_casual)) %&gt;%
-  drop_na()
-</code></pre>
+      <pre><code class="language-r">
+      all_trips &lt;- all_trips %&gt;%
+        mutate(
+          started_at = ymd_hms(started_at),
+          ended_at = ymd_hms(ended_at),
+          ride_length = as.numeric(difftime(ended_at, started_at, units = "mins")),
+          day_of_week = wday(started_at, label = TRUE)
+        ) %&gt;%
+        filter(ride_length &gt; 1, !is.na(member_casual)) %&gt;%
+        drop_na()
+      </code></pre>
       
-  ![CS1_Step3_DataCleaning](assets/CS1_Step3_DataCleaning.png)
-  - Figure 3 – ride_length and day_of_week calculated with cleaned dataset.
+      ![CS1_Step3_DataCleaning](assets/CS1_Step3_DataCleaning.png)
+      - Figure 3 – ride_length and day_of_week calculated with cleaned dataset.
 
 3. Analysis Module: Using dplyr, the data was grouped by user type and weekday to calculate summary metrics such as mean ride length, total duration by user type, and ride frequency across weekdays. Pivot-style summaries and cross-tabulations were developed to uncover usage patterns.
 
-<pre><code class="language-r">
-summary_stats &lt;- all_trips %&gt;%
-  group_by(member_casual) %&gt;%
-  summarise(
-    average_ride_length = mean(ride_length),
-    median_ride_length = median(ride_length),
-    max_ride_length = max(ride_length),
-    min_ride_length = min(ride_length),
-    ride_count = n()
-  )
+      <pre><code class="language-r">
+      summary_stats &lt;- all_trips %&gt;%
+        group_by(member_casual) %&gt;%
+        summarise(
+          average_ride_length = mean(ride_length),
+          median_ride_length = median(ride_length),
+          max_ride_length = max(ride_length),
+          min_ride_length = min(ride_length),
+          ride_count = n()
+        )
+      
+      print(summary_stats)
+      </code></pre>
 
-print(summary_stats)
-</code></pre>
-
-  ![CS1_Step4_SummaryStats](assets/CS1_Step4_SummaryStats.png)
-  - Figure 4 – Summary statistics showing longer ride durations for casual riders.
+      ![CS1_Step4_SummaryStats](assets/CS1_Step4_SummaryStats.png)
+      - Figure 4 – Summary statistics showing longer ride durations for casual riders.
 
 4. Visualization and Communication: Visual analysis was conducted using ggplot2 and Tableau. The following charts were produced to support interpretation:
     - Bar charts showing ride volume by user type and weekday
