@@ -822,6 +822,8 @@ Dataset: 12 months of public trip data from Divvy Bike Share (Motivate Internati
 
 1. Data Import and Preparation: The analysis began by downloading and unzipping 12 monthly .csv trip files. These were imported using read_csv() and combined into a single R dataframe via bind_rows(). Column names were standardized across all datasets (e.g., ride_id, rideable_type, started_at, ended_at, member_casual) to ensure uniformity.
 
+<pre><code class="language-r"> library(tidyverse) library(lubridate) library(janitor) file_list &lt;- list.files("data_raw", pattern = "*.csv", full.names = TRUE) all_trips &lt;- file_list %&gt;% map_df(read_csv) %&gt;% clean_names() </code></pre>
+
 ![CS1_Step2_DataImport](assets/CS1_Step2_DataImport.png)
 - Figure 2 – Successful import and merging of 12 monthly datasets into all_trips.
 
