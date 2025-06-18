@@ -816,9 +816,13 @@ Tools Used: R (RStudio), ggplot2, dplyr, lubridate, GitHub
 Dataset: 12 months of public trip data from Divvy Bike Share (Motivate International Inc.)
 
 <pre><code class="language-r">
-library(tidyverse)
-library(lubridate)
-library(janitor)
+install.packages(c(
+  "tidyverse",
+  "lubridate",
+  "janitor",
+  "ggplot2",
+  "readr"
+))
 </code></pre>
 
 ![CS1_Step1_Packages](assets/CS1_Step1_Packages.png)
