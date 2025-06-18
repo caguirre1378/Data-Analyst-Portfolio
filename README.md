@@ -870,14 +870,14 @@ Setup Instructions:
 
 **Top 3 Recommendations for the Marketing Team:**
 
-Weekend Promotions for Casual Riders 
-- Launch discounted weekend passes or referral codes to convert casuals who already ride on weekends.
+- Weekend Promotions for Casual Riders 
+Launch discounted weekend passes or referral codes to convert casuals who already ride on weekends.
 
-Commuter-Focused Messaging for Member 
-- Emphasize convenience, predictability, and cost-saving benefits of membership for daily work travel.
+- Commuter-Focused Messaging for Member 
+Emphasize convenience, predictability, and cost-saving benefits of membership for daily work travel.
 
-In-App Membership Nudges 
-- Trigger smart prompts for casual users who frequently ride (e.g., “You’ve taken 3 rides this week — save with a membership”).
+- In-App Membership Nudges 
+Trigger smart prompts for casual users who frequently ride (e.g., “You’ve taken 3 rides this week — save with a membership”).
 
 **Contribution and Licensing:**
 
