@@ -829,8 +829,7 @@ Dataset: 12 months of public trip data from Divvy Bike Share (Motivate Internati
     - Bar charts showing ride volume by user type and weekday
     - Line charts illustrating average ride duration over time
     - Heatmaps identifying peak usage by hour and day
-  
-  - Example visuals were included to communicate trends to stakeholders.
+    - Example visuals were included to communicate trends to stakeholders ->
 
 5. Key Findings:
     - Ride Duration: Casual riders average significantly longer rides than members.
@@ -841,7 +840,8 @@ Dataset: 12 months of public trip data from Divvy Bike Share (Motivate Internati
     - Casual riders took longer rides on average, while members rode more often but for shorter durations. Weekend peaks in casual use suggest recreation, whereas weekday member usage indicates commuting. Summer spikes in casual rides highlight opportunities for seasonal promotions.
 
 **Usage Instructions:**
-- System Requirements:
+
+System Requirements:
   -   Software: R (RStudio), Excel or Sheets (optional), Tableau
   -   Hardware: Workstation capable of handling ~1M rows
 
