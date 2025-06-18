@@ -911,7 +911,6 @@ Setup Instructions:
      → Suggests members ride for utility (commuting), while casuals ride for leisure.
 
       <pre><code class="language-r">
-      # Chart A – Number of Rides by Day of Week
       library(scales)
       
       ggplot(weekday_summary, aes(x = day_of_week, y = number_of_rides, fill = member_casual)) +
@@ -948,7 +947,6 @@ Setup Instructions:
      → Commuting pattern vs. recreational pattern.
 
         <pre><code class="language-r">
-        # Chart B – Average Ride Duration by Day of Week
         ggplot(weekday_summary, aes(x = day_of_week, y = average_duration, fill = member_casual)) +
           geom_col(position = position_dodge(width = 0.8), width = 0.35) +
           scale_fill_manual(values = c("casual" = "#FF6F61", "member" = "#00BFC4"),
@@ -981,8 +979,7 @@ Setup Instructions:
    - Members ride shorter durations on weekdays.
      → Promotional opportunities on weekends.
      
-                <pre><code class="language-r">
-        # Chart C – Average Ride Duration by Rider Type
+        <pre><code class="language-r">
         ggplot(summary_stats %>%
                  mutate(member_casual = factor(member_casual,
                                                levels = c("casual", "member"),
