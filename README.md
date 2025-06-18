@@ -910,20 +910,16 @@ Setup Instructions:
    - Members ride for ~12.6 minutes.
      → Suggests members ride for utility (commuting), while casuals ride for leisure.
 
-     <pre><code class="language-r">
-weekday_summary &lt;- all_trips %&gt;%
-  group_by(member_casual, day_of_week) %&gt;%
-  summarise(number_of_rides = n())
-
-ggplot(weekday_summary, aes(x = day_of_week, y = number_of_rides, fill = member_casual)) +
-  geom_col(position = "dodge") +
-  labs(
-    title = "Number of Rides by Day of Week",
-    x = "Day of Week",
-    y = "Number of Rides"
-  ) +
-  theme_minimal()
-</code></pre>
+      <pre><code class="language-r">
+      ggplot(weekday_summary, aes(x = day_of_week, 
+                                  y = number_of_rides, 
+                                  fill = member_casual)) +
+        geom_col(position = "dodge") +
+        labs(title = "Number of Rides by Day of Week", 
+             x = "Day of Week", 
+             y = "Number of Rides") +
+        theme_minimal()
+      </code></pre>
 
   ![CS1_Step5_RideVolumeByWeekday](assets/CS1_Step5_RideVolumeByWeekday.png)
   - Figure 5 – Casuals ride more on weekends; members ride more on weekdays.
@@ -933,20 +929,20 @@ ggplot(weekday_summary, aes(x = day_of_week, y = number_of_rides, fill = member_
    - Members ride more consistently during weekdays.
      → Commuting pattern vs. recreational pattern.
 
-    <pre><code class="language-r">
-    weekday_duration &lt;- all_trips %&gt;%
-      group_by(member_casual, day_of_week) %&gt;%
-      summarise(average_duration = mean(ride_length))
-    
-    ggplot(weekday_duration, aes(x = day_of_week, y = average_duration, fill = member_casual)) +
-      geom_col(position = "dodge") +
-      labs(
-        title = "Average Ride Duration by Day of Week",
-        x = "Day of Week",
-        y = "Average Duration (mins)"
-      ) +
-      theme_minimal()
-    </code></pre>
+        <pre><code class="language-r">
+        weekday_duration &lt;- all_trips %&gt;%
+          group_by(member_casual, day_of_week) %&gt;%
+          summarise(average_duration = mean(ride_length))
+        
+        ggplot(weekday_duration, aes(x = day_of_week, y = average_duration, fill = member_casual)) +
+          geom_col(position = "dodge") +
+          labs(
+            title = "Average Ride Duration by Day of Week",
+            x = "Day of Week",
+            y = "Average Duration (mins)"
+          ) +
+          theme_minimal()
+        </code></pre>
 
   ![CS1_Step6_AvgDurationByWeekday](assets/CS1_Step6_AvgDurationByWeekday.png)
   - Figure 6 – Casuals ride longer, especially on weekends.
@@ -956,20 +952,20 @@ ggplot(weekday_summary, aes(x = day_of_week, y = number_of_rides, fill = member_
    - Members ride shorter durations on weekdays.
      → Promotional opportunities on weekends.
      
-    <pre><code class="language-r">
-    weekday_duration &lt;- all_trips %&gt;%
-      group_by(member_casual, day_of_week) %&gt;%
-      summarise(average_duration = mean(ride_length))
-    
-    ggplot(weekday_duration, aes(x = day_of_week, y = average_duration, fill = member_casual)) +
-      geom_col(position = "dodge") +
-      labs(
-        title = "Average Ride Duration by Day of Week",
-        x = "Day of Week",
-        y = "Average Duration (mins)"
-      ) +
-      theme_minimal()
-    </code></pre>
+        <pre><code class="language-r">
+        weekday_duration &lt;- all_trips %&gt;%
+          group_by(member_casual, day_of_week) %&gt;%
+          summarise(average_duration = mean(ride_length))
+        
+        ggplot(weekday_duration, aes(x = day_of_week, y = average_duration, fill = member_casual)) +
+          geom_col(position = "dodge") +
+          labs(
+            title = "Average Ride Duration by Day of Week",
+            x = "Day of Week",
+            y = "Average Duration (mins)"
+          ) +
+          theme_minimal()
+        </code></pre>
 
   ![CS1_Step7_AvgRideByType](assets/CS1_Step7_AvgRideByType.png)
   - Figure 7 – Casual riders average nearly double the duration of members.
