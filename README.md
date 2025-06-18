@@ -825,8 +825,8 @@ install.packages(c(
 ))
 </code></pre>
 
-![CS1_Step1_Packages](assets/CS1_Step1_Packages.png)
-- Figure 1 – Required R packages installed successfully in RStudio.
+  ![CS1_Step1_Packages](assets/CS1_Step1_Packages.png)
+  - Figure 1 – Required R packages installed successfully in RStudio.
 
 **Project Structure:**
 
@@ -844,8 +844,8 @@ all_trips <- file_list %>%
   clean_names()
 </code></pre>
 
-![CS1_Step2_DataImport](assets/CS1_Step2_DataImport.png)
-- Figure 2 – Successful import and merging of 12 monthly datasets into all_trips.
+  ![CS1_Step2_DataImport](assets/CS1_Step2_DataImport.png)
+  - Figure 2 – Successful import and merging of 12 monthly datasets into all_trips.
 
 2. Cleaning and Transformation Module: Data cleaning involved removing rides with negative or zero duration and excluding records with missing member_casual values or station IDs. Time-related fields were processed using the lubridate package. Two new variables were created:
     - ride_length, calculated as the difference between ended_at and started_at
@@ -863,8 +863,8 @@ all_trips &lt;- all_trips %&gt;%
   drop_na()
 </code></pre>
       
-![CS1_Step3_DataCleaning](assets/CS1_Step3_DataCleaning.png)
-- Figure 3 – ride_length and day_of_week calculated with cleaned dataset.
+  ![CS1_Step3_DataCleaning](assets/CS1_Step3_DataCleaning.png)
+  - Figure 3 – ride_length and day_of_week calculated with cleaned dataset.
 
 3. Analysis Module: Using dplyr, the data was grouped by user type and weekday to calculate summary metrics such as mean ride length, total duration by user type, and ride frequency across weekdays. Pivot-style summaries and cross-tabulations were developed to uncover usage patterns.
 
@@ -882,8 +882,8 @@ summary_stats &lt;- all_trips %&gt;%
 print(summary_stats)
 </code></pre>
 
-![CS1_Step4_SummaryStats](assets/CS1_Step4_SummaryStats.png)
-- Figure 4 – Summary statistics showing longer ride durations for casual riders.
+  ![CS1_Step4_SummaryStats](assets/CS1_Step4_SummaryStats.png)
+  - Figure 4 – Summary statistics showing longer ride durations for casual riders.
 
 4. Visualization and Communication: Visual analysis was conducted using ggplot2 and Tableau. The following charts were produced to support interpretation:
     - Bar charts showing ride volume by user type and weekday
@@ -925,8 +925,8 @@ ggplot(weekday_summary, aes(x = day_of_week, y = number_of_rides, fill = member_
   theme_minimal()
 </code></pre>
 
-![CS1_Step5_RideVolumeByWeekday](assets/CS1_Step5_RideVolumeByWeekday.png)
-- Figure 5 – Casuals ride more on weekends; members ride more on weekdays.
+  ![CS1_Step5_RideVolumeByWeekday](assets/CS1_Step5_RideVolumeByWeekday.png)
+  - Figure 5 – Casuals ride more on weekends; members ride more on weekdays.
 
 2. Average Ride Duration by Weekday:
    - Casuals peak on weekends (especially Sat/Sun).
@@ -948,8 +948,8 @@ ggplot(weekday_summary, aes(x = day_of_week, y = number_of_rides, fill = member_
       theme_minimal()
     </code></pre>
 
-![CS1_Step6_AvgDurationByWeekday](assets/CS1_Step6_AvgDurationByWeekday.png)
-- Figure 6 – Casuals ride longer, especially on weekends.
+  ![CS1_Step6_AvgDurationByWeekday](assets/CS1_Step6_AvgDurationByWeekday.png)
+  - Figure 6 – Casuals ride longer, especially on weekends.
 
 3. Average Ride Duration by Rider Type:
    - Casuals ride longer on weekends.
@@ -971,8 +971,8 @@ ggplot(weekday_summary, aes(x = day_of_week, y = number_of_rides, fill = member_
       theme_minimal()
     </code></pre>
 
-![CS1_Step7_AvgRideByType](assets/CS1_Step7_AvgRideByType.png)
-- Figure 7 – Casual riders average nearly double the duration of members.
+  ![CS1_Step7_AvgRideByType](assets/CS1_Step7_AvgRideByType.png)
+  - Figure 7 – Casual riders average nearly double the duration of members.
 
 **Recommendations:**
 
