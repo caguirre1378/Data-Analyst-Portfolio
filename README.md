@@ -815,6 +815,12 @@ This project focused on uncovering usage trends between casual riders and annual
 Tools Used: R (RStudio), ggplot2, dplyr, lubridate, GitHub
 Dataset: 12 months of public trip data from Divvy Bike Share (Motivate International Inc.)
 
+<pre><code class="language-r">
+library(tidyverse)
+library(lubridate)
+library(janitor)
+</code></pre>
+
 ![CS1_Step1_Packages](assets/CS1_Step1_Packages.png)
 - Figure 1 – Required R packages installed successfully in RStudio.
 
@@ -822,7 +828,13 @@ Dataset: 12 months of public trip data from Divvy Bike Share (Motivate Internati
 
 1. Data Import and Preparation: The analysis began by downloading and unzipping 12 monthly .csv trip files. These were imported using read_csv() and combined into a single R dataframe via bind_rows(). Column names were standardized across all datasets (e.g., ride_id, rideable_type, started_at, ended_at, member_casual) to ensure uniformity.
 
-<pre><code class="language-r"> library(tidyverse) library(lubridate) library(janitor) file_list &lt;- list.files("data_raw", pattern = "*.csv", full.names = TRUE) all_trips &lt;- file_list %&gt;% map_df(read_csv) %&gt;% clean_names() </code></pre>
+<pre><code class="language-r">
+file_list &lt;- list.files("data_raw", pattern = "*.csv", full.names = TRUE)
+
+all_trips &lt;- file_list %&gt;%
+  map_df(read_csv) %&gt;%
+  clean_names()
+</code></pre>
 
 ![CS1_Step2_DataImport](assets/CS1_Step2_DataImport.png)
 - Figure 2 – Successful import and merging of 12 monthly datasets into all_trips.
@@ -830,11 +842,37 @@ Dataset: 12 months of public trip data from Divvy Bike Share (Motivate Internati
 2. Cleaning and Transformation Module: Data cleaning involved removing rides with negative or zero duration and excluding records with missing member_casual values or station IDs. Time-related fields were processed using the lubridate package. Two new variables were created:
     - ride_length, calculated as the difference between ended_at and started_at
     - day_of_week, derived from the started_at timestamp
+
+<pre><code class="language-r">
+all_trips &lt;- all_trips %&gt;%
+  mutate(
+    started_at = ymd_hms(started_at),
+    ended_at = ymd_hms(ended_at),
+    ride_length = as.numeric(difftime(ended_at, started_at, units = "mins")),
+    day_of_week = wday(started_at, label = TRUE)
+  ) %&gt;%
+  filter(ride_length &gt; 1, !is.na(member_casual)) %&gt;%
+  drop_na()
+</code></pre>
       
 ![CS1_Step3_DataCleaning](assets/CS1_Step3_DataCleaning.png)
 - Figure 3 – ride_length and day_of_week calculated with cleaned dataset.
 
 3. Analysis Module: Using dplyr, the data was grouped by user type and weekday to calculate summary metrics such as mean ride length, total duration by user type, and ride frequency across weekdays. Pivot-style summaries and cross-tabulations were developed to uncover usage patterns.
+
+<pre><code class="language-r">
+summary_stats &lt;- all_trips %&gt;%
+  group_by(member_casual) %&gt;%
+  summarise(
+    average_ride_length = mean(ride_length),
+    median_ride_length = median(ride_length),
+    max_ride_length = max(ride_length),
+    min_ride_length = min(ride_length),
+    ride_count = n()
+  )
+
+print(summary_stats)
+</code></pre>
 
 ![CS1_Step4_SummaryStats](assets/CS1_Step4_SummaryStats.png)
 - Figure 4 – Summary statistics showing longer ride durations for casual riders.
@@ -864,24 +902,69 @@ Setup Instructions:
    - Members ride for ~12.6 minutes.
      → Suggests members ride for utility (commuting), while casuals ride for leisure.
 
-     ![CS1_Step5_RideVolumeByWeekday](assets/CS1_Step5_RideVolumeByWeekday.png)
-     - Figure 5 – Casuals ride more on weekends; members ride more on weekdays.
+     <pre><code class="language-r">
+weekday_summary &lt;- all_trips %&gt;%
+  group_by(member_casual, day_of_week) %&gt;%
+  summarise(number_of_rides = n())
+
+ggplot(weekday_summary, aes(x = day_of_week, y = number_of_rides, fill = member_casual)) +
+  geom_col(position = "dodge") +
+  labs(
+    title = "Number of Rides by Day of Week",
+    x = "Day of Week",
+    y = "Number of Rides"
+  ) +
+  theme_minimal()
+</code></pre>
+
+![CS1_Step5_RideVolumeByWeekday](assets/CS1_Step5_RideVolumeByWeekday.png)
+- Figure 5 – Casuals ride more on weekends; members ride more on weekdays.
 
 2. Average Ride Duration by Weekday:
    - Casuals peak on weekends (especially Sat/Sun).
    - Members ride more consistently during weekdays.
      → Commuting pattern vs. recreational pattern.
 
-     ![CS1_Step6_AvgDurationByWeekday](assets/CS1_Step6_AvgDurationByWeekday.png)
-     - Figure 6 – Casuals ride longer, especially on weekends.
+    <pre><code class="language-r">
+    weekday_duration &lt;- all_trips %&gt;%
+      group_by(member_casual, day_of_week) %&gt;%
+      summarise(average_duration = mean(ride_length))
+    
+    ggplot(weekday_duration, aes(x = day_of_week, y = average_duration, fill = member_casual)) +
+      geom_col(position = "dodge") +
+      labs(
+        title = "Average Ride Duration by Day of Week",
+        x = "Day of Week",
+        y = "Average Duration (mins)"
+      ) +
+      theme_minimal()
+    </code></pre>
+
+![CS1_Step6_AvgDurationByWeekday](assets/CS1_Step6_AvgDurationByWeekday.png)
+- Figure 6 – Casuals ride longer, especially on weekends.
 
 3. Average Ride Duration by Rider Type:
    - Casuals ride longer on weekends.
    - Members ride shorter durations on weekdays.
      → Promotional opportunities on weekends.
+     
+    <pre><code class="language-r">
+    weekday_duration &lt;- all_trips %&gt;%
+      group_by(member_casual, day_of_week) %&gt;%
+      summarise(average_duration = mean(ride_length))
+    
+    ggplot(weekday_duration, aes(x = day_of_week, y = average_duration, fill = member_casual)) +
+      geom_col(position = "dodge") +
+      labs(
+        title = "Average Ride Duration by Day of Week",
+        x = "Day of Week",
+        y = "Average Duration (mins)"
+      ) +
+      theme_minimal()
+    </code></pre>
 
-     ![CS1_Step7_AvgRideByType](assets/CS1_Step7_AvgRideByType.png)
-     - Figure 7 – Casual riders average nearly double the duration of members.
+![CS1_Step7_AvgRideByType](assets/CS1_Step7_AvgRideByType.png)
+- Figure 7 – Casual riders average nearly double the duration of members.
 
 **Recommendations:**
 
