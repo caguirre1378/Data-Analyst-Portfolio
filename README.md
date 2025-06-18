@@ -940,7 +940,7 @@ Setup Instructions:
       </code></pre>
 
 
-      ![CS1_Step5_RideVolumeByWeekday](assets/CS1_Step5_RideVolumeByWeekday.png)
+      ![Chart A – Number of Rides by Day of Week](assets/CS1_S5v2.png)
       - Figure 5 – Casuals ride more on weekends; members ride more on weekdays.
 
 2. Average Ride Duration by Weekday:
@@ -975,7 +975,7 @@ Setup Instructions:
         </code></pre>
 
 
-        ![CS1_Step6_AvgDurationByWeekday](assets/CS1_Step6_AvgDurationByWeekday.png)
+        ![Chart B – Average Ride Duration by Day of Week](assets/CS1_S6v2.png)
         - Figure 6 – Casuals ride longer, especially on weekends.
 
 3. Average Ride Duration by Rider Type:
@@ -1014,7 +1014,7 @@ Setup Instructions:
           )
         </code></pre>
 
-        ![CS1_Step7_AvgRideByType](assets/CS1_Step7_AvgRideByType.png)
+        ![Chart C – Average Ride Duration by Rider Type](assets/CS1_S7v2.png)
         - Figure 7 – Casual riders average nearly double the duration of members.
 
 **Recommendations:**
