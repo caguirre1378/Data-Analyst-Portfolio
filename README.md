@@ -906,8 +906,8 @@ Setup Instructions:
 
 **Insights:**
 1. Ride Volume by Weekday:
-   - Casual riders take rides that average ~23.6 minutes.
-   - Members ride for ~12.6 minutes.
+   - Casual usage peaks on Saturdays and Sundays, reflecting recreational behavior.
+   - Member usage is consistently higher during weekdays, indicating frequent use for commuting or routine trips.
      → Suggests members ride for utility (commuting), while casuals ride for leisure.
 
       <pre><code class="language-r">
@@ -942,9 +942,9 @@ Setup Instructions:
       - Figure 5 – Casuals ride more on weekends; members ride more on weekdays.
 
 2. Average Ride Duration by Weekday:
-   - Casuals peak on weekends (especially Sat/Sun).
-   - Members ride more consistently during weekdays.
-     → Commuting pattern vs. recreational pattern.
+   - Casual riders tend to have longer rides on weekends, especially Saturday and Sunday.
+   - Members maintain steady, shorter average ride durations throughout the week.
+     → This reflects a clear difference in ride intent: leisure vs. routine commuting.
 
         <pre><code class="language-r">
         ggplot(weekday_summary, aes(x = day_of_week, y = average_duration, fill = member_casual)) +
@@ -975,9 +975,9 @@ Setup Instructions:
         - Figure 6 – Casuals ride longer, especially on weekends.
 
 3. Average Ride Duration by Rider Type:
-   - Casuals ride longer on weekends.
-   - Members ride shorter durations on weekdays.
-     → Promotional opportunities on weekends.
+   - Casual riders take rides that average approximately 23.6 minutes.
+   - Members ride for about 12.6 minutes.
+      → This suggests that members are likely using bikes for utility-based purposes such as commuting, while casual riders use them more for leisure or recreation.
      
         <pre><code class="language-r">
         ggplot(summary_stats %>%
