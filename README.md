@@ -862,18 +862,29 @@ Setup Instructions:
   - Export summaries
 3. Open Tableau dashboards or .Rmd report for visual insights
 
-**Future Enhancements:**
-- Integrate machine learning to predict likelihood of conversion from casual to member
-- Add real-time dashboarding with Tableau Public
-- Include station location data for geo-specific analysis
-- Launch A/B testing campaigns based on insights
+**Insights:**
+1. Ride Duration:
+   - Casual riders take rides that average ~23.6 minutes.
+   - Members ride for ~12.6 minutes.
+     → Suggests members ride for utility (commuting), while casuals ride for leisure.
 
-Top 3 Recommendations - 
-1. Weekend Promotions: Target casual riders with weekend discounts or summer perks to encourage membership sign-ups.
+2. Ride Volume by Weekday:
+   - Casuals peak on weekends (especially Sat/Sun).
+   - Members ride more consistently during weekdays.
+     → Commuting pattern vs. recreational pattern.
 
-2. Membership Messaging: Emphasize the value of frequent rides with consistent savings and convenience for work-week commuters.
+3. Ride Duration by Weekday:
+   - Casuals ride longer on weekends.
+   - Members ride shorter durations on weekdays.
+     → Promotional opportunities on weekends.
 
-3. App-Based Incentives: Use location and time data to suggest membership deals when casual riders take long trips repeatedly.
+**Top 3 Recommendations for the Marketing Team:**
+
+Weekend Promotions for Casual Riders - Launch discounted weekend passes or referral codes to convert casuals who already ride on weekends.
+
+Commuter-Focused Messaging for Member - Emphasize convenience, predictability, and cost-saving benefits of membership for daily work travel.
+
+In-App Membership Nudges - Trigger smart prompts for casual users who frequently ride (e.g., “You’ve taken 3 rides this week — save with a membership”).
 
 **Contribution and Licensing:**
 
