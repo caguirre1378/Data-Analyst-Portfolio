@@ -911,7 +911,8 @@ Setup Instructions:
      → Suggests members ride for utility (commuting), while casuals ride for leisure.
 
       <pre><code class="language-r">
-      library(scales)  # for comma formatting
+      # Chart A – Number of Rides by Day of Week
+      library(scales)
       
       ggplot(weekday_summary, aes(x = day_of_week, y = number_of_rides, fill = member_casual)) +
         geom_col(position = position_dodge(width = 0.8), width = 0.35) +
@@ -938,6 +939,7 @@ Setup Instructions:
         )
       </code></pre>
 
+
       ![CS1_Step5_RideVolumeByWeekday](assets/CS1_Step5_RideVolumeByWeekday.png)
       - Figure 5 – Casuals ride more on weekends; members ride more on weekdays.
 
@@ -947,20 +949,7 @@ Setup Instructions:
      → Commuting pattern vs. recreational pattern.
 
         <pre><code class="language-r">
-        # Calculate average duration per weekday and rider type
-        weekday_summary <- all_trips %>%
-          group_by(member_casual, day_of_week) %>%
-          summarise(
-            number_of_rides = n(),
-            average_duration = mean(ride_length),
-            .groups = 'drop'
-          )
-        
-        # Ensure correct weekday order
-        weekday_summary$day_of_week <- factor(weekday_summary$day_of_week,
-                                              levels = c("Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"))
-        
-        # Plot
+        # Chart B – Average Ride Duration by Day of Week
         ggplot(weekday_summary, aes(x = day_of_week, y = average_duration, fill = member_casual)) +
           geom_col(position = position_dodge(width = 0.8), width = 0.35) +
           scale_fill_manual(values = c("casual" = "#FF6F61", "member" = "#00BFC4"),
@@ -985,6 +974,7 @@ Setup Instructions:
           )
         </code></pre>
 
+
         ![CS1_Step6_AvgDurationByWeekday](assets/CS1_Step6_AvgDurationByWeekday.png)
         - Figure 6 – Casuals ride longer, especially on weekends.
 
@@ -993,20 +983,17 @@ Setup Instructions:
    - Members ride shorter durations on weekdays.
      → Promotional opportunities on weekends.
      
-        <pre><code class="language-r">
-        # Calculate average duration summary
-        summary_stats <- all_trips %>%
-          group_by(member_casual) %>%
-          summarise(
-            average_ride_length = mean(ride_length),
-            .groups = "drop"
-          )
-        
-        # Plot average ride duration by rider type
-        ggplot(summary_stats, aes(x = member_casual, y = average_ride_length, fill = member_casual)) +
+                <pre><code class="language-r">
+        # Chart C – Average Ride Duration by Rider Type
+        ggplot(summary_stats %>%
+                 mutate(member_casual = factor(member_casual,
+                                               levels = c("casual", "member"),
+                                               labels = c("Casual", "Member"))),
+               aes(x = member_casual, y = average_ride_length, fill = member_casual)) +
           geom_col(width = 0.6) +
-          scale_fill_manual(values = c("casual" = "#FF6F61", "member" = "#00BFC4"),
-                            labels = c("Casual", "Member")) +
+          geom_text(aes(label = round(average_ride_length, 1)),
+                    vjust = -0.3, size = 5, fontface = "bold") +
+          scale_fill_manual(values = c("Casual" = "#FF6F61", "Member" = "#00BFC4")) +
           labs(
             title = "Average Ride Duration by Rider Type",
             x = "Rider Type",
@@ -1015,15 +1002,15 @@ Setup Instructions:
           ) +
           theme_minimal(base_size = 14) +
           theme(
-            plot.title = element_text(face = "bold", hjust = 0.5, size = 16),
+            plot.title = element_text(hjust = 0.5, face = "bold", size = 16),
             axis.title.x = element_text(face = "bold"),
             axis.title.y = element_text(face = "bold"),
             axis.text.x = element_text(face = "bold"),
             legend.title = element_text(face = "bold"),
             legend.position = "right",
             panel.grid.major.y = element_line(color = "gray80", linetype = "dashed"),
-            panel.grid.minor.y = element_blank(),
-            panel.grid.major.x = element_blank()
+            panel.grid.major.x = element_blank(),
+            panel.grid.minor = element_blank()
           )
         </code></pre>
 
