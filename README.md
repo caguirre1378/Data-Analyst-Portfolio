@@ -842,15 +842,6 @@ Dataset: 12 months of public trip data from Divvy Bike Share (Motivate Internati
     - Line charts illustrating average ride duration over time
     - Heatmaps identifying peak usage by hour and day
     - Example visuals were included to communicate trends to stakeholders ->
-  
-![CS1_Step5_RideVolumeByWeekday](assets/CS1_Step5_RideVolumeByWeekday.png)
-- Figure 5 – Casuals ride more on weekends; members ride more on weekdays.
-
-![CS1_Step6_AvgDurationByWeekday](assets/CS1_Step6_AvgDurationByWeekday.png)
-- Figure 6 – Casuals ride longer, especially on weekends.
-
-![CS1_Step7_AvgRideByType](assets/CS1_Step7_AvgRideByType.png)
-- Figure 7 – Casual riders average nearly double the duration of members.
 
 **Usage Instructions:**
 
@@ -866,20 +857,29 @@ Setup Instructions:
 3. Open Tableau dashboards or .Rmd report for visual insights
 
 **Insights:**
-1. Ride Duration:
+1. Ride Volume by Weekday:
    - Casual riders take rides that average ~23.6 minutes.
    - Members ride for ~12.6 minutes.
      → Suggests members ride for utility (commuting), while casuals ride for leisure.
 
-2. Ride Volume by Weekday:
+     ![CS1_Step5_RideVolumeByWeekday](assets/CS1_Step5_RideVolumeByWeekday.png)
+     - Figure 5 – Casuals ride more on weekends; members ride more on weekdays.
+
+2. Average Ride Duration by Weekday:
    - Casuals peak on weekends (especially Sat/Sun).
    - Members ride more consistently during weekdays.
      → Commuting pattern vs. recreational pattern.
 
-3. Ride Duration by Weekday:
+     ![CS1_Step6_AvgDurationByWeekday](assets/CS1_Step6_AvgDurationByWeekday.png)
+     - Figure 6 – Casuals ride longer, especially on weekends.
+
+3. Average Ride Duration by Rider Type:
    - Casuals ride longer on weekends.
    - Members ride shorter durations on weekdays.
      → Promotional opportunities on weekends.
+
+     ![CS1_Step7_AvgRideByType](assets/CS1_Step7_AvgRideByType.png)
+     - Figure 7 – Casual riders average nearly double the duration of members.
 
 **Recommendations:**
 
