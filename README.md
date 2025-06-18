@@ -820,27 +820,25 @@ Dataset: 12 months of public trip data from Divvy Bike Share (Motivate Internati
 1. Data Import and Preparation: The analysis began by downloading and unzipping 12 monthly .csv trip files. These were imported using read_csv() and combined into a single R dataframe via bind_rows(). Column names were standardized across all datasets (e.g., ride_id, rideable_type, started_at, ended_at, member_casual) to ensure uniformity.
 
 2. Cleaning and Transformation Module: Data cleaning involved removing rides with negative or zero duration and excluding records with missing member_casual values or station IDs. Time-related fields were processed using the lubridate package. Two new variables were created:
-
-  - ride_length, calculated as the difference between ended_at and started_at
-  - day_of_week, derived from the started_at timestamp
+    - ride_length, calculated as the difference between ended_at and started_at
+    - day_of_week, derived from the started_at timestamp
 
 3. Analysis Module: Using dplyr, the data was grouped by user type and weekday to calculate summary metrics such as mean ride length, total duration by user type, and ride frequency across weekdays. Pivot-style summaries and cross-tabulations were developed to uncover usage patterns.
 
 4. Visualization and Communication: Visual analysis was conducted using ggplot2 and Tableau. The following charts were produced to support interpretation:
-  - Bar charts showing ride volume by user type and weekday
-  - Line charts illustrating average ride duration over time
-  - Heatmaps identifying peak usage by hour and day
+    - Bar charts showing ride volume by user type and weekday
+    - Line charts illustrating average ride duration over time
+    - Heatmaps identifying peak usage by hour and day
   
   - Example visuals were included to communicate trends to stakeholders.
 
 5. Key Findings:
-   
-  - Ride Duration: Casual riders average significantly longer rides than members.
-  - Usage Timing: Casuals peak on weekends; members are consistent on weekdays (commuter pattern).
-  - Ride Volume: Members take more rides overall, but shorter in length.
-  - Seasonality: Summer months show a spike in casual usage, suggesting seasonal promotion potential.
+    - Ride Duration: Casual riders average significantly longer rides than members.
+    - Usage Timing: Casuals peak on weekends; members are consistent on weekdays (commuter pattern).
+    - Ride Volume: Members take more rides overall, but shorter in length.
+    - Seasonality: Summer months show a spike in casual usage, suggesting seasonal promotion potential.
   
-  - Casual riders took longer rides on average, while members rode more often but for shorter durations. Weekend peaks in casual use suggest recreation, whereas weekday member usage indicates commuting. Summer spikes in casual rides highlight opportunities for seasonal promotions.
+    - Casual riders took longer rides on average, while members rode more often but for shorter durations. Weekend peaks in casual use suggest recreation, whereas weekday member usage indicates commuting. Summer spikes in casual rides highlight opportunities for seasonal promotions.
 
 **Usage Instructions:**
 - System Requirements:
