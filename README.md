@@ -939,7 +939,6 @@ Setup Instructions:
         )
       </code></pre>
 
-
       ![Chart A – Number of Rides by Day of Week](assets/CS1_S5v2.png)
       - Figure 5 – Casuals ride more on weekends; members ride more on weekdays.
 
@@ -973,8 +972,7 @@ Setup Instructions:
             panel.grid.major.x = element_blank()
           )
         </code></pre>
-
-
+        
         ![Chart B – Average Ride Duration by Day of Week](assets/CS1_S6v2.png)
         - Figure 6 – Casuals ride longer, especially on weekends.
 
