@@ -833,10 +833,14 @@ install.packages(c(
 1. Data Import and Preparation: The analysis began by downloading and unzipping 12 monthly .csv trip files. These were imported using read_csv() and combined into a single R dataframe via bind_rows(). Column names were standardized across all datasets (e.g., ride_id, rideable_type, started_at, ended_at, member_casual) to ensure uniformity.
 
 <pre><code class="language-r">
-file_list &lt;- list.files("data_raw", pattern = "*.csv", full.names = TRUE)
+library(tidyverse)
+library(lubridate)
+library(janitor)
 
-all_trips &lt;- file_list %&gt;%
-  map_df(read_csv) %&gt;%
+file_list <- list.files("data_raw", pattern = "*.csv", full.names = TRUE)
+
+all_trips <- file_list %>%
+  map_df(read_csv) %>%
   clean_names()
 </code></pre>
 
