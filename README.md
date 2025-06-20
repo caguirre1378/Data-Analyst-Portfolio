@@ -1039,7 +1039,7 @@ Setup Instructions:
           ylim(0, 30)
         </code></pre>
 
-        ![Chart C – Average Ride Duration by Rider Type](assets/CS1_S7v2.png)
+        ![Chart C – Average Ride Duration by Rider Type](assets/CS1_ARDBRT.png)
         - Figure 7 – Casuals ride longer, especially on weekends.
 
 **Recommendations:**
