@@ -979,7 +979,7 @@ Setup Instructions:
    - Members ride for about 12.6 minutes.
       → This suggests that members are likely using bikes for utility-based purposes such as commuting, while casual riders use them more for leisure or recreation.
      
-                <pre><code class="language-r">
+        <pre><code class="language-r">
         library(tidyverse)
         library(lubridate)
         library(janitor)
@@ -1010,17 +1010,20 @@ Setup Instructions:
                                         levels = c("casual", "member"),
                                         labels = c("Casual", "Member")))
         
-        # Plot average ride duration with values displayed on top
+        # Plot average ride duration with values on top and a visible legend
         ggplot(summary_stats, aes(x = member_casual, y = average_ride_length, fill = member_casual)) +
           geom_col(width = 0.6) +
           geom_text(aes(label = round(average_ride_length, 1)),
                     vjust = -0.6, size = 5, fontface = "bold") +
-          scale_fill_manual(values = c("Casual" = "#FF6F61", "Member" = "#00BFC4")) +
+          scale_fill_manual(
+            values = c("Casual" = "#FF6F61", "Member" = "#00BFC4"),
+            name = "Rider Type",  # Legend title
+            labels = c("Casual", "Member")  # Legend labels
+          ) +
           labs(
             title = "Average Ride Duration by Rider Type",
             x = "Rider Type",
-            y = "Avg. Duration (mins)",
-            fill = "Rider Type"
+            y = "Avg. Duration (mins)"
           ) +
           theme_minimal(base_size = 14) +
           theme(
