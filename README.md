@@ -980,14 +980,25 @@ Setup Instructions:
       → This suggests that members are likely using bikes for utility-based purposes such as commuting, while casual riders use them more for leisure or recreation.
      
         <pre><code class="language-r">
-        ggplot(summary_stats %>%
-                 mutate(member_casual = factor(member_casual,
-                                               levels = c("casual", "member"),
-                                               labels = c("Casual", "Member"))),
-               aes(x = member_casual, y = average_ride_length, fill = member_casual)) +
+        library(tidyverse)
+        
+        # Manually enter the values for the chart
+        summary_stats &lt;- tibble(
+          member_casual = c("casual", "member"),
+          average_ride_length = c(23.6, 12.6)
+        )
+        
+        # Convert labels for proper formatting
+        summary_stats &lt;- summary_stats %&gt;%
+          mutate(member_casual = factor(member_casual,
+                                        levels = c("casual", "member"),
+                                        labels = c("Casual", "Member")))
+        
+        # Create the bar chart
+        ggplot(summary_stats, aes(x = member_casual, y = average_ride_length, fill = member_casual)) +
           geom_col(width = 0.6) +
-          geom_text(aes(label = round(average_ride_length, 1)),
-                    vjust = -0.3, size = 5, fontface = "bold") +
+          geom_text(aes(label = average_ride_length),
+                    vjust = -0.6, size = 5, fontface = "bold") +
           scale_fill_manual(values = c("Casual" = "#FF6F61", "Member" = "#00BFC4")) +
           labs(
             title = "Average Ride Duration by Rider Type",
@@ -1003,10 +1014,10 @@ Setup Instructions:
             axis.text.x = element_text(face = "bold"),
             legend.title = element_text(face = "bold"),
             legend.position = "right",
-            panel.grid.major.y = element_line(color = "gray80", linetype = "dashed"),
             panel.grid.major.x = element_blank(),
             panel.grid.minor = element_blank()
-          )
+          ) +
+          ylim(0, 30)
         </code></pre>
 
         ![Chart C – Average Ride Duration by Rider Type](assets/CS1_S7v2.png)
