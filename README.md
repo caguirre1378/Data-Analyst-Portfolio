@@ -979,25 +979,41 @@ Setup Instructions:
    - Members ride for about 12.6 minutes.
       → This suggests that members are likely using bikes for utility-based purposes such as commuting, while casual riders use them more for leisure or recreation.
      
-        <pre><code class="language-r">
+                <pre><code class="language-r">
         library(tidyverse)
+        library(lubridate)
+        library(janitor)
         
-        # Manually enter the values for the chart
-        summary_stats &lt;- tibble(
-          member_casual = c("casual", "member"),
-          average_ride_length = c(23.6, 12.6)
-        )
+        # Import and clean all ride data
+        file_list &lt;- list.files("data_raw", pattern = "*.csv", full.names = TRUE)
         
-        # Convert labels for proper formatting
-        summary_stats &lt;- summary_stats %&gt;%
+        all_trips &lt;- file_list %&gt;%
+          map_df(read_csv) %&gt;%
+          clean_names() %&gt;%
+          mutate(
+            started_at = ymd_hms(started_at),
+            ended_at = ymd_hms(ended_at),
+            ride_length = as.numeric(difftime(ended_at, started_at, units = "mins")),
+            day_of_week = wday(started_at, label = TRUE)
+          ) %&gt;%
+          filter(ride_length > 1, !is.na(member_casual)) %&gt;%
+          drop_na()
+        
+        # Calculate average ride duration by rider type
+        summary_stats &lt;- all_trips %&gt;%
+          group_by(member_casual) %&gt;%
+          summarise(
+            average_ride_length = mean(ride_length),
+            .groups = "drop"
+          ) %&gt;%
           mutate(member_casual = factor(member_casual,
                                         levels = c("casual", "member"),
                                         labels = c("Casual", "Member")))
         
-        # Create the bar chart
+        # Plot average ride duration with values displayed on top
         ggplot(summary_stats, aes(x = member_casual, y = average_ride_length, fill = member_casual)) +
           geom_col(width = 0.6) +
-          geom_text(aes(label = average_ride_length),
+          geom_text(aes(label = round(average_ride_length, 1)),
                     vjust = -0.6, size = 5, fontface = "bold") +
           scale_fill_manual(values = c("Casual" = "#FF6F61", "Member" = "#00BFC4")) +
           labs(
