@@ -1042,6 +1042,20 @@ Setup Instructions:
         ![Chart C – Average Ride Duration by Rider Type](assets/CS1_ARDBRT.png)
         - Figure 7 – Casuals ride longer, especially on weekends.
 
+## 🚲 Cyclistic Rider Behavior Dashboard
+
+This dashboard summarizes 12 months of bike-share usage in Chicago, comparing behavioral trends between casual riders and annual members.
+
+![Case Study 1 Dashboard](assets/Case%20Study%201%20Dashboard.png)
+
+🔗 [Interactive Tableau Dashboard](https://public.tableau.com/views/YOUR-LINK-HERE)
+
+Key Insights:
+- Casual riders peak on weekends; members ride more on weekdays.
+- Member ride durations are shorter but more frequent (commuting behavior).
+- Casual ride volume surges in warmer months, suggesting leisure use.
+
+
 **Recommendations:**
 
 - Weekend Promotions for Casual Riders 
