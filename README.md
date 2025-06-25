@@ -1046,9 +1046,9 @@ Setup Instructions:
 
 This dashboard summarizes 12 months of bike-share usage in Chicago, comparing behavioral trends between casual riders and annual members.
 
-![Case Study 1 Dashboard](assets/Case%20Study%201%20Dashboard.png)
+![Cyclistic Rider Behavior Dashboard](assets/Cyclistic%20Rider%20Behavior%20Dashboard.png)
 
-🔗 [Interactive Tableau Dashboard](https://public.tableau.com/views/YOUR-LINK-HERE)
+🔗 [Interactive Tableau Dashboard](https://public.tableau.com/app/profile/christian.aguirre8539/viz/CyclisticRiderBehaviorDashboard/CyclisticRiderBehaviorDashboard?publish=yes)
 
 Key Insights:
 - Casual riders peak on weekends; members ride more on weekdays.
