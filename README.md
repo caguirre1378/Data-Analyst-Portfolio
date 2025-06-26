@@ -1046,7 +1046,7 @@ Setup Instructions:
 
 This dashboard summarizes 12 months of bike-share usage in Chicago, comparing behavioral trends between casual riders and annual members.
 
-![Cyclistic Rider Behavior Dashboard](assets/Cyclistic%20Rider%20Behavior%20Dashboard.png)
+![Cyclistic Rider Behavior Dashboard](assets/Case%20Study%201%20Dashboard.png)
 
 🔗 [Interactive Tableau Dashboard](https://public.tableau.com/app/profile/christian.aguirre8539/viz/CyclisticRiderBehaviorDashboard/CyclisticRiderBehaviorDashboard?publish=yes)
 
