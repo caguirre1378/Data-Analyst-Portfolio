@@ -1042,7 +1042,7 @@ Setup Instructions:
         ![Chart C – Average Ride Duration by Rider Type](assets/CS1_ARDBRT.png)
         - Figure 7 – Casuals ride longer, especially on weekends.
 
-#### Cyclistic Rider Behavior Dashboard
+#### 📊 Cyclistic Rider Behavior Dashboard
 
 This dashboard summarizes 12 months of bike-share usage in Chicago, comparing behavioral trends between casual riders and annual members.
 
@@ -1050,23 +1050,28 @@ This dashboard summarizes 12 months of bike-share usage in Chicago, comparing be
 
 🔗 [Interactive Tableau Dashboard](https://public.tableau.com/app/profile/christian.aguirre8539/viz/CyclisticRiderBehaviorDashboard/CyclisticRiderBehaviorDashboard?publish=yes)
 
-**Key Insights:**
+**Dashboard Overview**
+- Purpose: Analyze rider behavior to inform membership growth strategies.
+- Timeframe: April 2022 – March 2023
+- Tools Used: R (tidyverse, lubridate, ggplot2), Tableau Public
+- Key Filters: Rider Type (Casual vs. Member), Day of Week, Hour of Day
 
-- Casual riders peak on weekends; members ride more on weekdays.
-- Member ride durations are shorter but more frequent (commuting behavior).
-- Casual ride volume surges in warmer months, suggesting leisure use.
+**Key Performance Indicators**
+- Total Rides: 4,172,559
+- Member Rides: 2,319,482
+- Casual Rides: 1,853,077
+- Average Duration (Casual): 26.7 minutes
+- Average Duration (Member): 12.5 minutes
 
+**Key Insights**
+- Casual riders primarily ride on weekends, while members are more active on weekdays.
+- Members tend to take shorter, more frequent rides, suggesting a commuting pattern.
+- Casual ridership spikes in warmer months, indicating seasonal and leisure use.
 
-**Recommendations:**
-
-- Weekend Promotions for Casual Riders 
-Launch discounted weekend passes or referral codes to convert casuals who already ride on weekends.
-
-- Commuter-Focused Messaging for Member 
-Emphasize convenience, predictability, and cost-saving benefits of membership for daily work travel.
-
-- In-App Membership Nudges 
-Trigger smart prompts for casual users who frequently ride (e.g., “You’ve taken 3 rides this week — save with a membership”).
+**Strategic Recommendations**
+- Launch weekend promotions for casual riders, such as discounted passes or referral incentives.
+- Highlight benefits for members such as reliability, convenience, and cost savings for daily use.
+- Implement in-app prompts to encourage casual users to consider membership after frequent usage (e.g., “You’ve taken 3 rides this week — save with a membership”).
 
 **Contribution and Licensing:**
 
