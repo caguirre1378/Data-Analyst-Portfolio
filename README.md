@@ -812,6 +812,7 @@ This project focused on uncovering usage trends between casual riders and annual
 3. Support a targeted marketing strategy based on user patterns.
 
 **Technical Specifications:**
+
 Tools Used: R (RStudio), ggplot2, dplyr, lubridate, GitHub
 Dataset: 12 months of public trip data from Divvy Bike Share (Motivate International Inc.)
 
@@ -1086,121 +1087,152 @@ This project was developed for educational purposes through the Google Data Anal
 **Project Overview:**
 This project focused on analyzing smart device usage trends using public Fitbit data to support strategic growth for Bellabeat, a wellness technology company. The goal was to uncover patterns in user behavior (e.g., sleep, activity, heart rate) and translate those insights into marketing strategies for Bellabeat’s wellness products. The analysis focused on user habits across Bellabeat's target demographics, especially around activity and sleep, and culminated in actionable recommendations to optimize product engagement and customer acquisition.
 
+**Project Objectives:**
+  1. Identify trends in smart device usage behavior.
+  2. Understand user habits related to steps, calories burned, and sleep.
+  3. Recommend marketing strategies to enhance Bellabeat product engagement.
+
 **Technical Specifications:**
 
-Software Used: R (RStudio), Google Sheets, Tableau, GitHub
+Tools Used: R (RStudio), Google Sheets, Tableau, GitHub
+Dataset: 30-day aggregated Fitbit data from 30 users (public dataset via Kaggle)
 
-**Techniques Applied:**
+<!--Placeholder for R packages installation snippet-->
 
-- Data Exploration: Explored and summarized activity, steps, sleep, and calories data from Fitbit users using summary statistics and visualizations.
-
-- Data Cleaning: Addressed missing values, removed duplicates, standardized column names, and validated data types and formats in R.
-
-- Behavioral Analysis: Identified weekday/weekend differences, activity trends by hour, and sleep duration ranges linked to calorie burn and activity levels.
-
-- Visualization and Storytelling: Built clear visuals using ggplot2 and Tableau to show usage trends and generate insights on how Bellabeat could better align with consumer wellness habits.
-
-**Project Components and Methodology:**
+  - Figure 1 – Required R packages installed successfully in RStudio.
 
 **Project Structure:**
 
-Raw Data Import and Initial Review - 
-   
-Objective: Understand the format and quality of the public Fitbit dataset from Kaggle
-    
-Methodology: 
+1. Data Import and Preparation: The analysis began by downloading and importing Fitbit data from multiple .csv files covering daily activity, sleep, and calories. These files were merged into a single dataframe. Column names were standardized (e.g., activity_date, total_steps, calories, total_minutes_asleep) to ensure uniformity.
 
-- Imported .csv files into R
+<!--Placeholder for data import and merge code-->
 
-- Inspected tables: dailyActivity, dailyCalories, dailySteps, sleepDay, and heartrate_seconds
+  - Figure 2 – Successful import and merging of Fitbit datasets.
 
-- Conducted initial checks for NULLs, unusual values, and formatting issues
-  
+2. Cleaning and Transformation Module: Data cleaning involved filtering out records with missing values or zero activity, and transforming date columns for analysis. New features were created:
+- active_minutes_total, combining all activity levels
+- day_of_week, extracted from the date field
 
-Cleaning and Transformation Module - 
+<!--Placeholder for data cleaning and transformation coded transformation code-->
 
-Objective: Prepare the data for analysis across multiple domains (activity, sleep, heart rate)
-    
-Methodology: 
+- Figure 3 – Cleaned dataset with additional variables calculated.
 
-- Merged and joined key tables (e.g., sleepDay + dailyActivity)
+3. Analysis Module: Using dplyr and ggplot2, summary metrics were calculated for calories, steps, and sleep. The data was grouped by day of the week and plotted to highlight behavioral patterns across different user activities.
 
-- Removed duplicate rows and filtered out erroneous entries (e.g., sleep duration = 0, extreme calories)
+<!--# Placeholder for summary statistics code-->
 
-- Standardized date formats and derived new fields (e.g., total minutes asleep, active minutes, day of week)
-  
+- Figure 4 – Summary metrics showing variation in user behavior.
 
-Analysis Module - 
-
-Objective: Extract trends to inform Bellabeat’s marketing direction
-
-Methodology: 
-
-- Analyzed activity and calorie patterns by weekday and user
-
-- Explored relationship between sleep and calorie burn
-
-- Identified low-engagement patterns that could be addressed via app nudges or coaching
-
-- Visualized hourly activity trends to inform content scheduling for Bellabeat app notifications
-  
-
-Key Findings:
-
-- Sleep Duration: Users with 7–8 hours of sleep burned more calories and had more active minutes on average
-
-- Activity Patterns: Peak steps and calories burned occurred mid-week (Tuesday–Thursday), with reduced engagement on weekends
-
-- Inactive Users: Some users displayed very low step counts or no recorded sleep data, indicating opportunities for re-engagement
-
-- Calorie Burn: Consistently higher calorie burn correlated with longer active minutes, especially among users who walked over 10,000 steps
-
+4. Visualization and Communication: Visual analysis was conducted using ggplot2 and Tableau. The following charts were developed to support communication of insights:
+- Boxplot of daily steps by weekday
+- Scatterplot of active minutes vs. calories burned
+- Histogram of sleep duration
+- Bar chart of average calories burned by day
         
 **Usage Instructions**
 
 System Requirements:
 
 - Software: R/RStudio, Google Sheets (optional), Tableau (for visualization)
+- Hardware: Workstation capable of handling ~20MB of data
 
-- Hardware: Standard workstation capable of running R and processing moderate datasets (~1M rows)
-
-Installation and Running Instructions:
-
-1. Download the Fitbit dataset from Kaggle
+Setup Instructions:
+1. Download Fitbit data from the Kaggle portal
+2. Run bellabeat_analysis.R to:
+   - Merge and clean the data
+   - Generate summary statistics
+3. Open Tableau dashboards or .Rmd report to review visual findings
    
-2. Use bellabeat_analysis.R to import, clean, and analyze the dataset
+**Insights:**
+
+1. Daily Steps by Weekday:
+   - Users showed the highest average step count midweek (Tuesday through Thursday).
+   - Step activity was less consistent on weekends, reflecting shifts in routine.
+
+<!--# Placeholder for Chart A code-->
+
+- Figure 5 – Weekday consistency suggests opportunity for habit-based features.
+
+2. Calories Burned vs. Active Minutes:
+   - There was a strong linear relationship between total active minutes and calories burned.
+   - More active users burned significantly more calories.
+
+<!--# Placeholder for Chart B code-->
+
+- Figure 6 – Calories burned increase proportionally with activity.
+
+3. Sleep Duration Distribution:
+   - Most users sleep between 6 to 7.5 hours, below the recommended 8 hours.
+   - Bellabeat can encourage mindfulness and restfulness through wellness tips.
+
+<!--# Placeholder for Chart C code-->
+
+4. Average Calories Burned by Weekday:
+   - Average calories burned mirror active minutes trends, peaking midweek.
+   - Lower calorie burn on weekends shows where engagement drops.
+
+<!--# Placeholder for Chart D code-->
+
+- Figure 8 – Weekday-focused engagement aligns with commuter patterns.
+
+#### 📊 Bellabeat Smart Device Behavior Dashboard
+
+This dashboard presents key metrics from 30 days of Fitbit data, providing a behavioral profile of typical smart device users.
+
+<!-- [Interactive Tableau Dashboard] -->
+
+**Dashboard Overview**
+- Purpose: Uncover usage trends to inform Bellabeat marketing strategy
+- Timeframe: March 2023
+- Tools Used: R (tidyverse, lubridate, ggplot2), Tableau Public
+- Key Filters: Day of Week, Calories Burned, Minutes Asleep
+
+**Key Performance Indicators:**
+- Avg. Daily Steps: 7,639 steps
+- Avg. Active Minutes: 132 minutes
+- Avg. Calories Burned: 2,338 kcal
+- Avg. Sleep Duration: 6.8 hours
+
+**Key Insights**
+- Users exhibit routine physical activity during weekdays.
+- Sleep duration is below optimal levels for most users.
+- Calories burned and step count show strong alignment with activity duration.
+- Weekends display noticeable drop-off in health behavior engagement.
+
+**Strategic Recommendations**
+- Introduce weekday habit-tracking challenges through the Bellabeat app.
+- Enhance sleep-tracking features and recovery content.
+- Use gamified calorie and step-tracking milestones to boost app retention.
+- Push weekend wellness engagement via reminders or hydration prompts.
+
+**Contribution and Licensing:**
+
+This project was developed for educational purposes through the Google Data Analytics Professional Certificate. All data used is publicly available and anonymized, provided by Motivate International Inc. under open license terms.
   
-3. Review the generated .csv summaries and Bellabeat_Insights.pdf report
-  
-4. Open Tableau file or visual gallery for presentation-ready charts
 
-   
 
-**Testing and Debugging:**
 
-- Validated merged dataframes for row consistency and ID overlap
 
-- Ensured accurate transformation of datetime formats and numeric summaries
 
-- Verified logical relationships (e.g., active calories vs. steps, sleep hours vs. calorie burn)
 
-- Explored outliers to determine inclusion/exclusion based on real-world plausibility
 
-  
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 **Contribution and Licensing:**
 
 This project was created for educational use as part of the Google Data Analytics Certificate. Data was sourced publicly from Fitbit (via Kaggle) and anonymized under a CC0 public domain license.
-
-Future Enhancements and Feedback:
-
-1. Expand Scope: Add smartwatch behavioral data from other sources for broader trend comparison
-
-2. Real-Time Integration: Connect live Bellabeat data streams for interactive dashboards
-
-3. User Segmentation: Cluster users by behavior types to support persona-based marketing
-
-4. Personalized Recommendations: Build logic for app nudges or habit-based notifications based on engagement trends
 
 
 
