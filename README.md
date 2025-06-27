@@ -1104,24 +1104,19 @@ Dataset: 30-day aggregated Fitbit data from 30 users (public dataset via Kaggle)
 **Project Structure:**
 
 1. Data Import and Preparation: The analysis began by downloading and importing Fitbit data from multiple .csv files covering daily activity, sleep, and calories. These files were merged into a single dataframe. Column names were standardized (e.g., activity_date, total_steps, calories, total_minutes_asleep) to ensure uniformity.
-  
-  <!--Placeholder for data import and merge code-->
-  
-    - Figure 2 – Successful import and merging of Fitbit datasets.
+      <!--Placeholder for data import and merge code-->
+      - Figure 2 – Successful import and merging of Fitbit datasets.
 
 2. Cleaning and Transformation Module: Data cleaning involved filtering out records with missing values or zero activity, and transforming date columns for analysis. New features were created:
 - active_minutes_total, combining all activity levels
 - day_of_week, extracted from the date field
-
-  <!--Placeholder for data cleaning and transformation coded transformation code-->
-  
-  - Figure 3 – Cleaned dataset with additional variables calculated.
+      <!--Placeholder for data cleaning and transformation coded transformation code-->
+      - Figure 3 – Cleaned dataset with additional variables calculated.
 
 3. Analysis Module: Using dplyr and ggplot2, summary metrics were calculated for calories, steps, and sleep. The data was grouped by day of the week and plotted to highlight behavioral patterns across different user activities.
 
-  <!--# Placeholder for summary statistics code-->
-  
-  - Figure 4 – Summary metrics showing variation in user behavior.
+      <!--# Placeholder for summary statistics code-->
+      - Figure 4 – Summary metrics showing variation in user behavior.
 
 4. Visualization and Communication: Visual analysis was conducted using ggplot2 and Tableau. The following charts were developed to support communication of insights:
 - Boxplot of daily steps by weekday
