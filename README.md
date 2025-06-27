@@ -1104,24 +1104,24 @@ Dataset: 30-day aggregated Fitbit data from 30 users (public dataset via Kaggle)
 **Project Structure:**
 
 1. Data Import and Preparation: The analysis began by downloading and importing Fitbit data from multiple .csv files covering daily activity, sleep, and calories. These files were merged into a single dataframe. Column names were standardized (e.g., activity_date, total_steps, calories, total_minutes_asleep) to ensure uniformity.
-
-<!--Placeholder for data import and merge code-->
-
-  - Figure 2 – Successful import and merging of Fitbit datasets.
+  
+  <!--Placeholder for data import and merge code-->
+  
+    - Figure 2 – Successful import and merging of Fitbit datasets.
 
 2. Cleaning and Transformation Module: Data cleaning involved filtering out records with missing values or zero activity, and transforming date columns for analysis. New features were created:
 - active_minutes_total, combining all activity levels
 - day_of_week, extracted from the date field
 
-<!--Placeholder for data cleaning and transformation coded transformation code-->
-
-- Figure 3 – Cleaned dataset with additional variables calculated.
+  <!--Placeholder for data cleaning and transformation coded transformation code-->
+  
+  - Figure 3 – Cleaned dataset with additional variables calculated.
 
 3. Analysis Module: Using dplyr and ggplot2, summary metrics were calculated for calories, steps, and sleep. The data was grouped by day of the week and plotted to highlight behavioral patterns across different user activities.
 
-<!--# Placeholder for summary statistics code-->
-
-- Figure 4 – Summary metrics showing variation in user behavior.
+  <!--# Placeholder for summary statistics code-->
+  
+  - Figure 4 – Summary metrics showing variation in user behavior.
 
 4. Visualization and Communication: Visual analysis was conducted using ggplot2 and Tableau. The following charts were developed to support communication of insights:
 - Boxplot of daily steps by weekday
@@ -1148,32 +1148,34 @@ Setup Instructions:
 1. Daily Steps by Weekday:
    - Users showed the highest average step count midweek (Tuesday through Thursday).
    - Step activity was less consistent on weekends, reflecting shifts in routine.
-
-<!--# Placeholder for Chart A code-->
-
-- Figure 5 – Weekday consistency suggests opportunity for habit-based features.
+     
+    <!--# Placeholder for Chart A code-->
+    
+    - Figure 5 – Weekday consistency suggests opportunity for habit-based features.
 
 2. Calories Burned vs. Active Minutes:
    - There was a strong linear relationship between total active minutes and calories burned.
    - More active users burned significantly more calories.
 
-<!--# Placeholder for Chart B code-->
-
-- Figure 6 – Calories burned increase proportionally with activity.
+    <!--# Placeholder for Chart B code-->
+    
+    - Figure 6 – Calories burned increase proportionally with activity.
 
 3. Sleep Duration Distribution:
    - Most users sleep between 6 to 7.5 hours, below the recommended 8 hours.
    - Bellabeat can encourage mindfulness and restfulness through wellness tips.
 
-<!--# Placeholder for Chart C code-->
+    <!--# Placeholder for Chart C code-->
+    
+    - Figure 7 – Sleep optimization opportunities for Bellabeat.
 
 4. Average Calories Burned by Weekday:
    - Average calories burned mirror active minutes trends, peaking midweek.
    - Lower calorie burn on weekends shows where engagement drops.
 
-<!--# Placeholder for Chart D code-->
-
-- Figure 8 – Weekday-focused engagement aligns with commuter patterns.
+    <!--# Placeholder for Chart D code-->
+    
+    - Figure 8 – Weekday-focused engagement aligns with commuter patterns.
 
 #### 📊 Bellabeat Smart Device Behavior Dashboard
 
