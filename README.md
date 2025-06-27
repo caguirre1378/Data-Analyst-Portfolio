@@ -1042,7 +1042,7 @@ Setup Instructions:
         ![Chart C – Average Ride Duration by Rider Type](assets/CS1_ARDBRT.png)
         - Figure 7 – Casuals ride longer, especially on weekends.
 
-### Cyclistic Rider Behavior Dashboard
+#### Cyclistic Rider Behavior Dashboard
 
 This dashboard summarizes 12 months of bike-share usage in Chicago, comparing behavioral trends between casual riders and annual members.
 
