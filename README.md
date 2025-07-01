@@ -1188,31 +1188,38 @@ Dataset: 30-day aggregated Fitbit data from 30 users (public dataset via Kaggle)
    
       <pre><code class="language-r">
         
-      # Load required libraries
-      library(dplyr)
-      library(ggplot2)
-      
-      # Group data by day of week and calculate summary metrics
-      summary_by_day &lt;- cleaned_data %&gt;%
-      group_by(day_of_week) %&gt;%
+    # Load required libraries
+    library(dplyr)
+    library(ggplot2)
+    
+    # Group data by day of week and calculate summary metrics
+    summary_by_day <- cleaned_data %>%
+      group_by(day_of_week) %>%
       summarise(
-      avg_steps = round(mean(total_steps, na.rm = TRUE), 0),
-      avg_calories = round(mean(calories, na.rm = TRUE), 0),
-      avg_sleep = round(mean(total_minutes_asleep, na.rm = TRUE) / 60, 1)  # Convert minutes to hours
-      )
-      
-      # View summary table
-      print(summary_by_day)
-      
-      # Optional: Plot average steps by day as example
-      ggplot(summary_by_day, aes(x = day_of_week, y = avg_steps)) +
+        avg_steps = round(mean(total_steps, na.rm = TRUE), 0),
+        avg_calories = round(mean(calories, na.rm = TRUE), 0),
+        avg_sleep = round(mean(total_minutes_asleep, na.rm = TRUE) / 60, 1)  # Convert to hours
+      ) %>%
+      mutate(day_of_week = factor(day_of_week,
+             levels = c("Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat")))
+    
+    # View summary table
+    print(summary_by_day)
+    
+    # Plot: Average Daily Steps by Day of Week
+    ggplot(summary_by_day, aes(x = day_of_week, y = avg_steps)) +
       geom_col(fill = "#00BCD4", width = 0.7) +
+      geom_text(aes(label = avg_steps), vjust = -0.5, fontface = "bold") +
       labs(
-      title = "Average Daily Steps by Day of Week",
-      x = "Day of Week",
-      y = "Steps"
+        title = "Average Daily Steps by Day of Week",
+        subtitle = "Based on Fitbit Data from Bellabeat Smart Device Users",
+        x = "Day of Week",
+        y = "Steps",
+        caption = "Source: Fitbit Public Dataset via Kaggle"
       ) +
-      theme_minimal()
+      theme_minimal() +
+      theme(axis.text.x = element_text(size = 12))
+
       </code></pre>
 
       - Figure 4 – Summary metrics showing variation in user behavior.
