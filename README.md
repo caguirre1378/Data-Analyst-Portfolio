@@ -1145,6 +1145,43 @@ Setup Instructions:
    - Step activity was less consistent on weekends, reflecting shifts in routine.
      
     <!--# Placeholder for Chart A code-->
+
+    <pre><code class="language-r">
+    library(ggplot2)
+    library(dplyr)
+    library(scales)
+    
+    # Bar chart for average daily steps by day of week
+    ggplot(avg_steps_by_day, aes(x = day_of_week, y = avg_steps)) +
+      geom_col(fill = "#00BCD4", width = 0.7) +  # Teal color
+      geom_text(
+        aes(label = comma(avg_steps)),
+        vjust = -0.5,
+        fontface = "bold",
+        size = 4
+      ) +
+      labs(
+        title = "Average Daily Steps by Day of Week",
+        subtitle = "Based on Fitbit Data from Bellabeat Smart Device Users",
+        x = "Day of Week",
+        y = "Average Steps",
+        caption = "Source: Fitbit Public Dataset via Kaggle"
+      ) +
+      theme_minimal(base_size = 14) +
+      theme(
+        plot.title = element_text(face = "bold", size = 18, hjust = 0.5),
+        plot.subtitle = element_text(face = "bold", size = 12, hjust = 0.5),
+        axis.title.x = element_text(face = "bold", size = 12),
+        axis.title.y = element_text(face = "bold", size = 12),
+        axis.text.x = element_text(angle = 45, hjust = 1),
+        axis.text.y = element_text(size = 11),
+        panel.grid.major.y = element_line(color = "gray90"),
+        panel.grid.minor = element_blank(),
+        plot.caption = element_text(hjust = 1, size = 9, face = "italic")
+      ) +
+      scale_y_continuous(labels = comma, expand = expansion(mult = c(0, 0.1)))
+      </code></pre>
+
     
     - Figure 5 – Weekday consistency suggests opportunity for habit-based features.
 
@@ -1153,22 +1190,157 @@ Setup Instructions:
    - More active users burned significantly more calories.
 
     <!--# Placeholder for Chart B code-->
+
+    <pre><code class="language-r">
+    # Chart 3: Calories Burned vs. Active Minutes
+    
+    # Load required libraries
+    library(ggplot2)
+    library(dplyr)
+    library(scales)
+    
+    # Clean and calculate total active minutes
+    activity_clean &lt;- daily_activity %&gt;%
+      mutate(TotalActiveMinutes = VeryActiveMinutes + FairlyActiveMinutes + LightlyActiveMinutes) %&gt;%
+      filter(Calories &gt; 0 &amp; !is.na(TotalActiveMinutes))
+    
+    # Scatterplot: Calories vs. Active Minutes
+    ggplot(activity_clean, aes(x = TotalActiveMinutes, y = Calories)) +
+      geom_point(color = "#00BCD4", alpha = 0.6, size = 2.5) +
+      geom_smooth(method = "lm", se = FALSE, color = "#007C91", linetype = "dashed", linewidth = 1.1) +
+      labs(
+        title = "Calories Burned vs. Total Active Minutes",
+        subtitle = "Fitbit Smart Device Users Over 30 Days (Bellabeat Case Study)",
+        x = "Total Active Minutes per Day",
+        y = "Calories Burned per Day",
+        caption = "Source: Fitbit Public Dataset via Kaggle | Visualization: Christian Aguirre"
+      ) +
+      scale_x_continuous(labels = comma, breaks = seq(0, 450, by = 50)) +
+      scale_y_continuous(labels = comma, breaks = seq(1000, 5000, by = 500)) +
+      theme_minimal(base_size = 15) +
+      theme(
+        plot.title = element_text(face = "bold", size = 18, hjust = 0.5),
+        plot.subtitle = element_text(face = "italic", size = 12, hjust = 0.5),
+        axis.title = element_text(face = "bold", size = 13),
+        axis.text = element_text(size = 11),
+        panel.grid.major.y = element_line(color = "gray90"),
+        panel.grid.major.x = element_blank(),
+        panel.grid.minor = element_blank(),
+        plot.caption = element_text(size = 9, hjust = 1, color = "gray40", face = "italic")
+      )
+      </code></pre>
+
     
     - Figure 6 – Calories burned increase proportionally with activity.
 
-3. Sleep Duration Distribution:
+4. Sleep Duration Distribution:
    - Most users sleep between 6 to 7.5 hours, below the recommended 8 hours.
    - Bellabeat can encourage mindfulness and restfulness through wellness tips.
 
     <!--# Placeholder for Chart C code-->
+
+    <pre><code class="language-r">
+    # Chart 3: Sleep Duration Distribution
+    
+    library(ggplot2)
+    
+    ggplot(sleep_data_clean, aes(x = TotalSleepHours)) +
+      # Histogram with requested teal
+      geom_histogram(binwidth = 0.5, fill = "#00BCD4", color = "black") +
+      
+      # Smoothed density line that matches distribution but ignores outliers
+      geom_density(aes(y = ..count..), 
+                   color = "black", 
+                   linewidth = 1,
+                   adjust = 0.6) +
+      
+      # Transparent highlight for 6–7.5 hour sleep band
+      geom_rect(aes(xmin = 6, xmax = 7.5, ymin = 0, ymax = Inf),
+                fill = "#b2ebf2", alpha = 0.05, inherit.aes = FALSE) +
+      
+      # Vertical line for 8-hour recommendation
+      geom_vline(xintercept = 8, linetype = "dashed", color = "red", linewidth = 1) +
+      
+      # Annotations
+      annotate("text", x = 8, y = 70, label = "Recommended 8 hrs", 
+               color = "red", hjust = 0, size = 4) +
+      annotate("text", x = 6.05, y = 70, label = "Most users\nsleep 6–7.5 hrs", 
+               color = "blue", hjust = 0, size = 4) +
+    
+      # Labels
+      labs(
+        title = "Sleep Duration Distribution Among Bellabeat Users",
+        subtitle = "Most users sleep between 6 and 7.5 hours — below the recommended 8 hours.\nBellabeat can encourage mindfulness and restfulness through wellness tips.",
+        x = "Total Sleep Duration (Hours per Night)",
+        y = "Number of Observations",
+        caption = "Figure 7 – Sleep optimization opportunities for Bellabeat\nSource: Fitbit Public Dataset via Kaggle | Visualization: Christian Aguirre"
+      ) +
+    
+      # Axis formatting
+      scale_x_continuous(limits = c(0, 15), breaks = seq(0, 15, 1)) +
+      scale_y_continuous(limits = c(0, 75), breaks = seq(0, 75, 10)) +
+    
+      # Theme
+      theme_minimal(base_size = 12) +
+      theme(
+        plot.title = element_text(face = "bold", size = 14),
+        plot.subtitle = element_text(size = 10),
+        plot.caption = element_text(size = 8)
+      )
+      </code></pre>
+
     
     - Figure 7 – Sleep optimization opportunities for Bellabeat.
 
-4. Average Calories Burned by Weekday:
+6. Average Calories Burned by Weekday:
    - Average calories burned mirror active minutes trends, peaking midweek.
    - Lower calorie burn on weekends shows where engagement drops.
 
     <!--# Placeholder for Chart D code-->
+
+    <pre><code class="language-r">
+    # Chart 4: Average Calories Burned by Weekday
+    
+    library(ggplot2)
+    library(dplyr)
+    
+    # Group and summarize
+    avg_calories_by_day &lt;- calories_data_clean %&gt;%
+      group_by(day_of_week) %&gt;%
+      summarise(AverageCalories = round(mean(calories), 0))
+    
+    # Plot
+    ggplot(avg_calories_by_day, aes(x = day_of_week, y = AverageCalories, group = 1)) +
+      geom_line(color = "#00BCD4", linewidth = 1.5) +
+      geom_point(size = 3, color = "#00BCD4") +
+      geom_text(aes(label = AverageCalories), vjust = -1.2, size = 3.8) +
+    
+      # Midweek peak annotation
+      annotate("point", x = 3, y = max(avg_calories_by_day$AverageCalories),
+               color = "red", size = 4, shape = 17) +
+      annotate("text", x = 3, y = max(avg_calories_by_day$AverageCalories) + 60,
+               label = "⬤ Midweek peak", color = "red", size = 4, fontface = "bold") +
+    
+      # Weekend drop annotation
+      annotate("text", x = 7, y = min(avg_calories_by_day$AverageCalories) - 40,
+               label = "Weekend drop ⬇", color = "blue", size = 3.8, fontface = "italic") +
+    
+      labs(
+        title = "Average Calories Burned by Weekday",
+        subtitle = "Burn trends peak midweek and dip on weekends.\nVisual cue to target engagement for Bellabeat’s activity programs.",
+        x = "Day of Week",
+        y = "Average Calories Burned",
+        caption = "Figure 8 – Weekday-focused engagement aligns with commuter patterns.\nSource: Fitbit Public Dataset via Kaggle | Visualization: Christian Aguirre"
+      ) +
+      theme_minimal(base_size = 12) +
+      theme(
+        plot.title = element_text(face = "bold", size = 14),
+        plot.subtitle = element_text(size = 10),
+        plot.caption = element_text(size = 8),
+        axis.text.x = element_text(face = "bold")
+      )
+      </code></pre>
+
     
     - Figure 8 – Weekday-focused engagement aligns with commuter patterns.
 
