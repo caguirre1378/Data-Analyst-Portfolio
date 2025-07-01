@@ -1292,7 +1292,7 @@ Setup Instructions:
       )
       </code></pre>
 
-   ![Chart 3 – Sleep Duration Distribution](assets/Sleep%20Duration%20Distribution%20Amond%20Bellabeat%20Users.png)
+   ![Chart 3 – Sleep Duration Distribution](assets/Sleep%20Duration%20Distribution%20Among%20Bellabeat%20Us....png)
     - Figure 7 – Sleep optimization opportunities for Bellabeat.
 
 4. Average Calories Burned by Weekday:
