@@ -1140,7 +1140,7 @@ Setup Instructions:
    
 **Insights:**
 
-1. Daily Steps by Weekday:
+1. Average Daily Steps by Weekday:
    - Users showed the highest average step count midweek (Tuesday through Thursday).
    - Step activity was less consistent on weekends, reflecting shifts in routine.
      
@@ -1185,7 +1185,7 @@ Setup Instructions:
       scale_y_continuous(labels = comma, expand = expansion(mult = c(0, 0.1)))
       </code></pre>
 
-    
+    ![Chart 1 – Average Daily Steps by Day of Week](assets/Average%20Daily%20Steps%20by%20Day%20of%20Week.png)
     - Figure 5 – Weekday consistency suggests opportunity for habit-based features.
 
 2. Calories Burned vs. Active Minutes:
@@ -1233,7 +1233,7 @@ Setup Instructions:
       )
       </code></pre>
 
-    
+    ![Chart 2 – Calories Burned vs. Total Active Minutes](assets/Calories%20Burned%20vs.%20Total%20Active%20Minutes.png)
     - Figure 6 – Calories burned increase proportionally with activity.
 
 4. Sleep Duration Distribution:
@@ -1292,7 +1292,7 @@ Setup Instructions:
       )
       </code></pre>
 
-    
+    ![Chart 3 – Sleep Duration Distribution](assets/Sleep%20Duration%20Distribution%20Among%20Bellabeat%20Us....png)
     - Figure 7 – Sleep optimization opportunities for Bellabeat.
 
 6. Average Calories Burned by Weekday:
@@ -1344,7 +1344,7 @@ Setup Instructions:
       )
       </code></pre>
 
-    
+    ![Chart 4 – Average Calories Burned by Weekday](assets/Average%20Calories%20Burned%20by%20Weekday.png)
     - Figure 8 – Weekday-focused engagement aligns with commuter patterns.
 
 #### 📊 Bellabeat Smart Device Behavior Dashboard
