@@ -1217,11 +1217,13 @@ Dataset: 30-day aggregated Fitbit data from 30 users (public dataset via Kaggle)
 
       - Figure 4 – Summary metrics showing variation in user behavior.
 
-5. Visualization and Communication: Visual analysis was conducted using ggplot2 and Tableau. The following charts were developed to support communication of insights:
-- Line chart of average calories burned by weekday
-- Bar chart of average daily steps by day of week
-- Scatterplot of total active minutes vs. calories burned
-- Histogram and density plot of sleep duration among Bellabeat users
+4. Visualization and Communication: Visual analysis was conducted using ggplot2 and Tableau.
+
+   The following charts were developed to support communication of insights:
+    - Line chart of average calories burned by weekday
+    - Bar chart of average daily steps by day of week
+    - Scatterplot of total active minutes vs. calories burned
+    - Histogram and density plot of sleep duration among Bellabeat users
         
 **Usage Instructions**
 
