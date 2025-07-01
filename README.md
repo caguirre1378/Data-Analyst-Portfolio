@@ -1236,7 +1236,7 @@ Setup Instructions:
     ![Chart 2 – Calories Burned vs. Total Active Minutes](assets/Calories%20Burned%20vs.%20Total%20Active%20Minutes.png)
     - Figure 6 – Calories burned increase proportionally with activity.
 
-4. Sleep Duration Distribution:
+3. Sleep Duration Distribution:
    - Most users sleep between 6 to 7.5 hours, below the recommended 8 hours.
    - Bellabeat can encourage mindfulness and restfulness through wellness tips.
 
@@ -1292,10 +1292,10 @@ Setup Instructions:
       )
       </code></pre>
 
-    ![Chart 3 – Sleep Duration Distribution](assets/Sleep%20Duration%20Distribution%20Among%20Bellabeat%20Us....png)
+   ![Chart 3 – Sleep Duration Distribution](assets/Sleep%20Duration%20Distribution%20Amond%20Bellabeat%20Users.png)
     - Figure 7 – Sleep optimization opportunities for Bellabeat.
 
-6. Average Calories Burned by Weekday:
+4. Average Calories Burned by Weekday:
    - Average calories burned mirror active minutes trends, peaking midweek.
    - Lower calorie burn on weekends shows where engagement drops.
 
