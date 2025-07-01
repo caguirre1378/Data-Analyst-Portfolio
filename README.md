@@ -1104,8 +1104,7 @@ Dataset: 30-day aggregated Fitbit data from 30 users (public dataset via Kaggle)
 
   <!--Placeholder for R packages installation snippet-->
   
-  <pre><code class="language-r">
-    
+  <pre><code class="language-r"> 
   install.packages(c("tidyverse", "lubridate", "janitor", "ggplot2", "scales", "dplyr"))
   
   library(tidyverse)
@@ -1159,8 +1158,7 @@ Dataset: 30-day aggregated Fitbit data from 30 users (public dataset via Kaggle)
 - day_of_week, extracted from the date field
     <!--Placeholder for data cleaning and transformation coded transformation code-->
 
-     <pre><code class="language-r">
-                
+     <pre><code class="language-r">         
      # Load required libraries
      library(dplyr)
      library(lubridate)
@@ -1186,8 +1184,7 @@ Dataset: 30-day aggregated Fitbit data from 30 users (public dataset via Kaggle)
 
       <!--# Placeholder for summary statistics code-->
    
-      <pre><code class="language-r">
-        
+    <pre><code class="language-r">     
     # Load required libraries
     library(dplyr)
     library(ggplot2)
@@ -1219,7 +1216,6 @@ Dataset: 30-day aggregated Fitbit data from 30 users (public dataset via Kaggle)
       ) +
       theme_minimal() +
       theme(axis.text.x = element_text(size = 12))
-
       </code></pre>
 
       - Figure 4 – Summary metrics showing variation in user behavior.
