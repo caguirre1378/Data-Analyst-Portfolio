@@ -1102,43 +1102,109 @@ This project focused on analyzing smart device usage trends using public Fitbit 
 Tools Used: R (RStudio), Google Sheets, Tableau, GitHub
 Dataset: 30-day aggregated Fitbit data from 30 users (public dataset via Kaggle)
 
-<!--Placeholder for R packages installation snippet-->
-
-   <pre><code class="language-r">
-    # Install required packages (if not already installed)
-    packages &lt;- c("tidyverse", "lubridate", "janitor", "ggplot2", "scales", "dplyr")
-    installed &lt;- packages %in% installed.packages()
-    if (any(!installed)) install.packages(packages[!installed])
-    
-    # Load packages
-    library(tidyverse)
-    library(lubridate)
-    library(janitor)
-    library(ggplot2)
-    library(scales)
-    library(dplyr)
-    </code></pre>
+  <!--Placeholder for R packages installation snippet-->
 
   - Figure 1 – Required R packages installed successfully in RStudio.
 
 **Project Structure:**
 
 1. Data Import and Preparation: The analysis began by downloading and importing Fitbit data from multiple .csv files covering daily activity, sleep, and calories. These files were merged into a single dataframe. Column names were standardized (e.g., activity_date, total_steps, calories, total_minutes_asleep) to ensure uniformity.
-      <!--Placeholder for data import and merge code-->
+     <!--Placeholder for data import and merge code-->
+
+     <pre><code class="language-r">
+
+      # Load required libraries
+      library(tidyverse)
+      library(janitor)
+      
+      # Import Fitbit datasets
+      daily_activity &lt;- read_csv("data_raw/dailyActivity_merged.csv") %&gt;% clean_names()
+      daily_sleep    &lt;- read_csv("data_raw/sleepDay_merged.csv") %&gt;% clean_names()
+      daily_calories &lt;- read_csv("data_raw/dailyCalories_merged.csv") %&gt;% clean_names()
+      
+      # Convert dates
+      daily_activity &lt;- daily_activity %&gt;%
+      mutate(activity_date = as.Date(activity_date, format = "%m/%d/%Y"))
+      daily_sleep &lt;- daily_sleep %&gt;%
+      mutate(sleep_day = as.Date(sleep_day, format = "%m/%d/%Y"))
+      daily_calories &lt;- daily_calories %&gt;%
+      mutate(activity_date = as.Date(activity_date, format = "%m/%d/%Y"))
+      
+      # Merge all datasets
+      merged_data &lt;- daily_activity %&gt;%
+      inner_join(daily_sleep, by = c("id", "activity_date" = "sleep_day")) %&gt;%
+      inner_join(daily_calories, by = c("id", "activity_date")) %&gt;%
+      rename(date = activity_date)
+      
+      # Preview result
+      glimpse(merged_data)
+      </code></pre>
+
       - Figure 2 – Successful import and merging of Fitbit datasets.
 
-2. Cleaning and Transformation Module: Data cleaning involved filtering out records with missing values or zero activity, and transforming date columns for analysis. New features were created:
+3. Cleaning and Transformation Module: Data cleaning involved filtering out records with missing values or zero activity, and transforming date columns for analysis. New features were created:
 - active_minutes_total, combining all activity levels
 - day_of_week, extracted from the date field
-      <!--Placeholder for data cleaning and transformation coded transformation code-->
-      - Figure 3 – Cleaned dataset with additional variables calculated.
+    <!--Placeholder for data cleaning and transformation coded transformation code-->
+
+    <pre><code class="language-r">
+                
+    # Load required libraries
+    library(dplyr)
+    library(lubridate)
+                
+    # Clean and transform the merged Fitbit dataset
+    cleaned_data &lt;- merged_data %&gt;%
+    # Remove rows with missing values or zero total steps
+    filter(!is.na(total_steps), total_steps &gt; 0) %&gt;%
+                
+    # Create new features
+    mutate(
+    active_minutes_total = very_active_minutes + fairly_active_minutes + lightly_active_minutes,
+    day_of_week = wday(date, label = TRUE)
+    )
+                
+    # Preview cleaned dataset
+    glimpse(cleaned_data)
+    </code></pre>
+        
+     - Figure 3 – Cleaned dataset with additional variables calculated.
 
 3. Analysis Module: Using dplyr and ggplot2, summary metrics were calculated for calories, steps, and sleep. The data was grouped by day of the week and plotted to highlight behavioral patterns across different user activities.
 
       <!--# Placeholder for summary statistics code-->
+   
+      <pre><code class="language-r">
+      # Load required libraries
+      library(dplyr)
+      library(ggplot2)
+      
+      # Group data by day of week and calculate summary metrics
+      summary_by_day &lt;- cleaned_data %&gt;%
+      group_by(day_of_week) %&gt;%
+      summarise(
+      avg_steps = round(mean(total_steps, na.rm = TRUE), 0),
+      avg_calories = round(mean(calories, na.rm = TRUE), 0),
+      avg_sleep = round(mean(total_minutes_asleep, na.rm = TRUE) / 60, 1)  # Convert minutes to hours
+      )
+      
+      # View summary table
+      print(summary_by_day)
+      
+      # Optional: Plot average steps by day as example
+      ggplot(summary_by_day, aes(x = day_of_week, y = avg_steps)) +
+      geom_col(fill = "#00BCD4", width = 0.7) +
+      labs(
+      title = "Average Daily Steps by Day of Week",
+      x = "Day of Week",
+      y = "Steps"
+      ) +
+      theme_minimal()
+      </code></pre>
+
       - Figure 4 – Summary metrics showing variation in user behavior.
 
-4. Visualization and Communication: Visual analysis was conducted using ggplot2 and Tableau. The following charts were developed to support communication of insights:
+5. Visualization and Communication: Visual analysis was conducted using ggplot2 and Tableau. The following charts were developed to support communication of insights:
 - Boxplot of daily steps by weekday
 - Scatterplot of active minutes vs. calories burned
 - Histogram of sleep duration
