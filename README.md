@@ -1147,6 +1147,9 @@ Setup Instructions:
     <!--# Placeholder for Chart A code-->
 
     <pre><code class="language-r">
+    # Chart 1: Daily Steps by Weekday
+    
+    # Load required libraries
     library(ggplot2)
     library(dplyr)
     library(scales)
@@ -1192,7 +1195,7 @@ Setup Instructions:
     <!--# Placeholder for Chart B code-->
 
     <pre><code class="language-r">
-    # Chart 3: Calories Burned vs. Active Minutes
+    # Chart 2: Calories Burned vs. Active Minutes
     
     # Load required libraries
     library(ggplot2)
@@ -1378,31 +1381,6 @@ This dashboard presents key metrics from 30 days of Fitbit data, providing a beh
 
 This project was developed for educational purposes through the Google Data Analytics Professional Certificate. All data used is publicly available and anonymized, provided by Motivate International Inc. under open license terms.
   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-**Contribution and Licensing:**
-
-This project was created for educational use as part of the Google Data Analytics Certificate. Data was sourced publicly from Fitbit (via Kaggle) and anonymized under a CC0 public domain license.
-
 
 
 
