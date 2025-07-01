@@ -1103,6 +1103,18 @@ Tools Used: R (RStudio), Google Sheets, Tableau, GitHub
 Dataset: 30-day aggregated Fitbit data from 30 users (public dataset via Kaggle)
 
   <!--Placeholder for R packages installation snippet-->
+  
+  <pre><code class="language-r">
+    
+  install.packages(c("tidyverse", "lubridate", "janitor", "ggplot2", "scales", "dplyr"))
+  
+  library(tidyverse)
+  library(lubridate)
+  library(janitor)
+  library(ggplot2)
+  library(scales)
+  library(dplyr)
+  </code></pre>
 
   - Figure 1 – Required R packages installed successfully in RStudio.
 
@@ -1175,6 +1187,7 @@ Dataset: 30-day aggregated Fitbit data from 30 users (public dataset via Kaggle)
       <!--# Placeholder for summary statistics code-->
    
       <pre><code class="language-r">
+        
       # Load required libraries
       library(dplyr)
       library(ggplot2)
