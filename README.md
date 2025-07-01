@@ -1115,6 +1115,8 @@ Dataset: 30-day aggregated Fitbit data from 30 users (public dataset via Kaggle)
   library(dplyr)
   </code></pre>
 
+
+  ![Fg1 – Required Installed Packages](assets/Fg1%20-%20Required%20Installed%20Packages.png)
   - Figure 1 – Required R packages installed successfully in RStudio.
 
 **Project Structure:**
@@ -1151,9 +1153,10 @@ Dataset: 30-day aggregated Fitbit data from 30 users (public dataset via Kaggle)
       glimpse(merged_data)
       </code></pre>
 
+      ![Fg2 – Data Import and Preparation](assets/Fg2%20-%20Data%20Import%20and%20Preparation.png)
       - Figure 2 – Successful import and merging of Fitbit datasets.
 
-2. Cleaning and Transformation Module: Data cleaning involved filtering out records with missing values or zero activity, and transforming date columns for analysis. New features were created:
+1. Cleaning and Transformation Module: Data cleaning involved filtering out records with missing values or zero activity, and transforming date columns for analysis. New features were created:
 - active_minutes_total, combining all activity levels
 - day_of_week, extracted from the date field
     <!--Placeholder for data cleaning and transformation coded transformation code-->
@@ -1177,7 +1180,8 @@ Dataset: 30-day aggregated Fitbit data from 30 users (public dataset via Kaggle)
      # Preview cleaned dataset
      glimpse(cleaned_data)
      </code></pre>
-          
+
+     ![Fg3 – Cleaning and Transformation](assets/Fg3%20-%20Cleaning%20and%20Transformation.png)
      - Figure 3 – Cleaned dataset with additional variables calculated.
 
 3. Analysis Module: Using dplyr and ggplot2, summary metrics were calculated for calories, steps, and sleep. The data was grouped by day of the week and plotted to highlight behavioral patterns across different user activities.
@@ -1185,42 +1189,20 @@ Dataset: 30-day aggregated Fitbit data from 30 users (public dataset via Kaggle)
       <!--# Placeholder for summary statistics code-->
    
     <pre><code class="language-r">     
-    # Load required libraries
-    library(dplyr)
-    library(ggplot2)
-    
-    # Group data by day of week and calculate summary metrics
+    # Summarize average steps, calories, and sleep by weekday
     summary_by_day <- cleaned_data %>%
       group_by(day_of_week) %>%
       summarise(
         avg_steps = round(mean(total_steps, na.rm = TRUE), 0),
         avg_calories = round(mean(calories, na.rm = TRUE), 0),
-        avg_sleep = round(mean(total_minutes_asleep, na.rm = TRUE) / 60, 1)  # Convert to hours
-      ) %>%
-      mutate(day_of_week = factor(day_of_week,
-             levels = c("Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat")))
-    
-    # View summary table
-    print(summary_by_day)
-    
-    # Plot: Average Daily Steps by Day of Week
-    ggplot(summary_by_day, aes(x = day_of_week, y = avg_steps)) +
-      geom_col(fill = "#00BCD4", width = 0.7) +
-      geom_text(aes(label = avg_steps), vjust = -0.5, fontface = "bold") +
-      labs(
-        title = "Average Daily Steps by Day of Week",
-        subtitle = "Based on Fitbit Data from Bellabeat Smart Device Users",
-        x = "Day of Week",
-        y = "Steps",
-        caption = "Source: Fitbit Public Dataset via Kaggle"
-      ) +
-      theme_minimal() +
-      theme(axis.text.x = element_text(size = 12))
+        avg_sleep = round(mean(total_minutes_asleep, na.rm = TRUE) / 60, 1)
+      )
       </code></pre>
 
-      - Figure 4 – Summary metrics showing variation in user behavior.
+    ![Fg4 – Summary by Day of Week](assets/Fg4%20-%20Summary%20by%20Day%20of%20Week.png)
+    - Figure 4 – Summary metrics showing variation in user behavior.
 
-4. Visualization and Communication: Visual analysis was conducted using ggplot2 and Tableau.
+5. Visualization and Communication: Visual analysis was conducted using ggplot2 and Tableau.
 
    The following charts were developed to support communication of insights:
     - Line chart of average calories burned by weekday
