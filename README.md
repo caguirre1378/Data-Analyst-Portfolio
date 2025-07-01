@@ -939,7 +939,9 @@ Setup Instructions:
         )
       </code></pre>
 
+
         ![Chart A – Number of Rides by Day of Week](assets/CS1_S5v2.png)
+     
         - Figure 5 – Casual riders average nearly double the duration of members.
 
 2. Average Ride Duration by Weekday:
@@ -971,8 +973,10 @@ Setup Instructions:
             panel.grid.major.x = element_blank()
           )
         </code></pre>
+  
         
-     ![Chart B – Average Ride Duration by Day of Week](assets/CS1_S6v2.png)
+        ![Chart B – Average Ride Duration by Day of Week](assets/CS1_S6v2.png)
+     
         - Figure 6 – Casuals ride more on weekends; members ride more on weekdays.
 
 3. Average Ride Duration by Rider Type:
@@ -1041,6 +1045,7 @@ Setup Instructions:
         </code></pre>
 
         ![Chart C – Average Ride Duration by Rider Type](assets/CS1_ARDBRT.png)
+     
         - Figure 7 – Casuals ride longer, especially on weekends.
 
 #### 📊 Cyclistic Rider Behavior Dashboard
