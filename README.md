@@ -1297,10 +1297,11 @@ Setup Instructions:
       )
       </code></pre>
 
-   ![Chart 3 – Sleep Duration Distribution](assets/Sleep%20Duration%20Distribution%20Among%20Bellabeat%20Us....png)
+    ![Chart 3 – Sleep Duration Distribution](assets/Sleep%20Duration%20Distribution%20Among%20Bellabeat%20Users.png)
+   
     - Figure 7 – Sleep optimization opportunities for Bellabeat.
 
-4. Average Calories Burned by Weekday:
+5. Average Calories Burned by Weekday:
    - Average calories burned mirror active minutes trends, peaking midweek.
    - Lower calorie burn on weekends shows where engagement drops.
 
