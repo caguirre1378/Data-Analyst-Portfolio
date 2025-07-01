@@ -1121,65 +1121,65 @@ Dataset: 30-day aggregated Fitbit data from 30 users (public dataset via Kaggle)
 **Project Structure:**
 
 1. Data Import and Preparation: The analysis began by downloading and importing Fitbit data from multiple .csv files covering daily activity, sleep, and calories. These files were merged into a single dataframe. Column names were standardized (e.g., activity_date, total_steps, calories, total_minutes_asleep) to ensure uniformity.
+   
      <!--Placeholder for data import and merge code-->
 
-     <pre><code class="language-r">
-
+      <pre><code class="language-r">
       # Load required libraries
       library(tidyverse)
       library(janitor)
       
-      # Import Fitbit datasets
-      daily_activity &lt;- read_csv("data_raw/dailyActivity_merged.csv") %&gt;% clean_names()
-      daily_sleep    &lt;- read_csv("data_raw/sleepDay_merged.csv") %&gt;% clean_names()
-      daily_calories &lt;- read_csv("data_raw/dailyCalories_merged.csv") %&gt;% clean_names()
-      
-      # Convert dates
-      daily_activity &lt;- daily_activity %&gt;%
+      # Import and clean Fitbit datasets
+      daily_activity &lt;- read_csv("dailyActivity_merged.csv") %&gt;%
+      clean_names() %&gt;%
       mutate(activity_date = as.Date(activity_date, format = "%m/%d/%Y"))
-      daily_sleep &lt;- daily_sleep %&gt;%
+      
+      daily_sleep &lt;- read_csv("sleepDay_merged.csv") %&gt;%
+      clean_names() %&gt;%
       mutate(sleep_day = as.Date(sleep_day, format = "%m/%d/%Y"))
-      daily_calories &lt;- daily_calories %&gt;%
-      mutate(activity_date = as.Date(activity_date, format = "%m/%d/%Y"))
       
-      # Merge all datasets
+      daily_calories &lt;- read_csv("dailyCalories_merged.csv") %&gt;%
+      clean_names() %&gt;%
+      mutate(activity_day = as.Date(activity_day, format = "%m/%d/%Y"))
+      
+      # Merge datasets on user ID and date
       merged_data &lt;- daily_activity %&gt;%
       inner_join(daily_sleep, by = c("id", "activity_date" = "sleep_day")) %&gt;%
-      inner_join(daily_calories, by = c("id", "activity_date")) %&gt;%
+      inner_join(daily_calories, by = c("id", "activity_date" = "activity_day")) %&gt;%
       rename(date = activity_date)
       
-      # Preview result
+      # Preview the result
       glimpse(merged_data)
       </code></pre>
 
       - Figure 2 – Successful import and merging of Fitbit datasets.
 
-3. Cleaning and Transformation Module: Data cleaning involved filtering out records with missing values or zero activity, and transforming date columns for analysis. New features were created:
+2. Cleaning and Transformation Module: Data cleaning involved filtering out records with missing values or zero activity, and transforming date columns for analysis. New features were created:
 - active_minutes_total, combining all activity levels
 - day_of_week, extracted from the date field
     <!--Placeholder for data cleaning and transformation coded transformation code-->
 
-    <pre><code class="language-r">
+     <pre><code class="language-r">
                 
-    # Load required libraries
-    library(dplyr)
-    library(lubridate)
-                
-    # Clean and transform the merged Fitbit dataset
-    cleaned_data &lt;- merged_data %&gt;%
-    # Remove rows with missing values or zero total steps
-    filter(!is.na(total_steps), total_steps &gt; 0) %&gt;%
-                
-    # Create new features
-    mutate(
-    active_minutes_total = very_active_minutes + fairly_active_minutes + lightly_active_minutes,
-    day_of_week = wday(date, label = TRUE)
-    )
-                
-    # Preview cleaned dataset
-    glimpse(cleaned_data)
-    </code></pre>
-        
+     # Load required libraries
+     library(dplyr)
+     library(lubridate)
+                  
+     # Clean and transform the merged Fitbit dataset
+     cleaned_data &lt;- merged_data %&gt;%
+     # Remove rows with missing values or zero total steps
+     filter(!is.na(total_steps), total_steps &gt; 0) %&gt;%
+                  
+     # Create new features
+     mutate(
+     active_minutes_total = very_active_minutes + fairly_active_minutes + lightly_active_minutes,
+     day_of_week = wday(date, label = TRUE)
+     )
+                  
+     # Preview cleaned dataset
+     glimpse(cleaned_data)
+     </code></pre>
+          
      - Figure 3 – Cleaned dataset with additional variables calculated.
 
 3. Analysis Module: Using dplyr and ggplot2, summary metrics were calculated for calories, steps, and sleep. The data was grouped by day of the week and plotted to highlight behavioral patterns across different user activities.
