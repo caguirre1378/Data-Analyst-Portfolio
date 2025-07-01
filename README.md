@@ -1104,6 +1104,21 @@ Dataset: 30-day aggregated Fitbit data from 30 users (public dataset via Kaggle)
 
 <!--Placeholder for R packages installation snippet-->
 
+   <pre><code class="language-r">
+    # Install required packages (if not already installed)
+    packages &lt;- c("tidyverse", "lubridate", "janitor", "ggplot2", "scales", "dplyr")
+    installed &lt;- packages %in% installed.packages()
+    if (any(!installed)) install.packages(packages[!installed])
+    
+    # Load packages
+    library(tidyverse)
+    library(lubridate)
+    library(janitor)
+    library(ggplot2)
+    library(scales)
+    library(dplyr)
+    </code></pre>
+
   - Figure 1 – Required R packages installed successfully in RStudio.
 
 **Project Structure:**
