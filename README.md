@@ -1438,6 +1438,8 @@ Setup Instructions:
 
 This dashboard presents key metrics from 30 days of Fitbit data, providing a behavioral profile of typical smart device users.
 
+![Bellabeat Smart Device Behavior Dashboard](./Bellabeat%20Smart%20Device%20Behavior%20Dashboard%20.png)
+🔗 [Interactive Tableau Dashboard](https://public.tableau.com/app/profile/christian.aguirre8539/viz/BellabeatSmartDeviceBehaviorDashboard/BellabeatSmartDeviceBehaviorDashboard?publish=yes)
 <!-- [Interactive Tableau Dashboard] -->
 
 **Dashboard Overview**
