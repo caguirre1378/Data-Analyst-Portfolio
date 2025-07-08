@@ -1470,22 +1470,3 @@ This dashboard presents key metrics from 30 days of Fitbit data, providing a beh
 
 This project was developed for educational purposes through the Google Data Analytics Professional Certificate. All data used is publicly available and anonymized, provided by Motivate International Inc. under open license terms.
   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
