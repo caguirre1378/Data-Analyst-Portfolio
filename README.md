@@ -1528,6 +1528,30 @@ Dataset: Telco Customer Churn (Kaggle, ~7K records, 21 features)
       <!--# Placeholder for summary statistics code-->
 
 5. Evaluation & Feature Importance: Used confusion_matrix and classification_report to measure model performance. Feature importance plots highlighted which business features most strongly predicted churn (e.g., Contract, Tenure, MonthlyCharges).
+
+Model Explainability using SHAP
+
+To interpret model predictions and understand the marginal impact of each feature on churn, SHAP (SHapley Additive exPlanations) was used with the Logistic Regression model. SHAP values provide transparency and support trust in predictive analytics by showing which features push predictions toward churn or retention.
+
+<pre><code class="language-python">
+# Import SHAP
+import shap
+
+# Create SHAP explainer for linear models (Logistic Regression)
+explainer = shap.LinearExplainer(model, X_train, feature_perturbation="interventional")
+
+# Calculate SHAP values for the test set
+shap_values = explainer.shap_values(X_test)
+
+# Summary plot showing feature impact and distribution
+shap.summary_plot(shap_values, X_test)
+
+# Bar plot showing average magnitude of feature importance
+shap.summary_plot(shap_values, X_test, plot_type="bar")
+</code></pre>
+
+
+
         
 **Usage Instructions**
 
