@@ -1531,7 +1531,7 @@ Dataset: Telco Customer Churn (Kaggle, ~7K records, 21 features)
     <!--Placeholder for data cleaning and transformation coded transformation code-->
 
     ![Missing and Duplicate Data Validation](assets/Missing%20and%20Duplicate%20Data%20Validation.png)
-    ![Validation of Clean Dataset (Null + Duplicate Rows)](assets/Validation%20of%20Clean%20Dataset%20(Null%20+%20Duplicate%20Rows).png)
+    ![Validation of Clean Dataset](assets/Validation%20of%20Clean%20Dataset%20(Null%20+%20Duplicate%20Checks).png)
     ![Removing Unnecessary Columns (customerID)](assets/Removing%20Unnecessary%20Columns%20(customerID).png)
     ![Label Encoding Categorical Features](assets/Label%20Encoding%20Categorical%20Features.png)
     ![Train-Test Split with Fix for Syntax Error](assets/Train-Test%20Split%20with%20Fix%20for%20Syntax%20Error.png)
