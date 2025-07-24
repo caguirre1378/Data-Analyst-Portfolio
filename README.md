@@ -1595,8 +1595,8 @@ shap.summary_plot(shap_values, X_test, plot_type="bar")
 ![SHAP Attempt – Module Not Found Error](assets/SHAP%20Attempt%20–%20Module%20Not%20Found%20Error.png)
 ![SHAP Installed – Incompatible with Logistic Regression](assets/SHAP%20Installed%20–%20Incompatible%20with%20Logistic%20Regression.png)
 ![SHAP Error Fix Attempt - Switching to LinearExplainer](assets/SHAP%20Error%20Fix%20Attempt%20-%20Switching%20to%20LinearExplainer.png)
-![SHAP Summary Plot for Logistic Regression](assets/SHAP%20Summary%20Plot%20for%20Logistic%20Regression.png)
-![SHAP Bar Plot (Global Feature Importance)](assets/SHAP%20Bar%20Plot%20(Global%20Feature%20Importance).png)
+![SHAP Summary Plot for Logistic Regression](%5BSHAP%20Summary%20Plot%20for%20Logistic%20Regression%20-%20LinearExplainer.png%5D)
+![SHAP Bar Plot – Global Feature Importance](%5BSHAP%20Bar%20Plot%20(Global%20Feature%20Importance%20Ranking).png%5D)
 
 
 
