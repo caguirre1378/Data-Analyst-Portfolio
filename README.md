@@ -1469,4 +1469,109 @@ This dashboard presents key metrics from 30 days of Fitbit data, providing a beh
 **Contribution and Licensing:**
 
 This project was developed for educational purposes through the Google Data Analytics Professional Certificate. All data used is publicly available and anonymized, provided by Motivate International Inc. under open license terms.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---
+
+### Project 7: Telco Customer Churn Analysis for Retention Strategy
+
+### (July 2025 — Kaggle Dataset, Python End-to-End Modeling Project))
+
+**Project Overview:**
+This project analyzes customer churn behavior using a real-world telecom dataset. The goal was to understand what drives customer attrition and use predictive modeling to support proactive retention strategies. By identifying churn indicators like contract type, tenure, monthly charges, and payment method, this analysis helps telecom companies make informed business decisions to improve long-term customer engagement.
+
+
+**Project Objectives:**
+  1. Predict whether a customer will churn using classification models
+  2. Identify the top behavioral and billing features associated with churn
+  3. Provide data-driven business insights and actionable recommendations to reduce churn
+
+**Technical Specifications:**
+
+Tools Used: Python (Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn), Jupyter Notebook
+Modeling Techniques: Random Forest, Feature Importance, Data Preprocessing
+Dataset: Telco Customer Churn (Kaggle, ~7K records, 21 features)
+
+  <!--Placeholder for installation snippet-->
+
+**Project Structure:**
+
+1. Data Import and Preparation: The Telco churn dataset was loaded into Jupyter and inspected for missing values, data types, and feature relationships. Key fields such as tenure, monthly charges, and contract type were evaluated for early insights.
+   
+     <!--Placeholder for data import and merge code-->
+
+2. Cleaning and Transformation Module:
+   - Converted TotalCharges to numeric
+   - Handled missing values
+   - Encoded categorical variables using LabelEncoder
+   - Scaled numeric variables for modeling
+  
+    <!--Placeholder for data cleaning and transformation coded transformation code-->
+
+3. Modeling Module: Used RandomForestClassifier to train a binary churn prediction model on a cleaned and preprocessed dataset. The model achieved solid precision and recall on unseen test data and revealed key churn drivers.
+
+      <!--# Placeholder for summary statistics code-->
+
+5. Evaluation & Feature Importance: Used confusion_matrix and classification_report to measure model performance. Feature importance plots highlighted which business features most strongly predicted churn (e.g., Contract, Tenure, MonthlyCharges).
+        
+**Usage Instructions**
+
+System Requirements:
+
+- Software: Jupyter Notebook, Python 3.x, scikit-learn
+- Dependencies: pandas, numpy, seaborn, matplotlib, sklearn
+
+Setup Instructions:
+1. Download the Telco Customer Churn dataset from Kaggle
+2. Open the notebook telco_churn_analysis.ipynb
+3. Run cells sequentially to view data import, cleaning, modeling, and insights
+4. Review the final feature importance plot and business recommendations
+   
+**Insights:**
+
+1. Churn Rate by Contract Type:
+   - Customers on month-to-month contracts had the highest churn rate.
+   - Those on one-year or two-year contracts were significantly more likely to stay.
+     
+    <!--# Placeholder for Chart A code-->
+
+2. Monthly Charges vs. Churn:
+   - Customers with higher monthly charges were more likely to churn.
+   - This trend suggests pricing pressure or dissatisfaction among high-paying customers.
+
+    <!--# Placeholder for Chart B code-->
+
+3. Tenure vs. Churn Likelihood:
+   - New customers (tenure < 12 months) showed the highest churn probability.
+   - Longer-tenured customers were more stable and less likely to leave.
+     
+    <!--# Placeholder for Chart C code-->
+
+4. Payment Method Impact:
+   - Users who paid via electronic check had a notably higher churn rate.
+   - Those using credit card or automatic bank draft churned less, indicating billing convenience matters.
+
+    <!--# Placeholder for Chart D code-->
+
+**Strategic Recommendations**
+- Launch customer loyalty offers targeting short-tenure and monthly users
+- Bundle services for high monthly spenders to reduce churn risk
+- Improve billing transparency and app experience for digital payment users
+- Use churn predictions to drive personalized retention campaigns
+
+**Contribution and Licensing:**
+This project was developed for educational purposes using the Telco Customer Churn dataset from Kaggle. Data is public and anonymized.
   
