@@ -1515,6 +1515,13 @@ Dataset: Telco Customer Churn (Kaggle, ~7K records, 21 features)
    
      <!--Placeholder for data import and merge code-->
 
+    ![Dataset File Loaded in JupyterLab Directory](assets/Dataset%20File%20Loaded%20in%20JupyterLab%20Directory.png)
+    ![Dataset Overview in CSV Viewer](assets/Dataset%20Overview%20in%20CSV%20Viewer.png)
+    ![Data Preview and Missing Value Check](assets/Data%20Preview%20and%20Missing%20Value%20Check.png)
+    ![Duplicate Rows Check](assets/Duplicate%20Rows%20Check.png)
+    ![Correlation Heatmap of Telco Dataset](assets/Correlation%20Heatmap%20of%20Telco%20Dataset.png)
+
+
 2. Cleaning and Transformation Module:
    - Converted TotalCharges to numeric
    - Handled missing values
@@ -1523,9 +1530,19 @@ Dataset: Telco Customer Churn (Kaggle, ~7K records, 21 features)
   
     <!--Placeholder for data cleaning and transformation coded transformation code-->
 
-3. Modeling Module: Used RandomForestClassifier to train a binary churn prediction model on a cleaned and preprocessed dataset. The model achieved solid precision and recall on unseen test data and revealed key churn drivers.
+    ![Missing and Duplicate Data Validation](assets/Missing%20and%20Duplicate%20Data%20Validation.png)
+    ![Validation of Clean Dataset (Null + Duplicate Rows)](assets/Validation%20of%20Clean%20Dataset%20(Null%20+%20Duplicate%20Rows).png)
+    ![Removing Unnecessary Columns (customerID)](assets/Removing%20Unnecessary%20Columns%20(customerID).png)
+    ![Label Encoding Categorical Features](assets/Label%20Encoding%20Categorical%20Features.png)
+    ![Train-Test Split with Fix for Syntax Error](assets/Train-Test%20Split%20with%20Fix%20for%20Syntax%20Error.png)
 
-      <!--# Placeholder for summary statistics code-->
+
+4. Modeling Module: Used RandomForestClassifier to train a binary churn prediction model on a cleaned and preprocessed dataset. The model achieved solid precision and recall on unseen test data and revealed key churn drivers.
+
+    <!--# Placeholder for summary statistics code-->
+    ![Logistic Regression vs Random Forest Comparison](assets/Logistic%20Regression%20vs%20Random%20Forest%20Comparison.png)
+    ![Logistic Regression Model Evaluation](assets/Logistic%20Regression%20Model%20Evaluation.png)
+
 
 5. Evaluation & Feature Importance: Used confusion_matrix and classification_report to measure model performance. Feature importance plots highlighted which business features most strongly predicted churn (e.g., Contract, Tenure, MonthlyCharges).
 
@@ -1575,6 +1592,13 @@ shap.summary_plot(shap_values, X_test)
 shap.summary_plot(shap_values, X_test, plot_type="bar")
 </code></pre>
 
+![SHAP Attempt – Module Not Found Error](assets/SHAP%20Attempt%20–%20Module%20Not%20Found%20Error.png)
+![SHAP Installed – Incompatible with Logistic Regression](assets/SHAP%20Installed%20–%20Incompatible%20with%20Logistic%20Regression.png)
+![SHAP Error Fix Attempt - Switching to LinearExplainer](assets/SHAP%20Error%20Fix%20Attempt%20-%20Switching%20to%20LinearExplainer.png)
+![SHAP Summary Plot for Logistic Regression](assets/SHAP%20Summary%20Plot%20for%20Logistic%20Regression.png)
+![SHAP Bar Plot (Global Feature Importance)](assets/SHAP%20Bar%20Plot%20(Global%20Feature%20Importance).png)
+
+
 
 Conclusion
 - Logistic Regression and Random Forest models identified churn risks with solid accuracy
@@ -1593,6 +1617,9 @@ Setup Instructions:
 1. Download the Telco Customer Churn dataset from Kaggle
 2. Open the notebook telco_churn_analysis.ipynb
 3. Run cells sequentially to view data import, cleaning, modeling, and insights
+   
+  ![Python Package Import Cell](assets/Python%20Package%20Import%20Cell.png)
+  
 4. Review the final feature importance plot and business recommendations
    
 **Insights:**
