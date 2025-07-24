@@ -1529,6 +1529,31 @@ Dataset: Telco Customer Churn (Kaggle, ~7K records, 21 features)
 
 5. Evaluation & Feature Importance: Used confusion_matrix and classification_report to measure model performance. Feature importance plots highlighted which business features most strongly predicted churn (e.g., Contract, Tenure, MonthlyCharges).
 
+Model Evaluation and Performance Metrics
+
+To validate the performance of the classification model, key metrics such as precision, recall, and F1-score were computed using the classification report. A confusion matrix was also plotted to visually assess prediction accuracy across churn and non-churn labels.
+
+<pre><code class="language-python">
+from sklearn.metrics import classification_report, confusion_matrix
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+# Predict on test set
+y_pred = model.predict(X_test)
+
+# Confusion Matrix
+conf_mat = confusion_matrix(y_test, y_pred)
+sns.heatmap(conf_mat, annot=True, fmt='d', cmap='Blues')
+plt.xlabel('Predicted')
+plt.ylabel('Actual')
+plt.title('Confusion Matrix')
+plt.show()
+
+# Classification Report
+print(classification_report(y_test, y_pred))
+</code></pre>
+
+
 Model Explainability using SHAP
 
 To interpret model predictions and understand the marginal impact of each feature on churn, SHAP (SHapley Additive exPlanations) was used with the Logistic Regression model. SHAP values provide transparency and support trust in predictive analytics by showing which features push predictions toward churn or retention.
@@ -1551,8 +1576,12 @@ shap.summary_plot(shap_values, X_test, plot_type="bar")
 </code></pre>
 
 
-
-        
+Conclusion
+- Logistic Regression and Random Forest models identified churn risks with solid accuracy
+- Tenure, contract type, and monthly charges were top indicators
+- SHAP helped clarify which features contributed most to predictions
+- These findings enable targeted interventions for customer retention
+      
 **Usage Instructions**
 
 System Requirements:
@@ -1571,26 +1600,19 @@ Setup Instructions:
 1. Churn Rate by Contract Type:
    - Customers on month-to-month contracts had the highest churn rate.
    - Those on one-year or two-year contracts were significantly more likely to stay.
-     
-    <!--# Placeholder for Chart A code-->
 
 2. Monthly Charges vs. Churn:
    - Customers with higher monthly charges were more likely to churn.
    - This trend suggests pricing pressure or dissatisfaction among high-paying customers.
 
-    <!--# Placeholder for Chart B code-->
-
 3. Tenure vs. Churn Likelihood:
    - New customers (tenure < 12 months) showed the highest churn probability.
    - Longer-tenured customers were more stable and less likely to leave.
-     
-    <!--# Placeholder for Chart C code-->
 
 4. Payment Method Impact:
    - Users who paid via electronic check had a notably higher churn rate.
    - Those using credit card or automatic bank draft churned less, indicating billing convenience matters.
 
-    <!--# Placeholder for Chart D code-->
 
 **Strategic Recommendations**
 - Launch customer loyalty offers targeting short-tenure and monthly users
