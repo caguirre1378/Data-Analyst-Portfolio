@@ -1502,7 +1502,9 @@ This project analyzes customer churn behavior using a real-world telecom dataset
 **Technical Specifications:**
 
 Tools Used: Python (Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn), Jupyter Notebook
+
 Modeling Techniques: Random Forest, Feature Importance, Data Preprocessing
+
 Dataset: Telco Customer Churn (Kaggle, ~7K records, 21 features)
 
   <!--Placeholder for installation snippet-->
