@@ -15,3 +15,22 @@ collections:
     output: true
     permalink: /:collection/:name
 
+# Navigation bar
+defaults:
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: single
+
+# Top navigation menu
+navigation:
+  - title: "Home"
+    url: /
+  - title: "About"
+    url: /about/
+  - title: "Portfolio"
+    url: /portfolio/
+  - title: "Resume"
+    url: /resume/
+
