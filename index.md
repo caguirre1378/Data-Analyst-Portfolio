@@ -12,18 +12,23 @@ header:
       class: "btn--primary"
 
 # --- 8 “Areas of Interest” items (icons + short text)
-areas:
+
+# Row 1 (3 items)
+areas_row1:
   - title: "Cloud Compute"
-    excerpt: "I maintain servers for database storage, model training, and model deployment."
+    excerpt: "Servers for storage, model training, and deployment."
     icon: "fas fa-cloud"
   - title: "NLP"
-    excerpt: "I apply NLP techniques to make sense of human interactions."
+    excerpt: "Techniques to make sense of human text."
     icon: "fas fa-language"
   - title: "Machine Learning"
-    excerpt: "More than an API call: I like the math, theory, and implementation."
+    excerpt: "I like the math, theory, and implementation."
     icon: "fas fa-robot"
+
+# Row 2 (3 items)
+areas_row2:
   - title: "Parallel Computing"
-    excerpt: "I extract data from Hadoop ecosystems using the HIVE framework."
+    excerpt: "Hadoop/Hive experience for large-scale data."
     icon: "fas fa-project-diagram"
   - title: "Model Deployment"
     excerpt: "Production ML via REST APIs and CI/CD."
@@ -31,33 +36,7 @@ areas:
   - title: "Data Analytics"
     excerpt: "Clear, compelling stories with data."
     icon: "fas fa-chart-bar"
-  - title: "SQL & Databases"
-    excerpt: "Modeling, cleaning, and performance-minded querying."
-    icon: "fas fa-database"
-  - title: "Visualization"
-    excerpt: "Tableau/ggplot/Matplotlib for crisp, decision-ready visuals."
-    icon: "fas fa-chart-line"
 
-# --- Latest projects (3 big cards – you can add more)
-latest:
-  - title: "Telco Customer Churn"
-    excerpt: "End-to-end modeling with SHAP explainability."
-    image_path: 
-    url: /projects/telco-churn/
-    btn_label: "Read case study"
-    btn_class: "btn--primary"
-  - title: "Cyclistic Rider Behavior"
-    excerpt: "R + Tableau: usage patterns that drive conversion."
-    image_path: 
-    url: /projects/cyclistic/
-    btn_label: "Open project"
-    btn_class: "btn--primary"
-  - title: "Bellabeat Usage Analysis"
-    excerpt: "Wellness insights from Fitbit data."
-    image_path: 
-    url: /projects/bellabeat/
-    btn_label: "Open project"
-    btn_class: "btn--primary"
 ---
 
 <!-- Intro blurb under the hero -->
