@@ -2,7 +2,7 @@
 layout: splash
 title: "Christian Aguirre"
 subtitle: "Data Analyst · SQL · Tableau · Python"
-classes: wide              # 👈 makes the content area wide so grids can form
+classes: wide      # we'll also force wide via CSS in step C
 header:
   overlay_color: "#000"
   overlay_filter: "0.55"
@@ -12,7 +12,7 @@ header:
       url: "/portfolio/"
       class: "btn--primary"
 
-# your areas_row1, areas_row2, latest blocks stay here…
+# Row 1 (3 cards)
 areas_row1:
   - title: "Cloud Compute"
     excerpt: "Servers for storage, model training, and deployment."
@@ -21,9 +21,10 @@ areas_row1:
     excerpt: "Techniques to make sense of human text."
     icon: "fas fa-language"
   - title: "Machine Learning"
-    excerpt: "Math, theory, and implementation."
+    excerpt: "Math, theory, implementation."
     icon: "fas fa-robot"
 
+# Row 2 (3 cards)
 areas_row2:
   - title: "Parallel Computing"
     excerpt: "Hadoop/Hive for large-scale data."
@@ -35,6 +36,7 @@ areas_row2:
     excerpt: "Clear, compelling stories with data."
     icon: "fas fa-chart-bar"
 
+# Latest projects (image tiles)
 latest:
   - title: "Telco Customer Churn"
     excerpt: "Modeling with SHAP explainability."
@@ -64,4 +66,3 @@ Welcome! I analyze data to drive decisions. Explore my interests and recent work
 
 ## My Latest Projects
 {% include feature_row id="latest" type="left" %}
-
