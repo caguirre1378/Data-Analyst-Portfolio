@@ -6,7 +6,6 @@ classes: wide
 header:
   overlay_color: "#000"
   overlay_filter: "0.55"
-  # Optional: replace this with a real image in /assets/images/
   overlay_image: /assets/images/header-bg.jpg
   actions:
     - label: "MY PROJECTS"
@@ -36,7 +35,7 @@ areas_row2:
     excerpt: "Clear, compelling stories with data."
     icon: "fas fa-chart-bar"
 
-# ---------- Fallback 'Latest Projects' (used only if _projects collection not found) ----------
+# ---------- Fallback 'Latest Projects' ----------
 latest:
   - title: "Telco Customer Churn"
     excerpt: "Modeling with SHAP explainability."
@@ -67,8 +66,8 @@ Welcome! I analyze data to drive decisions. Explore my interests and recent work
 {% include feature_row id="areas_row2" type="icon" class="ai-grid" %}
 
 ## My Latest Projects
-{% assign latest_projects = site.projects | sort: 'date' | reverse | slice: 0, 3 %}
-{% if latest_projects and latest_projects.size > 0 %}
+{% assign latest_projects = site.projects | sort: "date" | reverse | slice: 0, 3 %}
+{% if latest_projects.size > 0 %}
 <div class="grid__wrapper">
   {% for doc in latest_projects %}
     {% include archive-single.html type="grid" %}
