@@ -55,3 +55,13 @@ latest:
     btn_label: "Open project"
     btn_class: "btn--primary"
 ---
+
+Welcome! I analyze data to drive decisions. Explore my interests and recent work below.
+
+## Areas of Interest
+{% include feature_row id="areas_row1" type="icon" class="ai-grid" %}
+{% include feature_row id="areas_row2" type="icon" class="ai-grid" %}
+
+## My Latest Projects
+{% include feature_row id="latest" type="left" %}
+
