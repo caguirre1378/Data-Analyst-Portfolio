@@ -1,18 +1,13 @@
 ---
-title: "Optimizing Operational Performance"
-excerpt: "Business Analytics II project – improving delivery, costs, and retention"
+title: "Telco Customer Churn Analysis"
+excerpt: "End-to-end Python project with SHAP explainability"
 layout: single
-date: 2021-12-01
+date: 2025-07-01
 ---
 
-### Overview
-This senior-level project focused on diagnosing and addressing operational issues
-in a hypothetical lawn equipment manufacturing company.
+This project analyzes churn behavior using Random Forest and Logistic Regression,
+with SHAP for model explainability.
 
-### Objectives
-- Increase on-time delivery rates
-- Optimize transmission costs
-- Enhance employee retention
+![Churn Heatmap](../assets/images/churn-heatmap.png)
 
-### Key Visuals
-![On-Time Delivery Chart](../assets/images/otd.png)
+[View full code on GitHub](https://github.com/caguirre1378/Data-Analyst-Portfolio)
