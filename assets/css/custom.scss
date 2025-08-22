@@ -1,4 +1,7 @@
-/* Centered, airy icon cards like the reference screenshot */
+/* Make the splash page content wide so feature grids form 3 columns */
+.layout--splash .page__content { max-width: 1200px; }
+
+/* Pretty hover + spacing (optional) */
 .ai-grid .feature__item {
   text-align: center;
   background: #fff;
@@ -11,16 +14,4 @@
   transform: translateY(-4px);
   box-shadow: 0 14px 28px rgba(0,0,0,.10);
 }
-.ai-grid .feature__icon {
-  font-size: 28px;
-  opacity: .9;
-  margin-bottom: 8px;
-}
-.ai-grid .archive__item-title {
-  font-weight: 700;
-  margin-bottom: 6px;
-}
-.ai-grid .archive__item-excerpt {
-  font-size: .92rem;
-  color: #555;
-}
+.ai-grid .feature__icon { font-size: 28px; opacity: .9; margin-bottom: 8px; }
