@@ -65,4 +65,10 @@ Welcome! I analyze data to drive decisions. Explore my interests and recent work
 {% include feature_row id="areas_row2" type="icon" class="ai-grid" %}
 
 ## My Latest Projects
-{% include feature_row id="latest" type="left" %}
+{% assign latest = site.projects | sort: 'date' | reverse | slice: 0, 3 %}
+<div class="grid__wrapper">
+  {% for doc in latest %}
+    {% include archive-single.html type="grid" %}
+  {% endfor %}
+</div>
+
