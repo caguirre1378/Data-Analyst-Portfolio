@@ -1,0 +1,10 @@
+title: "Christian Aguirre"
+description: "Data Analyst Portfolio"
+baseurl: "" 
+url: "https://caguirre1378.github.io"
+
+remote_theme: "mmistakes/minimal-mistakes@latest"
+plugins:
+  - jekyll-include-cache
+  - jekyll-feed
+  - jekyll-seo-tag
