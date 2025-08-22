@@ -2,17 +2,18 @@
 layout: splash
 title: "Christian Aguirre"
 subtitle: "Data Analyst · SQL · Tableau · Python"
-classes: wide      # we'll also force wide via CSS in step C
+classes: wide
 header:
   overlay_color: "#000"
   overlay_filter: "0.55"
+  # Optional: replace this with a real image in /assets/images/
   overlay_image: /assets/images/header-bg.jpg
   actions:
     - label: "MY PROJECTS"
       url: "/portfolio/"
       class: "btn--primary"
 
-# Row 1 (3 cards)
+# ---------- Areas of Interest (icon rows) ----------
 areas_row1:
   - title: "Cloud Compute"
     excerpt: "Servers for storage, model training, and deployment."
@@ -24,7 +25,6 @@ areas_row1:
     excerpt: "Math, theory, implementation."
     icon: "fas fa-robot"
 
-# Row 2 (3 cards)
 areas_row2:
   - title: "Parallel Computing"
     excerpt: "Hadoop/Hive for large-scale data."
@@ -36,23 +36,25 @@ areas_row2:
     excerpt: "Clear, compelling stories with data."
     icon: "fas fa-chart-bar"
 
-# Latest projects (image tiles)
+# ---------- Fallback 'Latest Projects' (used only if _projects collection not found) ----------
 latest:
   - title: "Telco Customer Churn"
     excerpt: "Modeling with SHAP explainability."
-    image_path: /assets/images/Telco Splash.png
+    image_path: /assets/images/telco-splash.png
     url: /projects/telco-churn/
     btn_label: "Read case study"
     btn_class: "btn--primary"
+
   - title: "Cyclistic Rider Behavior"
     excerpt: "R + Tableau: usage patterns that drive conversion."
-    image_path: /assets/images/Cyclist Splash.png
+    image_path: /assets/images/cyclist-splash.png
     url: /projects/cyclistic/
     btn_label: "Open project"
     btn_class: "btn--primary"
+
   - title: "Bellabeat Usage Analysis"
     excerpt: "Wellness insights from Fitbit data."
-    image_path: /assets/images/Bellabeat Splash.png
+    image_path: /assets/images/bellabeat-splash.png
     url: /projects/bellabeat/
     btn_label: "Open project"
     btn_class: "btn--primary"
@@ -65,10 +67,13 @@ Welcome! I analyze data to drive decisions. Explore my interests and recent work
 {% include feature_row id="areas_row2" type="icon" class="ai-grid" %}
 
 ## My Latest Projects
-{% assign latest = site.projects | sort: 'date' | reverse | slice: 0, 3 %}
+{% assign latest_projects = site.projects | sort: 'date' | reverse | slice: 0, 3 %}
+{% if latest_projects and latest_projects.size > 0 %}
 <div class="grid__wrapper">
-  {% for doc in latest %}
+  {% for doc in latest_projects %}
     {% include archive-single.html type="grid" %}
   {% endfor %}
 </div>
-
+{% else %}
+{% include feature_row id="latest" %}
+{% endif %}
