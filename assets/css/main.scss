@@ -1,0 +1,28 @@
+---
+# leave this front matter so Jekyll compiles Sass
+---
+
+@import "minimal-mistakes/skins/default"; // or your preferred skin
+@import "minimal-mistakes";
+
+/* If you created assets/css/custom.scss, import it: */
+@import "custom";
+
+/* Force 3-across “Areas of Interest” icon cards */
+.ai-grid .feature__wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(220px, 1fr));
+  gap: 1.25rem 2rem;
+  align-items: start;
+}
+.ai-grid .archive__item-title,
+.ai-grid .archive__item-excerpt { text-align: center; }
+
+/* Force 3-across project tiles on the splash page */
+.layout--splash .grid__wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+@media (max-width: 1000px) { .layout--splash .grid__wrapper { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 640px)  { .layout--splash .grid__wrapper { grid-template-columns: 1fr; } }
