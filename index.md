@@ -40,19 +40,19 @@ areas_row2:
 latest:
   - title: "Telco Customer Churn"
     excerpt: "Modeling with SHAP explainability."
-    image_path: /assets/images/telco.jpg
+    image_path: /assets/images/Telco Splash.png
     url: /projects/telco-churn/
     btn_label: "Read case study"
     btn_class: "btn--primary"
   - title: "Cyclistic Rider Behavior"
     excerpt: "R + Tableau: usage patterns that drive conversion."
-    image_path: /assets/images/cyclistic.jpg
+    image_path: /assets/images/Cyclist Splash.png
     url: /projects/cyclistic/
     btn_label: "Open project"
     btn_class: "btn--primary"
   - title: "Bellabeat Usage Analysis"
     excerpt: "Wellness insights from Fitbit data."
-    image_path: /assets/images/bellabeat.jpg
+    image_path: /assets/images/Bellabeat Splash.png
     url: /projects/bellabeat/
     btn_label: "Open project"
     btn_class: "btn--primary"
