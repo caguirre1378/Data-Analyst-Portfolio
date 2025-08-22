@@ -4,6 +4,8 @@ baseurl: ""
 url: "https://caguirre1378.github.io"
 
 remote_theme: "mmistakes/minimal-mistakes"
+minimal_mistakes_skin: "default"   # optional, you can try "air", "contrast", etc.
+fontawesome: true                  # ✅ enables icon packs
 
 plugins:
   - jekyll-include-cache
