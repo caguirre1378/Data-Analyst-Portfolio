@@ -4,6 +4,7 @@ baseurl: ""
 url: "https://caguirre1378.github.io"
 
 remote_theme: "mmistakes/minimal-mistakes"
+
 plugins:
   - jekyll-include-cache
   - jekyll-feed
