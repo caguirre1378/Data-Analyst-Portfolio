@@ -5,15 +5,13 @@ subtitle: "Data Analyst · SQL · Tableau · Python"
 header:
   overlay_color: "#000"
   overlay_filter: "0.55"
-  overlay_image: /assets/images/header-bg.jpg   # or remove this line
+  overlay_image: /assets/images/header-bg.jpg
   actions:
     - label: "MY PROJECTS"
       url: "/portfolio/"
       class: "btn--primary"
 
-# --- 8 “Areas of Interest” items (icons + short text)
-
-# Row 1 (3 items)
+# Row 1 (3 cards)
 areas_row1:
   - title: "Cloud Compute"
     excerpt: "Servers for storage, model training, and deployment."
@@ -22,13 +20,13 @@ areas_row1:
     excerpt: "Techniques to make sense of human text."
     icon: "fas fa-language"
   - title: "Machine Learning"
-    excerpt: "I like the math, theory, and implementation."
+    excerpt: "Math, theory, and implementation."
     icon: "fas fa-robot"
 
-# Row 2 (3 items)
+# Row 2 (3 cards)
 areas_row2:
   - title: "Parallel Computing"
-    excerpt: "Hadoop/Hive experience for large-scale data."
+    excerpt: "Hadoop/Hive for large-scale data."
     icon: "fas fa-project-diagram"
   - title: "Model Deployment"
     excerpt: "Production ML via REST APIs and CI/CD."
@@ -37,16 +35,33 @@ areas_row2:
     excerpt: "Clear, compelling stories with data."
     icon: "fas fa-chart-bar"
 
+# Latest projects (image cards)
+latest:
+  - title: "Telco Customer Churn"
+    excerpt: "Modeling with SHAP explainability."
+    image_path: /assets/images/telco.jpg
+    url: /projects/telco-churn/
+    btn_label: "Read case study"
+    btn_class: "btn--primary"
+  - title: "Cyclistic Rider Behavior"
+    excerpt: "R + Tableau: usage patterns that drive conversion."
+    image_path: /assets/images/cyclistic.jpg
+    url: /projects/cyclistic/
+    btn_label: "Open project"
+    btn_class: "btn--primary"
+  - title: "Bellabeat Usage Analysis"
+    excerpt: "Wellness insights from Fitbit data."
+    image_path: /assets/images/bellabeat.jpg
+    url: /projects/bellabeat/
+    btn_label: "Open project"
+    btn_class: "btn--primary"
 ---
 
-<!-- Intro blurb under the hero -->
 Welcome! I analyze data to drive decisions. Explore my interests and recent work below.
 
 ## Areas of Interest
-{% comment %}
-We render the 8 items as a clean icon grid using feature_row.
-{% endcomment %}
-{% include feature_row id="areas" type="icon" %}
+{% include feature_row id="areas_row1" type="icon" class="ai-grid" %}
+{% include feature_row id="areas_row2" type="icon" class="ai-grid" %}
 
 ## My Latest Projects
 {% include feature_row id="latest" type="left" %}
