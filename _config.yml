@@ -14,15 +14,16 @@ plugins:
 collections:
   projects:
     output: true
-    permalink: /:collection/:name
+    permalink: /projects/:name/
 
-# Navigation bar
 defaults:
   - scope:
       path: ""
       type: projects
     values:
       layout: single
+      author_profile: false
+
 
 # Top navigation menu
 navigation:
