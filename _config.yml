@@ -8,3 +8,9 @@ plugins:
   - jekyll-include-cache
   - jekyll-feed
   - jekyll-seo-tag
+
+collections:
+  projects:
+    output: true
+    permalink: /:collection/:name
+
