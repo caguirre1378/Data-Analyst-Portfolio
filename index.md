@@ -25,20 +25,21 @@ classes: wide
 </section>
 
 
-<section class="section-white">
-  <h2>My Latest Projects</h2>
-  <p class="section-sub">Take a look at my recent work.</p>
-  {% assign recent = site.projects | slice: 0, 3 %}
-  <div class="cards">
-  {% for item in recent %}
-    <article class="card">
-      <a href="{{ item.url | relative_url }}">
-        {% if item.thumbnail %}<img src="{{ item.thumbnail | relative_url }}" alt="{{ item.title }}">{% endif %}
-        {% if item.date %}<small class="card-meta">{{ item.date | date: "%b %-d, %Y" }}</small>{% endif %}
-        <h3>{{ item.title }}</h3>
-        <p>{{ item.excerpt | default: item.description }}</p>
-      </a>
-    </article>
-  {% endfor %}
-  </div>
-</section>
+## My Latest Projects
+<p class="subtitle">Take a look at my recent work.</p>
+
+{% assign recent = site.projects | slice: 0, 3 %}
+<div class="cards">
+{% for item in recent %}
+  <article class="card">
+    <a href="{{ item.url | relative_url }}">
+      {% if item.thumbnail %}
+        <img src="{{ item.thumbnail | relative_url }}" alt="{{ item.title }}">
+      {% endif %}
+      <h3>{{ item.title }}</h3>
+      <p>{{ item.excerpt | default: item.description }}</p>
+    </a>
+  </article>
+{% endfor %}
+</div>
+
