@@ -1,19 +1,24 @@
 areas:
   - title: "Cloud Compute"
     icon: "fas fa-cloud"
-    excerpt: "Servers for storage, model training, and deployment."
+    excerpt: "I maintain servers for storage, model training, and deployment."
+
   - title: "NLP"
     icon: "fas fa-language"
-    excerpt: "Techniques to make sense of text."
+    excerpt: "I use NLP techniques to make sense of human text."
+
   - title: "Machine Learning"
     icon: "fas fa-robot"
-    excerpt: "I enjoy the math and the implementation."
+    excerpt: "I enjoy both the math and the implementation."
+
   - title: "Parallel Computing"
     icon: "fas fa-project-diagram"
-    excerpt: "Hadoop and Hive at large scale."
+    excerpt: "I regularly extract from Hadoop / Hive at large scale."
+
   - title: "Model Deployment"
     icon: "fas fa-rocket"
-    excerpt: "I ship models with REST APIs."
+    excerpt: "I ship models to production with REST APIs."
+
   - title: "Data Analytics"
     icon: "fas fa-chart-line"
-    excerpt: "Clear stories with data."
+    excerpt: "I love telling a clear, compelling story with data."
