@@ -40,11 +40,19 @@ h2 { font-size: 1.75rem; margin-bottom: 1.25rem; }
 }
 .feature__item { text-align: center; padding: 10px 12px; }
 .feature__icon {
-  display: inline-flex; align-items: center; justify-content: center;
-  width: 64px; height: 64px; border-radius: 9999px;
-  border: 1px solid #e5e7eb; background: #fff; color: #64748b;
-  font-size: 26px; margin-bottom: 12px; box-shadow: 0 6px 12px rgba(2,6,23,.06);
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  width:64px; height:64px;
+  border-radius:50%;
+  border:1px solid #e5e7eb;
+  background:#fff;
+  color:#2563eb;   /* nice blue accent */
+  font-size:26px;
+  margin-bottom:12px;
+  box-shadow:0 4px 10px rgba(0,0,0,.06);
 }
+
 .feature__item .archive__item-title {
   margin: .65rem 0 .25rem; font-size: 1rem; color: #111827; font-weight: 600;
 }
