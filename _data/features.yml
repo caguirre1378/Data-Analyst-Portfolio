@@ -1,19 +1,24 @@
 areas:
   - title: "Cloud Compute"
     excerpt: "Servers for storage, model training, and deployment."
-    icon: "fas fa-cloud"   # FontAwesome icon
+    icon: "fas fa-cloud"
+
   - title: "NLP"
     excerpt: "Techniques to make sense of human text."
     icon: "fas fa-language"
+
   - title: "Machine Learning"
     excerpt: "Math, theory, and implementation."
     icon: "fas fa-robot"
+
   - title: "Parallel Computing"
     excerpt: "Hadoop/Hive for large-scale data."
     icon: "fas fa-project-diagram"
+
   - title: "Model Deployment"
     excerpt: "Production ML via REST APIs and CI/CD."
     icon: "fas fa-rocket"
+
   - title: "Data Analytics"
     excerpt: "Clear, compelling stories with data."
     icon: "fas fa-chart-line"
