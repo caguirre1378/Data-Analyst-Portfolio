@@ -2,14 +2,15 @@
 permalink: /about/
 title: "About"
 layout: single
+classes: wide
 ---
 
-Welcome. I analyze data to drive decisions. Explore my interests and recent work below.
+I analyze data to drive decisions. I like clear stories, clean code, and shipping useful tools.
 
+**What I’m focused on**
 - Cloud compute for storage, model training, and deployment  
 - NLP to make sense of human text  
-- Machine learning, math and implementation  
-- Parallel computing with Hadoop and Hive  
+- Machine learning: math + implementation  
+- Parallel computing with Hadoop / Hive  
 - Model deployment with REST APIs  
-- Data analytics and clear stories with data
-
+- Data analytics and decision-ready visuals
