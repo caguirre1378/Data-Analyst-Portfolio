@@ -20,6 +20,7 @@ collections:
   projects:
     output: true
     permalink: /projects/:name/
+    fontawesome: true
 
 defaults:
   - scope:
