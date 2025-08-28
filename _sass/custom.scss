@@ -89,6 +89,64 @@ h2 { font-size: 1.75rem; margin-bottom: 1.25rem; }
   }
 }
 @media (max-width: 640px) {
+
+
+
+  /* ===== Fix Areas of Interest section ===== */
+.feature__wrapper {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 2.5rem 3rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.feature__item {
+  text-align: center;
+  padding: 1rem;
+}
+
+.feature__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 9999px;
+  border: 1px solid #e5e7eb;
+  background: #fff;
+  color: #2563eb;  /* blue */
+  font-size: 28px;
+  margin-bottom: 12px;
+  box-shadow: 0 6px 12px rgba(2,6,23,.08);
+}
+
+.feature__item .archive__item-title {
+  margin: .65rem 0 .25rem;
+  font-size: 1rem;
+  color: #111827;
+  font-weight: 600;
+}
+
+.feature__item p {
+  color: #6b7280;
+  margin: 0 auto;
+  max-width: 360px;
+  font-size: .95rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 1024px) {
+  .feature__wrapper {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 640px) {
+  .feature__wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+
   .feature__wrapper {
     grid-template-columns: 1fr;
   }
