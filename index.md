@@ -28,15 +28,16 @@ classes: wide
 
 {% assign recent = site.projects | slice: 0, 3 %}
 <div class="cards">
-{% for item in recent %}
-  <article class="card">
-    <a href="{{ item.url | relative_url }}">
-      {% if item.thumbnail %}
-        <img src="{{ item.thumbnail | relative_url }}" alt="{{ item.title }}">
-      {% endif %}
-      <h3>{{ item.title }}</h3>
-      <p>{{ item.excerpt | default: item.description }}</p>
-    </a>
-  </article>
-{% endfor %}
+  {% for item in recent %}
+    <article class="card">
+      <a href="{{ item.url | relative_url }}">
+        {% if item.thumbnail %}
+          <img src="{{ item.thumbnail | relative_url }}" alt="{{ item.title }}">
+        {% endif %}
+        <h3>{{ item.title }}</h3>
+        <p>{{ item.excerpt | default: item.description }}</p>
+      </a>
+    </article>
+  {% endfor %}
 </div>
+
