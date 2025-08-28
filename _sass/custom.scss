@@ -20,35 +20,62 @@ h2{font-size:1.75rem;margin-bottom:1.25rem}
 .intro-left h2{font-size:.9rem;letter-spacing:.08em;text-transform:uppercase;color:#6b7280;margin-bottom:.2rem}
 .intro-left p{color:#4b5563}
 
-/* ===== Areas of Interest (Minimal Mistakes feature_row) ===== */
-.feature__wrapper{gap:34px}
-.feature__item{padding:10px 6px;text-align:center}
-.feature__item .archive__item-title{margin:.65rem 0 .25rem;font-size:1rem}
-.feature__item p{color:#6b7280;margin:0 auto;max-width:340px}
-.feature__icon{display:inline-flex;align-items:center;justify-content:center;
-  width:64px;height:64px;border-radius:9999px;border:1px solid #e5e7eb;
-  background:#fff;color:#64748b;font-size:26px;margin-bottom:10px}
+/* --- Areas of Interest block (matches the reference) --- */
 
-/* ===== Project cards ===== */
-.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
-.card{background:#fff;border-radius:14px;overflow:hidden;
-  box-shadow:0 4px 12px rgba(2,6,23,.10);transition:transform .2s ease,box-shadow .2s ease}
-.card:hover{transform:translateY(-4px);box-shadow:0 10px 24px rgba(2,6,23,.18)}
-.card img{width:100%;height:210px;object-fit:cover}
-.card h3{margin:1rem 1rem .35rem}
-.card p{margin:0 1rem 1.1rem;color:#64748b}
-.card-meta{display:block;color:#9aa1ac;font-size:.8rem;margin:.5rem 1rem 0}
+/* the band is already gray via .section-gray; just tighten the layout */
+.section-gray { background:#f9fafb; padding:56px 0;
+  box-shadow: inset 0 8px 12px -12px rgba(0,0,0,.18),
+              inset 0 -8px 12px -12px rgba(0,0,0,.14); }
 
-/* footer cleanup */
-.site-footer .feed-subscribe{display:none}
-
-/* responsive */
-@media (max-width:1024px){
-  .intro-wrap{grid-template-columns:1fr 320px}
-  .hero-avatar{width:300px;height:300px}
+/* container of items that Minimal Mistakes renders */
+.feature__wrapper{
+  display:grid !important;
+  grid-template-columns: repeat(3, minmax(0,1fr));
+  gap: 26px 34px;
+  max-width: 1100px;
+  margin: 0 auto;
 }
-@media (max-width:900px){
-  .intro-wrap{grid-template-columns:1fr;text-align:center}
-  .intro-right{order:-1}
-  .cards{grid-template-columns:1fr}
+
+/* each card */
+.feature__item{
+  text-align:center;
+  padding: 10px 12px;
+}
+
+/* circular icon “badge” */
+.feature__icon{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  width:64px; height:64px;
+  border-radius:9999px;
+  border:1px solid #e5e7eb;
+  background:#fff;
+  color:#64748b;          /* icon color */
+  font-size:26px;
+  margin-bottom:12px;
+  box-shadow:0 6px 12px rgba(2,6,23,.06);
+}
+
+/* title + copy */
+.feature__item .archive__item-title{
+  margin:.65rem 0 .25rem;
+  font-size: 1rem;
+  color:#111827;
+  font-weight:600;
+}
+.feature__item p{
+  color:#6b7280;
+  margin: 0 auto;
+  max-width: 360px;
+  font-size: .95rem;
+  line-height: 1.6;
+}
+
+/* responsive like the reference */
+@media (max-width: 1024px){
+  .feature__wrapper{ grid-template-columns: repeat(2, minmax(0,1fr)); }
+}
+@media (max-width: 640px){
+  .feature__wrapper{ grid-template-columns: 1fr; }
 }
