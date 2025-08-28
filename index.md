@@ -1,29 +1,27 @@
 ---
 layout: single
-title: ""
+title: ""          # hide the big page title
 classes: wide
 ---
 
-<section class="section-white">
-  <div class="intro-wrap">
-    <div class="intro-left">
-      <h2>I am</h2>
-      <h1>Christian Aguirre</h1>
-      <p>Conversational coder and analyst, inspired by tough problems.</p>
-      <p><a class="btn btn--primary" href="/projects/">My Projects</a></p>
-    </div>
-    <div class="intro-right">
-      <img src="/assets/images/headshot.jpg" alt="Christian Aguirre" class="hero-avatar">
-    </div>
+<div class="intro-wrap">
+  <div class="intro-left">
+    <h2>I am</h2>
+    <h1>Christian Aguirre</h1>
+    <p>Conversational coder and analyst, inspired by tough problems.</p>
+    <p><a class="btn btn--primary" href="/projects/">My Projects</a></p>
   </div>
-</section>
+  <div class="intro-right">
+    <img src="/assets/images/headshot.jpg" alt="Christian Aguirre" class="hero-avatar">
+  </div>
+</div>
 
-<section class="section-gray">
-  <h2 style="text-align:center;">Areas of Interest</h2>
-  <p class="section-sub">Take a look at some of the things I love working on.</p>
-  {% include feature_row id="areas" type="center" %}
-</section>
+## Areas of Interest
+<p class="subtitle">Take a look at some of the things I love working on.</p>
 
+{% include feature_row id="areas" type="center" %}
+
+---
 
 ## My Latest Projects
 <p class="subtitle">Take a look at my recent work.</p>
@@ -42,4 +40,3 @@ classes: wide
   </article>
 {% endfor %}
 </div>
-
