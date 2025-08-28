@@ -1,15 +1,20 @@
-title: "Christian Aguirre"
-description: "Data Analyst Portfolio"
-baseurl: "" 
+title: Christian Aguirre
+name: Christian Aguirre
+description: Data Analyst Portfolio
 url: "https://caguirre1378.github.io"
+baseurl: ""
 
-remote_theme: "mmistakes/minimal-mistakes"
-fontawesome: true          # ← required for the icon set
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+
 plugins:
   - jekyll-include-cache
   - jekyll-feed
   - jekyll-seo-tag
 
+author:
+  name: "Christian Aguirre"
+  avatar: "/assets/images/headshot.jpg"
+  bio: "Curious analyst focused on turning data into decisions."
 
 collections:
   projects:
@@ -19,20 +24,10 @@ collections:
 defaults:
   - scope:
       path: ""
-      type: projects
+      type: "projects"
     values:
       layout: single
       author_profile: false
 
-
-# Top navigation menu
-navigation:
-  - title: "Home"
-    url: /
-  - title: "About"
-    url: /about/
-  - title: "Portfolio"
-    url: /portfolio/
-  - title: "Resume"
-    url: /resume/
-
+include:
+  - _pages
