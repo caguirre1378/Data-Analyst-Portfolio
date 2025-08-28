@@ -19,10 +19,11 @@ classes: wide
 </section>
 
 <section class="section-gray">
-  <h2>Areas of Interest</h2>
+  <h2 style="text-align:center;">Areas of Interest</h2>
   <p class="section-sub">Take a look at some of the things I love working on.</p>
   {% include feature_row id="areas" type="center" %}
 </section>
+
 
 <section class="section-white">
   <h2>My Latest Projects</h2>
