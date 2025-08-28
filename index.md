@@ -18,10 +18,11 @@ classes: wide
   </div>
 </section>
 
-<section class="section-gray">
-  
-## Areas of Interest
-{% include feature_row id="areas" type="center" %}
+<div class="section-gray">
+  <h2>Areas of Interest</h2>
+  <p class="section-sub">Take a look at some of the things I love working on.</p>
+  {% include feature_row feature_row=site.data.features.areas type="center" %}
+</div>
 
 
 
