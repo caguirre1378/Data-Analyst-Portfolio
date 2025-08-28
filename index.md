@@ -19,10 +19,11 @@ classes: wide
 </section>
 
 <section class="section-gray">
-  <h2>Areas of Interest</h2>
-  <p class="section-sub">Take a look at some of the things I love working on.</p>
-  {% include feature_row feature_row=site.data.features.areas type="center" %}
-</section>
+  
+## Areas of Interest
+<p class="section-sub">Take a look at some of the things I love working on.</p>
+{% include feature_row feature_row=site.data.features.areas type="center" %}
+
 
 <section class="section-white">
   <h2>My Latest Projects</h2>
