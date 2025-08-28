@@ -1,27 +1,34 @@
-title: Christian Aguirre
-name: Christian Aguirre
-description: Data Analyst Portfolio
+title: "Christian Aguirre"
+name: "Christian Aguirre"
+description: "Data Analyst Portfolio"
 url: "https://caguirre1378.github.io"
 baseurl: ""
 
+# Theme
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
 
+# Plugins
 plugins:
   - jekyll-include-cache
   - jekyll-feed
   - jekyll-seo-tag
 
+# Author
 author:
   name: "Christian Aguirre"
   avatar: "/assets/images/headshot.jpg"
   bio: "Curious analyst focused on turning data into decisions."
 
+# Enable Font Awesome icons
+fontawesome: true
+
+# Collections (projects section)
 collections:
   projects:
     output: true
     permalink: /projects/:name/
-    fontawesome: true
 
+# Defaults for projects
 defaults:
   - scope:
       path: ""
@@ -30,5 +37,6 @@ defaults:
       layout: single
       author_profile: false
 
+# Include pages folder
 include:
   - _pages
