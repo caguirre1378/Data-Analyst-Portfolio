@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "Christian Aguirre"
+title: ""          # hide the big page title
 classes: wide
 ---
 
