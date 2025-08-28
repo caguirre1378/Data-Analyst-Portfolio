@@ -23,7 +23,7 @@ excerpt: "Conversational coder and analyst, inspired by tough problems."
   </div>
 </div>
 
-{% include feature_row id="areas" type="center" %}
+{% raw %}{% include feature_row id="areas" type="center" %}{% endraw %}
 
 ## My Latest Projects
 
