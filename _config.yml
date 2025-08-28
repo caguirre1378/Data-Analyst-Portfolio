@@ -40,3 +40,24 @@ defaults:
 # Include pages folder
 include:
   - _pages
+
+areas:
+  - title: "Cloud Compute"
+    excerpt: "I maintain servers for database storage, model training, and model deployment."
+    icon: "fas fa-cloud"
+  - title: "NLP"
+    excerpt: "I have worked with researchers to apply NLP techniques to make sense of the motivations behind human interactions."
+    icon: "fas fa-language"
+  - title: "Machine Learning"
+    excerpt: "I love the math and theory as well as the implementation of ML models."
+    icon: "fas fa-robot"
+  - title: "Parallel Computing"
+    excerpt: "I regularly extract data from Hadoop databases using the Hive framework."
+    icon: "fas fa-project-diagram"
+  - title: "Model Deployment"
+    excerpt: "I implement machine learning models in production using REST APIs."
+    icon: "fas fa-code-branch"
+  - title: "Data Analytics"
+    excerpt: "I love telling a story. Making data-driven insights clear is one of my favorite skills."
+    icon: "fas fa-chart-bar"
+
