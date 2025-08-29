@@ -7,16 +7,19 @@ classes: wide
 <section class="section-white">
   <div class="intro-wrap">
     <div class="intro-left">
-      <h2>I am</h2>
       <h1>Christian Aguirre</h1>
-      <p>Conversational coder and analyst, inspired by tough problems.</p>
-      <p><a class="btn btn--primary" href="/projects/">My Projects</a></p>
+      <p>Data analyst focused on operations and decision support. I build dashboards, pipelines, and models that help teams act with clarity.</p>
+      <p>
+        <a class="btn btn--primary" href="/projects/">View Projects</a>
+        <a class="btn" href="/resume/">Resume</a>
+      </p>
     </div>
     <div class="intro-right">
       <img src="/assets/images/headshot.jpg" alt="Christian Aguirre" class="hero-avatar">
     </div>
   </div>
 </section>
+
 
 <section class="section-gray">
   <h2>Areas of Interest</h2>
