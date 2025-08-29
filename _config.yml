@@ -1,63 +1,38 @@
 title: "Christian Aguirre"
-name: "Christian Aguirre"
-description: "Data Analyst Portfolio"
+description: "Data & ML portfolio"
 url: "https://caguirre1378.github.io"
-baseurl: ""
+baseurl: ""   # do not change for user/username.github.io sites
 
-# Theme
-remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+remote_theme: "mmistakes/minimal-mistakes"
+fontawesome: true
 
-# Plugins
 plugins:
   - jekyll-include-cache
   - jekyll-feed
   - jekyll-seo-tag
 
-# Author
-author:
-  name: "Christian Aguirre"
-  avatar: "/assets/images/headshot.jpg"
-  bio: "Curious analyst focused on turning data into decisions."
-
-# Enable Font Awesome icons
-fontawesome: true
-
-# Collections (projects section)
+# Projects collection
 collections:
   projects:
     output: true
     permalink: /projects/:name/
 
-# Defaults for projects
+# Defaults for project pages
 defaults:
   - scope:
       path: ""
-      type: "projects"
+      type: projects
     values:
       layout: single
       author_profile: false
 
-# Include pages folder
-include:
-  - _pages
-
-areas:
-  - title: "Cloud Compute"
-    excerpt: "I maintain servers for database storage, model training, and model deployment."
-    icon: "fas fa-cloud"
-  - title: "NLP"
-    excerpt: "I have worked with researchers to apply NLP techniques to make sense of the motivations behind human interactions."
-    icon: "fas fa-language"
-  - title: "Machine Learning"
-    excerpt: "I love the math and theory as well as the implementation of ML models."
-    icon: "fas fa-robot"
-  - title: "Parallel Computing"
-    excerpt: "I regularly extract data from Hadoop databases using the Hive framework."
-    icon: "fas fa-project-diagram"
-  - title: "Model Deployment"
-    excerpt: "I implement machine learning models in production using REST APIs."
-    icon: "fas fa-code-branch"
-  - title: "Data Analytics"
-    excerpt: "I love telling a story. Making data-driven insights clear is one of my favorite skills."
-    icon: "fas fa-chart-bar"
-
+# Top navigation
+navigation:
+  - title: "Home"
+    url: /
+  - title: "About"
+    url: /about/
+  - title: "Portfolio"
+    url: /projects/
+  - title: "Resume"
+    url: /resume/
