@@ -4,7 +4,7 @@ title: "World Layoffs: SQL Data Cleaning"
 date: 2025-01-15
 category: "SQL & Databases"
 tags: [mysql, sql, cleaning, staging, analytics-ready]
-thumbnail: /assets/projects/layoffs-splash.png
+thumbnail: /assets/images/layoffs-splash.png
 weight: 40
 description: "De-duping, standardization, null handling, and type fixes for global layoffs data."
 ---
