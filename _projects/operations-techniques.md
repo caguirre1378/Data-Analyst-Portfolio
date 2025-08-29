@@ -2,7 +2,7 @@
 layout: single
 title: "Operations Techniques: Optimization & Decision Models"
 date: 2023-12-01
-category: "Optimization & OR"
+category: or
 tags: [excel, lingo, lp, milp, bilp, simulation, decision-trees]
 thumbnail: /assets/images/ops-kpi-splash.png
 weight: 60
