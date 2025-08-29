@@ -11,6 +11,6 @@ I analyze data to drive decisions. I like clear stories, clean code, and shippin
 - Cloud compute for storage, model training, and deployment  
 - NLP to make sense of human text  
 - Machine learning: math + implementation  
-- Parallel computing with Hadoop / Hive  
+- Parallel computing with Hadoop/Hive  
 - Model deployment with REST APIs  
-- Data analytics and decision-ready visuals
+- Decision-ready data visualization
