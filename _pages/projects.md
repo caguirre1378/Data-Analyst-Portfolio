@@ -17,7 +17,7 @@ classes: wide
 ### {{ label }}
 
 <div class="cards">
-{% assign items = site.projects | where_exp: "p","p.category contains key" | sort: "weight" %}
+{% assign items = site.projects | where: "category", key | sort: "weight" %}
 {% for item in items %}
   <article class="card">
     <a href="{{ item.url | relative_url }}">
