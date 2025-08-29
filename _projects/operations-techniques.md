@@ -4,7 +4,7 @@ title: "Operations Techniques: Optimization & Decision Models"
 date: 2023-12-01
 category: "Optimization & OR"
 tags: [excel, lingo, lp, milp, bilp, simulation, decision-trees]
-thumbnail: /assets/projects/ops-techniques-thumb.jpg
+thumbnail: /assets/projects/ops-kpi-splash.png
 weight: 60
 description: "Six applied problems: queues, stocking, simulation, copier selection, legal decision tree, and assignment."
 ---
