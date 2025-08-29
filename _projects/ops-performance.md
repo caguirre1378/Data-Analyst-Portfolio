@@ -2,7 +2,7 @@
 layout: single
 title: "Operational Performance: Manufacturing KPI Analysis"
 date: 2021-12-01
-category: "Optimization & OR"
+category: or
 tags: [excel, statistics, kpi, reporting]
 thumbnail: /assets/images/ops-performance-splash.png
 weight: 70
