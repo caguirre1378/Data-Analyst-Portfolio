@@ -21,16 +21,22 @@ Managed contractor accounts, kept inventory/procurement moving, and shipped the 
 - **A.S., Business Administration — Northern Virginia Community College (2019–2021)**
 
 ## How I work
-- Start with the decision, not the chart.  
-- Keep the loop short: ingest → clean → check → **ship** → observe → iterate.  
-- Write assumptions and constraints down.  
-- Prefer simple, explainable models that are easy to operate and hand off.
+- **Start with a Decision Brief.** What decision, by whom, by when, with what success metric and constraints. No analysis without an owner and a deadline.
+- **Baseline first, then improve.** Establish the current number, define “good enough,” and iterate toward it.
+- **Data hygiene before charts.** Pin down source of truth, keys, time grains, and definitions. Write small, readable SQL/Power Query steps and keep a data dictionary.
+- **Make it refreshable.** One-click/one-query refresh (Power Query, SQL views, or parameterized extracts). Version files and keep inputs in a `/data` folder.
+- **Short feedback loops.** Ship a rough cut early, demo, collect edge cases, and fold them back in weekly.
+- **Explainability > cleverness.** Prefer simple, testable logic. Log assumptions, add input checks, and back-test joins/aggregations.
+- **Clean hand-off.** A README, owner, refresh steps, and a rollback plan. No heroics required to keep it running.
 
 ## What I can help with
-- KPI design and lightweight operational dashboards (**Excel / Power Query / SQL**).  
-- Data cleaning & standardization; build tidy, reusable staging tables for analysts.  
-- Practical models: churn risk, cohorts, queueing, resource allocation.  
-- Concise decision memos with a clear recommendation and next steps.
+- **KPIs & dashboards.** Turn goals into measurable, unambiguous metrics (clear numerator/denominator, time window, thresholds). Build lightweight dashboards with drill-through and alerts in **Excel / Power Query / SQL / Tableau**.
+- **Data cleaning & modeling.** De-dupe, standardize categories, normalize dates, and build tidy **staging tables** or star-schema views that analysts can reuse.
+- **Operational analytics.** Queueing/capacity & SLA tracking, cohort/retention analysis, churn risk, scenario tables for staffing or inventory, light forecasting.
+- **Automation of ad-hoc work.** Convert manual reports into refreshable pipelines; Excel+VBA utilities for bulk lookups/exports; scheduled parameterized queries when allowed.
+- **Decision support.** One-page memos with context, options, trade-offs, recommendation, and next steps—plus the numbers to defend it.
+- **Enablement.** Short docs, templates, and quick trainings so the team can maintain and extend the work without me.
+
 
 ## Selected work
 - **[Telco churn](/projects/telco-churn/):** model, drivers, and retention targets.  
