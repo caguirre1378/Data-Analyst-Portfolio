@@ -2,7 +2,7 @@
 layout: single
 title: "World Layoffs: SQL Data Cleaning"
 date: 2025-01-15
-category: "SQL & Databases"
+category: sql
 tags: [mysql, sql, cleaning, staging, analytics-ready]
 thumbnail: /assets/images/layoffs-splash.png
 weight: 40
