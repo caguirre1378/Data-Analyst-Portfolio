@@ -4,7 +4,7 @@ title: "Operational Performance: Manufacturing KPI Analysis"
 date: 2021-12-01
 category: "Optimization & OR"
 tags: [excel, statistics, kpi, reporting]
-thumbnail: /assets/projects/ops-performance-splash.png
+thumbnail: /assets/images/ops-performance-splash.png
 weight: 70
 description: "On-time delivery, transmission cost, and retention analysis with statistical tests and KPI views."
 ---
