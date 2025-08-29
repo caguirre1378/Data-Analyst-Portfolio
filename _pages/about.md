@@ -45,29 +45,24 @@ Managed contractor accounts, kept inventory/procurement moving, and shipped the 
 
 ## Tools I reach for
 
-<div class="twocol">
-  <div>
-    <h3>Data & Analysis</h3>
-    <ul>
-      <li><strong>SQL:</strong> MySQL, SQL Server Management Studio (SSMS)</li>
-      <li><strong>Python:</strong> pandas, NumPy, scikit-learn, Matplotlib, Seaborn, Jupyter</li>
-      <li><strong>R:</strong> tidyverse, dplyr, ggplot2, lubridate</li>
-      <li><strong>Excel / VBA:</strong> Pivot tables, macros, Power Query pipelines</li>
-      <li>Tableau, Power BI (basic)</li>
-    </ul>
-  </div>
-  <div>
-    <h3>Operations & Reporting</h3>
-    <ul>
-      <li>Work order ticketing & performance dashboards (DHHQ)</li>
-      <li>Data cleaning & standardization for reporting pipelines</li>
-      <li>Resource tracking, KPI design, vendor performance metrics</li>
-      <li>Documentation & compliance reporting in federal settings</li>
-      <li>Presentation & decision-memo writing (Excel, PowerPoint, Word)</li>
-    </ul>
-  </div>
+<div>
+  <span class="pill">SQL (MySQL/SSMS)</span>
+  <span class="pill">Excel & VBA</span>
+  <span class="pill">Power Query</span>
+  <span class="pill">Tableau</span>
+  <span class="pill">Power BI (basic)</span>
+  <span class="pill">Python (pandas)</span>
+  <span class="pill">R (tidyverse)</span>
+  <span class="pill">Jupyter</span>
+  <span class="pill">Git/GitHub</span>
+  <span class="pill">LINGO</span>
 </div>
 
+<span class="pill">NumPy</span>
+<span class="pill">scikit-learn</span>
+<span class="pill">Matplotlib</span>
+<span class="pill">Seaborn</span>
+<span class="pill">ggplot2</span>
 
 ## Milestones
 <ul class="timeline">
