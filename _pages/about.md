@@ -95,24 +95,28 @@ Managed contractor accounts, kept inventory/procurement moving, and shipped the 
 
 
 ## Now / Next
+
 <div class="twocol">
   <div>
     <h3>Now</h3>
     <ul>
-      <li>Reusable evaluation checklists (leakage, drift, fairness).</li>
-      <li>Short, decision-first model write-ups.</li>
-      <li>Better “decision quality” metrics (beyond accuracy).</li>
+      <li><strong>Evaluation checklists</strong> — bake leakage, drift, fairness, and data-quality gates into PRs; add quick sampling spot-checks before release.</li>
+      <li><strong>Decision-first write-ups</strong> — one-pager per model/analysis: decision → baseline → cost of error → recommendation → risks/next steps; link to a reproducible notebook.</li>
+      <li><strong>Decision-quality metrics</strong> — track calibration, lift vs. current policy, expected value/cost curves, and time-to-insight (not just accuracy).</li>
+      <li><strong>From ad-hoc to repeatable</strong> — turn scripts into refreshable pipelines; document data owners, keys, and SLAs.</li>
     </ul>
   </div>
   <div>
     <h3>Next</h3>
     <ul>
-      <li>Lightweight monitoring patterns for small ML services.</li>
-      <li>Human-in-the-loop patterns for borderline predictions.</li>
-      <li>More postmortems and playbooks to beat tribal knowledge.</li>
+      <li><strong>Lightweight monitoring</strong> — freshness/volume/schema checks with simple alerts (email/Teams) and a short runbook for red/yellow states.</li>
+      <li><strong>Human-in-the-loop</strong> — review queue for borderline predictions, thresholds and escalation rules, feedback captured for retraining, complete audit trail.</li>
+      <li><strong>Postmortems & playbooks</strong> — tight templates, common failure modes, rollback/verify checklist; publish to a team wiki to kill tribal knowledge.</li>
+      <li><strong>Data contracts & validation</strong> — schema constraints, allowed ranges, dedupe/keys, and backfill policy to prevent silent regressions.</li>
     </ul>
   </div>
 </div>
+
 
 ## Say hello
 Open to data/ML roles and collaborations.
