@@ -2,7 +2,7 @@
 layout: single
 title: "Cyclistic Rider Behavior"
 date: 2026-05-01
-category: "Analytics (R & Tableau)"
+category: analytics
 tags: [r, tidyverse, ggplot2, tableau, case-study]
 thumbnail: /assets/images/cyclist-splash.png
 weight: 20
