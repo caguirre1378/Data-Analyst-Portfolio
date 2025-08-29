@@ -5,24 +5,30 @@ layout: single
 classes: wide
 ---
 
-I work on data problems that sit close to operations. I build small, reliable tools that shorten feedback loops and help someone make a decision today.
+I work on data problems close to operations. The goal is simple: shorten the loop from “question” to “decision.” I ship small, reliable tools—spreadsheets, SQL models, and lightweight scripts—that people can use today.
 
-Current: **Facility Support Manager, GBA Associates (DHHQ)** — own workflows, vendor coordination, ticketing/reporting, and quick fixes that remove friction. Built an Excel/VBA multi-criteria search for large project lists, Power Query jobs to consolidate history, and dashboards for SLA/volume trends.
+**Current — Facility Support Manager, GBA Associates (DHHQ).**  
+Own the facility-support workflow end-to-end (intake → triage → vendor dispatch → close-out) and turn ticket data into decisions. Built:
+- An Excel/VBA multi-criteria search across large project/work-order lists (lookup time dropped from minutes to seconds).
+- Power Query pipelines that consolidate multi-year exports and vendor files into one clean model.
+- Compact dashboards for SLA/volume trends, aging, and recurring issues.
 
-Before that: **Pro Sales, Lowe’s** — owned contractor accounts, inventory/procurement, and the habit of shipping the thing people use.  
-School: **B.S. in MIS (GMU)**.
+**Previously — Pro Sales, Lowe’s.**  
+Managed contractor accounts, kept inventory/procurement moving, and shipped the simplest solution people would actually use.
+
+**Education — B.S. in Management Information Systems, George Mason University (GMU).**
 
 ## How I work
 - Start with the decision, not the chart.  
-- Keep the loop short: clean → check → ship → iterate.  
-- Write assumptions down.  
-- Prefer simple models that are explainable and easy to operate.
+- Keep the loop short: ingest → clean → check → **ship** → observe → iterate.  
+- Write assumptions and constraints down.  
+- Prefer simple, explainable models that are easy to operate and hand off.
 
 ## What I can help with
-- KPI design and lightweight ops dashboards (**Excel / Power Query / SQL**).  
-- Data cleaning and standardization for analysts and reporting.  
+- KPI design and lightweight operational dashboards (**Excel / Power Query / SQL**).  
+- Data cleaning & standardization; build tidy, reusable staging tables for analysts.  
 - Practical models: churn risk, cohorts, queueing, resource allocation.  
-- Brief decision memos with a clear recommendation.
+- Concise decision memos with a clear recommendation and next steps.
 
 ## Selected work
 - **[Telco churn](/projects/telco-churn/):** model, drivers, and retention targets.  
