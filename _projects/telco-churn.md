@@ -4,7 +4,7 @@ title: "Telco Customer Churn Analysis"
 date: 2025-07-01
 category: "ML & Modeling"
 tags: [python, sklearn, shap, classification]
-thumbnail: /assets/projects/telco-splash.png
+thumbnail: /assets/images/telco-splash.png
 weight: 10
 description: "End-to-end churn classification with model explainability using SHAP."
 ---
