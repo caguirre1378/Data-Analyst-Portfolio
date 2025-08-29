@@ -4,7 +4,7 @@ title: "Landscape Database Revitalization"
 date: 2023-04-01
 category: "SQL & Databases"
 tags: [sql-server, ssms, erd, normalization, indexing]
-thumbnail: /assets/projects/landscape-thumb.jpg
+thumbnail: /assets/projects/landscape-splash.png
 weight: 50
 description: "Standardized, normalized, and indexed a fragmented operations DB; 30+ queries for insights."
 ---
