@@ -11,6 +11,10 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
+# Include custom pages
+include:
+  - _pages
+
 # Projects collection
 collections:
   projects:
