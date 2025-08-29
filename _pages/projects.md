@@ -22,7 +22,7 @@ classes: wide
   <article class="card">
     <a href="{{ item.url | relative_url }}">
       {% if item.thumbnail %}
-        <img src="{{ item.thumbnail | relative_url }}" alt="{{ item.title }}">
+        <img src="{{ item.thumbnail | relative_url }}" alt="{{ item.title }}" class="card-thumbnail">
       {% endif %}
       <h3>{{ item.title }}</h3>
       <p>{{ item.goal | default:item.excerpt | markdownify | strip_html }}</p>
