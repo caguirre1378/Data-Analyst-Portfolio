@@ -2,7 +2,7 @@
 layout: single
 title: "Bellabeat Smart Device Usage Analysis"
 date: 2026-05-02
-category: "Analytics (R & Tableau)"
+category: analytics
 tags: [r, tidyverse, ggplot2, tableau, case-study]
 thumbnail: /assets/images/bellabeat-splash.png
 weight: 30
