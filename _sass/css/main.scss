@@ -1,8 +1,12 @@
 ---
+# Only the front matter dashes above are needed.
 ---
 
-@import "minimal-mistakes/skins/contrast";  /* pick any skin you like */
+/* Theme skin (optional; remove this line if you don't want contrast) */
+@import "minimal-mistakes/skins/contrast";
+
+/* Core theme */
 @import "minimal-mistakes";
 
-/* your tweaks */
+/* Your overrides */
 @import "custom";
