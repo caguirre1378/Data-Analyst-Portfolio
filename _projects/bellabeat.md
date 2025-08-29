@@ -4,7 +4,7 @@ title: "Bellabeat Smart Device Usage Analysis"
 date: 2026-05-02
 category: "Analytics (R & Tableau)"
 tags: [r, tidyverse, ggplot2, tableau, case-study]
-thumbnail: /assets/projects/bellabeat-splash.png
+thumbnail: /assets/images/bellabeat-splash.png
 weight: 30
 description: "Smart device usage patterns (steps, sleep, calories) and marketing ideas."
 ---
