@@ -61,12 +61,12 @@ School: **B.S. in MIS (GMU)**.
   <li>
     <div class="tl-date">2022–2025</div>
     <div class="tl-card">
-      <strong>Pro Sales — Lowe’s</strong><br>
-      Managed contractor accounts; improved inventory and procurement flows; solved fast, shipped fast.
+      <strong>Pro Sales Associate — Lowe’s</strong><br>
+      Managed contractor accounts, improved procurement flows, and delivered fast solutions.
     </div>
   </li>
   <li>
-    <div class="tl-date">2023</div>
+    <div class="tl-date">2021–2023</div>
     <div class="tl-card">
       <strong>B.S., Management Information Systems — George Mason University</strong>
     </div>
@@ -78,6 +78,7 @@ School: **B.S. in MIS (GMU)**.
     </div>
   </li>
 </ul>
+
 
 ## Now / Next
 <div class="twocol">
