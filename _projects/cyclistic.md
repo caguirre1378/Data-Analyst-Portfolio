@@ -4,7 +4,7 @@ title: "Cyclistic Rider Behavior"
 date: 2026-05-01
 category: "Analytics (R & Tableau)"
 tags: [r, tidyverse, ggplot2, tableau, case-study]
-thumbnail: /assets/projects/cyclist-splash.png
+thumbnail: /assets/images/cyclist-splash.png
 weight: 20
 description: "Bike share trends, cohorts, and rider behavior across 12 months."
 ---
