@@ -2,8 +2,7 @@
 
 Welcome to my data analytics portfolio. This site showcases selected projects I’ve completed using **SQL, Python, R, Tableau, Excel, and other tools**. Each project highlights real-world business problems and the techniques I used to analyze data, build models, and deliver actionable insights.
 
-🌐 Live Portfolio: [caguirre1378.github.io/data-analytics-portfolio](https://caguirre1378.github.io/data-analytics-portfolio)
-
+🌐 Live Portfolio: [caguirre1378.github.io](https://caguirre1378.github.io)
 
 ---
 
