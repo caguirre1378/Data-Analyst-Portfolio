@@ -16,7 +16,9 @@ Own the facility-support workflow end-to-end (intake → triage → vendor dispa
 **Previously — Pro Sales, Lowe’s.**  
 Managed contractor accounts, kept inventory/procurement moving, and shipped the simplest solution people would actually use.
 
-**Education — B.S. in Management Information Systems, George Mason University (GMU).**
+**Education**  
+- **B.S., Management Information Systems — George Mason University (2021–2023)**  
+- **A.S., Business Administration — Northern Virginia Community College (2019–2021)**
 
 ## How I work
 - Start with the decision, not the chart.  
