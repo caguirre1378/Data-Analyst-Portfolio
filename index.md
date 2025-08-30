@@ -24,7 +24,43 @@ classes: wide
   <h2>Areas of Interest</h2>
   <p class="section-sub">Take a look at some of the things I love working on.</p>
 
-  {% include feature_row id="areas" %}
+  <div class="topics">
+    <article class="topic">
+      <div class="topic__icon"><i class="fas fa-cloud"></i></div>
+      <h3>Cloud Compute</h3>
+      <p>Servers for storage, model training, and deployment.</p>
+    </article>
+
+    <article class="topic">
+      <div class="topic__icon"><i class="fas fa-language"></i></div>
+      <h3>NLP</h3>
+      <p>Techniques to make sense of human text and conversations.</p>
+    </article>
+
+    <article class="topic">
+      <div class="topic__icon"><i class="fas fa-robot"></i></div>
+      <h3>Machine Learning</h3>
+      <p>From the math to practical modeling and evaluation.</p>
+    </article>
+
+    <article class="topic">
+      <div class="topic__icon"><i class="fas fa-project-diagram"></i></div>
+      <h3>Parallel Computing</h3>
+      <p>Hadoop/Hive workflows for large-scale data processing.</p>
+    </article>
+
+    <article class="topic">
+      <div class="topic__icon"><i class="fas fa-rocket"></i></div>
+      <h3>Model Deployment</h3>
+      <p>Shipping models with REST APIs, CI/CD, and monitoring.</p>
+    </article>
+
+    <article class="topic">
+      <div class="topic__icon"><i class="fas fa-chart-line"></i></div>
+      <h3>Data Analytics</h3>
+      <p>Clear, decision-ready visuals and storytelling with data.</p>
+    </article>
+  </div>
 </section>
 
 <section class="section-white">
