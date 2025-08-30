@@ -9,66 +9,70 @@ thumbnail: /assets/images/telco-splash.png
 weight: 10
 ---
 
-> **Goal** — Predict churn and explain *why* customers leave so retention can be targeted.  
-> **Stack** — Python (pandas, numpy, scikit-learn, matplotlib, seaborn), SHAP; Jupyter.  
-> **Data** — Telco Customer Churn (Kaggle), ≈7k customers, 21 features.
+> **Goal** — Predict churn and understand *why* customers leave so telecom teams can intervene earlier.  
+> **Stack** — Python (pandas, numpy, scikit-learn, matplotlib, seaborn), SHAP; Jupyter Notebook.  
+> **Data** — Telco Customer Churn (Kaggle), ~7,000 customers, 21 attributes including contract, tenure, and billing info.
 
 ---
 
 ## At a glance
-- Cleaned & encoded mixed tabular data; built a **baseline Random Forest** and compared to **Logistic Regression**.  
-- Evaluated with precision/recall and a confusion matrix; tuned for recall on the churn class.  
-- Added **explainability** with **SHAP** for global and local drivers.  
-- Delivered **clear playbook items** for marketing, billing, and product.
+- Built a complete **churn prediction pipeline** using supervised learning, with clean preprocessing and model comparison.
+- Trained a **Random Forest** classifier and benchmarked it against **Logistic Regression** for interpretability.
+- Used **SHAP** to explain model decisions — both globally (feature ranking) and locally (case-specific explanations).
+- Extracted business-focused recommendations tailored to **retention**, **pricing strategy**, and **payment behavior**.
 
 ---
 
 ## Data & preparation
-- Converted text‐encoded numerics (e.g., `TotalCharges`) to numeric; handled missing values.
-- One-hot encoded categoricals (contract type, internet service, payment method, etc.).
-- Removed identifiers (`customerID`) and scaled continuous features where useful.
+- Cleaned missing values and converted `TotalCharges` from string to float for numerical operations.
+- Dropped unique IDs (`customerID`) and encoded categorical features with one-hot encoding.
+- Scaled continuous columns like `MonthlyCharges` and `Tenure` to prep for logistic models.
+- Created visual summaries (correlation heatmaps, barplots) to understand churn patterns before modeling.
 
 ---
 
 ## Models & evaluation
-- Trained **RandomForestClassifier** as the primary model; benchmarked against **Logistic Regression**.
-- Measured **precision/recall** per class and reviewed the **confusion matrix** to see trade-offs.
-- Tuned the threshold/parameters to keep recall healthy on the churn class without spamming positives.
+- Trained a **Random Forest** as the primary model due to its ability to handle non-linear interactions.
+- Logistic Regression was used as a **baseline model** for quick interpretability.
+- Evaluation was done using **confusion matrix**, **classification report**, and **precision/recall curves**.
+- Focused on optimizing **recall for the churn class**, ensuring fewer at-risk customers were missed.
 
-> Why these two?  
-> Logistic Regression gives a strong, interpretable linear baseline. Random Forest captures non-linear splits and interactions that often matter in churn (tenure × contract type × charges).
+> **Why these two?**  
+> Logistic Regression offers transparency and coefficients; Random Forest finds complex churn patterns like *tenure × contract type*. Together they show accuracy vs explainability tradeoffs.
 
 ---
 
 ## Explainability
-- **Global**: SHAP feature importance highlighted **Contract**, **Tenure**, **MonthlyCharges**, and **PaymentMethod** as top drivers.
-- **Local**: Case-level SHAP plots used to show why a specific customer was flagged (useful for ops or success teams).
+- Applied **SHAP** (SHapley Additive Explanations) to both models for post-hoc interpretability.
+- **Top global features**: `Contract`, `Tenure`, `MonthlyCharges`, and `PaymentMethod` emerged as churn signals.
+- Local SHAP plots helped explain *why* individual customers were flagged, useful for support teams and marketing segmentation.
 
 ---
 
 ## Business insights
-- **Month-to-month contracts** and **short tenure** correlate with churn.  
-- **Higher monthly charges** increase churn risk → likely pricing pressure.  
-- **Electronic check** users churn more; **autopay/credit card** churn less → friction + trust matter.
+- **Short-tenure customers on month-to-month contracts** had the highest churn — loyalty risk.
+- **Higher billing amounts** correlated with churn, possibly tied to perceived value or pricing concerns.
+- Customers paying with **electronic check** churned more than those using **credit cards or autopay**.
+- Data suggests that **billing friction** and **lack of contract commitment** are key retention factors.
 
 **Recommendations**
-- Target **month-to-month** and **<12-month tenure** with retention offers; nudge to annual terms.
-- Bundle or price-protect **high-charge** customers; message value, not just discount.
-- Promote **autopay/credit card** enrollment; reduce billing friction and failed payments.
-- Use model scores for **outbound saves** and **win-back** campaigns; review SHAP on edge cases.
+- Incentivize **annual contracts** for new users (<12 months) to improve loyalty.
+- Add value to **high-cost plans** through bundled services or promotions.
+- Promote **autopay enrollment** to reduce churn tied to billing inconvenience.
+- Use the model to trigger **outbound save campaigns** and **early alerts** based on churn scores.
 
 ---
 
 ## Reproduce
-1. Download the **Telco Customer Churn** dataset from Kaggle.  
-2. Open `telco_churn_analysis.ipynb` in Jupyter.  
-3. Run cells top-to-bottom (installs, prep, modeling, SHAP, plots).
+1. Download the **Telco Churn dataset** from Kaggle.  
+2. Open `telco_churn_analysis.ipynb` in Jupyter Notebook.  
+3. Follow the cells in order — from data cleaning to modeling, SHAP, and insight generation.
 
-**Repo**: <https://github.com/caguirre1378/Data-Analyst-Portfolio>
+🔗 [View the code on GitHub](https://github.com/caguirre1378/Data-Analyst-Portfolio)
 
 ---
 
 ## Next
-- Calibrate probabilities (Platt/Isotonic) for campaign thresholds.  
-- Add monotonic/XGBoost variant and partial dependence checks.  
-- Build a tiny **inference + monitoring** script (drift, class balance, alerting).
+- Add **probability calibration** (Platt scaling / Isotonic regression) for marketing thresholds.  
+- Incorporate **XGBoost** with monotonic constraints for robust churn modeling.  
+- Build an **inference script** to monitor class balance, model drift, and prediction quality over time.
