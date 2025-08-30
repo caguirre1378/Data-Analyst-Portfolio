@@ -7,6 +7,7 @@ category: or
 tags: [operations-research, optimization, queuing, monte-carlo, linear-programming, decision-tree, bilp, lingo, excel]
 permalink: /projects/operations-techniques/
 weight: 30
+thumbnail: /assets/images/ops-kpi-splash.png
 ---
 
 > **Scope** — Applied management science to six practical problems in retail, manufacturing, and services.  
