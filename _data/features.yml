@@ -1,24 +1,24 @@
 areas:
-  - title: "Cloud Compute"
-    excerpt: "Servers for storage, model training, and deployment."
-    icon: "fas fa-cloud"
+  - title: "Data Cleaning & Preparation"
+    excerpt: "Wrangled raw datasets using SQL, Excel, and Python to get them ready for analysis or dashboards."
+    icon: "fas fa-broom"
 
-  - title: "NLP"
-    excerpt: "Techniques to make sense of human text."
-    icon: "fas fa-language"
+  - title: "SQL Querying"
+    excerpt: "Built complex queries with joins, CTEs, and aggregations to power dashboards and reporting tools."
+    icon: "fas fa-database"
 
-  - title: "Machine Learning"
-    excerpt: "Math, theory, and implementation."
-    icon: "fas fa-robot"
+  - title: "Python Analytics & Modeling"
+    excerpt: "Used pandas, scikit-learn, and SHAP to model churn, explain predictions, and drive decisions."
+    icon: "fas fa-code"
 
-  - title: "Parallel Computing"
-    excerpt: "Hadoop/Hive for large-scale data."
-    icon: "fas fa-project-diagram"
-
-  - title: "Model Deployment"
-    excerpt: "Production ML via REST APIs and CI/CD."
-    icon: "fas fa-rocket"
-
-  - title: "Data Analytics"
-    excerpt: "Clear, compelling stories with data."
+  - title: "Tableau Dashboards"
+    excerpt: "Created visualizations that highlight trends, monitor KPIs, and support operational strategy."
     icon: "fas fa-chart-line"
+
+  - title: "Excel Automation"
+    excerpt: "Developed trackers and reporting tools using formulas, VBA, and Power Query for recurring tasks."
+    icon: "fas fa-file-excel"
+
+  - title: "End-to-End Projects"
+    excerpt: "Led projects from data sourcing to model deployment — shared through GitHub and portfolio site."
+    icon: "fas fa-project-diagram"
