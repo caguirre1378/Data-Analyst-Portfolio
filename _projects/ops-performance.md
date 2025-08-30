@@ -7,7 +7,7 @@ category: analytics
 tags: [excel, hypothesis-testing, proportions, anova, manufacturing, kpi, retention]
 permalink: /projects/ops-performance/
 weight: 15
-thumbnail: /assets/projects/ops-performance-splash.png
+thumbnail: /assets/images/ops-performance-splash.png
 ---
 
 > **Goal** — Diagnose and improve manufacturing performance across three KPIs.  
