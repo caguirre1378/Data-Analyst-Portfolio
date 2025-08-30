@@ -26,39 +26,39 @@ classes: wide
 
   <div class="topics">
     <article class="topic">
-      <div class="topic__icon"><i class="fas fa-cloud"></i></div>
-      <h3>Cloud Compute</h3>
-      <p>Servers for storage, model training, and deployment.</p>
+      <div class="topic__icon"><i class="fas fa-broom"></i></div>
+      <h3>Data Cleaning & Preparation</h3>
+      <p>Wrangled raw datasets using SQL, Excel, and Python to get them ready for analysis or dashboards.</p>
     </article>
 
     <article class="topic">
-      <div class="topic__icon"><i class="fas fa-language"></i></div>
-      <h3>NLP</h3>
-      <p>Techniques to make sense of human text and conversations.</p>
+      <div class="topic__icon"><i class="fas fa-database"></i></div>
+      <h3>SQL Querying</h3>
+      <p>Built complex queries with joins, CTEs, and aggregations to power dashboards and reporting tools.</p>
     </article>
 
     <article class="topic">
-      <div class="topic__icon"><i class="fas fa-robot"></i></div>
-      <h3>Machine Learning</h3>
-      <p>From the math to practical modeling and evaluation.</p>
-    </article>
-
-    <article class="topic">
-      <div class="topic__icon"><i class="fas fa-project-diagram"></i></div>
-      <h3>Parallel Computing</h3>
-      <p>Hadoop/Hive workflows for large-scale data processing.</p>
-    </article>
-
-    <article class="topic">
-      <div class="topic__icon"><i class="fas fa-rocket"></i></div>
-      <h3>Model Deployment</h3>
-      <p>Shipping models with REST APIs, CI/CD, and monitoring.</p>
+      <div class="topic__icon"><i class="fas fa-code"></i></div>
+      <h3>Python Analytics & Modeling</h3>
+      <p>Used pandas, scikit-learn, and SHAP to model churn, explain predictions, and drive decisions.</p>
     </article>
 
     <article class="topic">
       <div class="topic__icon"><i class="fas fa-chart-line"></i></div>
-      <h3>Data Analytics</h3>
-      <p>Clear, decision-ready visuals and storytelling with data.</p>
+      <h3>Tableau Dashboards</h3>
+      <p>Created visualizations that highlight trends, monitor KPIs, and support operational strategy.</p>
+    </article>
+
+    <article class="topic">
+      <div class="topic__icon"><i class="fas fa-file-excel"></i></div>
+      <h3>Excel Automation</h3>
+      <p>Developed trackers and reporting tools using formulas, VBA, and Power Query for recurring tasks.</p>
+    </article>
+
+    <article class="topic">
+      <div class="topic__icon"><i class="fas fa-project-diagram"></i></div>
+      <h3>End-to-End Projects</h3>
+      <p>Led projects from data sourcing to model deployment — shared through GitHub and portfolio site.</p>
     </article>
   </div>
 </section>
