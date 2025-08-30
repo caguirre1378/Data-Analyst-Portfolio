@@ -4,7 +4,7 @@ title: ""
 classes: wide
 ---
 
-<section class="section-white">
+<section class="section-white home-hero">
   <div class="intro-wrap">
     <div class="intro-left">
       <h1>Christian Aguirre</h1>
@@ -15,10 +15,11 @@ classes: wide
       </p>
     </div>
     <div class="intro-right">
-      <img src="/assets/images/headsot.jpg" alt="Christian Aguirre" class="hero-avatar">
+      <img src="/assets/images/headshot.jpg" alt="Christian Aguirre" class="hero-avatar">
     </div>
   </div>
 </section>
+
 
 
 <section class="section-gray">
