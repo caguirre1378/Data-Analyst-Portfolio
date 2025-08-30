@@ -1,0 +1,10 @@
+<div class="topics">
+  {% assign features = site.data.features[include.id] %}
+  {% for feature in features %}
+    <article class="topic">
+      <div class="topic__icon"><i class="{{ feature.icon }}"></i></div>
+      <h3>{{ feature.title }}</h3>
+      <p>{{ feature.excerpt }}</p>
+    </article>
+  {% endfor %}
+</div>
