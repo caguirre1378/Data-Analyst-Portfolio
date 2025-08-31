@@ -10,65 +10,104 @@ weight: 15
 thumbnail: /assets/images/ops-performance-splash.png
 ---
 
-> **Goal** — Diagnose and improve manufacturing performance across three KPIs.  
-> **Stack** — **Excel** (data cleaning, KPI views, tests), **Word** (8-page executive report).
+> **Goal** — Identify performance gaps and recommend solutions across three core KPIs.  
+> **Stack** — Microsoft Excel (analysis, dashboards), Word (8-page report).  
+> **Course** — Business Analytics II (Fall 2021), Senior Capstone
 
 ---
 
 ## Overview
-In **Business Analytics II (Fall 2021)**, I analyzed a hypothetical lawn-equipment manufacturer to pinpoint where operations were lagging and what to change first. The workbook is organized by KPI with clean inputs, calculations, and formatted visuals stakeholders can use immediately. The accompanying Word brief summarizes results and actions.
+This project analyzed the operations of a hypothetical lawn equipment manufacturer to uncover bottlenecks and propose data-driven improvements. Using historical data from 2014–2018, I assessed on-time delivery, transmission unit costs, and employee retention — all critical to sustainable performance.
+
+The Excel workbook includes interactive KPI dashboards, embedded statistical analysis, and clean formatting for stakeholders. An 8-page Word report summarizes insights, methodology, and next steps for operational leaders.
 
 ---
 
-## KPIs & methods
+## KPI Deep Dives
 
 ### 1) On-Time Delivery (OTD)
-**Question.** Did delivery performance materially improve by 2018 vs. 2014?  
-**Method.** One-sample **proportion test** (H₀: \(p_{2018}\le p_{2014}\)) with monthly OTD trend and seasonality checks.  
-**Finding.** **Statistically significant improvement** in 2018; visuals show steadier performance and fewer low-OTD months.
+**Objective:** Determine if delivery performance significantly improved by 2018.  
+**Method:** One-sample **proportion test** comparing 2018 vs. 2014  
+**Insights:**
+- Statistically significant improvement in 2018
+- Monthly trends showed steadier performance and fewer seasonal dips  
+**Recommendation:** Continue enforcing process improvements that led to 2018 gains. Use visual dashboards to monitor consistency.
 
 ---
 
-### 2) Transmission Unit Cost (process options)
-**Question.** Is an alternative transmission process cheaper on average?  
-**Method.** **One-way ANOVA** across candidate processes; post-hoc comparison when needed.  
-**Finding.** **Process A** is **marginally** cheaper. Given switching frictions, recommend piloting A in one line while tightening waste on the current process.
+### 2) Transmission Unit Cost (UTC)
+**Objective:** Compare average unit costs across three alternative transmission processes.  
+**Method:** **One-way ANOVA** with post-hoc checks  
+**Insights:**
+- Process A was marginally cheaper, though not by a wide margin
+- Switching costs may outweigh minor savings  
+**Recommendation:** Pilot **Process A** on a single line while reducing waste in the current setup to validate its viability.
 
 ---
 
-### 3) Employee Retention (gender × locality)
-**Question.** Where are we losing people and what cohorts are stickier?  
-**Method.** Cohort pivots by **gender** and **local/non-local**; monthly retention curves and rate deltas.  
-**Finding.** **Local** staff and **male** cohort show **slightly higher** retention. Recommend shift scheduling tweaks, local recruiting, and targeted onboarding for higher-risk cohorts.
+### 3) Employee Retention
+**Objective:** Identify trends in retention by **gender** and **local vs. non-local** status  
+**Method:** Cohort pivot analysis with retention curves  
+**Insights:**
+- Local and male employees had slightly higher retention
+- Retention gaps were small but consistent  
+**Recommendation:** Improve onboarding, shift flexibility, and targeted HR engagement for non-local or high-risk cohorts.
 
 ---
 
-## Workbook structure
-- **Raw** — source tables with data validation and filters.  
-- **Calc** — clean joins, derived fields, KPI math, and test inputs.  
-- **Charts** — formatted visuals aligned to each KPI tab: **OTD**, **Transmission Cost**, **Retention**.  
-- Consistent slicers, conditional formatting, and notes for assumptions.
+## Workbook Design
+
+- **Raw Data:** Filterable source tables with validation
+- **Calc Tabs:** KPI-specific calculations, test inputs, and logic
+- **Charts:** Clean visuals per KPI (OTD, UTC, Retention)
+- Features include slicers, conditional formatting, and export-ready figures
+
+Each tab supports quick scenario testing and updates dynamically when inputs are adjusted.
 
 ---
 
-## How to use
-1. Open the **Excel workbook**; start on the **Summary** (or KPI) tab.  
-2. Use slicers (year, process, cohort) to explore.  
-3. Recalculate stats by adjusting test inputs (e.g., baseline year, α).  
-4. Export figures for slides or paste into the **8-page Word report** template.  
-5. For scenario checks, tweak process costs or staffing in **Calc** and watch the dashboards update.
+## How to Use
+
+1. Open the Excel workbook and start at the **Summary** tab  
+2. Use slicers to filter year, process type, or cohort group  
+3. Adjust statistical assumptions (e.g., alpha levels, years) to test sensitivity  
+4. Export visuals for presentation or reports  
+5. Read the 8-page Word report for structured findings and business recommendations
 
 ---
 
 ## Deliverables
-- **Clean Excel workbook** with three KPI tabs and publication-ready charts.  
-- **8-page report**: executive summary, methods, results, and recommended next steps.
+
+- 📊 **Excel dashboard** with KPI-specific tabs and real-time visualizations  
+- 📄 **8-page Word report** including:
+  - Executive summary  
+  - KPI deep dives  
+  - Visual evidence  
+  - Clear, actionable next steps
 
 ---
 
-## Links
-- **Files & report** — <https://github.com/caguirre1378/Data-Analyst-Portfolio>
+## Summary of Results
+
+| KPI                | Method               | Key Takeaway                                                   |
+|--------------------|----------------------|----------------------------------------------------------------|
+| On-Time Delivery   | Proportion Test       | Significant improvement by 2018; performance stabilized        |
+| Transmission Cost  | ANOVA                 | Process A slightly cheaper; recommend pilot before rollout     |
+| Employee Retention | Cohort Analysis       | Local/male cohorts retain better; improve onboarding for others|
 
 ---
 
-*Updated: December 1, 2021*
+## Future Enhancements
+
+- **Predictive Modeling** — Add churn or cost prediction using regression or classification  
+- **Automated Tracking** — Integrate Power Query for real-time KPI refreshes  
+- **ERP Integration** — Deploy within a broader ERP dashboard for end-to-end visibility
+
+---
+
+## GitHub
+📂 [View files, dashboards, and report](https://github.com/caguirre1378/Data-Analyst-Portfolio)
+
+---
+
+*Updated: August 30, 2025*
