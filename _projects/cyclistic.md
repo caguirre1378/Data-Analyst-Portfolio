@@ -5,7 +5,7 @@ title: "Cyclistic Rider Behavior"
 excerpt: "12 months of Chicago bike-share data to explain casual vs member behavior and drive membership growth."
 classes: wide
 category: analytics
-tags: \[r, tidyverse, ggplot2, dplyr, lubridate, tableau]
+tags: [r, tidyverse, ggplot2, dplyr, lubridate, tableau]
 thumbnail: /assets/images/cyclist-splash.png
 permalink: /projects/cyclistic/
 weight: 20
