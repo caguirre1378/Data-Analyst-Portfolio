@@ -3,7 +3,7 @@ layout: single
 title: "World Layoffs: SQL Data Cleaning"
 excerpt: "SQL-powered data cleaning pipeline to prepare a public layoffs dataset for analysis and business insights."
 classes: wide
-category: analytics
+category: sql
 tags: [mysql, sql, data-cleaning, wrangling, eda, business-insights]
 thumbnail: /assets/images/layoffs-splash.png
 permalink: /projects/world-layoffs-cleaning/
