@@ -15,32 +15,58 @@ weight: 20
 
 ---
 
+## Project Overview
+
+This project tackled the restructuring of a fragmented landscaping company’s database, transforming it into a streamlined, normalized system that supports reliable analytics and business decision-making.
+
+Using SQL Server Management Studio, SQL Server, and ERDPlus, the legacy database—originally composed of wide, denormalized tables—was rebuilt into a clean, normalized schema. The process involved resolving redundancies, enforcing constraints, indexing high-traffic paths, and creating over 30 advanced SQL queries to uncover insights such as service popularity, customer trends, and project profitability.
+
+---
+
 ## At a glance
-- **ER modeling → normalized schema** (3NF) with clear entity boundaries.  
-- **Integrity** via **PK/FK** and **UNIQUE** constraints; **CHECK** rules for valid ranges.  
-- **Redundancy removed**; **indexes** added for high-traffic joins and filters.  
-- **30+ queries** for service popularity, customer trends, job profitability, seasonality.
+
+- **ER modeling → normalized schema** (3NF) with clearly defined entity boundaries.  
+- **Data integrity** via **PRIMARY/FOREIGN KEYS**, **UNIQUE constraints**, and **CHECK rules** for valid values.  
+- **Redundancy removed** through normalization; **indexes** added to improve performance.  
+- **30+ SQL queries** developed for business insights and strategic reporting.
 
 ---
 
-## Project overview
-A legacy DB mixed customers, jobs, materials, labor, and services in a few wide tables, making reporting unreliable.  
-I re-modeled the domain, implemented a normalized schema in **SQL Server**, migrated/standardized data, and produced a query pack that the business can use for routine reporting and ad-hoc analysis.
+## Technical Specifications
+
+**Software Used:** SQL Server Management Studio, SQL Server, ERDPlus  
+
+**Techniques Applied:**  
+
+### Data Standardization and Normalization
+- Converted inconsistent values into standardized formats.
+- Designed schema to eliminate redundancy and optimize performance.
+- Organized fragmented data into structured, normalized tables.
+
+### Advanced SQL Query Development
+- Created 30+ advanced SQL queries using joins, aggregations, subqueries, and window functions.
+- Focused on business intelligence: customer behaviors, service use, and profitability.
 
 ---
 
-## Design & schema
+## Design & Schema
 
-### Core entities
-- **Client** (accounts)  
-- **Project** (a scheduled job for a client)  
-- **Service** (mowing, mulch install, aeration, etc.)  
-- **ProjectService** (junction: which services a project included)  
-- **Material** (mulch, sod, fertilizer)  
-- **LaborEntry** (crew time logs)  
-- **Supplier** (for materials)
+### Core Entities
+- **Client** — Maintains customer accounts.
+- **Project** — Represents a scheduled landscaping job for a client.
+- **Service** — Mowing, aeration, sod laying, etc.
+- **ProjectService** — Junction table linking services to specific projects.
+- **Material** — Mulch, fertilizer, sod.
+- **LaborEntry** — Crew labor logs (hours, rates).
+- **Supplier** — Vendor providing materials.
 
-### Example DDL (excerpt)
+### ER Modeling
+An entity-relationship model was created in ERDPlus, defining attributes, relationships, and cardinality. The schema was refined to ensure support for analytics and minimize anomalies during inserts and updates.
+
+---
+
+## Example DDL (Schema Excerpt)
+
 ```sql
 CREATE TABLE dbo.Client (
   ClientID        INT IDENTITY PRIMARY KEY,
@@ -94,6 +120,55 @@ CREATE TABLE dbo.LaborEntry (
 );
 
 -- Helpful indexes
-CREATE INDEX IX_Project_Client           ON dbo.Project (ClientID, ScheduledOn);
-CREATE INDEX IX_ProjectService_Service   ON dbo.ProjectService (ServiceID);
-CREATE INDEX IX_LaborEntry_Project       ON dbo.LaborEntry (ProjectID);
+CREATE INDEX IX_Project_Client         ON dbo.Project (ClientID, ScheduledOn);
+CREATE INDEX IX_ProjectService_Service ON dbo.ProjectService (ServiceID);
+CREATE INDEX IX_LaborEntry_Project     ON dbo.LaborEntry (ProjectID);
+```
+
+---
+
+## Querying and Analysis
+
+Advanced SQL queries were developed for reporting on:
+- Most requested services
+- Seasonal project distribution
+- Material cost trends
+- Profitability by project or service
+- Labor hours by crew member or job type
+
+These queries allow stakeholders to make informed decisions based on reliable and structured data.
+
+---
+
+## Testing and Debugging
+
+- All queries were tested using dummy and live sample data.
+- PK/FK relationships were validated to avoid referential integrity issues.
+- Queries were optimized for performance using indexes and query plans.
+
+---
+
+## Usage Instructions
+
+**System Requirements:** SQL Server, SQL Server Management Studio (SSMS)  
+**Hardware Requirements:** Standard workstation with sufficient memory and CPU for SQL Server
+
+**Steps:**
+1. Import SQL scripts into SSMS.
+2. Execute DDL to create schema and tables.
+3. Populate tables with test data or migrate real operational data.
+4. Run analytical queries for reporting and trend analysis.
+
+---
+
+## Contribution and Licensing
+
+This is an academic project for advanced SQL coursework and database management best practices. Not licensed for commercial use without instructor approval.
+
+---
+
+## Future Enhancements
+
+- Integrate Tableau or Power BI dashboards using the normalized schema.
+- Automate ETL pipelines for data refresh.
+- Expand query library to include financial projections and customer segmentation.
