@@ -5,7 +5,7 @@ title: "Bellabeat Smart Device Usage Analysis"
 excerpt: "Fitbit public data used to explain behavior and inform Bellabeat’s marketing & product engagement."
 classes: wide
 category: analytics
-tags: \[r, tidyverse, dplyr, lubridate, ggplot2, janitor, tableau]
+tags: [r, tidyverse, dplyr, lubridate, ggplot2, janitor, tableau]
 thumbnail: /assets/images/bellabeat-splash.png
 permalink: /projects/bellabeat/
 weight: 30
