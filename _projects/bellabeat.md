@@ -1,5 +1,4 @@
 ---
-
 layout: single
 title: "Bellabeat Smart Device Usage Analysis"
 excerpt: "Fitbit public data used to explain behavior and inform Bellabeat’s marketing & product engagement."
@@ -9,7 +8,8 @@ tags: [r, tidyverse, dplyr, lubridate, ggplot2, janitor, tableau]
 thumbnail: /assets/images/bellabeat-splash.png
 permalink: /projects/bellabeat/
 weight: 30
-----------
+---
+
 
 > **Goal** — Uncover usage patterns (steps, calories, sleep) and translate them into actions that grow engagement and acquisition.
 > **Stack** — R (tidyverse, dplyr, lubridate, janitor, ggplot2), Tableau Public.
