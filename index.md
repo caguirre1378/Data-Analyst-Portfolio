@@ -63,22 +63,50 @@ classes: wide
   </div>
 </section>
 
+
+
+
+
+
 <section class="section-white">
   <h2>My Latest Projects</h2>
   <p class="section-sub">Take a look at my recent work.</p>
 
-  {% assign recent = site.projects | slice: 0, 3 %}
-  <div class="cards">
-    {% for item in recent %}
-      <article class="card">
-        <a href="{{ item.url | relative_url }}">
-          {% if item.thumbnail %}
-            <img src="{{ item.thumbnail | relative_url }}" alt="{{ item.title }}">
-          {% endif %}
-          <h3>{{ item.title }}</h3>
-          <p>{{ item.excerpt | default: item.description }}</p>
-        </a>
-      </article>
-    {% endfor %}
+  <div class="carousel-wrapper" style="position: relative;">
+    <!-- Left Arrow -->
+    <button id="prevBtn" style="position: absolute; left: -30px; top: 40%; transform: translateY(-50%); z-index: 2; background: white; border: 1px solid #ccc; border-radius: 50%; width: 35px; height: 35px;">←</button>
+
+    <!-- Carousel Container -->
+    <div id="carousel" style="display: flex; overflow-x: auto; scroll-behavior: smooth; gap: 20px; padding: 10px 0;">
+      {% assign recent = site.projects %}
+      {% for item in recent %}
+        <article class="card" style="min-width: 300px; max-width: 300px; flex-shrink: 0;">
+          <a href="{{ item.url | relative_url }}">
+            {% if item.thumbnail %}
+              <img src="{{ item.thumbnail | relative_url }}" alt="{{ item.title }}" style="width: 100%; height: auto; border-radius: 4px;">
+            {% endif %}
+            <h3>{{ item.title }}</h3>
+            <p>{{ item.excerpt | default: item.description }}</p>
+          </a>
+        </article>
+      {% endfor %}
+    </div>
+
+    <!-- Right Arrow -->
+    <button id="nextBtn" style="position: absolute; right: -30px; top: 40%; transform: translateY(-50%); z-index: 2; background: white; border: 1px solid #ccc; border-radius: 50%; width: 35px; height: 35px;">→</button>
   </div>
 </section>
+
+<script>
+  const carousel = document.getElementById('carousel');
+  const nextBtn = document.getElementById('nextBtn');
+  const prevBtn = document.getElementById('prevBtn');
+
+  nextBtn.addEventListener('click', () => {
+    carousel.scrollBy({ left: 330, behavior: 'smooth' });
+  });
+
+  prevBtn.addEventListener('click', () => {
+    carousel.scrollBy({ left: -330, behavior: 'smooth' });
+  });
+</script>
