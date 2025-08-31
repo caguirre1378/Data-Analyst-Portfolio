@@ -1,15 +1,15 @@
 ---
-
 layout: single
 title: "World Layoffs: SQL Data Cleaning"
-excerpt: "Real-world layoffs dataset cleaned in MySQL: duplicates, nulls, formatting, and prep for trend analysis."
+excerpt: "Prepare a real-world layoffs dataset for SQL EDA and trend analysis."
 classes: wide
 category: analytics
-tags: \[sql, mysql, data-cleaning, data-prep, eda, duplicates, nulls]
+tags: [mysql, sql, cleaning, data-wrangling, eda]
 thumbnail: /assets/images/layoffs-splash.png
-permalink: /projects/layoffs-cleaning/
-weight: 35
-----------
+permalink: /projects/world-layoffs-cleaning/
+weight: 40
+---
+
 
 > **Goal** — Prepare a real-world layoffs dataset for exploratory data analysis and trend insights.
 > **Stack** — MySQL (Workbench), GitHub.
