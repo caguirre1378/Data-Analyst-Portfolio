@@ -33,26 +33,18 @@ h2 { font-size: 1.75rem; margin-bottom: 1.25rem; }
 
 .section-white .intro-wrap {
   display: grid;
-  grid-template-columns: 1.1fr 0.9fr; /* closer to equal balance */
+  grid-template-columns: 1fr 1fr; /* equal balance */
   align-items: center;
 
-  max-width: none;   /* full width hero */
-  padding: 0 4rem;   /* keep spacing from screen edges */
-  margin: 0 auto;
+  max-width: 1100px;   /* match the rest of the page */
+  margin: 0 auto;      /* fully center the grid */
+  padding: 0 2rem;     /* even spacing on both sides */
 
-  gap: 4rem; /* space between text and photo */
+  gap: 3rem;           /* consistent space between text and photo */
 }
 
 .section-white .intro-left  { justify-self: start; }
-.section-white .intro-right { justify-self: end; } /* push image right */
-
-/* Heading/text tweaks */
-.intro-left h1 { font-size: 2.6rem; line-height: 1.2; margin: .2rem 0 1rem; }
-.intro-left h2 {
-  font-size: .9rem; letter-spacing: .08em; text-transform: uppercase;
-  color: #6b7280; margin-bottom: .2rem;
-}
-.intro-left p { color: #4b5563; }
+.section-white .intro-right { justify-self: center; } /* center photo more */
 
 /* =========================================================
    Areas of Interest (feature_row)
