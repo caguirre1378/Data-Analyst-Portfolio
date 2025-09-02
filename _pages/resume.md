@@ -17,11 +17,11 @@ classes: wide
 
 <div class="resume-cta">
   <a class="btn btn--primary btn--large"
-     href="/assets/Data%20Analyst%20Resume%20-%20August%202025.pdf" download>
+     href="{{ site.baseurl }}/assets/Data%20Analyst%20Resume%20-%20August%202025.pdf" download>
     ⬇ Download PDF
   </a>
   <a class="btn btn--inverse"
-     href="/assets/Data%20Analyst%20Resume%20-%20August%202025.pdf" target="_blank" rel="noopener">
+     href="{{ site.baseurl }}/assets/Data%20Analyst%20Resume%20-%20August%202025.pdf" target="_blank" rel="noopener">
     Open in new tab
   </a>
   <button class="btn" onclick="window.print()">🖨️ Print</button>
@@ -40,9 +40,9 @@ classes: wide
 ---
 
 <div class="pdf-embed">
-  <object data="/assets/Data%20Analyst%20Resume%20-%20August%202025.pdf"
+  <object data="{{ site.baseurl }}/assets/Data%20Analyst%20Resume%20-%20August%202025.pdf"
           type="application/pdf" width="100%" height="1100px">
     <p>Your browser can’t display PDFs here.  
-    <a href="/assets/Data%20Analyst%20Resume%20-%20August%202025.pdf">Click to open the file.</a></p>
+    <a href="{{ site.baseurl }}/assets/Data%20Analyst%20Resume%20-%20August%202025.pdf">Click to open the file.</a></p>
   </object>
 </div>
