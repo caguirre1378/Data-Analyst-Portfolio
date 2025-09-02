@@ -2,7 +2,7 @@
    Base & layout
    ======================================================= */
 .page { 
-  max-width: 980px;   /* tightened from 1180px */
+  max-width: 1100px;   /* tightened general content width */
   margin: 0 auto;
 }
 body { font-size: 17px; line-height: 1.7; color: #23262b; }
@@ -33,12 +33,14 @@ h2 { font-size: 1.75rem; margin-bottom: 1.25rem; }
 
 .section-white .intro-wrap {
   display: grid;
-  grid-template-columns: 1.3fr 0.7fr; /* give text more space, image less */
+  grid-template-columns: 1.1fr 0.9fr; /* closer to equal balance */
   align-items: center;
-  max-width: 1000px; /* reduced from 1280px to cut whitespace */
-  margin-left: auto;
-  margin-right: auto;
-  gap: 3rem; /* more breathing room between text and photo */
+
+  max-width: none;   /* full width hero */
+  padding: 0 4rem;   /* keep spacing from screen edges */
+  margin: 0 auto;
+
+  gap: 4rem; /* space between text and photo */
 }
 
 .section-white .intro-left  { justify-self: start; }
@@ -59,7 +61,7 @@ h2 { font-size: 1.75rem; margin-bottom: 1.25rem; }
   display: grid !important;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 26px 34px;
-  max-width: 1000px; /* reduced from 1100px */
+  max-width: 1000px;
   margin: 0 auto;
 }
 .feature__item { text-align: center; padding: 10px 12px; }
@@ -123,7 +125,7 @@ h2 { font-size: 1.75rem; margin-bottom: 1.25rem; }
   display:grid;
   grid-template-columns:repeat(3,minmax(0,1fr));
   gap:24px 32px;
-  max-width:1000px; /* reduced from 1100px */
+  max-width:1000px;
   margin:0 auto;
 }
 .topic{
