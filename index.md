@@ -15,7 +15,7 @@ classes: wide
       </p>
     </div>
     <div class="intro-right">
-    <img src="assets/images/headshot.png" alt="Christian Aguirre" style="border-radius: 50%; width: 250px; height: 250px; object-fit: cover;">
+      <img src="assets/images/headshot.png" alt="Christian Aguirre" class="profile-pic">
     </div>
   </div>
 </section>
@@ -63,11 +63,6 @@ classes: wide
   </div>
 </section>
 
-
-
-
-
-
 <section class="section-white">
   <h2>My Latest Projects</h2>
   <p class="section-sub">Take a look at my recent work.</p>
@@ -110,3 +105,12 @@ classes: wide
     carousel.scrollBy({ left: -330, behavior: 'smooth' });
   });
 </script>
+
+<style>
+  .profile-pic {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+  }
+</style>
