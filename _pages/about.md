@@ -68,4 +68,71 @@ Managed contractor accounts, kept inventory and procurement moving, and shipped 
   <span class="pill">scikit-learn</span>
   <span class="pill">Matplotlib</span>
   <span class="pill">Seaborn</span>
-  <spa
+  <span class="pill">ggplot2</span>
+</div>
+
+## Milestones
+<ul class="timeline">
+  <li>
+    <div class="tl-date">2025</div>
+    <div class="tl-card">
+      <strong>Google Data Analytics Professional Certificate — May 2025</strong><br>
+      Coursework across cleaning, analysis, visualization, and practical stakeholder communication.
+    </div>
+  </li>
+  <li>
+    <div class="tl-date">2025</div>
+    <div class="tl-card">
+      <strong>Facility Support Manager — GBA Associates @ DHHQ (Mar 2025–present)</strong><br>
+      Workflow ownership, vendor coordination, and ops reporting. Shipped Excel/VBA search, Power Query consolidation, and performance dashboards.
+    </div>
+  </li>
+  <li>
+    <div class="tl-date">2022–2025</div>
+    <div class="tl-card">
+      <strong>Pro Sales Associate — Lowe’s</strong><br>
+      Managed contractor accounts, improved procurement flows, and delivered fast solutions.
+    </div>
+  </li>
+  <li>
+    <div class="tl-date">2021–2023</div>
+    <div class="tl-card">
+      <strong>B.S., Management Information Systems — George Mason University</strong>
+    </div>
+  </li>
+  <li>
+    <div class="tl-date">2019–2021</div>
+    <div class="tl-card">
+      <strong>A.S., Business Administration — Northern Virginia Community College</strong>
+    </div>
+  </li>
+</ul>
+
+## Now / Next
+<div class="twocol">
+  <div>
+    <h3>Now</h3>
+    <ul>
+      <li><strong>Evaluation checklists</strong> — leakage, drift, fairness, and data-quality gates in PRs; quick sampling checks before release.</li>
+      <li><strong>Decision-first write ups</strong> — one pager per analysis: decision → baseline → cost of error → recommendation → risks and next steps; link to a reproducible notebook.</li>
+      <li><strong>Decision-quality metrics</strong> — calibration, lift vs. current policy, expected value and cost curves, time to insight.</li>
+      <li><strong>From ad hoc to repeatable</strong> — turn scripts into refreshable pipelines; document data owners, keys, and SLAs.</li>
+    </ul>
+  </div>
+  <div>
+    <h3>Next</h3>
+    <ul>
+      <li><strong>Lightweight monitoring</strong> — freshness, volume, and schema checks with simple alerts and a short runbook.</li>
+      <li><strong>Human in the loop</strong> — review queue for borderline predictions; thresholds and escalation rules; feedback loop for retraining.</li>
+      <li><strong>Postmortems & playbooks</strong> — tight templates, common failure modes, rollback and verify checklist.</li>
+      <li><strong>Data contracts & validation</strong> — schema constraints, allowed ranges, de-dupe keys, and backfill policy.</li>
+    </ul>
+  </div>
+</div>
+
+## Say hello
+<p>
+  <a class="btn btn--primary" href="{{ site.baseurl }}/resume/">Resume</a>
+  <a class="btn" href="{{ site.baseurl }}/projects/">Portfolio</a>
+  <a class="btn" href="mailto:christianaguirrepp@gmail.com">Email</a>
+</p>
