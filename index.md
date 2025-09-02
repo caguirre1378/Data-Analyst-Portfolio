@@ -15,7 +15,7 @@ classes: wide
       </p>
     </div>
     <div class="intro-right">
-      <img src="/assets/images/headsot.jpg" alt="Christian Aguirre" class="hero-avatar">
+      <img src="/assets/images/headshot.jpg" alt="Christian Aguirre" class="hero-avatar">
     </div>
   </div>
 </section>
