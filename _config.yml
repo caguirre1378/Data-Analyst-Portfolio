@@ -1,7 +1,7 @@
 title: "Christian Aguirre"
 description: "Data & ML portfolio"
 url: "https://caguirre1378.github.io"
-baseurl: ""   # do not change for user/username.github.io sites
+baseurl: "/Data-Analyst-Portfolio"
 
 remote_theme: "mmistakes/minimal-mistakes"
 fontawesome: true
