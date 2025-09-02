@@ -56,13 +56,11 @@ Managed contractor accounts, kept inventory/procurement moving, and shipped the 
   <span class="pill">Jupyter</span>
   <span class="pill">Git/GitHub</span>
   <span class="pill">LINGO</span>
-</div>
-
-<span class="pill">NumPy</span>
-<span class="pill">scikit-learn</span>
-<span class="pill">Matplotlib</span>
-<span class="pill">Seaborn</span>
-<span class="pill">ggplot2</span>
+  <span class="pill">NumPy</span>
+  <span class="pill">scikit-learn</span>
+  <span class="pill">Matplotlib</span>
+  <span class="pill">Seaborn</span>
+  <span class="pill">ggplot2</span>
 
 ## Milestones
 <ul class="timeline">
