@@ -15,7 +15,7 @@ classes: wide
       </p>
     </div>
     <div class="intro-right">
-      <img src="{{ site.baseurl }}/assets/images/headshot.jpg" alt="Christian Aguirre">
+    <img src="assets/images/headshot.png" alt="Christian Aguirre" style="border-radius: 50%; width: 250px; height: 250px; object-fit: cover;">
     </div>
   </div>
 </section>
