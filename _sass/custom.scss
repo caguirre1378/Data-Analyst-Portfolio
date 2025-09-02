@@ -33,18 +33,19 @@ h2 { font-size: 1.75rem; margin-bottom: 1.25rem; }
 
 .section-white .intro-wrap {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* equal balance */
+  grid-template-columns: 1.3fr 0.7fr; /* text wider, image narrower */
   align-items: center;
 
-  max-width: 1100px;   /* match the rest of the page */
-  margin: 0 auto;      /* fully center the grid */
-  padding: 0 2rem;     /* even spacing on both sides */
+  max-width: 1200px;   /* wider container to allow more push to the right */
+  margin: 0 auto;
+  padding: 0 2rem;
 
-  gap: 3rem;           /* consistent space between text and photo */
+  gap: 3rem;
 }
 
 .section-white .intro-left  { justify-self: start; }
-.section-white .intro-right { justify-self: center; } /* center photo more */
+.section-white .intro-right { justify-self: end; } /* keep photo anchored right */
+
 
 /* =========================================================
    Areas of Interest (feature_row)
